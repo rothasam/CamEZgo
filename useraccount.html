@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user account</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main>
+        <section class="user-account">
+            <div class="container">
+                <div class="row mt-5">
+                    <h3 class="fw-medium mb-4">ការកំណត់គណនី</h3>
+                    <div class="col-lg-3">
+                        <div class="card border">
+                            <div class="card-body p-0">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 col-5 width-col pt-4">
+                                        <div class="image-profile position-relative">
+                                            <img class="img-fluid" src="assets/img/profile/userprofile.png" alt="">
+                                            <span class="edit-img"><i class="fa-solid fa-pen"></i></span>
+                                        </div>
+                                        <div class="text-center mt-3 mb-4">
+                                            <h4 class="fw-medium">John Jame</h4>
+                                            <span class="label-verified"><i class="bi bi-check2-circle"></i>
+                                                បានផ្ទៀងផ្ទាត់</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" role="tab" aria-current="page" data-bs-toggle="tab"
+                                            data-bs-target="#account" href="#">
+                                            <span><i class="bi bi-person-fill"></i></span> គណនី</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" role="tab" data-bs-target="#changepassword"
+                                            data-bs-toggle="tab" href="#"><span><i class="fa-solid fa-key"></i></span>
+                                            ផ្លាស់ប្តូរពាក្យសម្ងាត់</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" role="tab" data-bs-target="#security" data-bs-toggle="tab"
+                                            href="#"><span><i class="bi bi-shield-lock-fill"></i></span> ឯកជនភាព
+                                            និងសុវត្ថិភាព</a>
+                                    </li>
+
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" role="tab" data-bs-target="#notification"
+                                            data-bs-toggle="tab" href="#"><span><i class="bi bi-bell-fill"></i></span>
+                                            សេចក្តីជូនដំណឹង</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" role="tab" data-bs-target="#deleteaccount"
+                                            data-bs-toggle="tab" href="#"><span><i class="fa-solid fa-trash"></i></span>
+                                            លុបគណនី</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link border-0" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" href="#">
+                                            <span><i class="fa-solid fa-right-from-bracket"></i></span> Log
+                                            Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="verifyemail"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body pt-4">
+                                    <h5>តើអ្នកចង់ចេញពីគណនីទេ?</h5>
+                                    <div class="d-flex justify-content-end">
+                                        <a type="button" class="btn btn-cancel" data-bs-dismiss="modal">ទេ</a>
+                                        <a type="button" class="btn btn-cancel">បាទ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="account" role="tabpanel"
+                                aria-labelledby="account" tabindex="0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 mb-4 p-0">
+                                            <div class="card border">
+                                                <div class="card-body">
+                                                    <h3><span><i class="bi bi-person-fill"></i></span>
+                                                        ព័ត៌មានផ្ទាល់ខ្លួន
+                                                    </h3>
+                                                    <form action="" class="input-personal">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="fname"
+                                                                        class="form-label fs-label mb-1">នាមត្រកូល</label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        name="txtfname" placeholder="John"
+                                                                        aria-label="fname">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="lname"
+                                                                        class="form-label fs-label mb-1">នាមខ្លួន</label>
+                                                                    <input type="text" class="form-control" id="lname"
+                                                                        name="lastname" placeholder="Jame"
+                                                                        aria-label="lname">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="lname"
+                                                                        class="form-label fs-label mb-1">ថ្ងៃខែឆ្នាំកំណើត</label>
+                                                                    <input type="date" class="form-control"
+                                                                        value="2000-01-01" id="lname" name="lastname"
+                                                                        placeholder="lastname" aria-label="lname">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="sex"
+                                                                        class="form-label fs-label mb-1">ភេទ</label>
+                                                                    <input type="text" class="form-control"
+                                                                        value="ប្រុស" id="sex" name="lastname"
+                                                                        placeholder="sex" aria-label="sex">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="address"
+                                                                        class="form-label fs-label mb-1">អាស័យដ្ឋាន</label>
+                                                                    <input type="text" class="form-control"
+                                                                        value="ភ្នំពេញ" id="address" name="address"
+                                                                        placeholder="address" aria-label="address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="address"
+                                                                        class="form-label fs-label mb-1">លេខសម្គាល់ប័ណ្ណ</label>
+                                                                    <input type="text" class="form-control"
+                                                                        value="19********67" id="address" name="address"
+                                                                        placeholder="address" aria-label="address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="address"
+                                                                        class="form-label fs-label mb-1">អ៊ីមែល</label>
+                                                                    <input type="text" class="form-control"
+                                                                        value="leangeng03@gmail.com" id="address"
+                                                                        name="address" placeholder="address"
+                                                                        aria-label="address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="phone"
+                                                                        class="form-label fs-label mb-1">លេខទូរស័ព្ទ</label>
+                                                                    <input type="tel" class="form-control"
+                                                                        value="023 777 099" id="address" name="phone"
+                                                                        placeholder="phone" aria-label="phone">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="address"
+                                                                        class="form-label fs-label mb-1">កាលបរិច្ឆេទចេញប័ណ្ណ</label>
+                                                                    <input type="date" class="form-control"
+                                                                        value="2022-10-22" id="address" name="address"
+                                                                        placeholder="address" aria-label="address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="mb-3">
+                                                                    <label for="address"
+                                                                        class="form-label fs-label mb-1">កាលបរិច្ឆេទផុតកំណត់</label>
+                                                                    <input type="date" class="form-control"
+                                                                        value="2032-10-21" id="address" name="address"
+                                                                        placeholder="address" aria-label="address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 d-flex justify-content-end">
+                                                                <button class="btn btn-primary"
+                                                                    type="submit">រក្សាទុក</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card alert alert-warning">
+                                                <div class="card-body p-0">
+                                                    <p class="m-0">
+                                                        ប្រសិនបើអ្នកមានចម្ងល់សម្រាប់ជំនួយអតិថិជន សូមចុច
+                                                        <a class="text-warning" href="#">Customer Support</a>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="changepassword" role="tabpanel"
+                                aria-labelledby="changepassword" tabindex="0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="fw-medium mt-2 mb-3"><span><i
+                                                            class="fa-solid fa-key"></i></span>
+                                                    ផ្លាស់ប្តូរពាក្យសម្ងាត់</h4>
+                                                <div class="alert alert-warning" role="alert">
+                                                    <span><i class="bi bi-exclamation-circle-fill"></i></span>
+                                                    ដើម្បីធានាសុវត្ថិភាពពាក្យសម្ងាត់អ្នកត្រូវ:
+                                                    <ul class="mb-0 mt-2" style="list-style-type: circle;">
+                                                        <li>ពាក្យសម្ងាត់របស់អ្នកត្រូវមានយ៉ាងតិច 8 ខ្ទង់​ទៅ​ 15ខ្ទង់</li>
+                                                        <li>យ៉ាងហោចណាស់អក្សរធំមួយ និងអក្សរតូចមួយ</li>
+                                                        <li>យ៉ាងហោចណាស់លេខមួយខ្ទង់</li>
+                                                        <li>យ៉ាងហោចណាស់មានតួអក្សរពិសេសមួយ. ឧទា: !, #, @, $...</li>
+                                                    </ul>
+
+                                                </div>
+                                                <form class="user-password">
+                                                    <div class="mb-3 position-relative">
+                                                        <label for="confirmpassword"
+                                                            class="form-label mb-1 fs-label">ពាក្យសម្ងាត់បច្ចុប្បន្ន</label>
+                                                        <input type="password" class="form-control" id="password9"
+                                                            name="txtpass" placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់"
+                                                            aria-label="password" required>
+                                                        <div id="password-icon9" onclick="showHide9()"
+                                                            style="top: 35px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 position-relative">
+                                                        <label for="confirmpassword"
+                                                            class="form-label mb-1 fs-label">ពាក្យសម្ងាត់ថ្មី</label>
+                                                        <input type="password" class="form-control" id="password8"
+                                                            name="txtpass" placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់"
+                                                            aria-label="password" required>
+                                                        <div id="password-icon8" onclick="showHide8()"
+                                                            style="top: 35px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 position-relative">
+                                                        <label for="confirmpassword"
+                                                            class="form-label mb-1 fs-label">បញ្ជាក់ពាក្យសម្ងាត់ថ្មី</label>
+                                                        <input type="password" class="form-control" id="password7"
+                                                            name="txtpass" placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់"
+                                                            aria-label="password" required>
+                                                        <div id="password-icon7" onclick="showHide7()"
+                                                            style="top: 35px;">
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="submit"
+                                                        class="btn btn-primary">ផ្លាស់ប្តូរពាក្យសម្ងាត់</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security"
+                                tabindex="0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <span><i class="bi bi-shield-lock-fill"></i></span>
+                                                ឯកជនភាព និងសុវត្ថិភាព
+                                                <h4 class="fw-bold mt-2">Two-Factor Authentication (2FA)</h4>
+                                                <ul class="list-unstyled">
+                                                    <li class="border-bottom pt-3">
+                                                        <i class="fa-solid fa-envelope"></i> <span
+                                                            class="fw-bold">អ៊ីមែល</span>
+                                                        <p class="mt-2">ប្រើអ៊ីមែលរបស់អ្នកដើម្បីការពារគណនី
+                                                            និងការផ្ទេរទិន្នន័យរបស់អ្នក</p>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="fw-medium">le*****03@gmail.com</p>
+                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#email">Manage</button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="border-bottom pt-3">
+                                                        <i class="fa-solid fa-phone-volume"></i> <span
+                                                            class="fw-bold">លេខទូរស័ព្ទ</span>
+
+                                                        <p class="mt-2">ប្រើទូរស័ព្ទរបស់អ្នកដើម្បីការពារគណនី
+                                                            និងការផ្ទេរប្រាក់របស់អ្នក</p>
+                                                        <div class="d-flex justify-content-between">
+                                                            <p class="fw-medium">
+                                                                <span><i
+                                                                        class="bi bi-check-circle-fill text-success"></i></span>
+                                                                023 777 099
+                                                            </p>
+                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#phone">Manage</button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <h4 class="fw-bold">Device និង Activities</h4>
+                                                <ul class="list-unstyled">
+
+                                                    <li class="border-bottom pt-3">
+                                                        <i class="bi bi-pc-display"></i> <span class="fw-bold">My
+                                                            Device</span>
+                                                        <p class="mt-2">គ្រប់គ្រងឧបករណ៍ដែលមានស្ថានភាពចូល
+                                                            និងមើលប្រវត្តិឧបករណ៍របស់អ្នក</p>
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#mydevice">Manage</button>
+                                                        </div>
+                                                    </li>
+                                                    <li class="border-bottom pt-3 pb-4">
+                                                        <i class="fa-solid fa-arrow-right-from-bracket"></i> <span
+                                                            class="fw-bold">Account Activity</span>
+                                                        <p class="m-0 mt-2">ការចូលចុងក្រោយ៖ 2024-8-10 08:10:28
+                                                            សកម្មភាពគណនីគួរឱ្យសង្ស័យ?
+                                                        </p>
+                                                        <a href="#" class="text-warning">Disable Account</a>
+                                                    </li>
+                                                    <li class=" pt-3">
+                                                        <i class="bi bi-person-fill-dash"></i> <span
+                                                            class="fw-bold">Disable Account</span>
+                                                        <p class="m-0 mt-2">នៅពេលដែលគណនីត្រូវបានបិទ។
+                                                            សកម្មភាពភាគច្រើនរបស់អ្នកនឹងត្រូវបានរឹតបន្តឹង ដូចជាការចូល។
+                                                            អ្នកអាចជ្រើសរើសដើម្បីដោះសោគណនីនៅពេលណាក៏បាន។
+                                                            សកម្មភាពនេះនឹងមិនលុបគណនីរបស់អ្នកទេ។
+                                                        </p>
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary mt-2">Manage</button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- email -->
+                                <div class="modal fade" id="email" tabindex="-1" aria-labelledby="email"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="verifyemail"><span><i
+                                                            class="bi bi-shield-lock-fill"></i></span>
+                                                    ឯកជនភាព និងសុវត្ថិភាព</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pb-5">
+                                                <h6 class="mb-3">ការផ្ទៀងផ្ទាត់តាមអ៊ីមែល</h6><i
+                                                    class="fa-solid fa-envelope"></i>
+                                                <span class="fw-medium ms-2"> leangeng03@gmail.com</span> <a href="#"><i
+                                                        class="bi bi-pencil-square"></i></a>
+                                                <p class="mb-0 small" style="margin-left: 30px;">បានភ្ជាប់ 17 | មិថុនា |
+                                                    2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- phone -->
+                                <div class="modal fade" id="phone" tabindex="-1" aria-labelledby="phone"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="verifyphone"><span><i
+                                                            class="bi bi-shield-lock-fill"></i></span>
+                                                    ឯកជនភាព និងសុវត្ថិភាព</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pb-5">
+                                                <h6 class="mb-3">ការផ្ទៀងផ្ទាត់តាមលេខទូរស័ព្ទ</h6>
+                                                <i class="fa-solid fa-phone-volume"></i>
+                                                <span class="fw-medium ms-2"> 023 777 099</span> <a href="#"><i
+                                                        class="bi bi-pencil-square"></i></a>
+                                                <p class="mb-0 small" style="margin-left: 30px;">បានភ្ជាប់ 17 | មិថុនា |
+                                                    2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- my device -->
+                                <div class="modal fade" id="mydevice" tabindex="-1" aria-labelledby="mydevice"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="mydevice"><span><i
+                                                            class="bi bi-shield-lock-fill"></i></span>
+                                                    ឯកជនភាព និងសុវត្ថិភាព</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body pb-5">
+                                                <h6 class="mb-3 fw-bold">My Device</h6>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <i class="bi bi-laptop"></i><span class="fw-medium ms-2"> MSi
+                                                            CPH1911</span>
+                                                    </div>
+                                                    <a href="#" class="btn">Log Out</a>
+                                                </div>
+                                                <div style="margin-left: 30px;">
+                                                    <p class="mb-0 small">last login: 2024-08-10 08:10:28</p>
+                                                    <p class="mb-0 small">Location: phnom penh cambodia</p>
+                                                    <p class="mb-2 small">Ip Address: 192.168.122.234</p>
+                                                    <p class="mb-0 small"><i
+                                                            class="bi bi-check-circle-fill text-success"></i> Current
+                                                        Device
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification"
+                                tabindex="0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="deleteaccount" role="tabpanel"
+                                aria-labelledby="deleteaccount" tabindex="0">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <h4><span><i class="fa-solid fa-trash"></i></span> លុបគណនី</h4>
+                                                <div class="alert alert-warning mt-3" role="alert">
+                                                    <span><i class="bi bi-exclamation-circle-fill"></i></span>
+                                                    តើអ្នកចង់លុបគណនីឫ?
+                                                    <ul class="mb-0 mt-2" style="list-style-type: circle;">
+                                                        <li>
+                                                            បន្ទាប់ពីលុបគណនីរបស់អ្នករួចនោះទិន្នន័យរបស់អ្នកទាំងអស់នឹងបាត់បង់ក្នុងរយះពេល៤៨ម៉ោង។
+                                                            ប៉ុន្តែប្រសិនបើអ្នកចូលប្រើគណនីរបស់អ្នកក្នុងអំឡុងពេល៤៨ម៉ោងបន្ទាប់ពីលុបគណនីនោះគណនី
+                                                            និងទិន្នន័យរបស់អ្នកនឹងមិនត្រូវបានបាត់បង់ឡើយ។
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <form action="">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="mb-3">
+                                                                <label for="phone"
+                                                                    class="form-label fs-label mb-1">សូមបញ្ចូលនូវលេខទូរស័ព្ទរបស់អ្នក</label>
+                                                                <input type="tel" class="form-control" id="phone"
+                                                                    name="address" placeholder="លេខទូរស័ព្ទ"
+                                                                    aria-label="address">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-3">
+                                                                <label for="email"
+                                                                    class="form-label fs-label mb-1">សូមបញ្ចូលនូវអ៊ីមែលរបស់អ្នក</label>
+                                                                <input type="email" class="form-control" id="email"
+                                                                    name="email" placeholder="អ៊ីមែល"
+                                                                    aria-label="email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-3">
+                                                                <label for="password"
+                                                                    class="form-label fs-label mb-1">សូមបញ្ចូលនូវពាក្យសម្ងាត់</label>
+                                                                <input type="password" class="form-control" id="address"
+                                                                    name="password" placeholder="ពាក្យសម្ងាត់"
+                                                                    aria-label="address">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-3">
+                                                                <label for="password"
+                                                                    class="form-label fs-label mb-1">បញ្ចូលពាក្យសម្ងាត់ម្តងទៀតដើម្បីផ្ទៀងផ្ទាត់</label>
+                                                                <input type="password" class="form-control" id="address"
+                                                                    name="password" placeholder="ពាក្យសម្ងាត់"
+                                                                    aria-label="address">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <button class="btn btn-danger">លុបគណនី</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    let password1 = document.getElementById('password7');
+    let icon1 = document.getElementById('password-icon7');
+    let password2 = document.getElementById('password8');
+    let icon2 = document.getElementById('password-icon8');
+    let password3 = document.getElementById('password9');
+    let icon3 = document.getElementById('password-icon9');
+
+    function showHide7() {
+        if (password1.type === 'password') {
+            password1.setAttribute('type', 'text');
+            icon1.classList.add('hide');
+        } else {
+            password1.setAttribute('type', 'password');
+            icon1.classList.remove('hide');
+        }
+    }
+    function showHide8() {
+        if (password2.type === 'password') {
+            password2.setAttribute('type', 'text');
+            icon2.classList.add('hide');
+        } else {
+            password2.setAttribute('type', 'password');
+            icon2.classList.remove('hide');
+        }
+    }
+    function showHide9() {
+        if (password3.type === 'password') {
+            password3.setAttribute('type', 'text');
+            icon3.classList.add('hide');
+        } else {
+            password3.setAttribute('type', 'password');
+            icon3.classList.remove('hide');
+        }
+    }
+
+
+</script>
+
+</html>

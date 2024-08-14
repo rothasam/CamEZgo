@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>បង្កើតគណនី</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body class="bg-white">
+    <main>
+        <section id="sign-in" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <form id="signInForm" action="3-more-step.html" method="post" class="needs-validation"
+                                    novalidate>
+                                    <h4 class="my-3 fw-bold">សូមស្វាគមន៍មកកាន់ CamEZgo</h4>
+                                    <div class="col-12 my-5">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="sign-in.html">ចូលគណនី</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="create-account.html">
+                                                    បង្កើតគណនី</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">លេខទូរស័ព្ទ
+                                            <span class="text-danger"> *</span>
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="txtphone"
+                                            placeholder="លេខទូរស័ព្ទ" aria-label="phone" required>
+                                        <div class="invalid-feedback">
+                                            សូមបំពេញលេខទូរស័ព្ទរបស់អ្នក!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 position-relative">
+                                        <label for="email" class="form-label mb-1">អ៊ីមែល
+                                            <span class="text-danger"> *</span>
+                                        </label>
+                                        <input type="email" class="form-control" id="email" name="txtemail"
+                                            placeholder="អ៊ីមែល" aria-label="Email" required>
+                                        <div class="invalid-feedback">
+                                            សូមបំពេញអ៊ីមែលរបស់អ្នក!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 position-relative">
+                                        <label for="password4" class="form-label">ពាក្យសម្ងាត់
+                                            <span class="text-danger"> *</span>
+                                        </label>
+                                        <input type="password" class="form-control" id="password4" name="txtpass"
+                                            placeholder="ពាក្យសម្ងាត់" aria-label="password" required>
+                                        <div id="password-icon4" onclick="showHide4()"></div>
+                                        <div class="invalid-feedback">
+                                            សូមបំពេញពាក្យសម្ងាត់របស់អ្នក!
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                                required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                យល់ព្រមតាម<a href="#" class="forgot"> លក្ខខណ្ឌ</a>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                អ្នកត្រូវតែយល់ព្រមមុនពេលដាក់ស្នើ!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a href="3-more-step.html" class="btn btn-primary d-block" id="submitBtn"
+                                            type="submit">បង្កើតគណនី</a>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="line-root">
+                                            <span>ឬបង្កើតគណនីមួយ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <a href="3-more-step.html" class="btn-google btn btn-outline-primary d-block"
+                                            type="button">
+                                            <img style="width: 20px; height: 20px;"
+                                                src="assets/img/icon/form/google.png" alt="">
+                                            <span class="text-secondary">Google</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a href="3-more-step.html" class="btn-facebook btn btn-outline-primary d-block"
+                                            type="button">
+                                            <img style="width: 20px; height: 20px;"
+                                                src="assets/img/icon/form/facebook.png" alt="">
+                                            <span class="text-secondary">Facebook</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 mb-3 text-center">
+                                        <a href="sign-in.html" class="forgot">ចូលគណនី</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <img src="Screenshot 2024-07-21 152323.jpg" alt=""> -->
+</body>
+<script src="Assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+        document.getElementById('submitBtn').addEventListener('click', function (event) {
+
+            event.preventDefault();
+            const form = document.getElementById('signInForm');
+            if (form.checkValidity()) {
+                // Redirect to another page if form is valid
+                window.location.href = '3-more-step.html';
+            } else {
+                form.classList.add('was-validated');
+            }
+        });
+    })()
+    let password1 = document.getElementById('password4');
+    let icon1 = document.getElementById('password-icon4');
+    let password2 = document.getElementById('password4');
+    let icon2 = document.getElementById('password-icon4');
+
+    function showHide4() {
+        if (password1.type === 'password') {
+            password1.setAttribute('type', 'text');
+            icon1.classList.add('hide');
+        } else {
+            password1.setAttribute('type', 'password');
+            icon1.classList.remove('hide');
+        }
+    }
+
+
+    function showHide4() {
+        if (password2.type === 'password') {
+            password2.setAttribute('type', 'text');
+            icon2.classList.add('hide');
+        } else {
+            password2.setAttribute('type', 'password');
+            icon2.classList.remove('hide');
+        }
+    }
+</script>
+
+</html>
