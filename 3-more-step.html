@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 ជំហានទៀត</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main class="modal-3step">
+        <!-- Modal -->
+        <div class="width-450 modal fade" id="ThreeStep" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="ThreeStepLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title" id="ThreeStepLabel">3
+                                ដំណាក់កាលដើម្បីទទួលបានការជួលរថយន្ត</h1>
+                            <span class=""><span class="text-danger">* </span>វានឹងចំណាយពេល 2-5 នាទី</span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/mail-open.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">1. បញ្ជាក់អាសយដ្ឋានអ៊ីមែល</p>
+                                    <span>example@gmail.com</span>
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/phone-sms.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">2. បញ្ជាក់លេខទូរស័ព្ទ</p>
+                                    <span>ធ្វើឱ្យគណនីរបស់អ្នកកាន់តែមានសុវត្ថិភាព</span>
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/information.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">3. បន្ថែមព័ត៌មានប្រវត្តិរូប</p>
+                                    <span>អាចចាប់ផ្តើមជួល</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later" data-bs-dismiss="modal">
+                                ធ្វើវានៅពេលក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary next" data-bs-target="#ConfirmPhone"
+                                data-bs-toggle="modal">
+                                ចាប់​ផ្តើ​ម​ឥឡូវ​នេះ
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 verify-code modal fade" id="ConfirmPhone" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="ConfirmPhoneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title mb-2" id="ConfirmPhoneLabel">ពិនិត្យអ៊ីមែលរបស់អ្នកសម្រាប់លេខកូដ</h1>
+                            <span>លេខកូដបញ្ជាក់ត្រូវបានផ្ញើទៅ le***@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="w-75">
+                            <div class="row mb-3">
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control  fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="text-view">មិនបានទទួលលេខកូដ? <a href="#" class="forgot">ព្យាយាមម្តងទៀតនៅ
+                                    00:59</a></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later"
+                                data-bs-target="#ThreeStep" data-bs-toggle="modal">ត្រឡប់ក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary px-4 next" data-bs-target="#TwoStep"
+                                data-bs-toggle="modal">បន្ទាប់</button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="TwoStep" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="TwoStepLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title" id="TwoStepLabel">2 ដំណាក់កាលដើម្បីទទួលបានការជួលរថយន្ត</h1>
+                            <span><span class="text-danger">*</span>វានឹងចំណាយពេល 2-5 នាទី</span>
+                        </div>
+                    </div>
+                    <div class="modal-body p-4">
+                        <ul class="list-unstyled">
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/mail-open.png" alt="Icon Mail">
+                                <div class="position-relative">
+                                    <p class="mb-0">1. បញ្ជាក់អាសយដ្ឋានអ៊ីមែល</p>
+                                    <span>example@gmail.com</span>
+                                    <img class="position-absolute" src="assets/img/icon/form/checked.png" alt="">
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/phone-sms.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">2. បញ្ជាក់លេខទូរស័ព្ទ</p>
+                                    <span>ធ្វើឱ្យគណនីរបស់អ្នកកាន់តែមានសុវត្ថិភាព</span>
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/information.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">3. បន្ថែមព័ត៌មានប្រវត្តិរូប</p>
+                                    <span>អាចចាប់ផ្តើមជួល</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later"
+                                data-bs-target="#ConfirmPhone" data-bs-toggle="modal">
+                                ត្រឡប់ក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary next" data-bs-target="#verifyphone"
+                                data-bs-toggle="modal">
+                                បញ្ជាក់លេខទូរស័ព្ទ
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="verifyphone" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="verifyphoneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title mb-2" id="verifyphoneLabel">បញ្ចូលលេខទូរស័ព្ទ</h1>
+                            <span>ចំណាំថាលេខទូរស័ព្ទនេះនិងប្រើសម្រាប់ទំនាក់ទំនង</span>
+                            <!-- <span>Note that this phone number will become contact.</span> -->
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="">
+                                    <div class="position-relative">
+                                        <label for="phone" class="form-label fs-label">លេខទូរស័ព្ទ
+                                            <span class="text-danger"> *</span>
+                                        </label>
+                                        <input type="tel" class="form-control" id="phone" name="txtphone" placeholder=""
+                                            value="023 777 099" aria-label="phone" required>
+                                        <span class="position-absolute" style="bottom: 8px; right: 15px;"><i
+                                                class="bi bi-pencil-square"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary px-5 next" data-bs-target="#getsms"
+                                data-bs-toggle="modal">
+                                បន្ទាប់
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="getsms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="getsmsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title mb-2" id="getsmsLabel">ពិនិត្យសារ SMS របស់អ្នកសម្រាប់លេខកូដ</h1>
+                            <span class="sub-text-modal">លេខកូដបញ្ជាក់ត្រូវបានផ្ញើទៅកាន់លេខ 023 777 999 ។<br>
+                                <span class="text-danger"> *</span>
+                                សូមពិនិត្យមើលប្រអប់សាររបស់អ្នក : </span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="w-75">
+                            <div class="row mb-3">
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2">
+                                    <div class="card">
+                                        <input type="text" class="form-control fw-bold ps-3 w-100" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="text-view">មិនបានទទួលលេខកូដ? <a href="#">ព្យាយាមម្តងទៀតនៅ 00:59</a></span>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later"
+                                data-bs-target="#verifyphone" data-bs-toggle="modal">
+                                ត្រឡប់ក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary px-4 next" data-bs-target="#OneStep"
+                                data-bs-toggle="modal">
+                                បន្ទាប់
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="OneStep" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="OneStepLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title" id="TwoStepLabel">1 ដំណាក់កាលដើម្បីទទួលបានការជួលរថយន្ត</h1>
+                            <span><span class="text-danger">*</span>វានឹងចំណាយពេល 2-5 នាទី</span>
+                        </div>
+                    </div>
+                    <div class="modal-body p-4">
+                        <ul class="list-unstyled">
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/mail-open.png" alt="Icon Mail">
+                                <div class="position-relative">
+                                    <p class="mb-0">1. បញ្ជាក់អាសយដ្ឋានអ៊ីមែល</p>
+                                    <span>example@gmail.com</span>
+                                    <img class="position-absolute" src="assets/img/icon/form/checked.png" alt="">
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/phone-sms.png" alt="Icon Mail">
+                                <div class="position-relative">
+                                    <p class="mb-0">2. បញ្ជាក់លេខទូរស័ព្ទ</p>
+                                    <span>ធ្វើឱ្យគណនីរបស់អ្នកកាន់តែមានសុវត្ថិភាព</span>
+                                    <img class="position-absolute" src="assets/img/icon/form/checked.png" alt="">
+                                </div>
+                            </li>
+                            <li class="list-step">
+                                <img src="assets/img/icon/form/information.png" alt="Icon Mail">
+                                <div>
+                                    <p class="mb-0">3. បន្ថែមព័ត៌មានប្រវត្តិរូប</p>
+                                    <span>អាចចាប់ផ្តើមជួល</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later"
+                                data-bs-target="#ConfirmPhone" data-bs-toggle="modal">
+                                ត្រឡប់ក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary px-4 next" data-bs-target="#AddProfile"
+                                data-bs-toggle="modal">
+                                បញ្ជាក់
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="AddProfile" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="AddProfileLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h1 class="modal-title" id="AddProfileLabel">ព័ត៌មានប្រវត្តិរូប</h1>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <label for="fname" class="form-label fs-label mb-1">នាមត្រកូល
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="fname" name="txtfanme"
+                                                placeholder="នាមត្រកូល" aria-label="fname" required>
+                                            <span
+                                                class="fs-label">នាមត្រកូលរបស់អ្នកត្រូវដូចជាមួយនិងប័ណ្ណ​បើកបរដែលត្រូវបង្ហាញ!</span>
+                                            <!-- <span>Your first name as it appears on your ID</span> -->
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="lname" class="form-label fs-label mb-1">នាមខ្លួន
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="lname" name="txtlanme"
+                                                placeholder="នាមខ្លួន" aria-label="lname" required>
+                                            <span
+                                                class="fs-label">នាមខ្លួនរបស់អ្នកត្រូវដូចជាមួយនិងប័ណ្ណ​បើកបរដែលត្រូវបង្ហាញ!</span>
+                                            <!-- <span>Your last name as it appears on your ID</span> -->
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="date" class="form-label fs-label mb-1">ថ្ងៃខែ​ឆ្នាំ​កំណើត
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="date" class="form-control" id="date" name="txtdate"
+                                                placeholder="" aria-label="date" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="address"
+                                                class="form-label fs-label mb-1">អាស័យ​ដ្ឋាន​បច្ចុប្បន្ន
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="address" name="txtaddress"
+                                                placeholder="អាស័យ​ដ្ឋាន​បច្ចុប្បន្ន" aria-label="address" required>
+                                        </div>
+                                        <label for="" class="form-label">ភេទ
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">ស្រី</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">ប្រុស</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gender"
+                                                    id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">ផ្សេងទៀត</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2 later" data-bs-target="#OneStep"
+                                data-bs-toggle="modal">
+                                ត្រឡប់ក្រោយ
+                            </button>
+                            <button type="button" class="btn btn-primary px-4 next" data-bs-target="#Verifydocument"
+                                data-bs-toggle="modal">
+                                បន្ទាប់
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade" id="Verifydocument" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="VerifydocumentLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0">
+                                    <form action="">
+                                        <div style="width: 250px; height: 250px;" class="mx-auto">
+                                            <img class="img-fluid" src="assets/img/driving-licence/identity-card.png"
+                                                alt="sample identity card">
+                                        </div>
+                                        <div class="mb-3">
+                                            <h3 class="mb-3">ការផ្ទៀងផ្ទាត់ឯកសារ</h3>
+                                            <span>នៅលើអេក្រង់បន្ទាប់
+                                                យើងនឹងសួរអ្នកឱ្យផ្ទុកឯកសារមួយ
+                                                ឬពីរដែលអាចបញ្ជាក់ព័ត៌មានរបស់អ្នក ។</span>
+                                        </div>
+                                        <div class="mb-3 position-relative">
+                                            <label for="checkname" class="form-label">ពិនិត្យឈ្មោះរបស់អ្នក<span
+                                                    class="text-danger"> *</span></label>
+                                            <input type="text" class="form-control" id="checkname" name="txtchname"
+                                                aria-label="checkname" value="សៀក​ លាងអេង" required>
+                                            <span class="position-absolute" style="bottom: 8px; right: 15px;"><i
+                                                    class="bi bi-pencil-square"></i></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary next" data-bs-target="#driverlicence"
+                                data-bs-toggle="modal">
+                                ដាក់ស្នើឯកសាររបស់អ្នក
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- upload -->
+        <div class="licence modal fade " id="driverlicence" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="driverlicenceLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header pb-2 border-0">
+                        <div>
+                            <h1 class="modal-title " id="driverlicenceLabel">ដាក់ស្នើប័ណ្ណបើកបរ</h1>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="card bg-info-subtle">
+                                    <div class="card-body d-flex align-content-center">
+                                        <div>
+                                            <span class="me-2"><i class="bi bi-exclamation-circle-fill"></i></span>
+                                        </div>
+                                        <div>
+                                            <span class="text-view">សូមប្រាកដថាឯកសាររបស់អ្នកត្រូវបង្ហាញរូបថតនិង ឈ្មោះពេញ
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-6 border-0 mb-3">
+                                <img src="assets/img/driving-licence/driving-licence-do.png" alt="sample-card">
+                            </div>
+                            <div class="card col-6 border-0 mb-3">
+                                <img src="assets/img/driving-licence/driving-licence-dont.png" alt="sample-card">
+                            </div>
+                            <div class="col-6 mb-4">
+                                <span class="fw-bold text-success">ត្រូវតែ</span>
+                                <ul class="do">
+                                    <li class="list-do">រូបថតគឺច្បាស់ហើយនិង​ លម្អិត</li>
+                                    <li class="list-do">ព័ត៌មានលម្អិតអាចអានបាន</li>
+                                    <li class="list-do">គុណភាពរូបថតខ្ពស់ឬល្អ</li>
+                                    <li class="list-do">ជ្រុងទាំង 4 នៃឯកសារអាចមើលឃើញ
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <span class="fw-bold text-danger">មិនតូ្រវ</span>
+                                <ul class="dont">
+                                    <li class="list-dont">រូបថតមិនច្បាស់ ហើយមិនលម្អិត</li>
+                                    <li class="list-dont">ព័ត៌មានលម្អិតមិនអាចអានបាន</li>
+                                    <li class="list-dont">គុណភាពរូបថតមិនល្អ</li>
+                                    <li class="list-dont">ជ្រុងទាំង 4 នៃឯកសារអាចមើលអត់ឃើញ</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="card d-flex align-content-center justify-content-center border-dashed"
+                                    style="height: 150px;">
+                                    <i class="bi bi-cloud-upload-fill text-center text-secondary fs-1"></i>
+                                    <span class="text-center">ដាក់ស្នើឯកសារផ្នែកខាងមុខរបស់អ្នកនៅទីនេះ</span>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="card d-flex align-content-center justify-content-center border-dashed"
+                                    style="height: 150px;">
+                                    <i class="bi bi-cloud-upload-fill text-center text-secondary fs-1"></i>
+                                    <span class="text-center">ដាក់ស្នើឯកសារផ្នែកខាងក្រោយរបស់អ្នកនៅទីនេះ</span>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary px-4 next" data-bs-target="#underReview"
+                                    data-bs-toggle="modal">
+                                    បញ្ជាក់
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="mt-4">
+                            <img src="assets/img/icon/form/lock.png" alt="lock icon">
+                            <span class="encrypted">ទិន្នន័យទាំងអស់ត្រូវបាន encrypted សម្រាប់សុវត្ថិភាព</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width-450 modal fade " id="underReview" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="underReviewLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <i class="bi bi-clock-fill fs-1"></i>
+                        <div class="mt-3">
+                            <h4 class="mb-2 under-review">ឯកសាររបស់អ្នកកំពុងស្ថិតក្រោមការត្រួតពិនិត្យ</h4>
+                            <span class="px-4 d-block text-view">ដំណើរការនេះជាធម្មតាចំណាយពេលពី 5 ទៅ 10 នាទី
+                                ប៉ុន្តែអាចមានរយៈពេលរហូតដល់
+                                24
+                                ម៉ោងក្នុងករណីខ្លះ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center border-0">
+                        <div class="w-100 d-flex justify-content-end">
+                            <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">
+                                រួចរាល់
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ThreeStep = new bootstrap.Modal(document.getElementById('ThreeStep'));
+            ThreeStep.show();
+        });
+    </script>
+</body>
+
+</html>

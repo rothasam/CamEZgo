@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ចូលគណនី</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body class="bg-white">
+    <main>
+        <section id="sign-in" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mx-auto">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <form id="signInForm" action="3-more-step.html" method="post" class="needs-validation"
+                                    novalidate>
+                                    <h4 class="my-3 fw-bold">សូមស្វាគមន៍មកកាន់ CamEZgo</h4>
+                                    <div class="col-12 my-5">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab"
+                                                    href="sign-in.html">ចូលគណនី</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab"
+                                                    href="create-account.html">បង្កើតគណនី</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-3 position-relative">
+                                        <label for="email" class="form-label mb-1">អ៊ីមែល <span class="text-danger">
+                                                *</span></label>
+                                        <input type="email" class="form-control" id="email" name="txtemail"
+                                            placeholder="អ៊ីមែល" aria-label="Email" required>
+                                        <div class="invalid-feedback">សូមបំពេញអ៊ីមែលរបស់អ្នក!</div>
+                                    </div>
+                                    <div class="mb-3 position-relative">
+                                        <label for="password" class="form-label">ពាក្យសម្ងាត់ <span class="text-danger">
+                                                *</span></label>
+                                        <input type="password" class="form-control" id="password3" name="txtpass"
+                                            placeholder="ពាក្យសម្ងាត់" aria-label="password" required>
+                                        <div class="eye-icon-hover">
+                                            <div id="password-icon3" onclick="togglePasswordVisibility()"></div>
+                                        </div>
+                                        <div class="invalid-feedback">សូមបំពេញពាក្យសម្ងាត់របស់អ្នក!</div>
+                                    </div>
+                                    <div class="mb-5 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">ចងចាំគណនីខ្ញុំ</label>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a href="3-more-step.html" role="button" class="btn btn-primary d-block"
+                                            id="submitBtn">ចូលគណនី</a>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="line-root">
+                                            <span>ឬបង្កើតគណនីមួយ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <a href="index.html" class="btn-google btn d-block" type="button">
+                                            <img style="width: 20px; height: 20px;"
+                                                src="assets/img/icon/form/google.png" alt="">
+                                            Google
+                                        </a>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <a href="index.html" class="btn-facebook btn d-block" type="button">
+                                            <img style="width: 20px; height: 20px;"
+                                                src="assets/img/icon/form/facebook.png" alt="">
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="col-12 mb-3 text-center">
+                                        <a href="forgot-password.html"
+                                            class="forgot">ខ្ញុំ​ភ្លេច​ពាក្យសម្ងាត់​របស់ខ្ញុំ</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <img src="Screenshot 2024-07-21 152323.jpg" alt=""> -->
+    </main>
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('signInForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+
+            submitBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+                if (form.checkValidity()) {
+                    window.location.href = '3-more-step.html';
+                } else {
+                    form.classList.add('was-validated');
+                }
+            });
+        });
+
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password3');
+            const passwordIcon = document.getElementById('password-icon3');
+            const type = passwordInput.type === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            passwordIcon.classList.toggle('hide', type === 'text');
+        }
+    </script>
+</body>
+
+</html>
