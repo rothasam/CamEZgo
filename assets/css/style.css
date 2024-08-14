@@ -298,6 +298,12 @@ header nav .nav-link:hover {
   box-shadow: none !important;
   border: 2px solid #86b7fe;
 }
+.modal-3step .modal-footer button:nth-child(1) a{
+    color: rgb(149, 149, 149);
+}
+.modal-3step .modal-footer button:nth-child(1):hover a{
+    color: rgb(255, 255, 255);
+}
 .line-root {
   position: relative;
   text-align: center;
