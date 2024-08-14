@@ -987,7 +987,7 @@ header nav .nav-link:hover {
 .car-list-sell .content-contact-company .contact-icon i{
   font-size: 25px;
 }
-.car-list-sell .map {
+.car-list-sell .phenti {
   width: 100%;
   height: 350px;
   max-height: 350px;
@@ -1439,7 +1439,7 @@ header nav .nav-link:hover {
   border-bottom: 2px solid var(--main-color);
 }
 .car-view .carousel-inner,
-.inquiry .map,
+.inquiry .phenti,
 .inquiry .new-car {
   border: 1px solid var(--main-color-100);
 }
@@ -1472,7 +1472,7 @@ header nav .nav-link:hover {
   background-color: var(--main-color-400);
   opacity: 1;
 }
-.inquiry .map iframe {
+.inquiry .phenti iframe {
   height: 380px;
 }
 .inquiry .car-color-swiper .swiper-button-next,
@@ -3440,7 +3440,7 @@ footer .nav-link:hover {
         border-top-right-radius: 40px;
         border-bottom-left-radius: 40px;
     }
-    .inquiry .map iframe {
+    .inquiry .phenti iframe {
         height: 340px;
     }
     .car-list .result,
@@ -3688,8 +3688,8 @@ footer .nav-link:hover {
         border: 2px solid var(--main-color-200);
         transform: skewY(0deg);
     }
-    .inquiry .map iframe {
-        height: 280px;
+    .inquiry .phenti iframe {
+        height: 280px ;
     }
     .car-list .ts-control {
         width: 150px;
