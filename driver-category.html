@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Category</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugin/tom-select/tom-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+
+    <!-- main -->
+    <main>
+        <section class="hero-driver-list">
+            <div class="hero-content align-items-center text-center px-5">
+                <h1 class="dark-blue fw-bold">ធ្វើដំណើរប្រកបដោយសុវត្ថិភាពជាមួយអ្នកបើកបររបស់ក្រុមហ៊ុន <mark>CamEZgo</mark></h1>
+                <nav aria-label="breadcrumb" class="mt-3">
+                    <ol class="breadcrumb fw-medium">
+                      <li class="breadcrumb-item"><a href="driver.html" class="text-decoration-none">អ្នកបើកបរ</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">តារាងអ្នកបើកបរ</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="driver-expert driver-list pb-1 pb-md-3 pb-lg-5">
+            <div class="container">
+                <form action="" class="pb-5 driver-form">
+                    <div class="row g-0 justify-content-center">
+                        <div class="col-xl-8">
+                            <div class="row g-2 g-md-3">
+                                <div class="col-lg-6">
+                                    <select id="select-beast-1" class="select-driver-1" placeholder="ស្វែងរកអ្នកបើកបរ..." autocomplete="off">
+                                        <option value="">ស្វែងរកអ្នកបើកបរ...</option>
+                                        <option value="លីម យូលាង">លីម យូលាង</option>
+                                        <option value="សេន អូអេស">សេន អូអេស</option>
+                                        <option value="វរាជ​ សម្បត្តិ">វរាជ​ សម្បត្តិ</option>
+                                        <option value="ណាក់​ ហ្វេក">ណាក់​ ហ្វេក</option>
+                                        <option value="តាន់ ហ្វុង">តាន់ ហ្វុង</option>
+                                        <option value="ស្តាស ដាណា">ស្តាស ដាណា</option>
+                                        <option value="ហ្សង់ រ៉ូស្យូ">ហ្សង់ រ៉ូស្យូ</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2">
+                                    <select id="select-beast-2" class="select-driver" placeholder="..." autocomplete="off">
+                                        <option value="1">20ឆ្នាំ - 24ឆ្នាំ</option>
+                                        <option value="2">24ឆ្នាំ - 28ឆ្នាំ</option>
+                                        <option value="3">28ឆ្នាំ - 32ឆ្នាំ</option>
+                                        <option value="4">32ឆ្នាំ - 35ឆ្នាំ</option>
+                                        <option value="4">35ឆ្នាំ - 40ឆ្នាំ</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2">
+                                    <select id="select-beast-3" class="select-driver" autocomplete="off">
+                                        <option value="0">ការវាយតម្លៃ...</option>
+                                        <option value="1">3.0 ទៅ 3.5</option>
+                                        <option value="2">3.5 ទៅ 4.0</option>
+                                        <option value="3">4.0 ទៅ 4.5</option>
+                                        <option value="4">4.5 ទៅ 4.9</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-lg-2">
+                                    <button type="button" class="btn btn-search text-light fw-medium w-100 h-100 rounded-1">ស្វែងរក</button>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </form>
+                <div class="row g-2 g-md-4 g-lg-5">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/23.png" class="img-fluid px-3" alt="លីម យូលាង">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">លីម យូលាង</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 2 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/10.png" class="img-fluid px-3" alt="រិន ថារ៉ាឌី">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">រិន ថារ៉ាឌី</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 3 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/19.png" class="img-fluid px-3" alt="សេន អូអេស">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">សេន អូអេស</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 3 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/1.png" class="img-fluid px-3" alt="វរាជ​ សម្បត្តិ">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">វរាជ​ សម្បត្តិ</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 2 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/8.png" class="img-fluid px-3" alt="ណាក់​ ហ្វេក">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">ណាក់​ ហ្វេក</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 2 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/14.png" class="img-fluid px-3" alt="តាន់ ហ្វុង">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">តាន់ ហ្វុង</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 3 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-none d-lg-block">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/8.png" class="img-fluid px-3" alt="ស្តាស ដាណា">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">ស្តាស ដាណា</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 4 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-none d-lg-block">
+                        <div class="card rounded-0 position-relative overflow-hidden">
+                            <div class="position-relative">
+                                <a href="#driver-detail" data-bs-toggle="modal">
+                                    <img src="assets/img/driver/pf/14.png" class="img-fluid px-3" alt="ហ្សង់ រ៉ូស្យូ">
+                                </a>
+                                <div class="media-icon-1 position-absolute">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-weixin"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body p-2 p-md-3 p-lg-4">
+                                <div class="text-center">
+                                    <a href="#driver-detail" data-bs-toggle="modal" class="text-decoration-none">
+                                        <h4 class="dark-blue fw-normal fw-md-bold mb-1">ហ្សង់ រ៉ូស្យូ</h4>
+                                    </a>
+                                    <span class="fw-normal fw-md-medium mb-0">បទពិសោធន៍​ 2 ឆ្នាំ</span>
+                                </div>
+                                <hr class="opacity-75 my-2 my-lg-3">
+                                <div class="d-flex justify-content-between align-items-center action">
+                                    <a href="#" class="text-decoration-none text-light small fw-normal fw-md-medium px-1 px-md-2 py-md-1 pb-1 rounded-1">ជួលឥឡូវនេះ</a>
+                                    <div class="rating text-warning">
+                                        <i class="fa-solid fa-star"></i> <span class="text-light">4.8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center justify-content-lg-end fw-bold mt-4">
+                      <li class="page-item rounded-start-1">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item rounded-end-1">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
+                <!-- Modal -->
+                <div class="modal fade" id="driver-detail" data-bs-backdrop="static" tabindex="-1" aria-labelledby="driver-detailLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg  modal-fullscreen-lg-down">
+                        <div class="modal-content rounded-1">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 fw-bold" id="driver-detailLabel">ព័ត៌មានអ្នកបើកបរលេខសម្គាល់ 0168</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div class="row g-3 justify-content-center">
+                                        <div class="col-sm-8 col-md-4">
+                                            <div class="row g-0 align-items-sm-center">
+                                                <div class="col-5 col-sm-6 col-md-12">
+                                                    <div class="image rounded-1 px-2 me-3 me-md-0">
+                                                        <img src="assets/img/driver/pf/23.png" class="img-fluid px-3 driver-img" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-7 col-sm-6 col-md-12">
+                                                    <div class="row g-0">
+                                                        <div class="col-12">
+                                                            <a href="#" class="book-driver d-block w-100 py-1 py-md-2 my-1 my-sm-2 my-md-3 mb-lg-3 rounded-1 fw-bold">ជួលឥឡូវនេះ</a>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="fw-medium">
+                                                                <p class="mb-sm-1">
+                                                                    <div class="d-flex">
+                                                                        <i class="fa-regular fa-calendar-check me-2 dark-blue"></i>
+                                                                        ធ្វើការរាល់ ថ្ងៃច័ន្ទ ដល់ ថ្ងៃសុក្រ
+                                                                    </div>
+                                                                </p>
+                                                                <hr class="border border-primary opacity-25 opacity-md-50 my-1 my-md-3">
+                                                                <div class="contact-icons d-flex justify-content-evenly mt-2 mt-sm-3 mt-md-0">
+                                                                    <a href="#"><i class="fa-brands fa-facebook-f text-ligh"></i></a>
+                                                                    <a href="#"><i class="fa-brands fa-x-twitter text-ligh"></i></a>
+                                                                    <a href="#"><i class="fa-brands fa-linkedin-in text-ligh"></i></a>
+                                                                    <a href="#"><i class="fa-brands fa-weixin text-ligh"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="driver-info d-flex">
+                                                        <div class="icon-info me-1">
+                                                            <i class="fa-regular fa-user"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-bold">ឈ្មោះ</h5>
+                                                            <span class="fw-medium">វរាជ​ សម្បត្តិ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="driver-info d-flex">
+                                                        <div class="icon-info me-1">
+                                                            <i class="fa-regular fa-flag"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-bold">ជនជាតិ</h5>
+                                                            <span class="fw-medium">ខ្មែរ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="driver-info d-flex">
+                                                        <div class="icon-info me-2 me-sm-1">
+                                                            <i class="fa-regular fa-envelope"></i>
+                                                        </div>
+                                                        <div class="overflow-hidden">
+                                                            <h5 class="fw-bold">អ៊ីម៉ែល</h5>
+                                                            <span class="fw-medium">
+                                                                <a href="sambath11@gmail.com" class="text-decoration-none">sambath11@gmail.com</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="driver-info d-flex">
+                                                        <div class="icon-info me-1">
+                                                            <i class="fa-regular fa-id-badge"></i>
+                                                        </div>
+                                                        <div class="overflow-hidden">
+                                                            <h5 class="fw-bold">ទូរស័ព្ទ</h5>
+                                                            <span class="fw-medium">+855123456789</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-0 py-3 sub-info rounded-1">
+                                                        <div class="col-4">
+                                                            <div class="text-center">
+                                                                <h6 class="fw-medium">បទពិសោធន៍​</h6>
+                                                                <span class="fw-bold fs-5">04 ឆ្នាំ</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="text-center">
+                                                                <h6 class="fw-medium">ប័ណ្ណបើកបរ</h6>
+                                                                <span class="fw-bold fs-5">មានសុពលភាព</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="text-center">
+                                                                <h6 class="fw-medium">ការវាយតម្លៃ</h6>
+                                                                <span class="fw-bold fs-5">
+                                                                    <i class="fa-regular fa-thumbs-up"></i> ល្អ
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <h5 class="text-center fw-medium dark-blue">ចំណេះដឹង និងជំនាញផ្សេងៗ</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="list-group-flush fw-medium dark-blue sub-skill ps-0 ps-sm-4">
+                                                        <li class="list-group-item my-1">
+                                                            <div class="d-flex">
+                                                                <i class="fa-solid fa-check me-2 text-success"></i>សុវត្ថិភាពបើកបរ
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item my-1">
+                                                            <div class="d-flex">
+                                                                <i class="fa-solid fa-check me-2 text-success"></i>ចំណេះដឹងអំពីយានយន្ត
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item my-1">
+                                                            <div class="d-flex">
+                                                                <i class="fa-solid fa-check me-2 text-success"></i>ចំណេះដឹងដោះស្រាយបញ្ហា
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="lang-skill">
+                                                        <div class="mb-2">
+                                                            <span class="small fw-medium dark-blue">ភាសាខ្មែរ</span>
+                                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar" style="width: 100%"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <span class="small fw-medium dark-blue">ភាសាអង់គ្លេស</span>
+                                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar" style="width: 90%"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="">
+                                                            <span class="small fw-medium dark-blue">ភាសាចិន</span>
+                                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar" style="width: 70%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/tom-select/tom-select.complete.min.js"></script>
+    <script>
+        new TomSelect("#select-beast-1",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            }
+        });
+
+        new TomSelect("#select-beast-2",{
+            create: false,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            },
+            controlInput: false
+        });
+
+        new TomSelect("#select-beast-3",{
+            create: false,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            },
+            controlInput: false
+        });
+
+        //
+        //var myModal = new bootstrap.Modal(document.getElementById("driver-detail"));
+        //myModal.show();
+    </script>
+</body>
+</html>

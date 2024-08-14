@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Sell List</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugin/rangeSlider/om-javascript-range-slider.css">
+    <link rel="stylesheet" href="assets/plugin/tom-select/tom-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+
+    <!-- main -->
+     <main>
+        <section class="fleet-filter py-3 py-md-4 py-lg-5">
+            <div class="container">
+                <form action="" class="form-search rounded-1 d-block d-md-none">
+                    <div class="row g-2">
+                        <div class="col-10">
+                            <div class="input-group h-100">
+                                <span class="input-group-text border-0 rounded-start-1" id="explore"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control border-0 ps-0 rounded-end-1" placeholder="ស្វែងរក..." aria-label="ស្វែងរក..." aria-describedby="explore">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <button class="btn btn-list-filter rounded-1 w-100 h-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilterMenu" aria-controls="offcanvasFilterMenu">
+                                <i class="fa-solid fa-sliders fs-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="offcanvas-md offcanvas-start w-100" tabindex="-1" id="offcanvasFilterMenu" aria-labelledby="offcanvasFilterMenuLabel">
+                    <div class="offcanvas-header d-md-none d-flex justify-content-between align-items-center">
+                        <h4 class="fw-bold filter-title dark-blue">តម្រៀបតាម​</h4>
+                        <button type="button" class="border-0 fs-5 bg-transparent" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasFilterMenu" aria-label="Close">
+                            <i class="fa-regular fa-circle-right"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <form action="" class="w-100 form-fleet rounded-1 px-3 px-md-0 py-3 py-lg-4 py-xl-5">
+                            <div class="row g-0">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="px-md-3 px-lg-4 ps-xl-5 h-100">
+                                        <div class="fleet-type">
+                                            <div class="d-flex align-items-start justify-content-between">
+                                                <h4 class="mb-4 fw-bold filter-title">តម្រៀបតាម​</h4>
+                                            </div>
+                                            <div class="d-flex">
+                                                <select id="select-beast-sort-fleet-1" class="sort-fleet w-50 me-1 me-lg-2" placeholder="ប្រភេទសាំង..." autocomplete="off">
+                                                    <option value="ប្រភេទសាំង...">ប្រភេទសាំង...</option>
+                                                    <option value="ប្រេងសាំង">ប្រេងសាំង</option>
+                                                    <option value="អគ្គិសនី">អគ្គិសនី</option>
+                                                    <option value="ប្រេងម៉ាស៊ូត">ប្រេងម៉ាស៊ូត</option>
+                                                </select>
+                                                <select id="select-beast-sort-fleet-2" class="sort-fleet w-50 ms-2 ms-lg-2" placeholder="Brand" autocomplete="off">
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="BMW">BMW</option>
+                                                    <option value="Ford">Ford</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Jeep">Jeep</option>
+                                                    <option value="Lambogrihni">Lambogrihni</option>
+                                                    <option value="Mercedes">Mercedes</option>
+                                                    <option value="Mazda">Mazda</option>
+                                                    <option value="Nissan">Nissan</option>
+                                                    <option value="Tesla">Tesla</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Bugatti">Bugatti</option>
+                                                    <option value="Ferrari">Ferrari</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="fleet-price">
+                                            <h5 class="my-3 fw-bold title">តម្លៃរថយន្ត</h5>
+                                            <div>
+                                                <input type="range" name="pieces" id="inputPieces" multiple value="10000,40000" min="5000" max="70000" unit=" $" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="px-md-3 px-lg-4 h-100 mt-5 mt-md-0 mid-col">
+                                        <div>
+                                            <h5 class="title fw-bold dark-blue mb-3">ប្រភេទរថយន្ត</h5>
+                                            <div class="row g-1 g-md-2">
+                                                <div class="col-4">
+                                                    <div class="">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="sedan-fleet">
+                                                        <label class="form-check-label fw-medium" for="sedan-fleet">Sedan</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="suv-fleet">
+                                                        <label class="form-check-label fw-medium" for="suv-fleet">SUV</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="sport-fleet">
+                                                        <label class="form-check-label fw-medium" for="sport-fleet">Sport</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="pickup-fleet">
+                                                        <label class="form-check-label fw-medium" for="pickup-fleet">Pickup</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="ven-fleet">
+                                                        <label class="form-check-label fw-medium" for="ven-fleet">Van</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h5 class="title fw-bold dark-blue my-3">ពណ៌រថយន្ត</h5>
+                                            <div class="row g-1 g-md-2">   
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="white-fleet">
+                                                        <label class="form-check-label fw-medium" for="white-fleet">ពណ៌ស</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="black-fleet">
+                                                        <label class="form-check-label fw-medium" for="black-fleet">ពណ៌ខ្មៅ</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="silver-fleet">
+                                                        <label class="form-check-label fw-medium" for="silver-fleet">ពណ៌ប្រាក់</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="yellow-fleet">
+                                                        <label class="form-check-label fw-medium" for="yellow-fleet">ពណ៌លឿង</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="red-fleet">
+                                                        <label class="form-check-label fw-medium" for="red-fleet">ពណ៌ក្រហម</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-4">
+                                                    <div>
+                                                        <input class="form-check-input me-1" type="checkbox" value="" id="brown-fleet">
+                                                        <label class="form-check-label fw-medium" for="brown-fleet">ពណ៌ត្នោត</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-more d-block w-100 p-0 mt-1 mt-md-2"><small class="text-primary">ពណ៌ទាំងអស់ <i class="fa-solid fa-angle-down"></i></small></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-md-3 ps-lg-4 pe-xl-5 d-md-flex d-lg-block h-100">
+                                        <div class="col-md-6 col-lg-12">
+                                            <div class="form-check form-switch mt-3 mt-md-0">
+                                                <label class="form-check-label text-info-emphasis" for="famous-fleet">បង្ហាញរថយន្តពេញនិយម</label>
+                                                <input class="form-check-input" type="checkbox" role="switch" id="famous-fleet" checked>
+                                            </div>
+                                            <div>
+                                                <h5 class="my-3 fw-bold title">Transmission</h5>
+                                                <div class="wrapper-button d-flex flex-wrap"> 
+                                                    <button type="button" class="btn btn-type rounded-1 my-1 me-2">Manual</button>
+                                                    <button type="button" class="btn btn-type rounded-1 my-1 me-2">Semi Automatic</button>
+                                                    <button type="button" class="btn btn-type rounded-1 my-1">Automatic</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-12 ms-md-4 ms-lg-0">
+                                            <h5 class="my-3 fw-bold title">ចំនួនកៅអី</h5>
+                                            <div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" id="seat2">
+                                                    <label class="form-check-label fw-medium" for="seat2">2 កៅអី</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" id="seat4">
+                                                    <label class="form-check-label fw-medium" for="seat4">4 កៅអី</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input me-1" type="checkbox" value="" id="seat6">
+                                                    <label class="form-check-label fw-medium" for="seat6">6 កៅអី</label>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-more d-block w-100 p-0 mt-1 mt-md-2 mt-lg-3"><small class="text-primary">កៅអីទាំងអស់ <i class="fa-solid fa-angle-down"></i></small></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fleet-list pb-3 pb-md-4 pb-lg-5">
+            <div class="container">
+                <div class="section-title mb-2 mb-md-3 mb-lg-4 d-flex justify-content-between align-items-center">
+                    <h3 class="fw-bold">រថយន្តសម្រាប់លក់</h3>
+                    <div class="list-type">
+                        <i class="fa-solid fa-table-cells me-1 me-md-2"></i>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+                <div class="row g-2 g-md-3 g-xl-4">
+                    <!-- 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge trending rounded-1 p-2">កំពុងពេញនិយម</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-1.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Mazda3, 2024</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$27,000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge new rounded-1 p-2">ឡានថ្មី</span>
+                                <span class="badge trending rounded-1 p-2">កំពុងពេញនិយម</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-2.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Mercedes-Benz, 2022</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$44,000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge soon rounded-1 p-2">មកដល់ឆាប់ៗ</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-6.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Toyota GR86, 2025</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$30,000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge new rounded-1 p-2">ឡានថ្មី</span>
+                                <span class="badge trending rounded-1 p-2">កំពុងពេញនិយម</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-4.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Camaro ZL1, 2022</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$66,045</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge soon rounded-1 p-2">មកដល់ឆាប់ៗ</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-3.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Nissan GT-R, 2025</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$120,000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge new rounded-1 p-2">ឡានថ្មី</span>
+                                <span class="badge discount rounded-1 bg p-2">បញ្ចុះតម្លៃ​ 15%</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-5.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Camaro ZL1, 2019</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$64,195</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge new rounded-1 p-2">ឡានថ្មី</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-7.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">BMW m440i, 2020</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$45,945</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge discount rounded-1 bg p-2">បញ្ចុះតម្លៃ​ 15%</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-8.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">Audi A7, 2024</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$72,000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card fleet rounded-1 position-relative h-100">
+                            <div class="position-absolute status">
+                                <span class="badge soon rounded-1 p-2">មកដល់ឆាប់ៗ</span>
+                            </div>
+                            <div class="d-flex w-100 justify-content-end p-3 pb-0">
+                                <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-9.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body pt-0">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div>
+                                        <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
+                                        <h5 class="mt-1 mb-0 fw-bold">
+                                            <a href="car-sell-detail.html" class="text-decoration-none dark-blue">BMW 430i Coupe, 2025</a>
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <small class="text-secondary">តម្លៃរថយន្ត</small>
+                                        <h5 class="mt-1 mb-0 dark-blue fw-bold">$50,700</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+    <!-- footer -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/rangeSlider/om-javascript-range-slider.js"></script>
+    <script src="assets/plugin/tom-select/tom-select.complete.min.js"></script>
+    <script>
+        OmRangeSlider.init();
+        //
+        new TomSelect("#select-beast-sort-fleet-1",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            },
+            controlInput: false
+        });
+        //
+        new TomSelect("#select-beast-sort-fleet-2",{
+            create: true,
+            sortField: {
+                field: "text",
+                direction: "asc"
+            },
+            controlInput: false
+        });
+    </script>
+</body>
+</html>
