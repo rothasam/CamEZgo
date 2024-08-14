@@ -3,9 +3,921 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugin/plyr/plyr.css">
+    <link rel="stylesheet" href="assets/plugin/swipper/swiper-bundle.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="assets/plugin/flatpickr/flatpickr.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
+
 </head>
 <body>
-    <h1>Hello</h1>
+
+    <header>
+            <nav class="navbar navbar-expand-md p-0">
+                <div class="container d-flex flex-column nav-contain">
+                    <div class="row w-100 py-2">
+                        <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                    </a>
+                                </li>
+                            </ul>    
+                        </div>
+                        <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
+                            <a class="navbar-brand" href="#"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
+                        </div>
+                        
+                        <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
+                            <a href="create-account.html" class="btn border-0">ចុះឈ្មោះ</a>
+                            <span>|</span>
+                            <a href="sign-in.html" class="btn border-0">ចូលគណនី</a>
+                        </div>
+                        
+                        
+                    </div>
+  
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <!-- Hero banner -->
+        <section>
+            <div class="hero-banner">
+                <div class="video-wrap position-relative">
+                    <div class="overlay position-absolute d-flex justify-content-center align-items-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                                    <div class="hero-text animate__animated animate__slideInLeft">
+                                        <h1 class="fw-bold text-white text-center text-md-start">ជួលរថយន្តឥឡូវ​នេះសំរាប់ដំណើរកំសាន្តដ៏រីករាយ</h1>
+                                        <p class="text-white py-4 text-center text-md-start">ស្វែងរករថយន្តដ៏សំបូរបែប និងទាន់សម័យសម្រាប់គ្រប់ដំណើររបស់អ្នក។ រីករាយជាមួយតម្លៃដែលមិនអាចកាត់ថ្លៃបាន រយៈពេលជួលដែលអាចបត់បែនបាន និងភាពងាយស្រួលនៃការកក់គ្រប់ពេលវេលា គ្រប់ទីកន្លែង ជាមួយនឹងបទពិសោធន៍កម្មវិធីរបស់យើង</p>
+                                        <h3 class="text-white">ទាញយកកម្មវិធីឥឡូវ​នេះ ៖</h3>
+                                        <div class="row">
+                                            <div class="col-7 col-md-10 col-lg-6 m-auto m-md-0">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <a href="#"><img src="assets/img/download-app/app-store.svg" class="w-100" alt=""></a>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="#"><img src="assets/img/download-app/play-store.svg" class="w-100" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-none d-md-flex justify-content-center align-items-center animate__animated animate__slideInRight">
+                                    <img src="assets/img/car/Tesla-Image.png" style="width: 100%;" alt="">                                
+                                </div>
+                                <div class="col-12 col-lg-10 m-auto animate__animated animate__slideInUp">
+                                    <div class="search-car-box mt-5 " >
+                                        <form action="" class="p-3">
+                                            <div class="row gx-2 gy-3 gy-md-0">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="input-group ">
+                                                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-car-side"></i></span>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected disabled>ជ្រើសរើសប្រភេទរថយន្ត</option>
+                                                            <option value="1">Sedan</option>
+                                                            <option value="2">SUV</option>
+                                                            <option value="3">Sport</option>
+                                                            <option value="4">Van</option>
+                                                            <option value="5">Pcikup</option>
+                                                          </select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-6 col-md-3">
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-calendar"></i></span>
+                                                        <input type="text" class="form-control" id="pickDate" placeholder="ថ្ងៃចាប់ផ្តើមកក់" aria-label="Username" aria-describedby="addon-wrapping">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-3">
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-calendar"></i></span>
+                                                        <input type="text" class="form-control" id="dropDate" placeholder="បញ្ចប់ការកក់" aria-label="Username" aria-describedby="addon-wrapping">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 mx-auto">
+                                                    <button type="button" class="btn w-100">
+                                                        <span class="me-1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                                        <span class="ms-1">ស្វែងរក</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video src="assets/img/vdo/hero-banner-vdo.mp4" id="player" controls muted autoplay loop></video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner -->
+        <section class="bg-white py-3">
+            <div class="container">
+                <div class="partner-wrap wow animate__animated animate__fadeIn">
+                    <div class="row gx-0 d-flex justify-content-center align-items-center">
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/image-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/tada.png" class="px-2 px-md-4 px-lg-4 px-xl-5" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/grab.png" class="px-md-3 px-lg-4 px-xl-5" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/total.png" class="px-2" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/carmate.svg" class=" px-xl-4" alt="">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="partner-brand">
+                                <img src="Assets/img/partnership/caltex.png" class="px-2 px-md-3 px-xl-4" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Service -->
+         <section>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">
+                        <h1 class="fw-bold">សេវាកម្ម</h1>
+                    </div>
+                    <div class="col-6 col-lg-3 wow animate__animated animate__fadeInUp">
+                        <div class="card-service">
+                            <div class="service-cover">
+                                <a href="#"> <img src="assets/img/our-service/car-renting.jpg"
+                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                            </div>
+                            <div class="card mx-auto border-0">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-card mb-2"><img src="assets/img/icon/car-for-rent.png"
+                                            class="img-fluid" alt=""></div>
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title mb-0 pb-2 text-center fw-bold">ជួលរថយន្ត</h5>
+                                    </a>
+                                    <p class="card-text text-center">ជួលឡានឥឡូវនេះដើម្បីទទួលបានបទពិសោធន៏ថ្មី</p>
+                                    <button type="button" class="btn">មើល <i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 wow animate__animated animate__fadeInUp">
+                        <div class="card-service">
+                            <div class="service-cover">
+                                <a href="#"> <img src="assets/img/our-service/fixing.jpg"
+                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                            </div>
+                            <div class="card mx-auto border-0">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-card mb-2 p-1"><img src="assets/img/icon/fix.png" class="img-fluid"
+                                            alt=""></div>
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title mb-0 pb-2 text-center fw-bold">ជួសជុលរថយន្ត</h5>
+                                    </a>
+                                    <p class="card-text text-center">ជួសជុលជាមួយនឺងការធានា ការថែទាំដែលល្អឥតខ្ចោះ</p>
+                                    <button type="button" class="btn">មើល <i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 pt-4 pt-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="card-service">
+                            <div class="service-cover">
+                                <a href="#"><img src="assets/img/our-service/car-selling.jpg"
+                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                            </div>
+                            <div class="card mx-auto border-0">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-card mb-2"><img src="assets/img/icon/sell-car.png"
+                                            class="img-fluid" alt=""></div>
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title mb-0 pb-2 text-center fw-bold">លក់រថយន្ត</h5>
+                                    </a>
+                                    <p class="card-text text-center">សាកល្បងនឺងរថយន្តថ្មី ទំនើបដែលមានទាំងគុណភាពខ្ពស់</p>
+                                    <button type="button" class="btn">មើល <i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 pt-4 pt-lg-0 wow animate__animated animate__fadeInUp">
+                        <div class="card-service">
+                            <div class="service-cover">
+                                <a href="#"><img src="assets/img/our-service/driver-mann.jpg"
+                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                            </div>
+                            <div class="card mx-auto border-0">
+                                <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                                    <div class="icon-card mb-2"><img src="assets/img/icon/driver.png" class="img-fluid"
+                                            alt=""></div>
+                                    <a href="#" class="text-decoration-none">
+                                        <h5 class="card-title mb-0 pb-2 text-center fw-bold">អ្នកបើកបរ</h5>
+                                    </a>
+                                    <p class="card-text text-center">អ្នកជំនាញនិងមានបទពិសោធន៏ ធានាសុវត្ថិភាពខ្ពស់</p>
+                                    <button type="button" class="btn">មើល <i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Feature  -->
+         <section class="bg-white">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-8 col-lg-5 feature-car-img me-auto me-lg-0 d-none d-lg-block wow animate__animated animate__fadeInLeftBig">
+                        <img src="assets/img/why-choose-us/feature.png" alt="">
+                    </div>
+                    <!-- <div class="col-4 d-lg-none d-block"></div> -->
+                    <div class="col-12 col-lg-7 feature-counting wow animate__animated animate__fadeInRightBig">
+                        <div class="row g-0">
+                            <div class="col-4">
+                                <div
+                                    class="count-list d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="d-flex d-flex justify-content-center align-items-center">
+                                        <div class="fw-bold fs-1 js-count-up" data-value="1352">0</div>
+                                        <span class="ms-1 fw-bolder fs-1"> +</span>
+                                    </div>
+                                    <div><h3 class="fw-bold">អតិថិជន</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div
+                                    class="count-list d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="fw-bold fs-1 js-count-up" data-value="79">0</div>
+                                    <div><h3 class="fw-bold">រថយន្តជួល</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div
+                                    class="count-list d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="fw-bold fs-1 js-count-up" data-value="12">0</div>
+                                    <div><h3 class="fw-bold">បទពិសោធន៏</h3></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- how we work section -->
+
+        <section class="how-we-work py-5">
+            <div class="container">
+                <div class="row gy-4 gy-md-3 gx-sm-5">
+                    <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">                            
+                        <h1 class="fw-bold">ដំណើរការពួកយើង</h1>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 wow animate__animated animate__zoomIn">
+                        <div class="detail-work">
+                            <div class="num-step"><h1 class="text-center fw-bold">១</h1></div>
+                            <div class="icon-step"><img src="assets/img/icon/booking.png" class="w-100 h-100 object-fit-cover" alt=""></div>
+                            <h3 class="text-center fw-bold">ការកក់</h3>
+                            <p class="text-center">ចាប់ផ្តើមដោយគ្រាន់តែជ្រើសរើសរថយន្តដែលអ្នកពេញចិត្ត និងកាលបរិច្ឆេទជួល រូចបញ្ចូលព័ត៌មានលម្អិតផ្ទាល់ខ្លួនរបស់លោកអ្នក</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 wow animate__animated animate__zoomIn">
+                        <div class="detail-work">
+                            <div class="num-step"><h1 class="text-center fw-bold">២</h1></div>
+                            <div class="icon-step"><img src="assets/img/icon/wallet.png" class="w-100 h-100 object-fit-cover" alt=""></div>
+                            <h3 class="text-center fw-bold">ការទូទាត់</h3>
+                            <p class="text-center">បន្តទៅកាន់ការទូទាត់តាមប្រើវិធីសាស្ត្រដែលអ្នកពេញចិត្ត ដោយមានផ្តល់ជូននូវជម្រើសជាច្រើនដើម្បីធ្វើឱ្យប្រតិបត្តិការមានភាពងាយស្រួល និងសុវត្ថិភាព</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto mx-lg-0 wow animate__animated animate__zoomIn">
+                        <div class="detail-work">
+                            <div class="num-step"><h1 class="text-center fw-bold">៣</h1></div>
+                            <div class="icon-step"><img src="assets/img/icon/new-car.png" class="w-100 h-100 object-fit-cover pb-1" alt=""></div>
+                            <h3 class="text-center fw-bold">ចាប់ផ្តើម</h3>
+                            <p class="text-center">ទទួលរថយន្តឬជ្រើសរើសការដឹកជញ្ជូនទៅកាន់អាសយដ្ឋានរបស់អ្នក រួចរីករាយជាមួយដំណើរកំសាន្តដោយទំនុកចិត្ត និងបទពិសោធន៍ថ្មី</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- Special-offer section -->
+        <section >
+            <div class="container my-3 my-md-5">
+                <div class="row">
+                    <div class="col-12 special-offer">
+                        <div class="row">
+                            <div class="col-12 col-md-6 offer-text">
+                                <div class="clip-path-disc wow animate__animated animate__headShake">
+                                    <p class="mb-0 text-center fw-bold">បញ្ចុះតម្លៃ <br>១០%</p>
+                                </div>
+                                <div class="m-auto wow animate__animated animate__fadeIn">
+                                    <h4 class="fw-bold text-white text-center text-md-start">ចុះឈ្មោះឥឡូវ​នេះដើម្បីទទួលបានការ<span class="text-warning">បញ្ចុះតម្លៃ ១០%</span> លើគ្រប់សេវាកម្មរបស់ពួកយើង</h4>
+                                    <small class="text-white text-center text-md-start">ការបញ្ចុះតម្លៃនេះនឹងមានសុពលភាព២០ថ្ងៃ គិតចាប់ពីថ្ងៃដែលលោកអ្នកបានចុះឈ្មោះ</small>
+                                    <div class="wow animate__animated animate__bounceIn">
+                                        <button type="button" class="btn mt-3 btn-register">ចុះឈ្មោះឥឡូវ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-4 px-md-0  wow animate__animated animate__zoomIn">
+                                <img src="assets/img/car/three-car.png" class="w-100" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+         <!-- Feedback -->
+         <section class="feedback-section pt-5">
+            <div class="container pt-md-5">
+                <div class="row gx-0">
+                    <div class="col-6">
+                        <div class="feed-top-img wow animate__animated animate__fadeIn">
+                            <img src="assets/img/why-choose-us/fix-ser.jpg" class="">
+
+                        </div>
+                    </div>
+                    <div class="col-6 head-title wow animate__animated animate__fadeIn">                            
+                        <h1 class="fw-bold">មតិយោបល់</h1>
+                    </div>
+                    <!-- <div class="col-2"></div> -->
+                   <div class="col-10 ms-auto" style="transform: translate(0,-180px); margin-bottom: -155px;">
+                    <div class="row swiper feedback-swiper gx-0">
+                        <div class="swiper-wrapper">
+                            <div class="col-12 swiper-slide wow animate__animated animate__flipInY">
+                                <div class="card border-0 feedback-wrap bg-transparent">
+                                    <div class="card-body p-0">
+                                        <div class="card-top"></div>
+                                        <div class="card-bottom px-3">
+                                            <div class="card-user-info">
+                                                <div class="user-pf">
+                                                    <img src="assets/img/profile/profile-1.jpg" class="w-100 h-100 object-fit-cover" alt=""">
+                                                </div>
+                                                <h6>មាស តុលា</h6>
+                                            </div>
+                                            <div class="card-text border-bottom">
+                                                <p class="text-center">ខ្ញុំ​បាន​ជួល​រថយន្ត​ពី​ក្រុមហ៊ុន​ផ្សេងៗ ប៉ុន្តែ​សេវា​បម្រើ​អតិថិជន​នៅ​ទី​នេះ​គឺ​ពិតជាល្អមែន ហើយមានភាពងាយស្រួលទៀត</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between py-1">
+                                                <span>១២ កក្កដា ២០២៣</span>
+                                                <div class="feed-rate text-warning">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 swiper-slide wow animate__animated animate__flipInY">
+                                <div class="card border-0 feedback-wrap bg-transparent">
+                                    <div class="card-body p-0">
+                                        <div class="card-top"></div>
+                                        <div class="card-bottom px-3">
+                                            <div class="card-user-info">
+                                                <div class="user-pf">
+                                                    <img src="assets/img/profile/profile-3.jpg" class="w-100 h-100 object-fit-cover" alt=""">
+                                                </div>
+                                                <h6>កែវ ចិន្តា</h6>
+                                            </div>
+                                            <div class="card-text border-bottom">
+                                                <p class="text-center">ខ្ញុំបានជួសជុលរថយន្តរបស់ខ្ញុំនៅទីនេះ ហើយសេវាកម្មរហ័ស និងមានប្រសិទ្ធភាព។ ឡានរបស់ខ្ញុំមានអារម្មណ៍ថ្មីម្តងទៀត។</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between py-1">
+                                                <span>២៣ មិនា ២០២៤</span>
+                                                <div class="feed-rate text-warning">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 swiper-slide wow animate__animated animate__flipInY">
+                                <div class="card border-0 feedback-wrap bg-transparent">
+                                    <div class="card-body p-0">
+                                        <div class="card-top"></div>
+                                        <div class="card-bottom px-3">
+                                            <div class="card-user-info">
+                                                <div class="user-pf">
+                                                    <img src="assets/img/profile/profile-2.png" class="w-100 h-100 object-fit-cover" alt=""">
+                                                </div>
+                                                <h6>សុខ ចាន់</h6>
+                                            </div>
+                                            <div class="card-text border-bottom">
+                                                <p class="text-center">ដំណើរការកក់គឺសាមញ្ញ ហើយរថយន្តស្ថិតក្នុងស្ថានភាពល្អឥតខ្ចោះ។ ខ្ញុំប្រាកដជានឹងប្រើប្រាស់សេវាកម្មរបស់ពួកគេម្តងទៀត
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between py-1">
+                                                <span>១៩ មេសា ២០២៤</span>
+                                                <div class="feed-rate text-warning">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 swiper-slide wow animate__animated animate__flipInY">
+                                <div class="card border-0 feedback-wrap bg-transparent">
+                                    <div class="card-body p-0">
+                                        <div class="card-top"></div>
+                                        <div class="card-bottom px-3">
+                                            <div class="card-user-info">
+                                                <div class="user-pf">
+                                                    <img src="assets/img/profile/userprofile.png" class="w-100 h-100 object-fit-cover" alt=""">
+                                                </div>
+                                                <h6>ជុំ ណូ</h6>
+                                            </div>
+                                            <div class="card-text border-bottom">
+                                                <p class="text-center">ការទទួលបានសេវាកម្មជួល ជួសជុល និងអ្នកបើកបរទាំងអស់នៅកន្លែងតែមួយ ធ្វើឱ្យជីវិតរបស់ខ្ញុំកាន់តែងាយស្រួល</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between py-1">
+                                                <span>៣០ កក្កដា ២០២៤</span>
+                                                <div class="feed-rate text-warning">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                    </div>
+                   </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- App section -->
+        <section>
+            <div class="container mb-5 mt-5 app-section py-3">
+                <div class="row">
+                    <div class="col-12 col-lg-10 m-auto">
+                        <div class="row">
+                            <div class="col-12 col-lg-9 m-auto py-5">
+                                <h4 class="text-center fw-bold wow animate__animated animate__fadeIn">ទាញយកកម្មវិធី CamEZgo ឥឡូវ​នេះ</h4>
+                                <p class="text-center wow animate__animated animate__fadeIn">ទទួលបានបទពិសោធន៍ភាពងាយស្រួលបំផុតជាមួយកម្មវិធីជួលរថយន្តរបស់យើង។ កក់យានជំនិះដែលអ្នកពេញចិត្តយ៉ាងឆាប់រហ័ស ចូលប្រើការផ្តល់ជូនសម្រាប់តែកម្មវិធីផ្តាច់មុខ និងទទួលបានព័ត៌មានថ្មីៗតាមពេលវេលាជាក់ស្តែងលើការកក់របស់អ្នក។ </p>
+                                <div class="row">
+                                    <div class="col-6 m-auto d-flex gap-3">
+                                        <div class="col-6 wow animate__animated animate__zoomIn">
+                                            <a href="#"><img src="assets/img/download-app/app-store.svg" class=""  alt=""></a>
+                                        </div>
+                                        <div class="col-6 me-auto wow animate__animated animate__zoomIn">
+                                            <a href="#"><img src="assets/img/download-app/play-store.svg" class="" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="py-5">
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">                            
+                        <h1 class="fw-bold">សំណួរដែលសួរញឹកញាប់</h1>
+                    </div>
+                    <div class="col-12 col-lg-5 order-2 order-lg-1 wow animate__animated animate__fadeInUp">
+                        <div class="row">
+                            <div class="col-10 col-lg-12 mx-auto mx-lg-0 pt-4 p-lg-0">
+                                <div class="form-contact pe-0 pe-lg-5">
+                                    <h5 class="fw-bold">ទំនាក់ទំនង</h5>
+                                    <small>តើលោកអ្នកកំពុងមានចម្ងល់រឺ? សូមផ្ញើសារមកកាន់ពួកយើងដើម្បីដោះស្រាយជូន។</small>
+                                    <form action="" class="mt-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <label for="firstname" class="form-label mb-0">នាមត្រកូល</label>
+                                                    <input type="text" class="form-control" id="" required>
+                                                </div>   
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-2">
+                                                    <label for="lastname" class="form-label mb-0">នាមខ្លួន </label>
+                                                    <input type="text" class="form-control" id="" required>
+                                                </div>  
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="emali" class="form-label mb-0">អុីម៉ែល </label>
+                                                    <input type="email" class="form-control" id="" required>
+                                                </div>  
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="phnumber" class="form-label mb-0">លេខទូរស័ព្ទ </label>
+                                                    <input type="text" class="form-control" id="" required>
+                                                </div>  
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-2">
+                                                    <label for="comment" class="form-label mb-0">មតិយោបល់ </label>
+                                                    <textarea class="form-control" placeholder="" id="" style="height: 50px"></textarea>
+                                                    <!-- <label for="floatingTextarea2" class="text-secondary">មតិយោបល់</label> -->
+                                                </div>
+                                                <div class="pt-2">
+                                                    <button type="submit" class="btn px-3">បញ្ជូន</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 order-1 order-lg-2 wow animate__animated animate__fadeInUp">
+                        <div class="accordion accordion-flush" id="accordionFAQ">
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    តើខ្ញុំត្រូវការឯកសារអ្វីខ្លះដើម្បីជួលឡាន?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">អ្នកត្រូវមានប័ណ្ណបើកបរដែលមានសុពលភាព ប័ណ្ណឥណទាន និងអត្តសញ្ញាណប័ណ្ណ។</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    តើ CamEZgo របស់យើងទទួលការកក់ រឺបង់ប្រាក់តាមទម្រង់ណា?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">ពួកយើងទទួលការការកក់ រឺបង់ប្រាក់តាមរយៈសាច់ប្រាក់ និងតាមOnline។</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    តើអតិថិជនត្រូវមានអាយុយ៉ាងតិចចាប់ពីប៉ុន្មានឡើងទើបអាចជ្រើសរើសសេវាសេវាកម្មពី CamEZgo?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">បាទ/ចាស ចំពោះអតិថិជនត្រូវមានអាយុយ៉ាងតិចចាប់ពី ២១ឆ្នាំឡើង។</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    តើខ្ញុំត្រូវការឯកសារអ្វីខ្លះដើម្បីធ្វើការកក់រថយន្ត?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">បាទ/ចាស យើងផ្តល់ការធានាលើសេវាកម្មជួសជុលទាំងអស់របស់យើង។ រយៈពេល និងការគ្របដណ្តប់អាស្រ័យលើប្រភេទនៃការជួសជុល។ ទាក់ទងមកយើងសម្រាប់ព័ត៌មានធានាជាក់លាក់។</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    តើអ្នកផ្តល់ការធានាលើការជួសជុលដែរឬទេ?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">បាទ/ចាស យើងផ្តល់ការធានាលើសេវាកម្មជួសជុលទាំងអស់របស់យើង។ រយៈពេល និងការគ្របដណ្តប់អាស្រ័យលើប្រភេទនៃការជួសជុល។ ទាក់ទងមកយើងសម្រាប់ព័ត៌មានធានាជាក់លាក់។</div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+     
+    </main>
+
+
+
+    
+    <footer>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="footer-brand">
+                        <a class="navbar-brand" href="#"><img src="assets/img/CamEZgo_logo.png" height="60px" class="" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-5 pb-4 pb-lg-0">
+                    <h5 class="fw-bold">អំពីយើង</h5>
+                    <p>គោលបំណងផ្តល់នូវសេវាកម្មទាក់ទងនឹងការជួលរថយន្ត ដែលមានតម្លៃសមរម្យ មានផាសុខភាព
+                        និងមានជំរើសច្រើនក្នុងការជ្រើសរើសទៅតាមតម្រូវការ</p>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item">
+                            <a href="term-condition.html" class="nav-link">លក្ខខណ្ឌ​</a>
+                        </li>
+                        <small class="mt-2">&nbsp | &nbsp</small>
+                        <li class="nav-item">
+                            <a href="privacy-policy.html" class="nav-link">គោលការណ៍​​ឯកជនភាព</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6  mx-auto mx-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">តំណភ្ជាប់</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ចុះឈ្មោះ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ចូលគណនី</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">អំពីយើង</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ប្លុក</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ការងារ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ទំនាក់ទំនង</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">សេវាកម្ម</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ជួលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ជួសជុលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">លក់រថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ជួលអ្នកបើកបរ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-4 pe-4 pe-lg-0">
+                            <h5 class="fw-bold pt-4 pt-md-0">ទំនាក់ទំនង</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-pin-map me-2"></i>ភ្នំពេញ</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-telephone me-2"></i>+855 23 99 999</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link w-100"><span><i class="bi bi-envelope-open me-2"></i>CamEZgo@info.com</span></a>
+                                </li>
+                            </ul>
+                            <div class="footer-social-media">
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-regular fa-paper-plane"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="col-6 d-flex ">
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="mb-0 text-white">រក្សាសិទ្ធដោយ CamEZgo</p>
+                    </div>
+
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="footer-app-link">
+                        <div class="row gx-3">
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/app-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/play-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/swipper/swiper-bundle.min.js"></script>
+    <script src="assets/plugin/plyr/plyr.polyfilled.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/plugin/wowjs/wow.min.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="assets/plugin/flatpickr/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        $("#pickDate").flatpickr({
+            enableTime: true,
+            time_24hr: true,
+            dateFormat: "d/m/y H:m",
+        })
+        $("#dropDate").flatpickr({
+            enableTime: true,
+            time_24hr: true,
+            dateFormat: "d/m/y H:m",
+        })
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+
+    $(document).ready(function () {
+            var counted = false;
+
+            function resetCounts() {
+                $('.js-count-up').each(function () {
+                    $(this).text(0);
+                });
+                counted = false;
+            }
+
+            $(window).scroll(function () {
+                var oTop = $('.feature-counting').offset().top - window.innerHeight;
+                var oBottom = $('.feature-counting').offset().top + $('.feature-counting').outerHeight();
+
+                if (!counted && $(window).scrollTop() > oTop && $(window).scrollTop() < oBottom) {
+                    $('.js-count-up').each(function () {
+                        var $this = $(this);
+                        var countTo = $this.attr('data-value');
+                        $({ countNum: $this.text() }).animate(
+                            { countNum: countTo },
+                            {
+                                duration: 2000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                }
+                            }
+                        );
+                    });
+                    counted = true;
+                } else if ($(window).scrollTop() < oTop || $(window).scrollTop() > oBottom) {
+                    resetCounts();
+                }
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".feedback-swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            //   pagination: {
+            //     el: ".swiper-pagination",
+            //     dynamicBullets: false,
+            //     clickable: true,
+            //   },
+            breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1032: {
+                slidesPerView: 3,
+            },
+            },
+        });
+        });
+    </script>
 </body>
 </html>
