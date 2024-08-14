@@ -1764,7 +1764,7 @@ header nav .nav-link:hover {
 /*            Hero-banner              */
 /***************************************/
 
-header {
+/* header {
   background-color: white;
 }
 header nav .nav-link {
@@ -1775,7 +1775,7 @@ header nav .nav-link.active {
 }
 header nav .nav-link:hover {
   color: var(--main-hover);
-}
+} */
 .hero-banner {
   width: 100%;
   height: 650px;
@@ -2259,7 +2259,7 @@ header nav .nav-link:hover {
 .card-service .card .card-body h5:hover {
   color: var(--main-hover);
 }
-.card-service .card button {
+.card-service .card .btn {
   background-color: var(--main-color);
   padding: 2px 15px;
   color: white;
@@ -2268,7 +2268,7 @@ header nav .nav-link:hover {
   background-color: var(--dark-blue);
   color: white;
 }
-.card-service .card button:hover {
+.card-service .card .btn:hover {
   background-color: var(--main-hover);
 }
 
@@ -3146,8 +3146,6 @@ footer .nav-link:hover {
   }
 }
 
-
-}
 @media (max-width: 992px) {
   .head-title h1 {
     font-size: 27px;
