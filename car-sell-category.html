@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </form>
-                <div class="offcanvas-md offcanvas-start w-100" tabindex="-1" id="offcanvasFilterMenu" aria-labelledby="offcanvasFilterMenuLabel">
+                <div class="offcanvas-md offcanvas-end w-100" tabindex="-1" id="offcanvasFilterMenu" aria-labelledby="offcanvasFilterMenuLabel">
                     <div class="offcanvas-header d-md-none d-flex justify-content-between align-items-center">
                         <h4 class="fw-bold filter-title dark-blue">តម្រៀបតាម​</h4>
                         <button type="button" class="border-0 fs-5 bg-transparent" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasFilterMenu" aria-label="Close">
@@ -46,7 +46,7 @@
                                     <div class="px-md-3 px-lg-4 ps-xl-5 h-100">
                                         <div class="fleet-type">
                                             <div class="d-flex align-items-start justify-content-between">
-                                                <h4 class="mb-4 fw-bold filter-title">តម្រៀបតាម​</h4>
+                                                <h4 class="mb-4 fw-bold filter-title d-none d-md-block">តម្រៀបតាម​</h4>
                                             </div>
                                             <div class="d-flex">
                                                 <select id="select-beast-sort-fleet-1" class="sort-fleet w-50 me-1 me-lg-2" placeholder="ប្រភេទសាំង..." autocomplete="off">
@@ -120,37 +120,37 @@
                                         <div>
                                             <h5 class="title fw-bold dark-blue my-3">ពណ៌រថយន្ត</h5>
                                             <div class="row g-1 g-md-2">   
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="white-fleet">
                                                         <label class="form-check-label fw-medium" for="white-fleet">ពណ៌ស</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="black-fleet">
                                                         <label class="form-check-label fw-medium" for="black-fleet">ពណ៌ខ្មៅ</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="silver-fleet">
                                                         <label class="form-check-label fw-medium" for="silver-fleet">ពណ៌ប្រាក់</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="yellow-fleet">
                                                         <label class="form-check-label fw-medium" for="yellow-fleet">ពណ៌លឿង</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="red-fleet">
                                                         <label class="form-check-label fw-medium" for="red-fleet">ពណ៌ក្រហម</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-xl-4">
+                                                <div class="col-6 col-sm-4 col-md-6 col-xl-4">
                                                     <div>
                                                         <input class="form-check-input me-1" type="checkbox" value="" id="brown-fleet">
                                                         <label class="form-check-label fw-medium" for="brown-fleet">ពណ៌ត្នោត</label>
@@ -223,7 +223,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-1.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -249,7 +249,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-2.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -274,7 +274,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-6.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -300,7 +300,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-4.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -325,7 +325,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-3.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -351,7 +351,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-5.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -376,7 +376,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-7.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -401,7 +401,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-8.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sedan</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">
@@ -426,7 +426,7 @@
                                 <a href="car-sell-detail.html" class="w-75"><img src="assets/img/fleet-list/fleet-9.jpg" class="img-fluid" alt=""></a>
                             </div>
                             <div class="card-body pt-0">
-                                <div class="d-flex justify-content-between align-items-end">
+                                <div class="d-flex justify-content-between align-items-start">
                                     <div>
                                         <small class="text-secondary">ប្រភេទរថយន្ត | <span class="text-primary">Sports</span></small>
                                         <h5 class="mt-1 mb-0 fw-bold">

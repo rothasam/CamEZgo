@@ -1509,7 +1509,7 @@ header nav .nav-link:hover {
   color: var(--bg-color);
 }
 .car-list .offcanvas-header {
-  border: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 .car-list .offcanvas-header,
 .car-list .form-filter {
@@ -3337,7 +3337,7 @@ footer .nav-link:hover {
   }
   .offer-text small {
     font-size: 12px;
-  }
+  } 
   .clip-path-disc {
     width: 80px;
     height: 70px;
@@ -3395,64 +3395,65 @@ footer .nav-link:hover {
   }
 /* panha's code */
   .hero-sell .hero-content,
-    .hero-driver .hero-content .video-banner,
-    .hero-driver .hero-content .description,
-    .hero-car-list .hero-content .video-banner,
-    .hero-car-list .hero-content .description{
-        max-height: 350px;
-    }
-    .hero-sell .hero-content h1,
-    .hero-driver .hero-content h1,
-    .hero-driver-list .hero-content h1,
-    .hero-car-list .hero-content h1 {
-        font-size: 38px;
-        font-weight: 550 !important;
-        line-height: 50px;
-    }
-    .hero-sell .hero-content p,
-    .hero-driver .hero-content p {
-        font-size: 17px;
-    }
-    .company-sell p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        overflow: hidden;
-    }
-    .car-list-sell .dealer-contact .icon span {
-        display: none;
-    }
-    .car-list-sell .dealer-contact .icon .icon-frame {
-        width: 35px;
-        height: 35px;
-        font-size: 15px;
-    }
-    .car-list-sell .dealer-contact a:hover .tiptool {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .car-view .carousel hr {
-        width: 45%;
-    }
-    .feature-staff .sub-video {
-        border-top-right-radius: 40px;
-        border-bottom-left-radius: 40px;
-    }
-    .inquiry .phenti iframe {
-        height: 340px;
-    }
-    .car-list .result,
-    .car-list .list-type {
-        width: 100%;
-    }
-    .car-list .ts-control {
-        width: 170px;
-    }
-    .fleet-filter .form-fleet .mid-col {
-        border: none;
-    }
+  .hero-driver .hero-content .video-banner,
+  .hero-driver .hero-content .description,
+  .hero-car-list .hero-content .video-banner,
+  .hero-car-list .hero-content .description{
+    max-height: 350px;
+  }
+  .hero-sell .hero-content h1,
+  .hero-driver .hero-content h1,
+  .hero-driver-list .hero-content h1,
+  .hero-car-list .hero-content h1 {
+    font-size: 38px;
+    font-weight: 550 !important;
+    line-height: 50px;
+  }
+  .hero-sell .hero-content p,
+  .hero-driver .hero-content p {
+    font-size: 17px;
+  }
+  .company-sell p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+  .car-list-sell .dealer-contact .icon span {
+    display: none;
+  }
+  .car-list-sell .dealer-contact .icon .icon-frame {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .car-list-sell .dealer-contact a:hover .tiptool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .car-view .carousel hr {
+    width: 45%;
+  }
+  .feature-staff .sub-video {
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  .inquiry .phenti iframe {
+    height: 340px;
+  }
+  .car-list .result,
+  .car-list .list-type {
+    width: 100%;
+  }
+  .car-list .ts-control {
+    width: 170px;
+  }
+  .fleet-filter .form-fleet,
+  .fleet-filter .form-fleet .mid-col {
+    border: none;
+  }
 
   .term-condition .card h2, .privacy-policy .card h2{
     font-size: 2px;
@@ -3585,115 +3586,115 @@ footer .nav-link:hover {
 
   /* === panha's code === */
   .hero-sell .hero-content h1,
-    .hero-driver .hero-content h1,
-    .hero-driver-list .hero-content h1,
-    .hero-car-list .hero-content h1 {
-        font-size: 30px;
-        width: 98%;
-        line-height: 40px;
-    }
-    .hero-sell .hero-content p,
-    .hero-driver .hero-content p{
-        font-weight: 400 !important;
-    }
-    .section-title h1 {
-        font-size: 28px;
-    }
-    .feature-sell .abstract-sell p {
-        font-size: 15px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        line-clamp: 3;
-        overflow: hidden;
-    }
-    .feature-sell .abstract-sell-1 .text {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .company-sell .showroom {
-        border-radius: 20px;
-    }
-    .car-list-sell .card .card-body .dark-blue {
-        font-size: 20px;
-    }
-    .pros-sell .card .card-body {
-        margin-top: 5px;
-    }
-    .car-list-sell .dealer-contact .icon .icon-frame {
-        width: 30px;
-        height: 30px;
-        font-size: 13px;
-    }
-    .car-list-sell .modal .modal-body .row .col-md-6:nth-child(5) {
-        order: 6;
-    }
-    .car-list-sell .modal .modal-body .row .col-md-6:nth-child(6) {
-        order: 5;
-    }
-    .car-list-sell .features .fa-check {
-        font-size: 13px !important;
-    }
-    .car-view .carousel hr {
-        width: 35%;
-    }
-    .car-view .carousel .view-video .btn-video{
-        height: 25px;
-        font-size: 15px !important;
-    }
-    .car-view .carousel .view-video .btn-video i {
-        font-size: 15px !important;
-    }
-    .car-view .carousel .status {
-        font-size: 16px;
-    }
-    .car-view .carousel .status .badge {
-        padding: 5px 12px;
-    }
-    .car-view .carousel hr {
-        height: 2px;
-    }
-    .feature-staff .sub-video {
-        border: 3px solid var(--main-color);
-    }
-    .feature-staff .video-icon i {
-        color: #ffffffa1;
-        font-size: 30px;
-    }
-    .feature-staff .key-feature i {
-        font-size: 22px;
-    }
-    .driver-expert .card.card-skew-1::before,
-    .driver-expert .card::before,
-    .driver-expert .card.card-skew-2::before {
-        border: 4px solid var(--main-color-400);
-        top: 25%;
-        transform: skewY(0);
-    }
-    .driver-expert .media-icon,
-    .driver-expert .media-icon-1 {
-        background-color: var(--main-color-400) !important;
-    }
-    .driver-expert .media-icon {
-        padding: 0;
-    }
-    .driver-expert .media-icon i,
-    .driver-expert .media-icon-1 i {
-        font-size: 15px;
-    }
-    .driver-list .card::before {
-        top: 20%;
-        border: 2px solid var(--main-color-200);
-        transform: skewY(0deg);
-    }
-    .inquiry .phenti iframe {
-        height: 280px ;
-    }
-    .car-list .ts-control {
-        width: 150px;
-    }
+  .hero-driver .hero-content h1,
+  .hero-driver-list .hero-content h1,
+  .hero-car-list .hero-content h1 {
+    font-size: 30px;
+    width: 98%;
+    line-height: 40px;
+  }
+  .hero-sell .hero-content p,
+  .hero-driver .hero-content p{
+    font-weight: 400 !important;
+  }
+  .section-title h1 {
+    font-size: 28px;
+  }
+  .feature-sell .abstract-sell p {
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .feature-sell .abstract-sell-1 .text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-sell .showroom {
+    border-radius: 20px;
+  }
+  .car-list-sell .card .card-body .dark-blue {
+    font-size: 20px;
+  }
+  .pros-sell .card .card-body {
+    margin-top: 5px;
+  }
+  .car-list-sell .dealer-contact .icon .icon-frame {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .car-list-sell .modal .modal-body .row .col-md-6:nth-child(5) {
+    order: 6;
+  }
+  .car-list-sell .modal .modal-body .row .col-md-6:nth-child(6) {
+    order: 5;
+  }
+  .car-list-sell .features .fa-check {
+    font-size: 13px !important;
+  }
+  .car-view .carousel hr {
+    width: 35%;
+  }
+  .car-view .carousel .view-video .btn-video{
+    height: 25px;
+    font-size: 15px !important;
+  }
+  .car-view .carousel .view-video .btn-video i {
+    font-size: 15px !important;
+  }
+  .car-view .carousel .status {
+    font-size: 16px;
+  }
+  .car-view .carousel .status .badge {
+    padding: 5px 12px;
+  }
+  .car-view .carousel hr {
+    height: 2px;
+  }
+  .feature-staff .sub-video {
+    border: 3px solid var(--main-color);
+  }
+  .feature-staff .video-icon i {
+    color: #ffffffa1;
+    font-size: 30px;
+  }
+  .feature-staff .key-feature i {
+    font-size: 22px;
+  }
+  .driver-expert .card.card-skew-1::before,
+  .driver-expert .card::before,
+  .driver-expert .card.card-skew-2::before {
+    border: 4px solid var(--main-color-400);
+    top: 25%;
+    transform: skewY(0);
+  }
+  .driver-expert .media-icon,
+  .driver-expert .media-icon-1 {
+    background-color: var(--main-color-400) !important;
+  }
+  .driver-expert .media-icon {
+    padding: 0;
+  }
+  .driver-expert .media-icon i,
+  .driver-expert .media-icon-1 i {
+    font-size: 15px;
+  }
+  .driver-list .card::before {
+    top: 20%;
+    border: 2px solid var(--main-color-200);
+    transform: skewY(0deg);
+  }
+  .inquiry .phenti iframe {
+    height: 280px ;
+  }
+  .car-list .ts-control {
+    width: 150px;
+  }
   /* ======================= */
   .team-name{
     width: 70%;
@@ -3722,45 +3723,45 @@ footer .nav-link:hover {
 }
 @media (max-width: 442px) {
   .driver-list .modal .image {
-      border: 1px solid var(--main-color-200);
-      border-bottom: 3px solid var(--main-color);
-      background-color: var(--main-color-50);
+    border: 1px solid var(--main-color-200);
+    border-bottom: 3px solid var(--main-color);
+    background-color: var(--main-color-50);
   }
   .driver-list .modal .driver-img {
-      transform: scaleX(-1);
+    transform: scaleX(-1);
   }
   .driver-list .modal .book-driver {
-      font-weight: normal !important;
-      border: 1px solid var(--main-color-200);
+    font-weight: normal !important;
+    border: 1px solid var(--main-color-200);
   }
   .driver-list .modal .fa-calendar-check {
-      font-size: 17px;
+    font-size: 17px;
   }
   .driver-list .modal .contact-icons i{
-      font-size: 17px;
-      color: var(--main-color);
+    font-size: 17px;
+    color: var(--main-color);
   }
   .driver-list .modal .contact-icons i:hover {
-      transform: scale(1.05);
+    transform: scale(1.05);
   }
   .driver-list .modal .driver-info .icon-info {
-      width: 30px;
-      font-size: 20px;
+    width: 30px;
+    font-size: 20px;
   }
   .driver-list .modal .driver-info h5 {
-      font-size: 16px !important;
+    font-size: 16px !important;
   }
   .driver-list .modal .driver-info span {
-      font-size: 14px !important;
+    font-size: 14px !important;
   }
   .driver-list .modal .sub-info span {
-      font-size: 16px !important;
+    font-size: 16px !important;
   }
   .driver-list .modal .list-group-flush .list-group-item {
-      font-size: 14px;
+    font-size: 14px;
   }
   .driver-list .modal .lang-skill .progress {
-      height: 4px;
+    height: 4px;
   }
 }
 @media (max-width: 430px) {
