@@ -702,7 +702,6 @@ header nav .nav-link:hover {
   flex-direction: column;
 }
 /* ================================= */
-/* hero-sell */
 .hero-sell{
   background-position: center;
   background-attachment: fixed;
@@ -735,7 +734,6 @@ header nav .nav-link:hover {
   font-weight: 550;
   color: #eae9e9;
 }
-/* feature sell */
 .feature-sell .card {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -778,7 +776,6 @@ header nav .nav-link:hover {
 .feature-staff .list-group-flush p {
   color: #6d6868;
 }
-/* car-logo */
 .car-logo-sell .logo-car {
   display: flex;
   align-items: center;
@@ -789,8 +786,6 @@ header nav .nav-link:hover {
   height: 80px;
   object-fit: contain;
 }
-
-/* company-sell */
 .company-sell h4 {
   font-size: 22px;
 }
@@ -799,7 +794,6 @@ header nav .nav-link:hover {
   overflow: hidden;
   position: relative;
 }
-/* pros-sell */
 .feature-sell .image,
 .feature-sell .image img,
 .pros-sell .servicer img,
@@ -846,7 +840,6 @@ header nav .nav-link:hover {
 .pros-sell p {
   color: #242424;
 }
-/* car-list-sell */
 .car-list-sell .card {
   background-color: transparent;
 }
@@ -1018,7 +1011,6 @@ header nav .nav-link:hover {
   font-weight: 500;
   color: #545454;
 }
-
 /* =================== */
 /* === driver.html === */
 /* =================== */
@@ -1031,9 +1023,6 @@ header nav .nav-link:hover {
 .hero-driver .hero-content .description {
   height: 600px;
 }
-
-/*  */
-
 .feature-staff .sub-video {
   object-fit: fill;
   border: 4px solid var(--main-color-300);
@@ -1052,7 +1041,6 @@ header nav .nav-link:hover {
   color: #ffffffcb;
   font-size: 50px;
 }
-
 .feature-staff .key-feature {
   text-align: center;
   border: 1px solid var(--main-color-400);
@@ -1072,9 +1060,6 @@ header nav .nav-link:hover {
 .feature-staff .key-feature:hover i{
   color: #f1f1f1;
 }
-
-/*  */
-
 .driver-expert .card {
   border: none;
   background-color: transparent;
@@ -1219,7 +1204,6 @@ header nav .nav-link:hover {
 .banner-name .breadcrumb .breadcrumb-item{
   font-size: 18px;
 }
-/*  */
 .driver-list .driver-form .ts-control {
   border: 1px solid var(--main-color-300);
   padding: 13px;
@@ -1330,7 +1314,6 @@ header nav .nav-link:hover {
   font-size: 16px !important;
   margin: 0 7px  !important;
 }
-/*  */
 .driver-list .page-item {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -1342,7 +1325,6 @@ header nav .nav-link:hover {
 .driver-list .page-link:focus {
   box-shadow: none;
 }
-/*  */
 .driver-list .modal .modal-header {
   border-bottom: 1px solid var(--main-color);
 }
@@ -1743,19 +1725,86 @@ header nav .nav-link:hover {
   color: #333333;
   background-color: #ffd700;
 }
-/* ======================= */
-/* === car-rent-datail.html=== */
-/* ======================= */
-.banner-name {
-  height: 300px;
-}
+/* ============================ */
+/* === car-rent-datail.html === */
+/* ============================ */
+.banner-name,
 .banner-name .banner-content {
-  height: 300px;
+  /* height: 450px; */
+}
+.banner-name .banner-content,
+.banner-name .main-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--dark-blue);
+}
+.banner-name .banner-content h1 {
+  color: var(--main-color-50);
+}
+.banner-name .banner-content .breadcrumb-item::before {
+  color: var(--main-color-100);
+}
+.car-attribute .main-info .btn-booking,
+.car-attribute .sub-info,
+.car-attribute .image-list .overlay,
+.car-attribute .btn-interest {
+  transition: all 0.4s ease-out;
+}
+.car-attribute .main-info {
+  background-color: var(--main-color-50);
+  border: 1px solid var(--main-color-200);
+  position: sticky;
+  top: 50px;
+}
+.car-attribute .main-info .price {
+  color: var(--main-color);
+}
+.car-attribute .main-info .hr-main-info {
+  border: 1px solid var(--main-color-200);
+  opacity: 0.5;
+}
+.car-attribute .main-info i {
+  font-size: 20px;
+}
+.car-attribute .main-info .btn-booking {
+  background-color: var(--main-color-500);
+  color: var(--bg-color);
+}
+.car-attribute .btn-interest {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.car-attribute .main-info .btn-booking:hover,
+.car-attribute .btn-interest:hover {
+  background-color: var(--main-hover);
+  color: var(--bg-color);
+}
+.car-attribute .describe span{
+  font-size: 20px;
+}
+.car-attribute .sub-info i {
+  font-size: 35px;
+  color: var(--main-color);
+}
+.car-attribute .sub-info h4 {
+  color: var(--dark-blue);
+}
+.car-attribute .describe p,
+.car-attribute .sub-info p {
+  line-height: 33px;
+}
+.car-attribute .image-list {
+  border: 1px solid var(--main-color-100);
+}
+.car-attribute .image-list .overlay {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.car-attribute .image-list .overlay:hover {
+  background-color: transparent;
 }
 /* ================================= */
 
@@ -3089,20 +3138,20 @@ footer .nav-link:hover {
   }
   /* panha's code */
   .hero-sell .hero-content h1,
-    .hero-driver .hero-content h1,
-    .hero-driver-list .hero-content h1,
-    .hero-car-list .hero-content h1 {
-        font-size: 40px;
-        width: 95%;
-        line-height: 55px;
-    }
-    .company-sell p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        line-clamp: 3;
-        overflow: hidden;
-    }
+  .hero-driver .hero-content h1,
+  .hero-driver-list .hero-content h1,
+  .hero-car-list .hero-content h1 {
+    font-size: 40px;
+    width: 95%;
+    line-height: 55px;
+  }
+  .company-sell p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
 }
 @media (max-width: 1024px) {
   .emergency .emergency-img-1 {
