@@ -1201,7 +1201,8 @@ header nav .nav-link:hover {
 .hero-driver-list .hero-content .breadcrumb-item,
 .hero-car-list .hero-content .breadcrumb-item,
 .main-info .breadcrumb .breadcrumb-item,
-.banner-name .breadcrumb .breadcrumb-item{
+.banner-name .breadcrumb .breadcrumb-item,
+.wishlist-head .breadcrumb-item{
   font-size: 18px;
 }
 .driver-list .driver-form .ts-control {
@@ -1728,12 +1729,10 @@ header nav .nav-link:hover {
 /* ============================ */
 /* === car-rent-datail.html === */
 /* ============================ */
-.banner-name,
-.banner-name .banner-content {
-  /* height: 450px; */
-}
 .banner-name .banner-content,
-.banner-name .main-image {
+.banner-name .main-image,
+.wishlist-head,
+.wishlist-head .wishlist-title{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1743,13 +1742,16 @@ header nav .nav-link:hover {
 .banner-name .banner-content h1 {
   color: var(--main-color-50);
 }
-.banner-name .banner-content .breadcrumb-item::before {
+.banner-name .banner-content .breadcrumb-item::before,
+.wishlist-head .breadcrumb-item::before {
   color: var(--main-color-100);
 }
 .car-attribute .main-info .btn-booking,
 .car-attribute .sub-info,
 .car-attribute .image-list .overlay,
-.car-attribute .btn-interest {
+.car-attribute .btn-interest,
+.wishlist .car-cart-item,
+.wishlist .car-cart-item .overlay {
   transition: all 0.4s ease-out;
 }
 .car-attribute .main-info {
@@ -1777,7 +1779,8 @@ header nav .nav-link:hover {
   color: var(--main-color);
 }
 .car-attribute .main-info .btn-booking:hover,
-.car-attribute .btn-interest:hover {
+.car-attribute .btn-interest:hover,
+.wishlist .car-cart-item .btn-let-rent:hover {
   background-color: var(--main-hover);
   color: var(--bg-color);
 }
@@ -1795,16 +1798,41 @@ header nav .nav-link:hover {
 .car-attribute .sub-info p {
   line-height: 33px;
 }
-.car-attribute .image-list {
+.car-attribute .image-list,
+.wishlist .car-cart-item {
   border: 1px solid var(--main-color-100);
 }
-.car-attribute .image-list .overlay {
+.car-attribute .image-list .overlay,
+.wishlist .car-cart-item .overlay {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.car-attribute .image-list .overlay:hover {
+.car-attribute .image-list .overlay:hover,
+.wishlist .car-cart-item:hover .overlay {
   background-color: transparent;
+}
+/* ===================== */
+/* === wishlist.html === */
+/* ===================== */
+.wishlist-head,
+.wishlist-head .wishlist-title {
+  height: 250px;
+}
+.wishlist .car-cart-item:hover {
+  border: 1px solid var(--main-hover);
+}
+.wishlist .car-cart-item .btn-let-rent {
+  background-color: var(--dark-blue);
+  color: var(--bg-color);
+}
+.wishlist .car-cart-item .overlay span {
+  font-size: 16px;
+  cursor: pointer;
+}
+.wishlist .car-cart-item .overlay .custom-tooltip {
+  --bs-tooltip-bg: red;
+  --bs-tooltip-color: var(--bs-white);
 }
 /* ================================= */
 
