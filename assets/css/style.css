@@ -1729,8 +1729,8 @@ header nav .nav-link:hover {
 /* ============================ */
 /* === car-rent-datail.html === */
 /* ============================ */
+.banner-name,
 .banner-name .banner-content,
-.banner-name .main-image,
 .wishlist-head,
 .wishlist-head .wishlist-title{
   display: flex;
@@ -3180,6 +3180,16 @@ footer .nav-link:hover {
     line-clamp: 3;
     overflow: hidden;
   }
+  .car-attribute .describe p,
+  .car-attribute .sub-info p {
+    line-height: 27px;
+  }
+  .car-attribute .sub-info i {
+    font-size: 30px;
+  }
+  .wishlist .car-cart-item h5 {
+    font-weight: 500 !important;
+  }
 }
 @media (max-width: 1024px) {
   .emergency .emergency-img-1 {
@@ -3195,7 +3205,6 @@ footer .nav-link:hover {
     flex: 0 0 auto;
     width: 66.66666667%;
   }
-
   .image-profile {
     width: 100%;
     height: 140px;
@@ -3331,7 +3340,6 @@ footer .nav-link:hover {
   .nav-account .navbar-nav .link-acc .dropdown-menu , .link-acc .drop-acc {
     left: -155px;
   }
-
   .why-us-list .card-title {
     font-size: 18px;
   }
@@ -3531,7 +3539,10 @@ footer .nav-link:hover {
   .fleet-filter .form-fleet .mid-col {
     border: none;
   }
-
+  .car-attribute .overlay .text-over {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
   .term-condition .card h2, .privacy-policy .card h2{
     font-size: 2px;
   }
@@ -3621,7 +3632,6 @@ footer .nav-link:hover {
   }
   .card-service .card {
     width: 90% !important;
-    /* transform: translateY(-40px); */
     margin-top: -110px !important;
   }
 
@@ -3772,6 +3782,18 @@ footer .nav-link:hover {
   .car-list .ts-control {
     width: 150px;
   }
+  .breadcrumb-item {
+    font-size: 13px !important;
+  }
+  .banner-name .banner-content h1 {
+    font-size: 25px;
+  }
+  .car-attribute .overlay .text-over {
+    font-size: 14px !important;
+  }
+  .car-attribute .sub-info i {
+    font-size: 25px;
+  }
   /* ======================= */
   .team-name{
     width: 70%;
@@ -3779,7 +3801,6 @@ footer .nav-link:hover {
   .team-name h6{
     font-size: 12px;
   }
-
   .special-offer, .app-section, .feature-counting {
     border-radius: 0;
   }
@@ -3839,6 +3860,9 @@ footer .nav-link:hover {
   }
   .driver-list .modal .lang-skill .progress {
     height: 4px;
+  }
+  .car-attribute .overlay .text-over {
+    font-size: 10px !important;
   }
 }
 @media (max-width: 430px) {
