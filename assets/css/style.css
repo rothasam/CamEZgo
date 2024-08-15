@@ -62,21 +62,25 @@ header nav .nav-link:hover {
 .navPage .navbar-nav .nav-item .nav-link {
   padding: 0px 15px;
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu , .link-acc .drop-acc {
+.nav-account .navbar-nav .link-acc .dropdown-menu,
+.link-acc .drop-acc {
   left: -150px;
   width: 220px;
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item , .link-acc .drop-acc .nav-link{
+.nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item,
+.link-acc .drop-acc .nav-link {
   padding: 10px 18px;
 }
-.link-acc .drop-acc li .nav-link{
- width: 220px;
+.link-acc .drop-acc li .nav-link {
+  width: 220px;
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item:hover, .link-acc .drop-acc .nav-link:hover {
+.nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item:hover,
+.link-acc .drop-acc .nav-link:hover {
   background-color: rgb(221, 221, 221);
   color: var(--main-color);
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu li:nth-child(1) img , .link-acc .drop-acc li:nth-child(1) img {
+.nav-account .navbar-nav .link-acc .dropdown-menu li:nth-child(1) img,
+.link-acc .drop-acc li:nth-child(1) img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -89,14 +93,14 @@ header nav .nav-link:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.link-acc .drop-acc{
+.link-acc .drop-acc {
   position: absolute;
   z-index: 1000;
   background-color: white;
   border-radius: 6px;
   display: none;
 }
-.link-acc:hover .drop-acc{
+.link-acc:hover .drop-acc {
   display: block;
 }
 .dropdown-noti {
@@ -111,8 +115,8 @@ header nav .nav-link:hover {
 .nav-noti:hover .dropdown-noti {
   display: block;
 }
-.nav-noti .nav-link span{
-  right: 0; 
+.nav-noti .nav-link span {
+  right: 0;
   font-size: 8px;
 }
 .noti-profile {
@@ -183,10 +187,12 @@ header nav .nav-link:hover {
   top: -12px;
   left: 0;
 }
-.hover-nav-car-type:hover .dropdown-car-type,.hover-nav-service:hover .dropdown-service {
+.hover-nav-car-type:hover .dropdown-car-type,
+.hover-nav-service:hover .dropdown-service {
   display: block;
 }
-.offcanvas-drop-menu .btn, .offcanvas-drop-menu .dropdown-menu{
+.offcanvas-drop-menu .btn,
+.offcanvas-drop-menu .dropdown-menu {
   border: 0;
 }
 .navPage.sticky {
@@ -297,11 +303,40 @@ header nav .nav-link:hover {
   box-shadow: none !important;
   border: 2px solid #86b7fe;
 }
-.modal-3step .modal-footer button:nth-child(1) a{
-    color: rgb(149, 149, 149);
+.modal-3step .modal-footer button:nth-child(1) a {
+  color: rgb(149, 149, 149);
 }
-.modal-3step .modal-footer button:nth-child(1):hover a{
-    color: rgb(255, 255, 255);
+.modal-3step .modal-footer button:nth-child(1):hover a {
+  color: rgb(255, 255, 255);
+}
+
+.btn-cancel {
+  border: none;
+}
+
+.btn-cancel:hover {
+  color: var(--main-color);
+}
+
+/* payment */
+#visa,
+#khqr {
+  display: none;
+  padding: 10px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  width: 100%;
+  border-width: 1px;
+  background-color: #dddddd3f;
+}
+
+.radio.selected {
+  background-color: transparent;
+  border: 1px solid dodgerblue;
 }
 .line-root {
   position: relative;
@@ -350,7 +385,6 @@ header nav .nav-link:hover {
 #password-icon3.hide,
 #password-icon4.hide,
 #password-icon5.hide,
-
 #password-icon6.hide,
 #password-icon7.hide,
 #password-icon8.hide,
@@ -601,7 +635,6 @@ header nav .nav-link:hover {
   background-color: dodgerblue;
 }
 
-
 .our-service .swiper-button-next,
 .technician .swiper-button-next {
   right: 45px !important;
@@ -708,7 +741,7 @@ header nav .nav-link:hover {
   flex-direction: column;
 }
 /* ================================= */
-.hero-sell{
+.hero-sell {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -721,7 +754,7 @@ header nav .nav-link:hover {
 .hero-driver .hero-content .description,
 .hero-driver-list .hero-content,
 .hero-car-list .hero-content .description,
-.feature-sell .sell-text{
+.feature-sell .sell-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -734,7 +767,7 @@ header nav .nav-link:hover {
   width: 75%;
 }
 .hero-sell .hero-content p,
-.hero-driver .hero-content p{
+.hero-driver .hero-content p {
   max-width: 90%;
   font-size: 20px;
   font-weight: 550;
@@ -748,7 +781,7 @@ header nav .nav-link:hover {
   background-color: var(--main-color-200);
 }
 .feature-sell .abstract-sell .abstract-content p {
-  color: #6d6868; 
+  color: #6d6868;
   position: relative;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -787,7 +820,7 @@ header nav .nav-link:hover {
   align-items: center;
   justify-content: center;
 }
-.car-logo-sell .logo-car img{
+.car-logo-sell .logo-car img {
   width: 120px;
   height: 80px;
   object-fit: contain;
@@ -820,8 +853,8 @@ header nav .nav-link:hover {
   background-color: transparent;
 }
 .pros-sell .card::before,
-.pros-sell .card::after{
-  content: '';
+.pros-sell .card::after {
+  content: "";
   width: 12px;
   height: 50%;
   position: absolute;
@@ -869,7 +902,7 @@ header nav .nav-link:hover {
   border-radius: 0;
   transition: all 0.5s ease-in-out;
 }
-.car-list-sell .sub-card:hover{
+.car-list-sell .sub-card:hover {
   border: 1px solid var(--main-color-400);
   background-color: var(--main-color-100);
 }
@@ -883,8 +916,8 @@ header nav .nav-link:hover {
 .car-list-sell .carousel-control-next {
   width: 8% !important;
 }
-.car-list-sell .carousel-control-next-icon, 
-.car-list-sell .carousel-control-prev-icon{
+.car-list-sell .carousel-control-next-icon,
+.car-list-sell .carousel-control-prev-icon {
   background-size: 70% 70% !important;
   background-image: none;
   background-color: var(--main-color-200);
@@ -894,7 +927,7 @@ header nav .nav-link:hover {
   justify-content: center;
   transition: all 0.3s ease-in;
 }
-.car-list-sell .carousel-control-next-icon:hover, 
+.car-list-sell .carousel-control-next-icon:hover,
 .car-list-sell .carousel-control-prev-icon:hover {
   color: var(--bg-color);
   background-color: var(--main-color);
@@ -909,7 +942,7 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-.car-list-sell .dealer-contact .icon .icon-frame{
+.car-list-sell .dealer-contact .icon .icon-frame {
   width: 45px;
   height: 45px;
   color: var(--main-color);
@@ -946,7 +979,7 @@ header nav .nav-link:hover {
   transition: all 0.5s ease-in-out;
 }
 .driver-expert .btn-driver-expert:hover,
-.car-list-sell .btn-dreamcar:hover{
+.car-list-sell .btn-dreamcar:hover {
   color: var(--main-hover);
 }
 .driver-expert .btn-driver-expert:hover i,
@@ -954,7 +987,7 @@ header nav .nav-link:hover {
   transform: translateX(35%);
 }
 .car-list-sell .modal .modal-header h1,
-.inquiry .feature-detail i  {
+.inquiry .feature-detail i {
   color: var(--main-color);
 }
 .car-list-sell .modal .modal-header .btn-close:focus,
@@ -983,7 +1016,7 @@ header nav .nav-link:hover {
 .car-list-sell .form-contact-company .btn-send-sms {
   background-color: var(--main-color-500);
 }
-.car-list-sell .content-contact-company .contact-icon i{
+.car-list-sell .content-contact-company .contact-icon i {
   font-size: 25px;
 }
 .car-list-sell .phenti {
@@ -1020,7 +1053,7 @@ header nav .nav-link:hover {
 /* =================== */
 /* === driver.html === */
 /* =================== */
-.hero-driver .hero-content .video-banner{
+.hero-driver .hero-content .video-banner {
   width: 100%;
   height: 600px;
   object-fit: fill;
@@ -1058,12 +1091,12 @@ header nav .nav-link:hover {
   color: #f1f1f1;
 }
 
-.feature-staff .key-feature i{
+.feature-staff .key-feature i {
   font-size: 30px;
   color: var(--main-color);
   transition: all 0.6s ease-in-out;
 }
-.feature-staff .key-feature:hover i{
+.feature-staff .key-feature:hover i {
   color: #f1f1f1;
 }
 .driver-expert .card {
@@ -1072,7 +1105,7 @@ header nav .nav-link:hover {
 }
 .driver-expert .card::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 80%;
   border: 6px solid var(--main-color);
@@ -1150,14 +1183,14 @@ header nav .nav-link:hover {
 .pricing-staff .package:hover {
   border: 1px solid var(--main-hover);
 }
-.pricing-staff .package .plan{
+.pricing-staff .package .plan {
   width: 120px;
   background-color: var(--main-color);
   position: absolute;
   top: 0;
   transform: translateY(-100%);
 }
-.pricing-staff .package.bg-tip .plan{
+.pricing-staff .package.bg-tip .plan {
   border: 1px solid var(--main-hover);
   border-bottom: none;
   color: var(--main-color);
@@ -1186,15 +1219,15 @@ header nav .nav-link:hover {
   display: flex;
 }
 .pricing-staff .package .list-group-item::before {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   padding-right: 10px;
   font-weight: 400;
   font-size: 18px;
-  content: '\f058' " ";
+  content: "\f058"" ";
   color: #20c997;
 }
 .pricing-staff .package .list-group-item.xmark::before {
-  content: '\f057' " ";
+  content: "\f057"" ";
   color: red;
 }
 /* ======================= */
@@ -1208,7 +1241,7 @@ header nav .nav-link:hover {
 .hero-car-list .hero-content .breadcrumb-item,
 .main-info .breadcrumb .breadcrumb-item,
 .banner-name .breadcrumb .breadcrumb-item,
-.wishlist-head .breadcrumb-item{
+.wishlist-head .breadcrumb-item {
   font-size: 18px;
 }
 .driver-list .driver-form .ts-control {
@@ -1217,18 +1250,18 @@ header nav .nav-link:hover {
   position: relative;
 }
 .driver-list .driver-form .ts-control:focus,
-.fleet-filter .form-fleet .fleet-type .ts-control:focus{
+.fleet-filter .form-fleet .fleet-type .ts-control:focus {
   outline: 1px solid var(--main-hover) !important;
 }
 .driver-list .driver-form .ts-control::after,
 .car-list .ts-control::after,
 .fleet-filter .form-fleet .fleet-type .ts-control::after {
   position: absolute;
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
   right: 13px;
   font-weight: 900;
   font-size: 16px;
-  content: '\f107' " ";
+  content: "\f107"" ";
   color: var(--dark-blue);
   transition: all 0.4s;
 }
@@ -1237,10 +1270,12 @@ header nav .nav-link:hover {
 .fleet-filter .form-fleet .fleet-type .ts-control:focus::after {
   transform: rotate(180deg);
 }
-.driver-list .driver-form .select-driver .ts-dropdown-content{
+.driver-list .driver-form .select-driver .ts-dropdown-content {
   text-align: center;
 }
-.driver-list .ts-dropdown, .ts-control, .ts-control input,
+.driver-list .ts-dropdown,
+.ts-control,
+.ts-control input,
 .driver-list .driver-form .ts-control input {
   font-size: 15px !important;
 }
@@ -1294,7 +1329,7 @@ header nav .nav-link:hover {
   overflow: hidden;
 }
 .driver-list .action a::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: var(--main-hover);
@@ -1319,7 +1354,7 @@ header nav .nav-link:hover {
 }
 .driver-list.driver-expert .media-icon-1 i {
   font-size: 16px !important;
-  margin: 0 7px  !important;
+  margin: 0 7px !important;
 }
 .driver-list .page-item {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1357,7 +1392,7 @@ header nav .nav-link:hover {
 .driver-list .modal .fa-calendar-check {
   font-size: 25px;
 }
-.driver-list .modal .contact-icons i{
+.driver-list .modal .contact-icons i {
   font-size: 20px;
   color: var(--main-color);
 }
@@ -1365,7 +1400,7 @@ header nav .nav-link:hover {
   transform: scale(1.2);
 }
 .driver-list .modal .driver-info span,
-.driver-list .modal .driver-info span a{
+.driver-list .modal .driver-info span a {
   color: var(--main-color);
 }
 .driver-list .modal .driver-info .icon-info {
@@ -1398,7 +1433,7 @@ header nav .nav-link:hover {
 /* ============================ */
 /* === car-sell-detail.html === */
 /* ============================ */
-.main-info  .media-icon .icon {
+.main-info .media-icon .icon {
   text-decoration: none;
   width: 30px;
   height: 30px;
@@ -1407,7 +1442,7 @@ header nav .nav-link:hover {
   font-size: 14px;
   transition: all 0.3s;
 }
-.main-info  .media-icon .icon:hover {
+.main-info .media-icon .icon:hover {
   background-color: var(--main-color);
   color: #fff;
 }
@@ -1494,7 +1529,7 @@ header nav .nav-link:hover {
 .hero-car-list .hero-content .description {
   height: 480px;
 }
-.hero-car-list .hero-content .breadcrumb-item+.breadcrumb-item::before {
+.hero-car-list .hero-content .breadcrumb-item + .breadcrumb-item::before {
   color: var(--bg-color);
 }
 .car-list .offcanvas-header {
@@ -1518,7 +1553,7 @@ header nav .nav-link:hover {
 .fleet-filter .form-check-input,
 .fleet-filter .form-check-label,
 .fleet-filter .form-fleet .btn-more small:hover,
-.fleet-list .section-title .list-type i{
+.fleet-list .section-title .list-type i {
   cursor: pointer;
 }
 .car-list .form-search .form-control,
@@ -1563,7 +1598,7 @@ header nav .nav-link:hover {
   justify-content: start;
 }
 .car-list .form-filter .om-sliderrange-display span,
-.fleet-filter .form-fleet .om-sliderrange-display span{
+.fleet-filter .form-fleet .om-sliderrange-display span {
   margin-right: 8px;
 }
 .car-list .result {
@@ -1595,19 +1630,19 @@ header nav .nav-link:hover {
 .fleet-list .fleet h5 a {
   transition: all 0.3s ease-in-out;
 }
-.car-list .car-rent{
+.car-list .car-rent {
   border: 1px solid transparent;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .car-list .car-rent:hover,
-.fleet-list .fleet:hover{
+.fleet-list .fleet:hover {
   border: 1px solid var(--main-color);
 }
 .car-list .car-rent:hover h5,
 .fleet-list .fleet:hover h5 a {
   color: var(--main-hover) !important;
 }
-.car-list .car-rent .car-img .status{
+.car-list .car-rent .car-img .status {
   background-color: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: space-between;
@@ -1628,7 +1663,7 @@ header nav .nav-link:hover {
 .car-list .car-rent .car-img .status .badge .fa-heart.red {
   color: red !important;
 }
-.car-list .car-rent .feature i{
+.car-list .car-rent .feature i {
   font-size: 15px;
 }
 .car-list .car-rent .btn-rent {
@@ -1663,7 +1698,7 @@ header nav .nav-link:hover {
 }
 .fleet-filter .form-fleet,
 .fleet-filter .form-fleet .btn-type,
-.fleet-list .fleet{
+.fleet-list .fleet {
   border: 1px solid var(--main-color-100);
 }
 .fleet-filter .form-fleet .mid-col {
@@ -1724,7 +1759,7 @@ header nav .nav-link:hover {
 .car-list .car-rent .car-img .status .discount,
 .fleet-list .fleet .status .discount {
   color: #006400;
-  background-color: #90EE90;
+  background-color: #90ee90;
 }
 .car-list-sell .card .badge.trending,
 .car-list .car-rent .car-img .status .trending,
@@ -1738,7 +1773,7 @@ header nav .nav-link:hover {
 .banner-name,
 .banner-name .banner-content,
 .wishlist-head,
-.wishlist-head .wishlist-title{
+.wishlist-head .wishlist-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1790,7 +1825,7 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
   color: var(--bg-color);
 }
-.car-attribute .describe span{
+.car-attribute .describe span {
   font-size: 20px;
 }
 .car-attribute .sub-info i {
@@ -1895,9 +1930,9 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
   color: white;
 }
-.search-car-box input:focus{
-  box-shadow: none!important;
-  border-color: rgb(151, 151, 151)!important;
+.search-car-box input:focus {
+  box-shadow: none !important;
+  border-color: rgb(151, 151, 151) !important;
 }
 
 /***************************************/
@@ -2242,19 +2277,20 @@ header nav .nav-link:hover {
   position: relative;
   padding-top: 30px;
 }
-.detail-work::before,.detail-work::after{
-  content: '';
+.detail-work::before,
+.detail-work::after {
+  content: "";
   position: absolute;
   width: 100px;
   height: 80px;
 }
-.detail-work::before{ 
+.detail-work::before {
   bottom: -2px;
   left: -2px;
   border-bottom: 6px solid var(--main-color);
   border-left: 6px solid var(--main-color);
 }
-.detail-work::after{
+.detail-work::after {
   top: -2px;
   right: -2px;
   border-top: 6px solid var(--main-color);
@@ -2300,7 +2336,7 @@ header nav .nav-link:hover {
   width: 80px;
   height: 90px;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 73%, 0 100%);
-  background-color: #FFC107;
+  background-color: #ffc107;
   padding-top: 10px;
 }
 .special-offer .btn-register {
@@ -2439,10 +2475,9 @@ header nav .nav-link:hover {
   justify-content: start;
   align-items: center;
 }
-.notification-list:hover{
+.notification-list:hover {
   background-color: rgb(234, 234, 234);
 }
-
 
 .achievement-count span {
   font-size: 42px;
@@ -2683,7 +2718,6 @@ header nav .nav-link:hover {
   width: 55px;
   background-color: #1e90ff;
 }
-
 
 /* user account */
 .user-account .nav .nav-item {
@@ -3097,21 +3131,24 @@ header nav .nav-link:hover {
 /***************************************/
 /*   Term-Condition & Privacy Policy   */
 /***************************************/
-.term-condition .card , .privacy-policy .card{
+.term-condition .card,
+.privacy-policy .card {
   padding: 20px 35px;
   text-align: justify;
 }
-.term-condition .card h3, .privacy-policy .card h3{
+.term-condition .card h3,
+.privacy-policy .card h3 {
   font-weight: bold;
   font-size: 24px;
 }
-.term-condition .card p, .term-condition .card ul ,
-.privacy-policy .card p, .privacy-policy .card ul{
+.term-condition .card p,
+.term-condition .card ul,
+.privacy-policy .card p,
+.privacy-policy .card ul {
   padding: 0 20px 0 30px;
   font-size: 18px;
- margin-bottom: 25px;
- line-height: 27px;
-
+  margin-bottom: 25px;
+  line-height: 27px;
 }
 
 /***************************************/
@@ -3160,10 +3197,10 @@ footer .nav-link:hover {
   .team-social-media .nav .nav-item .nav-link {
     font-size: 20px;
   }
-  .team-name h6{
+  .team-name h6 {
     font-size: 14px;
   }
-  .team-name small{
+  .team-name small {
     font-size: 12px;
   }
   /* panha's code */
@@ -3275,11 +3312,11 @@ footer .nav-link:hover {
     top: 10px;
     left: -120px;
   }
-  .nav-noti .bi-bell{
+  .nav-noti .bi-bell {
     font-size: 20px;
   }
-  .nav-noti .nav-link span{
-    right: -5px; 
+  .nav-noti .nav-link span {
+    right: -5px;
     transform: translateY(2px);
     font-size: 9px;
   }
@@ -3321,7 +3358,7 @@ footer .nav-link:hover {
   }
   .fleet-filter .form-fleet .mid-col {
     border-right: none;
-}
+  }
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3339,7 +3376,8 @@ footer .nav-link:hover {
   .dropdown-noti {
     right: -70px;
   }
-  .nav-account .navbar-nav .link-acc .dropdown-menu , .link-acc .drop-acc {
+  .nav-account .navbar-nav .link-acc .dropdown-menu,
+  .link-acc .drop-acc {
     left: -155px;
   }
   .why-us-list .card-title {
@@ -3367,13 +3405,13 @@ footer .nav-link:hover {
     width: 50px;
     height: 50px;
   }
-  .notification-list .nav-item .nav-link h6{
+  .notification-list .nav-item .nav-link h6 {
     font-size: 15px;
   }
-  .notification-list .nav-item .nav-link p{
+  .notification-list .nav-item .nav-link p {
     font-size: 14px;
   }
-  .noti-time{
+  .noti-time {
     font-size: 12px;
   }
   .hero-text {
@@ -3424,7 +3462,7 @@ footer .nav-link:hover {
   }
   .offer-text small {
     font-size: 12px;
-  } 
+  }
   .clip-path-disc {
     width: 80px;
     height: 70px;
@@ -3448,7 +3486,7 @@ footer .nav-link:hover {
   .detail-contact .contact-us-list {
     padding-left: 26px;
   }
-  .contact-social{
+  .contact-social {
     padding-left: 30px;
   }
   .map {
@@ -3480,12 +3518,12 @@ footer .nav-link:hover {
   .card-discount img {
     padding: 30px;
   }
-/* panha's code */
+  /* panha's code */
   .hero-sell .hero-content,
   .hero-driver .hero-content .video-banner,
   .hero-driver .hero-content .description,
   .hero-car-list .hero-content .video-banner,
-  .hero-car-list .hero-content .description{
+  .hero-car-list .hero-content .description {
     max-height: 350px;
   }
   .hero-sell .hero-content h1,
@@ -3545,14 +3583,18 @@ footer .nav-link:hover {
     font-size: 18px !important;
     font-weight: 500 !important;
   }
-  .term-condition .card h2, .privacy-policy .card h2{
+  .term-condition .card h2,
+  .privacy-policy .card h2 {
     font-size: 2px;
   }
-  .term-condition .card h3, .privacy-policy .card h3{
+  .term-condition .card h3,
+  .privacy-policy .card h3 {
     font-size: 19px;
   }
-  .term-condition .card p, .term-condition .card ul ,
-  .privacy-policy .card p, .privacy-policy .card ul{
+  .term-condition .card p,
+  .term-condition .card ul,
+  .privacy-policy .card p,
+  .privacy-policy .card ul {
     font-size: 15px;
   }
   .feed-top-img {
@@ -3612,13 +3654,13 @@ footer .nav-link:hover {
     width: 40px;
     height: 40px;
   }
-  .notification-list .nav-item .nav-link h6{
+  .notification-list .nav-item .nav-link h6 {
     font-size: 13px;
   }
-  .notification-list .nav-item .nav-link p{
+  .notification-list .nav-item .nav-link p {
     font-size: 12px;
   }
-  .noti-time{
+  .noti-time {
     width: 18%;
     font-size: 10px;
   }
@@ -3672,7 +3714,6 @@ footer .nav-link:hover {
     font-size: 10px;
   }
 
-
   /* === panha's code === */
   .hero-sell .hero-content h1,
   .hero-driver .hero-content h1,
@@ -3683,7 +3724,7 @@ footer .nav-link:hover {
     line-height: 40px;
   }
   .hero-sell .hero-content p,
-  .hero-driver .hero-content p{
+  .hero-driver .hero-content p {
     font-weight: 400 !important;
   }
   .section-title h1 {
@@ -3729,7 +3770,7 @@ footer .nav-link:hover {
   .car-view .carousel hr {
     width: 35%;
   }
-  .car-view .carousel .view-video .btn-video{
+  .car-view .carousel .view-video .btn-video {
     height: 25px;
     font-size: 15px !important;
   }
@@ -3779,7 +3820,7 @@ footer .nav-link:hover {
     transform: skewY(0deg);
   }
   .inquiry .phenti iframe {
-    height: 280px ;
+    height: 280px;
   }
   .car-list .ts-control {
     width: 150px;
@@ -3797,26 +3838,32 @@ footer .nav-link:hover {
     font-size: 25px;
   }
   /* ======================= */
-  .team-name{
+  .team-name {
     width: 70%;
   }
-  .team-name h6{
+  .team-name h6 {
     font-size: 12px;
   }
-  .special-offer, .app-section, .feature-counting {
+  .special-offer,
+  .app-section,
+  .feature-counting {
     border-radius: 0;
   }
-  .feature-counting h3{
+  .feature-counting h3 {
     font-size: 20px;
   }
-  .term-condition .card h2, .privacy-policy .card h2{
+  .term-condition .card h2,
+  .privacy-policy .card h2 {
     font-size: 20px;
   }
-  .term-condition .card h3, .privacy-policy .card h3{
+  .term-condition .card h3,
+  .privacy-policy .card h3 {
     font-size: 16px;
   }
-  .term-condition .card p, .term-condition .card ul ,
-  .privacy-policy .card p, .privacy-policy .card ul{
+  .term-condition .card p,
+  .term-condition .card ul,
+  .privacy-policy .card p,
+  .privacy-policy .card ul {
     padding: 0 10px 0 20px;
     font-size: 13px;
   }
@@ -3837,7 +3884,7 @@ footer .nav-link:hover {
   .driver-list .modal .fa-calendar-check {
     font-size: 17px;
   }
-  .driver-list .modal .contact-icons i{
+  .driver-list .modal .contact-icons i {
     font-size: 17px;
     color: var(--main-color);
   }
@@ -3872,7 +3919,7 @@ footer .nav-link:hover {
     width: 30px;
     height: 30px;
   }
-  .noti-time{
+  .noti-time {
     width: 28%;
   }
   .emergency .emergency-img-1 {
@@ -3950,4 +3997,3 @@ footer .nav-link:hover {
     right: 15px;
   }
 }
-
