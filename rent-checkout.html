@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Checkout</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+
+    <!-- main -->
+     <main>
+        <section class="wishlist-head booking">
+            <div class="wishlist-title">
+                <h1 class="fw-bold text-light">ចាប់ផ្តើមកក់រថយន្ត</h1>
+                <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
+                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">កក់រថយន្ត</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="booking-info py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="">
+                            <h4 class="fw-bold">ធ្វើការកក់រថយន្ត</h4>
+                            <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <form action="" class="booking-form rounded-1">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="rent-type shadow-checkout rounded-1 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="icon rounded-1">
+                                                <i class="fa-solid fa-car text-light"></i>
+                                            </div>
+                                            <h5 class="fw-bold ms-2 mb-0">ការទទួលរថយន្ត</h5>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-6">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('userLocate').click();">
+                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="userLocate">
+                                                    <label class="form-check-label mt-2" for="userLocate">
+                                                        ទទួលនៅទីតាំងរបស់ខ្ញុំ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('adminLocate').click();">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="adminLocate">
+                                                    <label class="form-check-label mt-2" for="adminLocate">
+                                                        ទទួលនៅទីតាំងក្រុមហ៊ុន
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="locate shadow-checkout rounded-1 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="icon rounded-1">
+                                                <i class="fa-solid fa-location-dot text-light"></i>
+                                            </div>
+                                            <h5 class="fw-bold ms-2 mb-0">កំណត់ទីតាំង</h5>
+                                        </div>
+                                        <div class="row g-3 align-items-end">
+                                            <div class="col-9">
+                                                <div>
+                                                    <label for="deliveryLocate" class="form-label">ទីតាំងទទួលឡាន</label>
+                                                    <input type="text" class="form-control rounded-1" placeholder="បញ្ចូលទីតាំង...">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="btn btn-current-location w-100 rounded-1">ទីតាំងបច្ចុប្បន្ន</button>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check ps-0 d-flex align-items-center">
+                                                    <input class="form-check-input m-0 ms-1 border" type="checkbox" value="" id="sameLocate">
+                                                    <label class="form-check-label text-body-secondary ms-2 small fw-medium" for="sameLocate">ប្រគល់ឡាននៅទីតាំងទទួល</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div>
+                                                    <label for="deliveryLocate" class="form-label">ទីតាំងប្រគល់</label>
+                                                    <input type="text" class="form-control rounded-1" placeholder="បញ្ចូលទីតាំង...">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="btn btn-current-location w-100 rounded-1">ទីតាំងបច្ចុប្បន្ន</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rent-time shadow-checkout rounded-1 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="icon rounded-1">
+                                                <i class="fa-regular fa-hourglass-half text-light"></i>
+                                            </div>
+                                            <h5 class="fw-bold ms-2 mb-0">រយៈពេលជួល</h5>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-3">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('hourRent').click();">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="hourRent">
+                                                    <label class="form-check-label mt-2" for="hourRent">
+                                                        គិតជាម៉ោង
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('dayRent').click();">
+                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="dayRent">
+                                                    <label class="form-check-label mt-2" for="dayRent">
+                                                        គិតជាថ្ងៃ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('weekRent').click();">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="weekRent">
+                                                    <label class="form-check-label mt-2" for="weekRent">
+                                                        គិតជាសប្តាហ៏
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('monthRent').click();">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="monthRent">
+                                                    <label class="form-check-label mt-2" for="monthRent">
+                                                        គិតជាខែ
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-3">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ថ្ងៃចាប់ផ្តើម</label>
+                                                            <input  type="date" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ពេលវេលាចាប់ផ្តើម</label>
+                                                            <input type="time" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ថ្ងៃបញ្ចប់</label>
+                                                            <input type="date" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ពេលវេលាបញ្ចប់</label>
+                                                            <input type="time" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="wrapper-button d-flex gap-3 justify-content-start">
+                                        <a href="car-rent-detail.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានឡាន</a>
+                                        <a href="#" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+     <!-- footer -->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
