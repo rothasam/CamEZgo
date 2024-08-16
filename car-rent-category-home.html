@@ -14,13 +14,12 @@
 </head>
 <body>
     <!-- header -->
-     
     <header>
-        <nav class="navbar navbar-expand-md p-0">
+        <nav class="navbar navbar-expand-lg p-0">
             <div class="container d-flex flex-column nav-contain">
                 <div class="row w-100 py-2">
-                    <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
-                        <ul class="navbar-nav ">
+                    <div class="col-4 d-none justify-content-start align-items-center d-lg-flex">
+                        <ul class="navbar-nav d-flex">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="fa-brands fa-facebook-f"></i>
@@ -41,21 +40,285 @@
                                     <i class="fa-regular fa-paper-plane"></i>
                                 </a>
                             </li>
-                        </ul>    
+                        </ul>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
-                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
+                    <div class="nav-brand col-12 col-lg-4">
+                        <a class="navbar-brand" href="homepage.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class=""
+
+                                alt=""></a>
                     </div>
-                    
-                    <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
-                        <a href="create-account.html" class="btn border-0">ចុះឈ្មោះ</a>
-                        <span>|</span>
-                        <a href="sign-in.html" class="btn border-0">ចូលគណនី</a>
+
+                    <div class="col-lg-4 nav-account d-flex justify-content-end align-items-center">
+                        <!-- Menu button - offcanvas -->
+                        <button class="btn d-block d-lg-none me-auto" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="navbar-nav d-flex justify-content-end align-items-center flex-row">
+                            <li class="nav-item position-relative" >
+                                <a class="nav-link " href="wishlist.html">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link " href="add-to-cart.html">
+                                    <i class="bi bi-cart2"></i>
+                                </a>
+                            </li> -->
+                            <li class="nav-item nav-noti position-relative" style="position: relative;">
+
+                                <a href="#" class="nav-link position-relative">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                                <div class="dropdown-noti">
+                                    <div class="nav-clip-path"></div>
+                                    <div class="line-noti-hover"></div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            ការជូនដំណឹង
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <ul class="nav d-flex flex-column">
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">៨នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">១២នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">ម្សិលមិញ</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                                    <a href="notification.html" class="text-decoration-none py-2">
+                                                        មើលទាំងអស់<i class="fa-solid fa-arrow-right-long"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="nav-item link-acc dropdown position-relative">
+                                <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/img/profile/userprofile.png" class="user-account" alt="">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                    <ul class="drop-acc nav p-0 card">
+                                        <li class="border-bottom">
+                                            <a class="nav-link d-flex justify-content-start align-items-center top-round-5"
+                                                href="useraccount.html">
+                                                <img src="assets/img/profile/userprofile.png" class="img-fluid" alt="">
+                                                <p class="mb-0 ms-3 fw-bold">Jame</p>
+                                            </a>
+                                        </li>
+                                        
+                                        <li><a class="nav-link" href="useraccount.html"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
+                                        <li><a class="nav-link bottom-round-5" href="index.html"><i class="bi bi-box-arrow-right me-3"></i>ចាកចេញ</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
                     </div>
-                </div>  
+                </div>
+
+                <hr class="d-none d-lg-block" style="margin: 0; height: 2px; width: 100%;">
+                <div class="offcanvas-lg offcanvas-start py-2 navPage" tabindex="-1" id="navbarOffcanvas"
+                    aria-labelledby="navbarOffcanvasLabel">
+                     <div class="offcanvas-header">
+                        <h5 class="offcanvas-title m-auto ps-4" id="navbarOffcanvasLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
+                        <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto"> <!-- mb-2 mb-lg-0 -->
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                    <span><i class="bi bi-house-door"></i></span>
+                                    <span>ទំព័រដើម</span>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative hover-nav-service d-lg-block d-none">
+                                <a class="nav-link" href="#">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-service">
+                                    <div class="line-service-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">ជួលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="repair-service.html">ជួសជុលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-sell-category.html">លក់រថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="driver-category.html">ជួលអ្នកបើកបរ</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!--  -->
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">ជួលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="repair-service.html">ជួសជុលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-sell-category.html">លក់រថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="driver-category.html">ជួលអ្នកបើកបរ</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">
+                                    <span><i class="bi bi-tags"></i></span>
+                                    <span>ប្រូម៉ូសិន</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="career.html">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>ការងារ</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    <span><i class="bi bi-book"></i></span>
+                                    <span>ប្លុក</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item position-relative hover-nav-car-type d-lg-block d-none">
+                                <a class="nav-link" href="#">
+
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-car-type">
+                                    <div class="line-car-type-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">Sedan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">SUV</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Sport</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Pickup</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="car-rent-category.html">Van</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sedan</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">SUV</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sport</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Pickup</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Van</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <span><i class="bi bi-people"></i></span>
+                                    <span>អំពីយើង</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">
+                                    <span><i class="bi bi-telephone"></i></span>
+                                    <span>ទំនាក់ទំនង</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
-</header>
+    </header>
 
     <!-- main -->
      <main>
@@ -276,7 +539,7 @@
                                     <div class="car-price">
                                         <h5 class="my-3 fw-bold title">តម្លៃរថយន្ត</h5>
                                         <div class="my-5">
-                                            <input type="range" name="pieces" id="inputPieces" multiple value="20,60" min="10" max="100" unit="$" />
+                                            <input type="range" name="pieces" id="inputPieces" multiple value="50,150" min="35" max="232" unit=" $" />
                                         </div>
                                     </div>
                                     <div class="car-transmission">
@@ -322,7 +585,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/1.png" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/1.png" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
@@ -333,23 +596,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
                                                     <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$55<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -358,7 +619,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/13.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/13.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge soon py-2 rounded-1">មកដល់ឆាប់ៗ</span>
@@ -369,23 +630,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Chevrolet Corvette</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
                                                     <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$65<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -394,7 +653,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/15.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/15.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge discount py-2 rounded-1">បញ្ចុះតម្លៃ​ 10%</span>
@@ -405,23 +664,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Lamborghini</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
                                                     <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$75<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -430,7 +687,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/6.png" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/6.png" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge trending py-2 rounded-1">កំពុងពេញនិយម​</span>
@@ -441,23 +698,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Hyundai Verna</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
-                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SUV</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$35<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -466,7 +721,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/10.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/10.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
@@ -477,23 +732,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota Highlander</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
-                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SUV</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>5 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2020</span>
+                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -502,7 +755,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/14.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/14.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge discount py-2 rounded-1">បញ្ចុះតម្លៃ​ 30%</span>
@@ -513,23 +766,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Honda Civic</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
-                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SUV</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ប្រេងសាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2025</span>
+                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -538,7 +789,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/2.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/2.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge soon py-2 rounded-1">មកដល់ឆាប់ៗ</span>
@@ -549,23 +800,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Ford Shelby GT500</h5></a>
-                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.9</span></div>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2022</span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$55<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -574,7 +823,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/3.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/3.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
@@ -585,23 +834,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Ford Shelby GT500</h5></a>
-                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.6</span></div>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2021</span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$39<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -610,7 +857,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/7.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/7.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge trending py-2 rounded-1">កំពុងពេញនិយម</span>
@@ -621,23 +868,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Ford Shelby GT500</h5></a>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
                                                 <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$65<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -646,7 +891,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/5.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/5.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge discount py-2 rounded-1">បញ្ចុះតម្លៃ​ 40%</span>
@@ -657,23 +902,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Nissan Z</h5></a>
-                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.7</span></div>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
                                                     <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$32<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -682,7 +925,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/9.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/9.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge soon py-2 rounded-1">មកដល់ឆាប់ៗ</span>
@@ -693,23 +936,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Prius Prime</h5></a>
-                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.3</span></div>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
-                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SUV</small></span>
-                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>5 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                    <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                    <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
                                                     <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$20<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>
@@ -718,7 +959,7 @@
                             <div class="col-md-6 col-xl-4">
                                 <div class="card car-rent rounded-1">
                                     <div class="car-img position-relative m-2 pb-0 mb-0">
-                                        <a href="car-rent-detail.html"><img src="assets/img/car-list/19.jpg" class="img-fluid rounded-1" alt=""></a>
+                                        <a href="#"><img src="assets/img/car-list/19.jpg" class="img-fluid rounded-1" alt=""></a>
                                         <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
                                             <div>
                                                 <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
@@ -729,23 +970,21 @@
                                     <div class="card-body px-4">
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <a href="car-rent-detail.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Nissan Z NISMO</h5></a>
-                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.4</span></div>
+                                                <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                                <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                             </div>
                                             <div class="feature">
                                                 <div class="d-flex flex-wrap justify-content-start text-secondary">
                                                     <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
                                                     <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
+                                                    <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                    <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4 class="mb-0 fw-medium">$40<small class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
-                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
-                                                    <a href="car-rent-detail.html" class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
-                                                </button>
+                                                <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                                <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
                                             </div>
                                         </div>
                                     </div>

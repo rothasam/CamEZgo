@@ -6,8 +6,318 @@
     <title>Promotion</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container d-flex flex-column nav-contain">
+                <div class="row w-100 py-2">
+                    <div class="col-4 d-none justify-content-start align-items-center d-lg-flex">
+                        <ul class="navbar-nav d-flex">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-brand col-12 col-lg-4">
+                        <a class="navbar-brand" href="homepage.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class=""
+
+                                alt=""></a>
+                    </div>
+
+                    <div class="col-lg-4 nav-account d-flex justify-content-end align-items-center">
+                        <!-- Menu button - offcanvas -->
+                        <button class="btn d-block d-lg-none me-auto" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="navbar-nav d-flex justify-content-end align-items-center flex-row">
+                            <li class="nav-item position-relative" >
+                                <a class="nav-link " href="wishlist.html">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link " href="add-to-cart.html">
+                                    <i class="bi bi-cart2"></i>
+                                </a>
+                            </li> -->
+                            <li class="nav-item nav-noti position-relative" style="position: relative;">
+
+                                <a href="#" class="nav-link position-relative">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                                <div class="dropdown-noti">
+                                    <div class="nav-clip-path"></div>
+                                    <div class="line-noti-hover"></div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            ការជូនដំណឹង
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <ul class="nav d-flex flex-column">
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">៨នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">១២នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">ម្សិលមិញ</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                                    <a href="notification.html" class="text-decoration-none py-2">
+                                                        មើលទាំងអស់<i class="fa-solid fa-arrow-right-long"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="nav-item link-acc dropdown position-relative">
+                                <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/img/profile/userprofile.png" class="user-account" alt="">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                    <ul class="drop-acc nav p-0 card">
+                                        <li class="border-bottom">
+                                            <a class="nav-link d-flex justify-content-start align-items-center top-round-5"
+                                                href="useraccount.html">
+                                                <img src="assets/img/profile/userprofile.png" class="img-fluid" alt="">
+                                                <p class="mb-0 ms-3 fw-bold">Jame</p>
+                                            </a>
+                                        </li>
+                                        
+                                        <li><a class="nav-link" href="useraccount.html"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
+                                        <li><a class="nav-link bottom-round-5" href="index.html"><i class="bi bi-box-arrow-right me-3"></i>ចាកចេញ</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="d-none d-lg-block" style="margin: 0; height: 2px; width: 100%;">
+                <div class="offcanvas-lg offcanvas-start py-2 navPage" tabindex="-1" id="navbarOffcanvas"
+                    aria-labelledby="navbarOffcanvasLabel">
+                     <div class="offcanvas-header">
+                        <h5 class="offcanvas-title m-auto ps-4" id="navbarOffcanvasLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
+                        <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto"> <!-- mb-2 mb-lg-0 -->
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                    <span><i class="bi bi-house-door"></i></span>
+                                    <span>ទំព័រដើម</span>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative hover-nav-service d-lg-block d-none">
+                                <a class="nav-link" href="#">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-service">
+                                    <div class="line-service-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">ជួលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="repair-service.html">ជួសជុលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-sell-category.html">លក់រថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="driver-category.html">ជួលអ្នកបើកបរ</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!--  -->
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">ជួលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="repair-service.html">ជួសជុលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-sell-category.html">លក់រថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="driver-category.html">ជួលអ្នកបើកបរ</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">
+                                    <span><i class="bi bi-tags"></i></span>
+                                    <span>ប្រូម៉ូសិន</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="career.html">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>ការងារ</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    <span><i class="bi bi-book"></i></span>
+                                    <span>ប្លុក</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item position-relative hover-nav-car-type d-lg-block d-none">
+                                <a class="nav-link" href="#">
+
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-car-type">
+                                    <div class="line-car-type-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">Sedan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">SUV</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Sport</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Pickup</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="car-rent-category.html">Van</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sedan</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">SUV</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sport</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Pickup</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Van</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <span><i class="bi bi-people"></i></span>
+                                    <span>អំពីយើង</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">
+                                    <span><i class="bi bi-telephone"></i></span>
+                                    <span>ទំនាក់ទំនង</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     
     <main>
         <section>
@@ -15,7 +325,7 @@
                 <div class="row">
                     <div class="col-10 m-auto" style="border:  1px solid red;">
                         <div class="row">
-                            <div class="col-5" style="border: 1px solid blue;">
+                            <div class="col-5 car-rent-promotion" style="border: 1px solid blue;">
                                 <div class="row">
                                     <div class="col-12 mb-4">
                                         <div class="card border-0" style="background-color: #F9F9FB;">
@@ -67,8 +377,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-7">
-                                
+                            <div class="col-7 car-sell-promotion">
+                                <div class="row">
+                                    <div class="col-12 position-relative" style="border: 1px solid purple;">
+                                        <div class="promotin-sale-text">
+                                            
+                                            <h4 class="fw-bold mt-4">2024 MUSTANG<sup>®</sup> GT Premium Fastback</h4>  
+                                            <strong class="fs-1 me-2">$53,690</strong>
+                                            <strong class="fs-3 text-body-tertiary"><del>$58,999</del></strong>
+                                        </div>
+                                        
+                                        <img src="assets/img/promotion/car-sell-promotion.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,6 +400,29 @@
     </main>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Back to top and Menu Sticky
+        window.onscroll = function () {
+        stickyNavbar();
+        };
+        var navbar = document.querySelector(".navPage");
+        var sticky = navbar.offsetTop;
+        var backToTop = document.getElementById("backToTop");
+
+        function stickyNavbar() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("sticky");
+            backToTop.style.display = "block";
+        } else {
+            navbar.classList.remove("sticky");
+            backToTop.style.display = "none";
+        }
+        }
+
+        backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
 </html>

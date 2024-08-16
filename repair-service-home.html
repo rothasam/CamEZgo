@@ -19,11 +19,11 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md p-0">
+        <nav class="navbar navbar-expand-lg p-0">
             <div class="container d-flex flex-column nav-contain">
                 <div class="row w-100 py-2">
-                    <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
-                        <ul class="navbar-nav ">
+                    <div class="col-4 d-none justify-content-start align-items-center d-lg-flex">
+                        <ul class="navbar-nav d-flex">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="fa-brands fa-facebook-f"></i>
@@ -44,21 +44,285 @@
                                     <i class="fa-regular fa-paper-plane"></i>
                                 </a>
                             </li>
-                        </ul>    
+                        </ul>
                     </div>
-                    <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
-                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
+                    <div class="nav-brand col-12 col-lg-4">
+                        <a class="navbar-brand" href="homepage.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class=""
+
+                                alt=""></a>
                     </div>
-                    
-                    <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
-                        <a href="create-account.html" class="btn border-0">ចុះឈ្មោះ</a>
-                        <span>|</span>
-                        <a href="sign-in.html" class="btn border-0">ចូលគណនី</a>
+
+                    <div class="col-lg-4 nav-account d-flex justify-content-end align-items-center">
+                        <!-- Menu button - offcanvas -->
+                        <button class="btn d-block d-lg-none me-auto" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="navbar-nav d-flex justify-content-end align-items-center flex-row">
+                            <li class="nav-item position-relative" >
+                                <a class="nav-link " href="wishlist.html">
+                                    <i class="bi bi-suit-heart"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link " href="add-to-cart.html">
+                                    <i class="bi bi-cart2"></i>
+                                </a>
+                            </li> -->
+                            <li class="nav-item nav-noti position-relative" style="position: relative;">
+
+                                <a href="#" class="nav-link position-relative">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
+                                </a>
+                                <div class="dropdown-noti">
+                                    <div class="nav-clip-path"></div>
+                                    <div class="line-noti-hover"></div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            ការជូនដំណឹង
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <ul class="nav d-flex flex-column">
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">៨នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">១២នាទី</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item border-bottom">
+                                                    <a class="nav-link d-flex justify-content-center align-items-center py-2"
+
+                                                        href="#">
+                                                        <div class="d-flex justify-content-center align-items-center"
+                                                            style="width: 25%;">
+                                                            <div class="noti-dot-unread"></div>
+                                                            <div class="noti-profile"><img
+
+                                                                    src="assets/img/notification/CamEZgo_logo.jpg"
+                                                                    class="w-100 h-100 object-fit-cover rounded-5"
+                                                                    
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <div class="noti-list-des ps-3" style="width: 75%;">
+                                                            <small class="fw-bold">CamEZgo</small>
+                                                            <p class=mb-0>ការផ្តល់ជូនពិសេស!!! បញ្ចុះ 10%</p>
+                                                            <small class="text-secondary">ម្សិលមិញ</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-center align-items-center">
+                                                    <a href="notification.html" class="text-decoration-none py-2">
+                                                        មើលទាំងអស់<i class="fa-solid fa-arrow-right-long"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="nav-item link-acc dropdown position-relative">
+                                <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/img/profile/userprofile.png" class="user-account" alt="">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                    <ul class="drop-acc nav p-0 card">
+                                        <li class="border-bottom">
+                                            <a class="nav-link d-flex justify-content-start align-items-center top-round-5"
+                                                href="useraccount.html">
+                                                <img src="assets/img/profile/userprofile.png" class="img-fluid" alt="">
+                                                <p class="mb-0 ms-3 fw-bold">Jame</p>
+                                            </a>
+                                        </li>
+                                        
+                                        <li><a class="nav-link" href="useraccount.html"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
+                                        <li><a class="nav-link bottom-round-5" href="index.html"><i class="bi bi-box-arrow-right me-3"></i>ចាកចេញ</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
                     </div>
-                </div>  
+                </div>
+
+                <hr class="d-none d-lg-block" style="margin: 0; height: 2px; width: 100%;">
+                <div class="offcanvas-lg offcanvas-start py-2 navPage" tabindex="-1" id="navbarOffcanvas"
+                    aria-labelledby="navbarOffcanvasLabel">
+                     <div class="offcanvas-header">
+                        <h5 class="offcanvas-title m-auto ps-4" id="navbarOffcanvasLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
+                        <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav m-auto"> <!-- mb-2 mb-lg-0 -->
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="homepage.html">
+                                    <span><i class="bi bi-house-door"></i></span>
+                                    <span>ទំព័រដើម</span>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative hover-nav-service d-lg-block d-none">
+                                <a class="nav-link" href="#">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-service">
+                                    <div class="line-service-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">ជួលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="repair-service.html">ជួសជុលរថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-sell-category.html">លក់រថយន្ត</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="driver-category.html">ជួលអ្នកបើកបរ</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!--  -->
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-gear"></i></span>
+                                    <span>សេវាកម្ម</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">ជួលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="repair-service.html">ជួសជុលរថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-sell-category.html">លក់រថយន្ត</a></li>
+                                    <li><a class="dropdown-item ps-5" href="driver-category.html">ជួលអ្នកបើកបរ</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="promotion.html">
+                                    <span><i class="bi bi-tags"></i></span>
+                                    <span>ប្រូម៉ូសិន</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="career.html">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span>ការងារ</span>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    <span><i class="bi bi-book"></i></span>
+                                    <span>ប្លុក</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item position-relative hover-nav-car-type d-lg-block d-none">
+                                <a class="nav-link" href="#">
+
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <div class="dropdown-car-type">
+                                    <div class="line-car-type-hover"></div>
+                                    <ul class="nav d-flex flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link top-round-5" href="car-rent-category.html">Sedan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">SUV</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Sport</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="car-rent-category.html">Pickup</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link bottom-round-5" href="car-rent-category.html">Van</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- dropdow -->
+                            <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                <a class="btn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><i class="bi bi-car-front"></i></span>
+                                    <span>ប្រភេទរថយន្ត</span>
+                                    <span><i class="bi bi-chevron-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sedan</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">SUV</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sport</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Pickup</a></li>
+                                    <li><a class="dropdown-item ps-5" href="car-rent-category.html">Van</a></li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <span><i class="bi bi-people"></i></span>
+                                    <span>អំពីយើង</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">
+                                    <span><i class="bi bi-telephone"></i></span>
+                                    <span>ទំនាក់ទំនង</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
-</header>
+    </header>
 
     <main>
         <section id="repair-banner" class="hero">
@@ -70,22 +334,19 @@
                                 class="text-uppercase wow animate__animated animate__fadeInDown">មជ្ឈមណ្ឌលជួសជុលរថយន្ត</span>
                             <h1 style="font-size: 48px; line-height: 75px;"
                                 class="mb-4 mt-2 font-weight-bold wow animate__animated animate__fadeInDown">ទទួលបាន
-                                ការជួសជុលរថយន្ត<br>
-                                <span style="color: #5340ff;">ដ៏មានទំនុកចិត្ត</span>
-                            </h1>
+                                ការជួសជុលរថយន្ត<br><span class="text-primary">ដ៏មានទំនុកចិត្ត</span></h1>
                             <p class="sub-text-modal wow animate__animated animate__fadeInUp" style="color: #bbb;">
                                 សេវាកម្មជួសជុលរថយន្តជំនាញរបស់យើងនៅទីនេះដើម្បីដោះស្រាយបញ្ហាណាមួយ មិនថាតូចឬធំ
                                 ជឿជាក់​លើ​យើង​សម្រាប់​ដំណោះ​ស្រាយ​រហ័ស
                                 និង​គួរ​ឱ្យ​ទុក​ចិត្ត​ដែល​ធ្វើ​ឱ្យ​អ្នក​ឈាន​ទៅ​មុខ</p>
                             <div class="text-view  wow animate__animated animate__fadeInUp">
-                                <span class="me-3"><i class="fa-solid fa-thumbs-up" style="color: #5340ff;"></i>
+                                <span class="me-3"><i class="fa-solid fa-thumbs-up text-primary"></i>
                                     សេវាកម្មគុណភាព</span>
-                                <span><i class="fa-solid fa-headphones-simple" style="color: #5340ff;"></i>
-                                    ចាំជួយលោកអ្នក 24 x
+                                <span><i class="fa-solid fa-headphones-simple text-primary"></i> ចាំជួយលោកអ្នក 24 x
                                     7</span>
                             </div>
                             <div class="mt-lg-5 mt-3  wow animate__animated animate__fadeInUp">
-                                <a href="#" class="btn btn-start-now text-white mt-3 mt-sm-0"
+                                <a href="#" class="btn btn-primary text-white mt-3 mt-sm-0"
                                     style="padding: 8px 25px; font-weight: 550;">ចាប់ផ្តើមឥឡូវ​នេះ</a>
                             </div>
                         </div </div>
@@ -98,7 +359,7 @@
             </div>
             <div class="container swiper mySwiper px-2 pb-4 d-flex justify-content-center">
                 <div class="row swiper-wrapper flex-nowrap">
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0 bg-dark w-100 text-white">
                             <img class="card-img" src="assets/img/repair-page/our-service/engine-repair-1.jpg"
                                 alt="Engine Repair" />
@@ -116,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0 bg-dark w-100 text-white">
                             <img class="card-img" src="assets/img/repair-page/our-service/tire-change.jfif"
                                 alt="Tire Change" />
@@ -135,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0 bg-dark w-100 text-white">
                             <img class="card-img" src="assets/img/repair-page/our-service/brake-repair.jpg"
                                 alt="Engine Repair" />
@@ -152,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0 bg-dark w-100 text-white">
                             <img class="card-img" src="assets/img/repair-page/our-service/oil-change.jpg"
                                 alt="Oil Change" />
@@ -277,7 +538,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">ចាប់ផ្តើម</button>
+                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">Join us now</button>
                     </div>
                 </div>
             </div>
@@ -381,7 +642,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">ចាប់ផ្តើម</button>
+                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">Join us now</button>
                     </div>
                 </div>
             </div>
@@ -484,7 +745,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">ចាប់ផ្តើម</button>
+                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">Join us now</button>
                     </div>
                 </div>
             </div>
@@ -587,7 +848,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">ចាប់ផ្តើម</button>
+                        <button type="button" class="btn-modal-service" data-bs-dismiss="modal">Join us now</button>
                     </div>
                 </div>
             </div>
@@ -597,21 +858,20 @@
         <section class="why-choose">
             <div class="container">
                 <div class="head-section">
-                    <h1 class="position-relative" style="margin-bottom: 65px;" data-aos="fade-up">
-                        ហេតុអ្វីជ្រើសរើសយើង?
+                    <h1 class="position-relative" style="margin-bottom: 65px;">ហេតុអ្វីជ្រើសរើសយើង?
                     </h1>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-4">
                         <div class="card border bg-transparent border-0 h-100">
                             <div class="card-body position-relative">
-                                <div class="choose-us-1 col-md-7 col-7 position-absolute " data-aos="fade-up"
+                                <div class="choose-us-1 col-md-7 col-7 position-absolute"
                                     style="top: -50px; left: -5px;">
                                     <img style="width: 100%; height: 100%; border: 5px solid #fff;"
                                         src="assets/img/repair-page/car-repair/car-repair-why-choose-us-2.jpg"
                                         alt="why-choose-image">
                                 </div>
-                                <div class="choose-us-2 col-md-6 col-6 position-absolute" data-aos="fade-up"
+                                <div class="choose-us-2 col-md-6 col-6 position-absolute"
                                     style="top: 140px; left: -10px;">
                                     <img style="width: 100%; height: 100%; border: 5px solid #fff;"
                                         src="assets/img/repair-page/car-repair/car-repair-why-choose-us.jpg" alt="">
@@ -629,7 +889,7 @@
                     <div class="col-lg-6 col-12 ">
                         <div class="card bg-transparent border-0">
                             <!-- <p class="text-primary fw-bold">WHY CHOOSE US?</p> -->
-                            <div class="content-choose mb-3" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="content-choose mb-3">
                                 <h3 class="mb-3">ការយកចិត្តទុកដាក់របស់យើងចំពោះសេវាកម្មរហ័ស
                                     និងអាចជឿទុកចិត្តបាន</h3>
                                 <span>ជ្រើសរើសសេវាកម្មជួសជុលរថយន្តរបស់យើងសម្រាប់ជំនាញដែលមិនអាចប្រៀបផ្ទឹមបាន
@@ -638,7 +898,7 @@
                                     ធានាថារថយន្តរបស់អ្នកត្រលប់មកសភាពដើមវិញយ៉ាងឆាប់រហ័ស និងប្រកបដោយប្រសិទ្ធភាព។</span>
                             </div>
                             <ul class="timeline-list">
-                                <li class="timeline-panel mb-3" data-aos="fade-up" data-aos-duration="2000">
+                                <li class="timeline-panel mb-3">
                                     <div class="timeline-img me-4">
                                         <span><i class="fa-solid fa-ranking-star"></i></span>
                                     </div>
@@ -650,9 +910,10 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="timeline-panel mb-3" data-aos="fade-up" data-aos-duration="2000">
+                                <li class="timeline-panel mb-3">
                                     <div class="timeline-img me-4">
                                         <span><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+
                                     </div>
                                     <div class="timeline-text">
                                         <h2>ការយកចិត្តទុកដាក់ចំពោះព័ត៌មានលម្អិត</h2>
@@ -662,7 +923,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="timeline-panel mb-3" data-aos="fade-up" data-aos-duration="2000">
+                                <li class="timeline-panel mb-3">
                                     <div class="timeline-img me-4">
                                         <span><i class="fa-regular fa-handshake"></i></span>
 
@@ -684,7 +945,7 @@
         <section class="achievement py-5" style="margin: 120px 0;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-5" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="col-lg-6 mb-5">
                         <div class="card border-0 bg-transparent">
                             <div class="card-body d-flex position-relative">
                                 <div class="achievement-text">
@@ -702,13 +963,13 @@
                         </div>
                     </div>
                     <div class="col-lg-6 mb-5">
-                        <div class="col-12 col-lg-9" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-12 col-lg-9">
                             <img style="width: 100%;height: 100%;"
                                 src="assets/img/repair-page/achievement/achievement-1.webp" alt="achievement">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 d-flex justify-content-center" data-aos="fade-up"
-                        data-aos-duration="2200">
+                    <div
+                        class="col-lg-3 col-6 wow animate__animated animate__zoomIn animate__slow animate__delay-0.5s d-flex justify-content-center">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <div class="achievement-count">
@@ -721,8 +982,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6  d-flex justify-content-center" data-aos="fade-up"
-                        data-aos-duration="2300">
+                    <div
+                        class="col-lg-3 col-6 wow animate__animated animate__zoomIn animate__slow animate__delay-0.5s d-flex justify-content-center">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <div class="achievement-count">
@@ -730,13 +991,13 @@
                                         <span class="js-count-up" data-value="3000">000</span>
                                         <span>+</span>
                                     </div>
-                                    <p>អតិថិជន</p>
+                                    <p>Transparency</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 d-flex justify-content-center" data-aos="fade-up"
-                        data-aos-duration="2400">
+                    <div
+                        class="col-lg-3 col-6 wow animate__animated animate__zoomIn animate__slow animate__delay-0.5s d-flex justify-content-center">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <div class="achievement-count">
@@ -746,8 +1007,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 d-flex justify-content-center" data-aos="fade-up"
-                        data-aos-duration="2500">
+                    <div
+                        class="col-lg-3 col-6 wow animate__animated animate__zoomIn animate__slow animate__delay-0.5s d-flex justify-content-center">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
                                 <div class="achievement-count">
@@ -764,7 +1025,7 @@
         <section class="emergency" style="margin-top: 140px">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-5" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="col-lg-6 mb-5">
                         <div class="card bg-transparent border-0 h-100">
                             <div class="card-body position-relative">
                                 <div class="emergency-img-1 col-md-8 col-7 position-absolute" style="top: -75px;">
@@ -784,7 +1045,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="col-lg-6">
                         <div class="card bg-transparent border-0">
                             <div class="content-choose mb-3 position-relative">
                                 <div class="head-emerg">
@@ -814,9 +1075,8 @@
                             </div>
                             <div>
                                 <span class="fw-bold fs-4 me-3 calling-text">លេខសម្រាប់​ទំនាក់ទំនង</span>
-                                <a href="#" class="text-decoration-none fw-bold fs-5  calling-text"
-                                    style="color: #5340ff;">
-                                    <span class=" fs-3 ">
+                                <a href="#" class="text-decoration-none fw-bold fs-5  calling-text">
+                                    <span class="text-primary fs-3 ">
                                         <i class="fa-solid fa-phone-volume text-black"></i>
                                     </span>(+855) 23 777 099
                                 </a>
@@ -828,13 +1088,13 @@
         </section>
         <!-- technician -->
         <section class="technician position-relative" style="margin: 100px 0;">
-            <div class="head-section" data-aos="zoom-in-up" data-aos-duration="3000">
+            <div class="head-section">
                 <h1 class="position-relative mb-5">អ្នកជំនាញរបស់យើង</h1>
             </div>
             </h1>
             <div class="container swiper mySwiper px-2 pb-5 d-flex justify-content-center">
                 <div class="row swiper-wrapper flex-nowrap">
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0" style="height: 560px;">
                             <div class="techincian-img">
                                 <img src="assets/img/repair-page/technician/technician-1.webp" alt="">
@@ -871,7 +1131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0" style="height: 560px;">
                             <div class="techincian-img">
                                 <img src="assets/img/repair-page/technician/technician-2.webp" alt="">
@@ -909,7 +1169,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 swiper-slide p-0" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="col-12 swiper-slide p-0">
                         <div class="card border-0" style="height: 560px;">
                             <div class="techincian-img">
                                 <img src="assets/img/repair-page/technician/technician-3.webp" alt="">
@@ -946,8 +1206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 swiper-slide p-0" style="height: 560px;" data-aos="zoom-in"
-                        data-aos-duration="2400">
+                    <div class="col-12 swiper-slide p-0" style="height: 560px;">
                         <div class="card border-0">
                             <div class="techincian-img">
                                 <img src="assets/img/repair-page/technician/technician-4.webp" alt="">
