@@ -824,13 +824,38 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugin/swipper/swiper-bundle.min.js"></script>
     <script src="assets/plugin/plyr/plyr.polyfilled.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/plugin/wowjs/wow.min.js"></script>
 
     <!-- Flatpickr -->
     <script src="assets/plugin/flatpickr/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
+        // Hero banner vdo
+        const player = new Plyr("#player");
+
+        // Back to top and Menu Sticky
+        window.onscroll = function () {
+        stickyNavbar();
+        };
+        var navbar = document.querySelector(".navPage");
+        var sticky = navbar.offsetTop;
+        var backToTop = document.getElementById("backToTop");
+
+        function stickyNavbar() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("sticky");
+            backToTop.style.display = "block";
+        } else {
+            navbar.classList.remove("sticky");
+            backToTop.style.display = "none";
+        }
+        }
+
+        backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // date
         $("#pickDate").flatpickr({
             enableTime: true,
             time_24hr: true,
@@ -841,14 +866,15 @@
             time_24hr: true,
             dateFormat: "d/m/y H:m",
         })
-    </script>
-    <script>
+
+        // wow
         new WOW().init();
+
     </script>
 
     <script>
-
-    $(document).ready(function () {
+         // feature counting
+         $(document).ready(function () {
             var counted = false;
 
             function resetCounts() {
@@ -886,18 +912,15 @@
                 }
             });
         });
+    </script>
 
-
+    <script>
+        // Swiper feedback
         document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".feedback-swiper", {
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-            //   pagination: {
-            //     el: ".swiper-pagination",
-            //     dynamicBullets: false,
-            //     clickable: true,
-            //   },
             breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -909,6 +932,28 @@
                 slidesPerView: 3,
             },
             },
+        });
+        });
+    </script>
+    <script>
+        // FAQ
+        const accordion = document.querySelectorAll(".accordion h3");
+        let mainParent;
+        let height;
+        let answer;
+        accordion.forEach((item) => {
+        item.addEventListener("click", () => {
+            height =
+            item.parentElement.nextElementSibling.firstElementChild.offsetHeight;
+            answer = item.parentElement.nextElementSibling;
+            mainParent = item.parentElement.parentElement;
+            if (mainParent.classList.contains("active")) {
+            mainParent.classList.remove("active");
+            answer.style.height = `0px`;
+            } else {
+            mainParent.classList.add("active");
+            answer.style.height = `${height}px`;
+            }
         });
         });
     </script>
