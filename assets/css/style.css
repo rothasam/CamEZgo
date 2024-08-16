@@ -237,7 +237,7 @@ header nav .nav-link:hover {
   bottom: 3px;
   left: 50%;
   margin-left: -14px;
-  background-color: #1e90ff;
+  background-color: var(--main-color);
 }
 .head-section h1::after {
   width: 120px;
@@ -248,7 +248,7 @@ header nav .nav-link:hover {
   margin-top: 15px;
   left: 50%;
   margin-left: -50px;
-  background-color: dodgerblue;
+  background-color: var(--main-color);
 }
 .head-emerg h3 {
   font-size: 28px;
@@ -266,6 +266,15 @@ header nav .nav-link:hover {
   height: 3px;
   width: 55px;
   background-color: #dc3545;
+}
+.btn-start-now {
+  background-color: var(--main-color);
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+.btn-start-now:hover {
+  color: #fff;
+  background-color: var(--main-hover);
 }
 #sign-in .nav .nav-item {
   width: 50%;
@@ -292,6 +301,15 @@ header nav .nav-link:hover {
 .btn-facebook:hover span {
   color: #fff !important;
 }
+#sign-in .btn-google,
+.btn-facebook {
+  border: 1px solid var(--main-color);
+}
+
+#sign-in .btn-google:hover,
+.btn-facebook:hover {
+  background-color: var(--main-color);
+}
 .filter-career .form-select:focus {
   border-width: 2px;
 }
@@ -299,9 +317,10 @@ header nav .nav-link:hover {
 .modal-3step .form-control:focus,
 .apply-cv .form-control:focus,
 .filter-career .form-control:focus,
-.filter-career .form-select:focus {
+.filter-career .form-select:focus,
+.style-input .form-control:focus {
   box-shadow: none !important;
-  border: 2px solid #86b7fe;
+  border: 2px solid var(--main-color);
 }
 .modal-3step .modal-footer button:nth-child(1) a {
   color: rgb(149, 149, 149);
@@ -318,6 +337,14 @@ header nav .nav-link:hover {
   color: var(--main-color);
 }
 
+.btn-outline-start {
+  border: 1px solid var(--main-color);
+  transition: all 0.5s ease-in-out;
+}
+.btn-outline-start:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
 /* payment */
 #visa,
 #khqr {
@@ -336,7 +363,7 @@ header nav .nav-link:hover {
 
 .radio.selected {
   background-color: transparent;
-  border: 1px solid dodgerblue;
+  border: 1px solid var(--main-color);
 }
 .line-root {
   position: relative;
@@ -432,16 +459,16 @@ header nav .nav-link:hover {
 
   .user-account .width-col {
     flex: 0 0 auto;
-    width: 55%;
+    width: 50% !important;
   }
   .image-profile {
     width: 100%;
-    height: 200px;
+    height: 120px;
   }
 
   .image-profile img {
     width: 100%;
-    height: 200px;
+    height: 120px;
     border-radius: 100%;
     border: 3px solid #ddd;
     object-fit: cover;
@@ -574,8 +601,8 @@ header nav .nav-link:hover {
 }
 .btn-modal-service {
   padding: 6px 20px;
-  background-color: dodgerblue;
-  border: 1px solid dodgerblue;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
   color: #fff;
   border-radius: 10px;
 }
@@ -609,7 +636,7 @@ header nav .nav-link:hover {
   height: 100%;
   left: -100%;
   padding: 0 4px;
-  background-color: dodgerblue;
+  background-color: var(--main-color);
   transition: 0.5s ease-in-out;
   z-index: -1;
 }
@@ -628,11 +655,11 @@ header nav .nav-link:hover {
   font-size: 14px;
   color: #fff;
   border-radius: 5px;
-  border: 2px solid dodgerblue;
+  border: 2px solid var(--main-color);
   transition: all 0.5s ease-in-out;
 }
 .our-service .btn-learn-more:hover {
-  background-color: dodgerblue;
+  background-color: var(--main-color);
 }
 
 .our-service .swiper-button-next,
@@ -648,11 +675,11 @@ header nav .nav-link:hover {
 .technician .swiper-button-next,
 .technician .swiper-button-prev {
   position: absolute !important;
-  border: 2px solid dodgerblue !important;
+  border: 2px solid var(--main-color) !important;
   height: 45px !important;
   width: 45px !important;
   border-radius: 100%;
-  color: dodgerblue !important;
+  color: var(--main-color) !important;
   font-weight: bold;
   display: none;
   top: 55% !important;
@@ -662,7 +689,7 @@ header nav .nav-link:hover {
 .our-service .swiper-button-prev:hover,
 .technician .swiper-button-next:hover,
 .technician .swiper-button-prev:hover {
-  background-color: dodgerblue;
+  background-color: var(--main-color);
   font-weight: bold;
   color: #fff !important;
 }
@@ -686,7 +713,7 @@ header nav .nav-link:hover {
   height: 30px;
   font-size: 12px;
   display: flex;
-  background-color: dodgerblue;
+  background-color: var(--main-color);
   color: #fff;
   justify-content: center;
   align-items: center;
@@ -716,7 +743,7 @@ header nav .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(30, 143, 255, 0.753);
+  background-color: var(--main-color);
   color: #fff;
   font-size: 20px;
 }
@@ -736,7 +763,7 @@ header nav .nav-link:hover {
 }
 .achievement-count {
   width: 100%;
-  color: dodgerblue;
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
 }
@@ -2593,7 +2620,7 @@ header nav .nav-link:hover {
 .achievement-text h1 {
   font-weight: 550;
   padding-left: 10px;
-  border-left: 3px solid dodgerblue;
+  border-left: 3px solid var(--main-color);
 }
 
 .technician .techincian-soical .nav {
@@ -2613,7 +2640,7 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
 }
 .technician .card .techincian-soical .nav .nav-item .nav-link span i {
-  color: dodgerblue;
+  color: var(--main-color);
   transition: 0.5s ease;
 }
 .technician .card:hover .techincian-soical .nav .nav-item .nav-link span i {
@@ -2632,7 +2659,16 @@ header nav .nav-link:hover {
   font-weight: bold;
   font-size: 12px;
   top: -12px;
-  left: 285px;
+  left: 220px;
+}
+
+.btn-logout {
+  border: 1px solid var(--main-color);
+  font-size: 12px;
+}
+.btn-logout:hover {
+  color: #fff;
+  background-color: var(--main-color);
 }
 
 .techician-hover {
@@ -2782,11 +2818,15 @@ header nav .nav-link:hover {
   transition: 0.5s ease-in-out;
 }
 .card-career:hover {
-  border-left: 1px solid #1e90ff;
-  border-right: 1px solid #1e90ff;
-  border-top: 4px solid #1e90ff;
-  border-bottom: 1px solid #1e90ff;
+  border-left: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
+  border-top: 4px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
   box-shadow: var(--bs-box-shadow) !important;
+}
+
+.text-career {
+  color: var(--main-color);
 }
 
 .head-title-career h1 {
@@ -2804,7 +2844,7 @@ header nav .nav-link:hover {
   bottom: 0;
   height: 4px;
   width: 55px;
-  background-color: #1e90ff;
+  background-color: var(--main-color);
 }
 
 /* user account */
@@ -2822,7 +2862,7 @@ header nav .nav-link:hover {
   margin-right: 10px;
 }
 .user-account .nav .nav-item .nav-link.active {
-  background-color: dodgerblue;
+  background-color: var(--main-color);
 }
 
 .image-profile {
@@ -3455,6 +3495,30 @@ footer .nav-link:hover {
   .fs-20 {
     font-size: 24px !important;
   }
+  .user-account .width-col {
+    flex: 0 0 auto;
+    width: 40% !important;
+  }
+  .image-profile {
+    width: 100%;
+    height: 250px;
+  }
+
+  .image-profile img {
+    width: 100%;
+    height: 250px;
+    border-radius: 100%;
+    border: 3px solid #ddd;
+    object-fit: cover;
+  }
+
+  .edit-img {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    bottom: 30px;
+    right: 15px;
+  }
 }
 @media (max-width: 768px) {
   .head-title h1 {
@@ -3691,6 +3755,38 @@ footer .nav-link:hover {
   .feed-top-img {
     height: 240px;
   }
+  #career-banner.hero,
+  #career-detail.hero {
+    background-position: left;
+  }
+  .user-account .width-col {
+    flex: 0 0 auto;
+    width: 39%;
+  }
+  .image-profile {
+    width: 100%;
+    height: 250px;
+  }
+
+  .image-profile img {
+    width: 100%;
+    height: 250px;
+    border-radius: 100%;
+    border: 3px solid #ddd;
+    object-fit: cover;
+  }
+
+  .edit-img {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .img-booking img {
+    height: 150px !important;
+  }
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -3707,7 +3803,7 @@ footer .nav-link:hover {
     top: 140px !important;
   }
   .content-choose .bagde-24h {
-    left: 250px !important;
+    left: 220px !important;
   }
   .emergency .calling-text {
     font-size: 1rem !important;
@@ -3954,6 +4050,14 @@ footer .nav-link:hover {
     padding: 0 10px 0 20px;
     font-size: 13px;
   }
+  #career-banner.hero,
+  #career-detail.hero {
+    background-position: center;
+  }
+  .text-achievement {
+    font-size: 30px !important;
+    font-weight: bold;
+  }
 }
 @media (max-width: 442px) {
   .driver-list .modal .image {
@@ -4069,14 +4173,19 @@ footer .nav-link:hover {
   }
   .user-account .width-col {
     flex: 0 0 auto;
-    width: 60%;
+    width: 60% !important;
   }
 
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 15px;
-    right: 15px;
+  .image-profile {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image-profile img {
+    width: 100%;
+    height: 200px;
+    border-radius: 100%;
+    border: 3px solid #ddd;
+    object-fit: cover;
   }
 }

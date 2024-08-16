@@ -10,22 +10,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" ;>
 </head>
 
 <body>
-    <main>
+    <main class="style-input">
         <section class="user-account">
             <div class="container">
                 <div class="row mt-5">
                     <h3 class="fw-medium mb-4">ការកំណត់គណនី</h3>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up-right" data-aos-duration="2000">
                         <div class="card border">
                             <div class="card-body p-0">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8 col-5 width-col pt-4">
-                                        <div class="image-profile position-relative">
-                                            <img class="img-fluid" src="assets/img/profile/userprofile.png" alt="">
-                                            <span class="edit-img"><i class="fa-solid fa-pen"></i></span>
+                                        <div class="image-profile position-relative dropdown">
+                                            <img src="assets/img/profile/userprofile.png" alt="" id="profileImage">
+                                            <!-- Profile Dropdown Trigger -->
+                                            <span class="edit-img dropdown-toggle" id="profileDropdown"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-pen"></i>
+                                            </span>
+                                            <!-- Dropdown Menu -->
+                                            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#viewProfileModal">មើលរូបភាព</a></li>
+                                                <li><a class="dropdown-item" href="#"
+                                                        onclick="document.getElementById('uploadProfilePicture').click();">ជ្រើសរើសរូបភាព</a>
+                                                </li>
+                                            </ul>
+                                            <!-- Hidden File Input for Uploading -->
+                                            <input type="file" id="uploadProfilePicture" style="display: none;"
+                                                accept="image/*" onchange="previewProfilePicture(event)">
                                         </div>
                                         <div class="text-center mt-3 mb-4">
                                             <h4 class="fw-medium">John Jame</h4>
@@ -52,12 +69,6 @@
                                             href="#"><span><i class="bi bi-shield-lock-fill"></i></span> ឯកជនភាព
                                             និងសុវត្ថិភាព</a>
                                     </li>
-
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link" role="tab" data-bs-target="#notification"
-                                            data-bs-toggle="tab" href="#"><span><i class="bi bi-bell-fill"></i></span>
-                                            សេចក្តីជូនដំណឹង</a>
-                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link" role="tab" data-bs-target="#deleteaccount"
                                             data-bs-toggle="tab" href="#"><span><i class="fa-solid fa-trash"></i></span>
@@ -74,6 +85,25 @@
                             </div>
                         </div>
                     </div>
+                    <!-- View Profile Picture Modal -->
+                    <div class="modal fade" id="viewProfileModal" tabindex="-1" aria-labelledby="viewProfileModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="viewProfileModalLabel">រូបភាព Profile</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <img id="modalProfileImage" class="img-fluid"
+                                        src="assets/img/profile/userprofile.png" alt="Profile Picture">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                     -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="verifyemail"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -88,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 m-lg-0 mt-4" data-aos="fade-up" data-aos-duration="2400">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="account" role="tabpanel"
                                 aria-labelledby="account" tabindex="0">
@@ -194,24 +224,25 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 d-flex justify-content-end">
-                                                                <button class="btn btn-primary"
+                                                                <button class="btn btn-start-now"
                                                                     type="submit">រក្សាទុក</button>
                                                             </div>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="card alert alert-warning">
-                                                <div class="card-body p-0">
-                                                    <p class="m-0">
-                                                        ប្រសិនបើអ្នកមានចម្ងល់សម្រាប់ជំនួយអតិថិជន សូមចុច
-                                                        <a class="text-warning" href="#">Customer Support</a>.
-                                                    </p>
+                                            <div class="col-12 mt-4">
+                                                <div class="card alert alert-warning">
+                                                    <div class="card-body p-0">
+                                                        <p class="m-0">
+                                                            ប្រសិនបើអ្នកមានចម្ងល់សម្រាប់ជំនួយអតិថិជន សូមចុច
+                                                            <a class="text-warning" href="#">Customer Support</a>.
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
 
                                 </div>
@@ -269,7 +300,7 @@
                                                     </div>
 
                                                     <button type="submit"
-                                                        class="btn btn-primary">ផ្លាស់ប្តូរពាក្យសម្ងាត់</button>
+                                                        class="btn btn-start-now">ផ្លាស់ប្តូរពាក្យសម្ងាត់</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -294,9 +325,9 @@
                                                             និងការផ្ទេរទិន្នន័យរបស់អ្នក</p>
                                                         <div class="d-flex justify-content-between">
                                                             <p class="fw-medium">le*****03@gmail.com</p>
-                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                            <button type="button" class="btn btn-outline-start mb-3"
                                                                 data-bs-toggle="modal"
-                                                                data-bs-target="#email">Manage</button>
+                                                                data-bs-target="#email">គ្រប់គ្រង</button>
                                                         </div>
                                                     </li>
                                                     <li class="border-bottom pt-3">
@@ -311,9 +342,9 @@
                                                                         class="bi bi-check-circle-fill text-success"></i></span>
                                                                 023 777 099
                                                             </p>
-                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                            <button type="button" class="btn btn-outline-start mb-3"
                                                                 data-bs-toggle="modal"
-                                                                data-bs-target="#phone">Manage</button>
+                                                                data-bs-target="#phone">គ្រប់គ្រង</button>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -326,9 +357,9 @@
                                                         <p class="mt-2">គ្រប់គ្រងឧបករណ៍ដែលមានស្ថានភាពចូល
                                                             និងមើលប្រវត្តិឧបករណ៍របស់អ្នក</p>
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-outline-primary mb-3"
+                                                            <button type="button" class="btn btn-outline-start mb-3"
                                                                 data-bs-toggle="modal"
-                                                                data-bs-target="#mydevice">Manage</button>
+                                                                data-bs-target="#mydevice">គ្រប់គ្រង</button>
                                                         </div>
                                                     </li>
                                                     <li class="border-bottom pt-3 pb-4">
@@ -337,7 +368,8 @@
                                                         <p class="m-0 mt-2">ការចូលចុងក្រោយ៖ 2024-8-10 08:10:28
                                                             សកម្មភាពគណនីគួរឱ្យសង្ស័យ?
                                                         </p>
-                                                        <a href="#" class="text-warning">Disable Account</a>
+                                                        <a href="#" class="text-warning" data-bs-toggle="modal"
+                                                            data-bs-target="#disableacc">Disable Account</a>
                                                     </li>
                                                     <li class=" pt-3">
                                                         <i class="bi bi-person-fill-dash"></i> <span
@@ -348,8 +380,9 @@
                                                             សកម្មភាពនេះនឹងមិនលុបគណនីរបស់អ្នកទេ។
                                                         </p>
                                                         <div class="d-flex justify-content-end">
-                                                            <button type="button"
-                                                                class="btn btn-outline-primary mt-2">Manage</button>
+                                                            <button type="button" class="btn btn-outline-start mt-2"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#disableacc">គ្រប់គ្រង</button>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -423,7 +456,7 @@
                                                         <i class="bi bi-laptop"></i><span class="fw-medium ms-2"> MSi
                                                             CPH1911</span>
                                                     </div>
-                                                    <a href="#" class="btn">Log Out</a>
+                                                    <a href="#" class="btn btn-logout">Log Out</a>
                                                 </div>
                                                 <div style="margin-left: 30px;">
                                                     <p class="mb-0 small">last login: 2024-08-10 08:10:28</p>
@@ -439,20 +472,25 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification"
-                                tabindex="0">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="card">
-                                            <div class="card-body">
+                                <!-- disabled acc -->
+                                <div class="modal fade" id="disableacc" tabindex="-1" aria-labelledby="disableacc"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-body pt-4">
+                                                <h5>តើអ្នកចង់ផ្អាកគណនីមែនទេ?</h5>
+                                                <div class="d-flex justify-content-end">
+                                                    <a type="button" class="btn btn-cancel"
+                                                        data-bs-dismiss="modal">ទេ</a>
+                                                    <a type="button" class="btn btn-cancel">បាទ</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
 
+
+                            </div>
                             <div class="tab-pane fade" id="deleteaccount" role="tabpanel"
                                 aria-labelledby="deleteaccount" tabindex="0">
                                 <div class="container">
@@ -529,6 +567,8 @@
     </main>
 </body>
 <script src="Assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script>
 
     let password1 = document.getElementById('password7');
@@ -564,8 +604,17 @@
             password3.setAttribute('type', 'password');
             icon3.classList.remove('hide');
         }
+    } function previewProfilePicture(event) {
+        const [file] = event.target.files;
+        if (file) {
+            const imgElement = document.getElementById('profileImage');
+            const modalImgElement = document.getElementById('modalProfileImage');
+            imgElement.src = URL.createObjectURL(file);
+            modalImgElement.src = URL.createObjectURL(file);
+        }
     }
-
+    AOS.init();
+    new WOW().init();
 
 </script>
 
