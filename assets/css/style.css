@@ -115,7 +115,7 @@ header nav .nav-link:hover {
 .nav-noti:hover .dropdown-noti {
   display: block;
 }
-.nav-noti .nav-link span {
+.nav-noti .nav-link span, .nav-item .nav-link .bi-suit-heart~span {
   right: 0;
   font-size: 8px;
 }
@@ -2415,6 +2415,13 @@ header nav .nav-link:hover {
   background-color: #ffc107;
   padding-top: 10px;
 }
+.car-rent-promotion .card-discount{
+  background-color: white;
+  border: 1px solid rgb(171, 171, 171);
+}
+.car-rent-promotion .card-discount h6{
+  color: var(--dark-blue);
+}
 .special-offer .btn-register {
   width: 250px;
   background-color: var(--main-color);
@@ -2422,6 +2429,21 @@ header nav .nav-link:hover {
 }
 .special-offer .btn-register:hover {
   background-color: var(--main-hover);
+}
+.car-sell-promotion{
+  overflow: hidden;
+  background-color: pink;
+  border-radius: 8px;
+  z-index: 10;
+}
+.car-sell-promotion img{
+  position: absolute;
+  height: 280px;
+  background-color: red;
+  /* transform: translate(200px,-60px); */
+  top: -30px;
+  right: -70px;
+  z-index: -10;
 }
 
 /***************************************/
@@ -2519,30 +2541,20 @@ header nav .nav-link:hover {
   font-size: 14px;
 }
 
-/****** FAQ ******/
-/* .faq-wrap {
-  width: 100%;
-} */
-
 /***************************************/
 /*           NOTIFICATION              */
 /***************************************/
-
-/* .notification-wrap .card-body .nav .nav-item .nav-link.active {
-  background-color: rgb(201, 84, 84);
-  padding: 1px 15px;
-  border-radius: 20px;
-} */
 .notification-list .navbar-nav .nav-item .nav-link .noti-dot {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: rgb(88, 107, 248);
   border-radius: 50%;
+  margin: 0 10px;
 }
 .notification-list .navbar-nav .nav-item .nav-link .notification-pf {
   width: 60px;
   height: 60px;
-  border: 1px solid rgb(149, 149, 149);
+  border: 1px solid rgb(220, 220, 220);
   border-radius: 50%;
 }
 .noti-time {
@@ -3215,7 +3227,7 @@ header nav .nav-link:hover {
 .term-condition .card h3,
 .privacy-policy .card h3 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 .term-condition .card p,
 .term-condition .card ul,
@@ -3241,7 +3253,7 @@ footer .nav-link {
 }
 footer .nav-link:hover {
   color: white;
-  transform: scale(102%);
+  /* transform: scale(102%); */
 }
 .footer-social-media .navbar-nav .nav-item .nav-link {
   font-size: 18px;
@@ -3388,13 +3400,16 @@ footer .nav-link:hover {
     top: 10px;
     left: -120px;
   }
-  .nav-noti .bi-bell {
+  .nav-noti .bi-bell, .nav-item .bi-suit-heart {
     font-size: 20px;
   }
-  .nav-noti .nav-link span {
+  .nav-noti .nav-link span , .nav-item .nav-link .bi-suit-heart~span {
     right: -5px;
     transform: translateY(2px);
     font-size: 9px;
+  }
+  .nav-item .nav-link .bi-suit-heart~span{
+    right: -7px;
   }
 
   .car-type-item {
@@ -3661,11 +3676,11 @@ footer .nav-link:hover {
   }
   .term-condition .card h2,
   .privacy-policy .card h2 {
-    font-size: 2px;
+    font-size: 22px;
   }
   .term-condition .card h3,
   .privacy-policy .card h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
   .term-condition .card p,
   .term-condition .card ul,
@@ -3725,10 +3740,6 @@ footer .nav-link:hover {
   .notification-list .navbar-nav .nav-item .nav-link .noti-dot {
     width: 8px;
     height: 8px;
-  }
-  .notification-list .navbar-nav .nav-item .nav-link .notification-pf {
-    width: 40px;
-    height: 40px;
   }
   .notification-list .nav-item .nav-link h6 {
     font-size: 13px;
@@ -3991,10 +4002,6 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 430px) {
-  .notification-list .navbar-nav .nav-item .nav-link .notification-pf {
-    width: 30px;
-    height: 30px;
-  }
   .noti-time {
     width: 28%;
   }
