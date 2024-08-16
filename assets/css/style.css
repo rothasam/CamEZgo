@@ -1954,6 +1954,12 @@ header nav .nav-link:hover {
   background-color: var(--main-color-700);
   color: var(--bg-color);
 }
+/* ======================= */
+/* === driver-checkout === */
+/* ======================= */
+.summary-detail .profile {
+  background-color: var(--main-color-900);
+}
 /* ================================= */
 
 /***************************************/
