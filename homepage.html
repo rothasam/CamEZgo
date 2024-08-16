@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/plugin/hover-css/hover.css">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- plyr -->
     <link rel="stylesheet" href="assets/plugin/plyr/plyr.css">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
@@ -53,7 +54,7 @@
                         </ul>
                     </div>
                     <div class="nav-brand col-12 col-lg-4">
-                        <a class="navbar-brand" href="#"><img src="assets/img/CamEZgo_logo.png" height="40px" class=""
+                        <a class="navbar-brand" href="homepage.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class=""
 
                                 alt=""></a>
                     </div>
@@ -65,17 +66,17 @@
                             <i class="fa-solid fa-bars"></i>
                         </button>
                         <ul class="navbar-nav d-flex justify-content-end align-items-center flex-row">
-                            <li class="nav-item d-none d-lg-block">
-                                <a class="nav-link " href="add-to-favorite.html">
+                            <li class="nav-item position-relative" >
+                                <a class="nav-link " href="wishlist.html">
                                     <i class="bi bi-suit-heart"></i>
+                                    <span class="badge bg-danger text-dark position-absolute top-0 p-1 rounded-5">9+</span>
                                 </a>
                             </li>
-
-                            <li class="nav-item d-none d-lg-block">
+                            <!-- <li class="nav-item d-none d-lg-block">
                                 <a class="nav-link " href="add-to-cart.html">
                                     <i class="bi bi-cart2"></i>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item nav-noti position-relative" style="position: relative;">
 
                                 <a href="#" class="nav-link position-relative">
@@ -162,16 +163,12 @@
                                 </div>
 
                             </li>
-
-
                             <li class="nav-item link-acc dropdown position-relative">
                                 <a href="#" class="nav-link" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <img src="assets/img/profile/userprofile.png" class="user-account" alt="">
                                     <i class="fa-solid fa-caret-down"></i>
                                 </a>
-                                
-                                <div class="d-none d-lg-block">
                                     <ul class="drop-acc nav p-0 card">
                                         <li class="border-bottom">
                                             <a class="nav-link d-flex justify-content-start align-items-center top-round-5"
@@ -181,43 +178,18 @@
                                             </a>
                                         </li>
                                         
-                                        <li><a class="nav-link" href="#"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
+                                        <li><a class="nav-link" href="useraccount.html"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
                                         <li><a class="nav-link bottom-round-5" href="index.html"><i class="bi bi-box-arrow-right me-3"></i>ចាកចេញ</a></li>
                                     </ul>
-                                </div>
-                                <div class="d-block d-lg-none card border-0">
-                                    <ul class="dropdown-menu p-0">
-                                        <li>
-                                            <a class="dropdown-item d-flex justify-content-start align-items-center top-round-5"
-                                                href="#">
-                                                <img src="assets/img/profile/userprofile.png" class="img-fluid" alt="">
-                                                <p class="mb-0 ms-3 fw-bold">Jame</p>
-                                            </a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="add-to-favorite.html"><i class="bi bi-suit-heart me-3"></i>បញ្ជីចំណូលចិត្ត</a></li>
-                                        <li><a class="dropdown-item" href="add-to-cart.html"><i class="bi bi-cart2 me-3"></i>កន្ត្រករបស់ខ្ញុំ</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-3"></i>ការកំណត់</a></li>
-                                        <li><a class="dropdown-item bottom-round-5" href="index.html"><i class="bi bi-box-arrow-right me-3"></i>ចាកចេញ</a></li>
-                                    </ul>
-                                </div>
                             </li>
                         </ul>
-
                     </div>
-
-
                 </div>
 
                 <hr class="d-none d-lg-block" style="margin: 0; height: 2px; width: 100%;">
-
-
-
-
                 <div class="offcanvas-lg offcanvas-start py-2 navPage" tabindex="-1" id="navbarOffcanvas"
                     aria-labelledby="navbarOffcanvasLabel">
-
-
-                    <div class="offcanvas-header">
+                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title m-auto ps-4" id="navbarOffcanvasLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
                         <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
                             data-bs-target="#navbarOffcanvas" aria-label="Close"></button>
@@ -358,11 +330,6 @@
             </div>
         </nav>
     </header>
-
-
-
-
-
 
 
    
@@ -668,7 +635,7 @@
                     </div>
                     <div class="swiper-wrapper">
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <a href="car-rent-category.html">
+                            <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
                                     <h4 class="car-type-brand">SEDAN</h4>
                                     <img src="assets/img/car/car-type/sedan-type.png"
@@ -677,7 +644,7 @@
                             </a>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <a href="car-rent-category.html">
+                            <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
                                     <h4 class="car-type-brand">SUV</h4>
                                     <img src="assets/img/car/car-type/suv-type.png"
@@ -686,7 +653,7 @@
                             </a>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <a href="car-rent-category.html">
+                            <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
                                     <h4 class="car-type-brand">SPORT</h4>
                                     <img src="assets/img/car/car-type/sport-type.png"
@@ -695,7 +662,7 @@
                             </a>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <a href="car-rent-category.html">
+                            <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
                                     <h4 class="car-type-brand">VAN</h4>
                                     <img src="assets/img/car/car-type/van-type.png"
@@ -704,7 +671,7 @@
                             </a>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <a href="car-rent-category.html">
+                            <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
                                     <h4 class="car-type-brand">PICKUP</h4>
                                     <img src="assets/img/car/car-type/pickup-type.png"
@@ -714,7 +681,7 @@
                         </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center align-items-center pt-3">
-                        <a href="car-rent-category.html" class="text-decoration-none view-all-car">មើលទាំងអស់<i
+                        <a href="car-rent-category-home.html" class="text-decoration-none view-all-car">មើលទាំងអស់<i
                                 class="fa-solid fa-arrow-right-long ms-2"></i></a>
                     </div>
                 </div>
@@ -722,7 +689,7 @@
         </section>
 
         <!-- Car for rent -->
-        <section class="">
+        <section class="car-list">
             <div class="container py-5">
                 <div class="row swiper car-item-swiper gx-0 swiper-button">
                     <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">
@@ -730,7 +697,7 @@
                     </div>
                     <div class="swiper-wrapper py-2">
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <div class="car-item card">
+                            <!-- <div class="car-item card">
                                 <div class="car-item-img position-relative">
                                     <span class="badge badege-status-new">ថ្មី</span>
                                     <span class="badge badege-status-disc ">បញ្ចុះ ១០%</span>
@@ -765,10 +732,42 @@
                                     </div>
 
                                 </div>
+                            </div> -->
+                            <div class="card car-rent rounded-1">
+                                <div class="car-img position-relative m-2 pb-0 mb-0">
+                                    <a href="#"><img src="assets/img/car-list/1.png" class="img-fluid rounded-1" alt=""></a>
+                                    <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                        <div>
+                                            <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
+                                        </div>
+                                        <span class="badge favorite fill py-2 rounded-1"><i class="fa-regular fa-heart text-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                            <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
+                                        </div>
+                                        <div class="feature">
+                                            <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                            <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <div class="car-item card">
+                            <!-- <div class="car-item card">
                                 <div class="car-item-img position-relative">
                                     <span class="badge badege-status-new ">ប្រើរួច</span>
                                     <a href="#"><img src="assets/img/car/car-show-2.png" alt=""></a>
@@ -802,10 +801,43 @@
                                     </div>
 
                                 </div>
+                            </div> -->
+                            <div class="card car-rent rounded-1">
+                                <div class="car-img position-relative m-2 pb-0 mb-0">
+                                    <a href="#"><img src="assets/img/car-list/15.jpg" class="img-fluid rounded-1" alt=""></a>
+                                    <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                        <div>
+                                            <span class="badge discount py-2 rounded-1">បញ្ចុះតម្លៃ​ 10%</span>
+                                        </div>
+                                        <span class="badge favorite fill py-2 rounded-1"><i class="fa-regular fa-heart text-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                            <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
+                                        </div>
+                                        <div class="feature">
+                                            <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                            <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <div class="car-item card">
+                            <!-- <div class="car-item card">
                                 <div class="car-item-img position-relative">
                                     <span class="badge badege-status-new">ប្រើរួច</span>
                                     <span class="badge badege-status-disc left-68">បញ្ចុះ ២០%</span>
@@ -840,10 +872,42 @@
                                     </div>
 
                                 </div>
+                            </div> -->
+                            <div class="card car-rent rounded-1">
+                                <div class="car-img position-relative m-2 pb-0 mb-0">
+                                    <a href="#"><img src="assets/img/car-list/10.jpg" class="img-fluid rounded-1" alt=""></a>
+                                    <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                        <div>
+                                            <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
+                                        </div>
+                                        <span class="badge favorite fill py-2 rounded-1"><i class="fa-regular fa-heart text-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                            <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
+                                        </div>
+                                        <div class="feature">
+                                            <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                            <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <div class="car-item card">
+                            <!-- <div class="car-item card">
                                 <div class="car-item-img position-relative">
                                     <span class="badge badege-status-new">ប្រើរួច</span>
                                     <span class="badge badege-status-disc left-68">បញ្ចុះ ១០%</span>
@@ -878,13 +942,44 @@
                                     </div>
 
                                 </div>
+                            </div> -->
+                            <div class="card car-rent rounded-1">
+                                <div class="car-img position-relative m-2 pb-0 mb-0">
+                                    <a href="#"><img src="assets/img/car-list/7.jpg" class="img-fluid rounded-1" alt=""></a>
+                                    <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                        <div>
+                                            <span class="badge trending py-2 rounded-1">កំពុងពេញនិយម</span>
+                                        </div>
+                                        <span class="badge favorite fill py-2 rounded-1"><i class="fa-regular fa-heart text-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                            <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
+                                        </div>
+                                        <div class="feature">
+                                            <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                            <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
-                            <div class="car-item card">
+                            <!-- <div class="car-item card">
                                 <div class="car-item-img position-relative">
                                     <span class="badge badege-status-new">ថ្មី</span>
-                                    <!-- <span class="badge badege-status-disc">បញ្ចុះ ២០%</span> -->
                                     <a href="#"><img src="assets/img/car/car-show-5.png" alt=""></a>
                                     <span class="badge add-to-favorite fill-heart">
                                         <i class="fa-regular fa-heart heart-icon"></i>
@@ -911,11 +1006,42 @@
                                             <div class="rent-price">
                                                 <p class="mb-0">$45 <small class="fs-6 fw-medium">/ ថ្ងៃ</small></p>
                                             </div>
-                                            <!-- <button type="button" class="btn btn-rents-now">ជួលឥឡូវ​</button> -->
                                             <button type="button" class="btn btn-rents-now">មើល<i class="fa-solid fa-angles-right ms-2"></i></button>
                                         </div>
                                     </div>
 
+                                </div>
+                            </div> -->
+                            <div class="card car-rent rounded-1">
+                                <div class="car-img position-relative m-2 pb-0 mb-0">
+                                    <a href="#"><img src="assets/img/car-list/19.jpg" class="img-fluid rounded-1" alt=""></a>
+                                    <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                        <div>
+                                            <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
+                                        </div>
+                                        <span class="badge favorite fill py-2 rounded-1"><i class="fa-regular fa-heart text-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="#" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5></a>
+                                            <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
+                                        </div>
+                                        <div class="feature">
+                                            <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                <span class="fw-medium w-50 ps-3 my-2"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                <span class="fw-medium w-50 ps-4 my-2"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>ម៉ាស៊ូត</span>
+                                                <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="mb-0 fw-medium">$45<small class="fs-6 fw-medium"> / ថ្ងៃ</small></h4>
+                                            <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">ជួលឥឡូវ​</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1364,16 +1490,16 @@
                             <h5 class="fw-bold pt-4 pt-md-0">តំណភ្ជាប់</h5>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="about-us.html" class="nav-link">អំពីយើង</a>
+                                    <a href="about-us-home.html" class="nav-link">អំពីយើង</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">ប្លុក</a>
+                                    <a href="blog-home.html" class="nav-link">ប្លុក</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="career.html" class="nav-link">ការងារ</a>
+                                    <a href="career-home.html" class="nav-link">ការងារ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="contact-us.html" class="nav-link">ទំនាក់ទំនង</a>
+                                    <a href="contact-us-home.html" class="nav-link">ទំនាក់ទំនង</a>
                                 </li>
                             </ul>
                         </div>
@@ -1381,13 +1507,13 @@
                             <h5 class="fw-bold pt-4 pt-md-0">សេវាកម្ម</h5>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="car-rent-category.html" class="nav-link">ជួលរថយន្ត</a>
+                                    <a href="car-rent-category-home.html" class="nav-link">ជួលរថយន្ត</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="repair-service.html" class="nav-link">ជួសជុលរថយន្ត</a>
+                                    <a href="repair-service-home.html" class="nav-link">ជួសជុលរថយន្ត</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="car-sell-category.html" class="nav-link">លក់រថយន្ត</a>
+                                    <a href="car-sell-category-home.html" class="nav-link">លក់រថយន្ត</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="driver-category.html" class="nav-link">ជួលអ្នកបើកបរ</a>

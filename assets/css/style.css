@@ -115,7 +115,7 @@ header nav .nav-link:hover {
 .nav-noti:hover .dropdown-noti {
   display: block;
 }
-.nav-noti .nav-link span {
+.nav-noti .nav-link span, .nav-item .nav-link .bi-suit-heart~span {
   right: 0;
   font-size: 8px;
 }
@@ -1643,7 +1643,7 @@ header nav .nav-link:hover {
   color: var(--main-hover) !important;
 }
 .car-list .car-rent .car-img .status {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.30);
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -3139,7 +3139,7 @@ header nav .nav-link:hover {
 .term-condition .card h3,
 .privacy-policy .card h3 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 .term-condition .card p,
 .term-condition .card ul,
@@ -3165,7 +3165,7 @@ footer .nav-link {
 }
 footer .nav-link:hover {
   color: white;
-  transform: scale(102%);
+  /* transform: scale(102%); */
 }
 .footer-social-media .navbar-nav .nav-item .nav-link {
   font-size: 18px;
@@ -3312,13 +3312,16 @@ footer .nav-link:hover {
     top: 10px;
     left: -120px;
   }
-  .nav-noti .bi-bell {
+  .nav-noti .bi-bell, .nav-item .bi-suit-heart {
     font-size: 20px;
   }
-  .nav-noti .nav-link span {
+  .nav-noti .nav-link span , .nav-item .nav-link .bi-suit-heart~span {
     right: -5px;
     transform: translateY(2px);
     font-size: 9px;
+  }
+  .nav-item .nav-link .bi-suit-heart~span{
+    right: -7px;
   }
 
   .car-type-item {
@@ -3585,11 +3588,11 @@ footer .nav-link:hover {
   }
   .term-condition .card h2,
   .privacy-policy .card h2 {
-    font-size: 2px;
+    font-size: 22px;
   }
   .term-condition .card h3,
   .privacy-policy .card h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
   .term-condition .card p,
   .term-condition .card ul,
