@@ -1631,8 +1631,7 @@ header nav .nav-link:hover {
   transition: all 0.3s ease-in-out;
 }
 .car-list .car-rent {
-  border: 1px solid transparent;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid var(--main-color-100);
 }
 .car-list .car-rent:hover,
 .fleet-list .fleet:hover {
@@ -1643,7 +1642,7 @@ header nav .nav-link:hover {
   color: var(--main-hover) !important;
 }
 .car-list .car-rent .car-img .status {
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1667,14 +1666,15 @@ header nav .nav-link:hover {
   font-size: 15px;
 }
 .car-list .car-rent .btn-rent {
-  border: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
   font-size: 15px;
+  background-color: var(--dark-blue);
 }
 .car-list .car-rent .btn-rent:hover {
   background-color: var(--main-hover);
   transform: translateY(-2px);
-  color: var(--bg-color);
+}
+.car-list .car-rent .btn-rent a {
+  color: var(--bg-color) !important;
 }
 /* ========================= */
 /* === car-sell-category === */
@@ -1792,7 +1792,10 @@ header nav .nav-link:hover {
 .car-attribute .image-list .overlay,
 .car-attribute .btn-interest,
 .wishlist .car-cart-item,
-.wishlist .car-cart-item .overlay {
+.wishlist .car-cart-item .overlay,
+.booking-info .booking-form .form-control,
+.booking-info .booking-form .btn-current-location,
+.booking-info .booking-form .btn-booking {
   transition: all 0.4s ease-out;
 }
 .car-attribute .main-info {
@@ -1843,11 +1846,10 @@ header nav .nav-link:hover {
 .wishlist .car-cart-item {
   border: 1px solid var(--main-color-100);
 }
-.car-attribute .image-list .overlay,
-.wishlist .car-cart-item .overlay {
+.car-attribute .image-list .overlay {
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .car-attribute .image-list .overlay:hover,
 .wishlist .car-cart-item:hover .overlay {
@@ -1867,28 +1869,102 @@ header nav .nav-link:hover {
   background-color: var(--dark-blue);
   color: var(--bg-color);
 }
+.wishlist .car-cart-item .overlay {
+  top: 0;
+  left: 0;
+}
 .wishlist .car-cart-item .overlay span {
   font-size: 16px;
   cursor: pointer;
+}
+.wishlist .car-cart-item .favorite {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+/* ========================== */
+/* === rent-checkout.html === */
+/* ========================== */
+.shadow-checkout {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.booking-info .booking-form .icon{
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+.booking-info .booking-form .form-check-input,
+.booking-info .booking-form .form-check-label {
+  cursor: pointer;
+}
+.booking-info .booking-form .form-check-input {
+  border: 1px solid var(--main-color-50);
+  background-color: var(--main-color-100);
+  box-shadow: none;
+}
+.booking-info .booking-form .form-check-input:checked {
+  background-color: var(--main-color);
+}
+.booking-info .booking-form .form-control {
+  border: 1px solid transparent;
+  background-color: var(--main-color-50);
+  box-shadow: none;
+}
+.booking-info .booking-form .form-control::placeholder {
+  font-size: 15px;
+}
+.booking-info .booking-form .form-control:focus {
+  border: 1px solid var(--main-color-400);
+  background-color: #fff;
+}
+.booking-info .booking-form .rent-type .form-check,
+.booking-info .booking-form .rent-time .form-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--main-color-50);
+  position: relative;
+}
+.booking-info .booking-form .rent-type .form-check .form-check-input:checked + .form-check-label::before,
+.booking-info .booking-form .rent-time .form-check .form-check-input:checked + .form-check-label::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--main-color-50);
+  border: 1px solid var(--main-color-400);
+  border-radius: 0.25rem;
+}
+.booking-info .booking-form .btn-current-location,
+.booking-info .booking-form .btn-booking.btn-1 {
+  background-color: var(--dark-blue);
+  color: var(--bg-color);
+}
+.booking-info .booking-form .btn-current-location:hover,
+.booking-info .booking-form .btn-booking:hover {
+  background-color: var(--main-hover);
+}
+.booking-info .booking-form .btn-booking {
+  background-color: var(--main-color-700);
+  color: var(--bg-color);
+}
+/* ======================= */
+/* === driver-checkout === */
+/* ======================= */
+.summary-detail .profile {
+  background-color: var(--main-color-900);
 }
 /* ================================= */
 
 /***************************************/
 /*            Hero-banner              */
 /***************************************/
-
-/* header {
-  background-color: white;
-}
-header nav .nav-link {
-  color: black;
-}
-header nav .nav-link.active {
-  color: var(--main-hover);
-}
-header nav .nav-link:hover {
-  color: var(--main-hover);
-} */
 .hero-banner {
   width: 100%;
   height: 650px;
