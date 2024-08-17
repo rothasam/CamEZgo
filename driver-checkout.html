@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
 </head>
 <body>
     <!-- header -->
@@ -15,9 +16,9 @@
      <main>
         <section class="wishlist-head booking">
             <div class="wishlist-title">
-                <h1 class="fw-bold text-light">ចាប់ផ្តើមជួលអ្នកបើកបរ</h1>
+                <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមជួលអ្នកបើកបរ</h1>
                 <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb wow animate__animated animate__fadeInUp">
                       <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
                       <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ជួលអ្នកបើកបរ</li>
                     </ol>
@@ -179,5 +180,9 @@
 
     <!-- footer -->
      <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/plugin/wowjs/wow.min.js"></script>
+     <script>
+        new WOW().init();
+     </script>
 </body>
 </html>

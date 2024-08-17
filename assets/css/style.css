@@ -38,6 +38,7 @@ mark {
 /***************************************/
 header {
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 header nav .nav-link {
   color: black;
@@ -62,10 +63,11 @@ header nav .nav-link:hover {
 .navPage .navbar-nav .nav-item .nav-link {
   padding: 0px 15px;
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu,
+/* .nav-account .navbar-nav .link-acc .dropdown-menu, */
 .link-acc .drop-acc {
   left: -150px;
   width: 220px;
+  top: 55px;
 }
 .nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item,
 .link-acc .drop-acc .nav-link {
@@ -143,7 +145,7 @@ header nav .nav-link:hover {
   top: -20px;
   right: 100px;
 }
-.nav-clip-path {
+.nav-clip-path{
   width: 18px;
   height: 18px;
   background-color: #ddd;
@@ -151,6 +153,9 @@ header nav .nav-link:hover {
   top: -18px;
   right: 105px;
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+.drop-acc .nav-clip-path{
+  right: 35px;
 }
 .dropdown-car-type,
 .dropdown-service {
@@ -220,9 +225,26 @@ header nav .nav-link:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.login-signup a:hover {
+.login-signup a{
+  border: 1px solid var(--main-color);
+  padding: 3px 7px;
+}
+.login-signup a:first-child{
+  background-color: var(--main-color);
+  color: white;
+}
+.login-signup a:first-child:hover{
+  background-color: var(--main-hover);
+  /* color: var(--main-color); */
+}
+.login-signup a:last-child{
   color: var(--main-color);
 }
+.login-signup a:last-child:hover{
+  color: white;
+  background-color: var(--main-hover);
+}
+
 .head-section h1 {
   text-align: center;
   text-transform: uppercase;
@@ -2480,6 +2502,9 @@ header nav .nav-link:hover {
 .service-cover {
   height: 180px;
 }
+.service-cover img{
+  border-radius: 4px;
+}
 .card-service .card {
   width: 80%;
   margin-top: -60px;
@@ -2488,6 +2513,7 @@ header nav .nav-link:hover {
   box-shadow: rgba(50, 50, 93, 0.176) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.236) 0px 30px 60px -30px;
   background-color: rgba(255, 255, 255, 0.924);
+  border-radius: 4px;
 }
 .card-service .card .card-body h5 {
   color: black;
@@ -2502,6 +2528,10 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   padding: 2px 15px;
   color: white;
+  border-radius: 3px;
+}
+.card-service .card .btn:hover .fa-arrow-right-long{
+  transform: translateX(4px);
 }
 .card-service .card:hover {
   background-color: var(--dark-blue);
@@ -3279,6 +3309,11 @@ header nav .nav-link:hover {
   line-height: 27px;
 }
 
+/* swiper pagination active */
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: var(--main-color)!important;
+}
+
 /***************************************/
 /*              Footer                 */
 /***************************************/
@@ -3527,6 +3562,9 @@ footer .nav-link:hover {
   .nav-clip-path {
     top: -18px;
     right: 73px;
+  }
+  .drop-acc .nav-clip-path{
+    right: 30px;
   }
   .dropdown-noti {
     right: -70px;
