@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Checkout</title>
+    <title>detail-technician</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
-     <!-- bootstrap icon -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- bootstrap icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    
 </head>
+
 <body>
-    <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container d-flex flex-column nav-contain">
@@ -313,175 +315,114 @@
     <!-- Buttton back to top -->
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-
-
-    <!-- main -->
-     <main>
-        <section class="wishlist-head booking">
-            <div class="wishlist-title">
-                <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមជួលអ្នកបើកបរ</h1>
-                <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb wow animate__animated animate__fadeInUp">
-                      <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ជួលអ្នកបើកបរ</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="booking-info py-5">
+    <main>
+        <section class="tech-detail py-5">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-12">
-                        <div class="">
-                            <h4 class="fw-bold">ធ្វើការជួលអ្នកបើកបរ</h4>
-                            <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-12" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="card bg-transparent border-0">
+                            <img class="img-fluid" src="assets/img/repair-page/technician/technician-1.webp" alt="">
+                            <div class="card-body p-0 mt-3">
+                                <div>
+                                    <h4 class="fw-medium">ជំនាញ​វិជ្ជាជីវៈ</h4>
+                                    <p class="fs-6">
+                                        ជំនាញ​វិជ្ជាជីវៈ​គឺ​ជា​សមត្ថភាព​និង​គុណ​សម្បត្តិ​ដែល​អាច​ឱ្យ​បុគ្គល​ម្នាក់ៗ​អាច​អនុវត្ត​បាន​យ៉ាង​មាន​ប្រសិទ្ធភាព​ក្នុង​ការ​ងារ​របស់​ពួក​គេ
+                                        ហើយ​រួម​បញ្ចូល​ទាំង​ការ​ទំនាក់ទំនង ភាព​ជា​អ្នក​ដឹកនាំ។
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between mb-1 fw-medium"
+                                        style="width: 97%; font-size: 12px;">
+                                        <p class="m-0">ជួសជុលម៉ាស៊ីន</p>
+                                        <p class="m-0">95%</p>
+                                    </div>
+                                    <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="height: 4px;">
+                                        <div class="progress-bar" style="width: 95%; height: 4px;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-1 fw-medium"
+                                        style="width: 82%; font-size: 12px;">
+                                        <p class="m-0">ការវិភាគម៉ាស៊ីន</p>
+                                        <p class="m-0">80%</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="80" style="height: 4px;">
+                                        <div class="progress-bar" style="width: 80%; height: 4px;"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-9">
-                        <form action="" class="booking-form rounded-1">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-4">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-user-tie text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសអ្នកបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('randomSelect').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="selectType" id="randomSelect">
-                                                    <label class="form-check-label mt-2" for="randomSelect">
-                                                        ជ្រើសរើសដោយស្វ័យប្រវត្តិ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('selfSelect').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="selectType" id="selfSelect">
-                                                    <label class="form-check-label mt-2" for="selfSelect">
-                                                        ជ្រើសរើសដោយខ្លួនឯង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div class="col-lg-8 col-12 mt-lg-0 mt-5" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-body p-0">
+                                <h2 class="m-0 mb-2 fw-bold">សេង សុផា</h2>
+                                <p class="text-primary">វិស្វករ​មេកានិច</p>
+                                <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តអនុវត្តគោលការណ៍នៃមេកានិចយានយន្ត ការធ្វើរោគវិនិច្ឆ័យ
+                                    និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ ដោះស្រាយបញ្ហា
+                                    និងជួសជុលយានយន្ត។ ជាធម្មតា ពួកវាធ្វើការនៅក្នុងឧស្សាហកម្មដូចជា សេវាកម្មជួលរថយន្ត
+                                    ហាងជួសជុលរថយន្ត ឬហាងលក់ទំនិញ
+                                    ដែលធានាឱ្យយានជំនិះមានសុវត្ថិភាព អាចទុកចិត្តបាន និងថែទាំបានល្អ។
+                                    តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការប្រើប្រាស់ឧបករណ៍
+                                    និងឧបករណ៍ឯកទេស ដើម្បីធ្វើរោគវិនិច្ឆ័យបញ្ហា ធ្វើការជួសជុល
+                                    និងធ្វើការថែទាំជាប្រចាំលើប្រភេទផ្សេងៗនៃយានយន្ត។</p>
+                                <div class="count-number d-flex align-items-center pb-4 border-bottom">
+                                    <span class="fw-bold fs-1 js-count-up" data-value="2123">2,123</span> <span
+                                        class="fw-bold fs-1">+</span>
+                                    <div class="ms-4">
+                                        <p class="m-0 fw-medium">គម្រោងបានបញ្ចប់</p>
+                                        <p class="m-0 fw-medium">18 ឆ្នាំ</p>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-4">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-info text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ព័ត៌មានអ្នកបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-12">
-                                                <div class="row g-3">
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">លេខសម្គាល់</label>
-                                                            <input  type="text" placeholder="0168" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">ឈ្មោះពេញ</label>
-                                                            <input type="text" placeholder="ចន ស្មីត" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">បទពិសោធន៍</label>
-                                                            <input type="text" placeholder="បទពិសោធន៍ 04 ឆ្នាំ" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">លេខទូរស័ព្ទ</label>
-                                                            <input type="text" placeholder="+855 123456789" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="wrapper-button d-flex gap-3 justify-content-start">
-                                        <a href="car-rent-detail.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានអ្នកបើកបរ</a>
-                                        <a href="#" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-3">
-                        <div class="card summary-detail shadow-checkout border-0 rounded-1">
-                            <div class="card-header border-0 d-flex justify-content-between">
-                                <h5 class="fw-bold mb-0">សង្ខេបព័ត៌មានជួល</h5>
-                                <h5 class="fw-bold mb-0">0168</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="row g-0">
-                                    <div class="col-8">
-                                        <div>
-                                            <ul class="list-group-flush p-0 pe-4">
-                                                <li class="list-group-item my-2 mt-0">
-                                                    <span>ឈ្មោះ</span>
-                                                    <span class="float-end">ចន ស្មីត</span>
-                                                </li>
-                                                <li class="list-group-item my-2">
-                                                    <span>បទពិសោធន៍</span>
-                                                    <span class="float-end">04 ឆ្នាំ</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="profile rounded-2">
-                                            <img src="assets/img/driver/pf/9.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <li class="list-group-item my-2">
-                                        <span>លេខប័ណ្ណបើកបរ</span>
-                                        <span class="float-end">B.0020097</span>
+                                <ul class="list-unstyled get-touch">
+                                    <h4 class="fw-medium mt-4 mb-3">ទំនាក់ទំនង</h4>
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-black fw-medium">
+                                            <span>
+                                                <i class="fa-solid fa-phone text-primary"></i>
+                                            </span> (+855) 23 123 456
+                                        </a>
                                     </li>
-                                    <li class="list-group-item my-2">
-                                        <span>លេខទូរស័ព្ទ</span>
-                                        <span class="float-end">123456789</span>
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-black fw-medium">
+                                            <span>
+                                                <i class="fa-regular fa-envelope-open text-primary"></i>
+                                            </span>
+                                            ronaldrichards@gmail.com
+                                        </a>
                                     </li>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between">
-                                        <span>ថ្ងៃចាប់ផ្តើម</span>
-                                        <span>អាទិត្យ, 12-ធ្នូ-2030</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span>ថ្ងៃបញ្ចប់</span>
-                                        <span>អាទិត្យ, 15-ធ្នូ-2030</span>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span class="fw-bold">ថ្លៃឈ្នួល</span>
-                                        <span class="fw-bold fs-5">$110</span>
-                                    </div> 
-                                </div>
+                                    <ul class="nav">
+                                        <li class="nav-item me-2">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-twitter text-white"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-2">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-instagram text-white"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-facebook-f text-white"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <h4 class="fw-medium mb-3">ការណែនាំអំពីអាជីព</h4>
+                                <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តប្រើមេកានិចយានយន្ត ការវិនិច្ឆ័យ និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ
+                                    និងជួសជុលយានយន្ត។
+                                    ពួកគេធ្វើការនៅក្នុងសេវាកម្មជួលរថយន្ត ហាងជួសជុល ឬហាងលក់ទំនិញ ធានាថាយានយន្តមានសុវត្ថិភាព
+                                    និងបំពេញតម្រូវការអតិថិជនប្រកបដោយប្រសិទ្ធភាព។
+                                    តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការធ្វើរោគវិនិច្ឆ័យបញ្ហា អនុវត្តការជួសជុល
+                                    និងដំណើរការថែទាំ ខណៈពេលដែលអនុវត្តតាមស្តង់ដារឧស្សាហកម្ម និងគោលការណ៍ណែនាំសុវត្ថិភាព។</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-     </main>
-
-    <!-- footer -->
+    </main>
     <footer>
         <div class="container pb-3">
             <div class="row">
@@ -621,14 +562,47 @@
         </div>
     </footer>
 
-     <script src="assets/js/bootstrap.bundle.min.js"></script>
-     <script src="assets/plugin/wowjs/wow.min.js"></script>
-     <script>
-        new WOW().init();
-     </script>
-     <script>
-         // Back to top and Menu Sticky
-         window.onscroll = function () {
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+    $(window).scroll(function () {
+        var a = 0;
+        var oTop = $(".count-number").offset().top - window.innerHeight;
+        console.log($(".count-number").offset().top);
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $(".js-count-up").each(function () {
+                var $this = $(this),
+                    countTo = $this.attr("data-value");
+                $({
+                    countNum: $this.text(),
+                }).animate(
+                    {
+                        countNum: countTo,
+                    },
+
+                    {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        },
+                    }
+                );
+            });
+            a = 1;
+        }
+    });
+    AOS.init();
+</script>
+<script>
+    // Back to top and Menu Sticky
+    window.onscroll = function () {
             stickyNavbar();
         };
         var navbar = document.querySelector(".navPage");
@@ -648,6 +622,6 @@
         backToTop.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-     </script>
-</body>
+</script>
+
 </html>

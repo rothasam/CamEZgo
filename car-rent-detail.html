@@ -9,9 +9,52 @@
     <link rel="stylesheet" href="assets/plugin/tom-select/tom-select.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
+     <!-- bootstrap icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md p-0 navbar-landing">
+            <div class="container d-flex flex-column nav-contain">
+                <div class="row w-100 py-2">
+                    <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
+                    </div> 
+                    <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
+                        <a href="create-account.html" class="btn rounded-1" style="border: 1px solid var(--main-color);">បង្កើតគណនី</a>
+                        <a href="sign-in.html" class="btn ms-2 rounded-1" style="border: 1px solid var(--main-color);">ចូលគណនី</a>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+    </header>
+    <!-- Buttton back to top -->
+    <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
     <!-- main -->
      <main>
@@ -79,8 +122,8 @@
                               </li>
                             </ul>
                             <hr class="hr-main-info my-xl-4">
-                            <a href="rent-checkout.html" class="btn btn-booking rounded-1 fw-bold w-100 mb-3"><i class="fa-solid fa-car me-2"></i>កក់ឥឡូវនេះ</a>
-                            <a href="wishlist.html" class="btn btn-interest rounded-1 fw-bold w-100"><i class="fa-solid fa-cloud-arrow-up me-2"></i>បញ្ចូលទៅកន្ត្រក់</a>
+                            <a href="create-account.html" class="btn btn-booking rounded-1 fw-bold w-100 mb-3"><i class="fa-solid fa-car me-2"></i>កក់ឥឡូវនេះ</a>
+                            <a href="create-account.html" class="btn btn-interest rounded-1 fw-bold w-100"><i class="fa-solid fa-cloud-arrow-up me-2"></i>បញ្ចូលទៅកន្ត្រក់</a>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -196,11 +239,169 @@
      </main>
 
     <!-- footer -->
+    <footer>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="footer-brand">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="60px" class="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 pb-4 pb-lg-0">
+                    <h5 class="fw-bold">អំពីយើង</h5>
+                    <p>គោលបំណងផ្តល់នូវសេវាកម្មទាក់ទងនឹងការជួលរថយន្ត ដែលមានតម្លៃសមរម្យ មានផាសុខភាព
+                        និងមានជំរើសច្រើនក្នុងការជ្រើសរើសទៅតាមតម្រូវការ</p>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item">
+                            <a href="term-condition.html" class="nav-link">លក្ខខណ្ឌ​</a>
+                        </li>
+                        <small class="mt-2">&nbsp | &nbsp</small>
+                        <li class="nav-item">
+                            <a href="privacy-policy.html" class="nav-link">គោលការណ៍​​ឯកជនភាព</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6  mx-auto mx-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">តំណភ្ជាប់</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="create-account.html" class="nav-link">ចុះឈ្មោះ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sign-in.html" class="nav-link">ចូលគណនី</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link">អំពីយើង</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">ប្លុក</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="career.html" class="nav-link">ការងារ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-us.html" class="nav-link">ទំនាក់ទំនង</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">សេវាកម្ម</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="car-rent-category.html" class="nav-link">ជួលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="repair-service.html" class="nav-link">ជួសជុលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="service-sell.html" class="nav-link">លក់រថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="driver.html" class="nav-link">ជួលអ្នកបើកបរ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-4 pe-4 pe-lg-0">
+                            <h5 class="fw-bold pt-4 pt-md-0">ទំនាក់ទំនង</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-pin-map me-2"></i>ភ្នំពេញ</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-telephone me-2"></i>+855 23 99 999</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link w-100"><span><i class="bi bi-envelope-open me-2"></i>CamEZgo@info.com</span></a>
+                                </li>
+                            </ul>
+                            <div class="footer-social-media">
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-regular fa-paper-plane"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="col-6 d-flex ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="mb-0 text-white">រក្សាសិទ្ធដោយ CamEZgo</p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="footer-app-link">
+                        <div class="row gx-3">
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/app-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/play-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugin/wowjs/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        window.onscroll = function () {
+        var navbar = document.querySelector(".navbar-landing");
+        var backToTop = document.getElementById("backToTop");
+        var sticky = navbar.offsetTop;
+
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+                backToTop.style.display = "block";
+            } else {
+                navbar.classList.remove("sticky");
+                backToTop.style.display = "none";
+            }
+        };
+
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
     </script>
 </body>
 </html>

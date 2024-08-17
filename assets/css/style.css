@@ -3314,6 +3314,37 @@ header nav .nav-link:hover {
   background-color: var(--main-color)!important;
 }
 
+/* pagination */
+.my-pagination .nav-page-prev .nav-link , .my-pagination .nav-page-next .nav-link{
+  background-color: white;
+  margin: 0 12px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px ; 
+  border: 1px solid var(--main-color-100);
+}
+.my-pagination .nav-page{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+  border: 1px solid var(--main-color-100);
+}
+.my-pagination .nav-page .nav li:first-child .nav-link{
+  border-radius: 4px 0 0 4px;
+}
+.my-pagination .nav-page .nav li:last-child .nav-link{
+  border-radius: 0 4px 4px 0;
+}
+.my-pagination .nav-page .nav li .nav-link:hover, 
+.my-pagination .nav-page-prev:hover .nav-link , 
+.my-pagination .nav-page-next:hover .nav-link{
+  background-color: var(--main-color);
+  color: white;
+}
+.my-pagination .nav-page .nav li .nav-link.active{
+  background-color: var(--main-color);
+  color: white;
+}
+
+
 /***************************************/
 /*              Footer                 */
 /***************************************/

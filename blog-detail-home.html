@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Checkout</title>
+    <title>Blog Detail</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
-     <!-- bootstrap icon -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!-- header -->
+
     <header>
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container d-flex flex-column nav-contain">
@@ -313,175 +313,132 @@
     <!-- Buttton back to top -->
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-
-
-    <!-- main -->
-     <main>
-        <section class="wishlist-head booking">
-            <div class="wishlist-title">
-                <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមជួលអ្នកបើកបរ</h1>
-                <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb wow animate__animated animate__fadeInUp">
-                      <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ជួលអ្នកបើកបរ</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="booking-info py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-12">
-                        <div class="">
-                            <h4 class="fw-bold">ធ្វើការជួលអ្នកបើកបរ</h4>
-                            <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
+    <main>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-7 col-xl-8">
+                    <div class="card border-0 wow animate__animated animate__fadeIn">
+                        <div class="card-header border-0 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="fw-bold">គន្លឹះសំខាន់ៗក្នុងការជ្រើសរើសរថយន្តជួលដ៏ល្អឥតខ្ចោះ</h4>
+                                <div>
+                                    <span class="badge bg-main-clr">ជួលរថយន្ត</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span><i class="fa-regular fa-calendar me-1"></i>24 កក្កដា 2024</span>
+                                <span class="ms-3"><i class="fa-solid fa-eye me-1"></i>125 មើល</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-9">
-                        <form action="" class="booking-form rounded-1">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-4">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-user-tie text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសអ្នកបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('randomSelect').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="selectType" id="randomSelect">
-                                                    <label class="form-check-label mt-2" for="randomSelect">
-                                                        ជ្រើសរើសដោយស្វ័យប្រវត្តិ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('selfSelect').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="selectType" id="selfSelect">
-                                                    <label class="form-check-label mt-2" for="selfSelect">
-                                                        ជ្រើសរើសដោយខ្លួនឯង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-4">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-info text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ព័ត៌មានអ្នកបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-3">
-                                            <div class="col-12">
-                                                <div class="row g-3">
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">លេខសម្គាល់</label>
-                                                            <input  type="text" placeholder="0168" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">ឈ្មោះពេញ</label>
-                                                            <input type="text" placeholder="ចន ស្មីត" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">បទពិសោធន៍</label>
-                                                            <input type="text" placeholder="បទពិសោធន៍ 04 ឆ្នាំ" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">លេខទូរស័ព្ទ</label>
-                                                            <input type="text" placeholder="+855 123456789" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="wrapper-button d-flex gap-3 justify-content-start">
-                                        <a href="car-rent-detail.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានអ្នកបើកបរ</a>
-                                        <a href="#" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-3">
-                        <div class="card summary-detail shadow-checkout border-0 rounded-1">
-                            <div class="card-header border-0 d-flex justify-content-between">
-                                <h5 class="fw-bold mb-0">សង្ខេបព័ត៌មានជួល</h5>
-                                <h5 class="fw-bold mb-0">0168</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="row g-0">
-                                    <div class="col-8">
-                                        <div>
-                                            <ul class="list-group-flush p-0 pe-4">
-                                                <li class="list-group-item my-2 mt-0">
-                                                    <span>ឈ្មោះ</span>
-                                                    <span class="float-end">ចន ស្មីត</span>
-                                                </li>
-                                                <li class="list-group-item my-2">
-                                                    <span>បទពិសោធន៍</span>
-                                                    <span class="float-end">04 ឆ្នាំ</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="profile rounded-2">
-                                            <img src="assets/img/driver/pf/9.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <li class="list-group-item my-2">
-                                        <span>លេខប័ណ្ណបើកបរ</span>
-                                        <span class="float-end">B.0020097</span>
-                                    </li>
-                                    <li class="list-group-item my-2">
-                                        <span>លេខទូរស័ព្ទ</span>
-                                        <span class="float-end">123456789</span>
-                                    </li>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between">
-                                        <span>ថ្ងៃចាប់ផ្តើម</span>
-                                        <span>អាទិត្យ, 12-ធ្នូ-2030</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span>ថ្ងៃបញ្ចប់</span>
-                                        <span>អាទិត្យ, 15-ធ្នូ-2030</span>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span class="fw-bold">ថ្លៃឈ្នួល</span>
-                                        <span class="fw-bold fs-5">$110</span>
-                                    </div> 
-                                </div>
-                            </div>
+                        <img src="assets/img/blog/woman-choosing-the-car.jpg" class="w-100 object-fit-contain my-3" alt="..." height="360px">
+                        <div class="card-body">
+                            <p class="card-text mb-4">នៅពេលរៀបចំផែនការធ្វើដំណើរ ការជ្រើសរើសការជួលរថយន្តត្រឹមត្រូវគឺចាំបាច់សម្រាប់បទពិសោធន៍ដ៏រលូន និងរីករាយ។ ចាប់ផ្តើមដោយការវាយតម្លៃតម្រូវការរបស់អ្នក៖ ពិចារណាចំនួនអ្នកដំណើរ ចំនួនអីវ៉ាន់ និងប្រភេទនៃការធ្វើដំណើរដែលអ្នកនឹងធ្វើ។ នេះនឹងជួយអ្នកក្នុងការកំណត់ថាតើអ្នកត្រូវការឡានតូច SUV ឬ minivan ។ លក្ខណៈពិសេសដូចជា GPS ម៉ាស៊ីនត្រជាក់ និងប្រព័ន្ធសុវត្ថិភាពកម្រិតខ្ពស់អាចធ្វើឱ្យមានភាពខុសគ្នាយ៉ាងសំខាន់ក្នុងភាពងាយស្រួល និងភាពងាយស្រួល ដូច្នេះសូមកំណត់អាទិភាពទាំងនេះនៅពេលជម្រើសរុករក។</p>
+                            <p class="card-text mb-4">ការប្រៀបធៀបតម្លៃគឺសំខាន់ណាស់ក្នុងការស្វែងរកកិច្ចព្រមព្រៀងដ៏ល្អបំផុត។ ប្រើឧបករណ៍ប្រៀបធៀបតាមអ៊ីនធឺណិតដើម្បីវាយតម្លៃអត្រាការប្រាក់ពីក្រុមហ៊ុនជួលផ្សេងៗគ្នា ហើយតែងតែអានការបោះពុម្ពដ៏ល្អដើម្បីជៀសវាងថ្លៃដែលលាក់កំបាំង។ ការកក់ទុកមុនជាញឹកញាប់អាចធានាបាននូវតម្លៃប្រសើរជាងមុន។ ការវាយតម្លៃពីអតិថិជនពីមុនគឺមានតម្លៃមិនអាចកាត់ថ្លៃបាន; ពួកគេអាចផ្តល់នូវការយល់ដឹងអំពីភាពជឿជាក់នៃរថយន្ត និងគុណភាពនៃសេវាកម្មអតិថិជន។ ពិនិត្យមើលគេហទំព័រពិនិត្យច្រើន ដើម្បីទទួលបានទស្សនៈប្រកបដោយតុល្យភាព។</p>
+                            <p class="card-text mb-4">ការយល់ដឹងអំពីជម្រើសធានារ៉ាប់រងលើការជួលក៏សំខាន់ផងដែរ។ ត្រូវប្រាកដថាអ្នកដឹងពីអ្វីដែលត្រូវរ៉ាប់រង ហើយពិចារណាថាតើការធានារ៉ាប់រងរថយន្តផ្ទាល់ខ្លួនរបស់អ្នក ឬប័ណ្ណឥណទានផ្តល់ការធានារ៉ាប់រងបន្ថែមលើការជួលដែរឬទេ។ នេះអាចជួយសង្រ្គោះអ្នកពីការចំណាយដែលមិនចាំបាច់។ លើសពីនេះ ស្វែងយល់ពីគោលការណ៍ប្រេងឥន្ធនៈរបស់ក្រុមហ៊ុនជួល។ អ្នកខ្លះតម្រូវឱ្យអ្នកប្រគល់ឡានវិញដោយធុងពេញ ខណៈពេលដែលអ្នកផ្សេងទៀតដំណើរការលើមូលដ្ឋានពេញទៅទទេ។ ជ្រើសរើសគោលការណ៍ដែលសាកសមបំផុតសម្រាប់គម្រោងធ្វើដំណើររបស់អ្នក ដើម្បីជៀសវាងការគិតថ្លៃបន្ថែម។</p>
+                            <p class="card-text mb-4">ជាចុងក្រោយ មុននឹងបើករថយន្តចេញ ត្រូវត្រួតពិនិត្យរថយន្តឱ្យបានហ្មត់ចត់ អំពីការខូចខាតដែលកើតមានពីមុនមក ហើយរាយការណ៍មកក្រុមហ៊ុនជួល ដើម្បីជៀសវាងការទទួលខុសត្រូវ។ ដោយពិចារណាលើកត្តាទាំងនេះ អ្នកអាចជ្រើសរើសការជួលរថយន្តដ៏ល្អឥតខ្ចោះ និងរីករាយជាមួយការធ្វើដំណើរដោយគ្មានកង្វល់។</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-lg-5 col-xl-4 ps-4 ">
+                    <div class="row blog-sticky">
+                        <div class="col-6 col-lg-12 d-none d-md-block popular-blog">
+                            <div class="card border-0" style="background-color: #F9F9FB;">
+                                <h5 class="my-3">ប្លុកថ្មីៗ</h5>
+                                <div class="card-body p-0 d-flex flex-column gap-5">
+                                    <div class="popular-blog-list wow animate__animated animate__fadeInRight">
+                                        <a href="blog-detail.html">
+                                            <div class="img">
+                                                <img src="assets/img/blog/car-checking-1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="d-flex flex-column justify-content-between px-3">
+                                            <div>
+                                                <a href="blog-detail.html" class="text-decoration-none">
+                                                    <span class="badge rounded-pill bg-main-clr">ជួលរថយន្ត</span>
+                                                    <h6 class="my-2">អ្វីដែលអ្នកមិនដឹងអំពីការធានារ៉ាប់រងរថយន្តជួល</h6>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between popular-blog-date">
+                                                <span><i class="fa-regular fa-calendar me-1"></i>02 តុលា 2023</span>
+                                                <span><i class="fa-solid fa-eye me-1"></i>24 មើល</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-blog-list wow animate__animated animate__fadeInRight">
+                                        <a href="blog-detail.html">
+                                            <div class="img">
+                                                <img src="assets/img/blog/buy-car.jpg" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="d-flex flex-column justify-content-between px-3">
+                                            <div>
+                                                <a href="blog-detail.html" class="text-decoration-none">
+                                                    <span class="badge rounded-pill bg-main-clr">ទិញ និងលក់</span>
+                                                    <h6 class="my-2">ស្វែងយល់ពីដំណើរការទិញរថយន្តនៅក្រុមហ៊ុនចែកចាយ</h6>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between popular-blog-date">
+                                                <span><i class="fa-regular fa-calendar me-1"></i>05 សីហា 2024</span>
+                                                <span><i class="fa-solid fa-eye me-1"></i>450 មើល</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-blog-list wow animate__animated animate__fadeInRight">
+                                        <a href="blog-detail.html">
+                                            <div class="img">
+                                                <img src="assets/img/blog/car-showcase.png" class="img-fluid" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="d-flex flex-column justify-content-between px-3">
+                                            <div>
+                                                <a href="blog-detail.html" class="text-decoration-none">
+                                                    <span class="badge rounded-pill bg-main-clr">ទិញ និងលក់</span>
+                                                    <span class="badge rounded-pill bg-main-clr">បច្ចេកវិទ្យា</span>
+                                                    <h6 class="my-2">គុណសម្បត្តិ និងគុណវិបត្តិនៃប្រភេទរថយន្តផ្សេងៗគ្នា</h6>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between popular-blog-date">
+                                                <span><i class="fa-regular fa-calendar me-1"></i>20 កក្កដា 2024</span>
+                                                <span><i class="fa-solid fa-eye me-1"></i>207 មើល</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12 mb-5">
+                            <div class="card border-0" style="background-color: #F9F9FB;">
+                                <h5 class="mt-3 mt-lg-5 mb-0">ការផ្តល់ជូនពិសេស</h5>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 wow animate__animated animate__fadeInUp">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card-discount">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <img src="assets/img/car/car-category/suv.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <div class="clip-path-disc">
+                                                        <p class="mb-0 text-center fw-bold text-danger">បញ្ចុះតម្លៃ <br>១០%</p>
+                                                    </div>
+                                                    <div class="w-100" style="margin-top: -35px;">
+                                                        <h6 class="fw-bold">Hyundai</h6>
+                                                        <small class="text-warning" style="font-size: 13px;">តម្លៃពិសេស!! <br> ជួលឥឡូវ​នេះទទួលការបញ្ចុះ ១០%</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
             </div>
-        </section>
-     </main>
-
-    <!-- footer -->
+        </div>
+    </main>
+    
     <footer>
         <div class="container pb-3">
             <div class="row">
@@ -620,13 +577,15 @@
             </div>
         </div>
     </footer>
+    
 
-     <script src="assets/js/bootstrap.bundle.min.js"></script>
-     <script src="assets/plugin/wowjs/wow.min.js"></script>
-     <script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/wowjs/wow.min.js"></script>
+    <script>
         new WOW().init();
-     </script>
-     <script>
+    </script>
+    <script>
          // Back to top and Menu Sticky
          window.onscroll = function () {
             stickyNavbar();
@@ -648,6 +607,6 @@
         backToTop.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-     </script>
+    </script>
 </body>
 </html>
