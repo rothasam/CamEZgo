@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Driver</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <!-- header -->
+
+    <!-- main -->
+    <section class="wishlist-head booking">
+        <div class="wishlist-title">
+            <h1 class="fw-bold text-light">ចាប់ផ្តើមទូទាត់ប្រាក់</h1>
+            <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
+                  <li class="breadcrumb-item"><a href="driver-checkout.html" class="text-decoration-none text-light opacity-75">ជួលអ្នកបើកបរ</a></li>
+                  <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ទូទាត់ប្រាក់</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="booking-info py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="">
+                        <h4 class="fw-bold">ធ្វើការទូទាត់ប្រាក់</h4>
+                        <span>លោកអ្នកអាចធ្វើការបង់ប្រាក់តាមវិធីខាងក្រោម</span>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form action="" class="booking-form rounded-1">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="rent-time shadow-checkout rounded-1 p-4">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="icon rounded-1">
+                                            <i class="fa-solid fa-money-check-dollar text-light"></i>
+                                        </div>
+                                        <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសការបង់ប្រាក់ <span class="text-danger">*</span></h5>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div id="prepayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('prepay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="prepay" data-bs-toggle="collapse" data-bs-target="#prepayAmount">
+                                                <label class="form-check-label mt-2" for="prepay">
+                                                    បង់ប្រាក់កក់ 10%
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div id="allpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('allpay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="allpay" data-bs-toggle="collapse" data-bs-target="#totalAmount">
+                                                <label class="form-check-label mt-2" for="allpay">
+                                                    បង់ប្រាក់ទាំងអស់
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div id="planpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('planpay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="planpay" data-bs-toggle="collapse" data-bs-target="#planAmount">
+                                                <label class="form-check-label mt-2" for="planpay">
+                                                    ប្រើប្រាស់គម្រោងបង់ប្រាក់
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div id="prepayAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10">
+                                            <div class="text-center py-3">
+                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់កក់ <span class="fs-4 ps-1">$5</span></h5>
+                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
+                                            </div>
+                                        </div>
+                                        <div id="totalAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10">
+                                            <div class="text-center py-3">
+                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់សរុប <span class="fs-4 ps-1">$60</span></h5>
+                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
+                                            </div>
+                                        </div>
+                                        <div id="planAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10">
+                                            <div class="p-3">
+                                                <div class="d-flex align-items-center">
+                                                    <label for="planCode" class="form-label mt-1">លេខកូដគម្រោង</label>
+                                                    <input required class="form-control bg-light rounded-1 mx-3" id="planCode" type="text" placeholder="សូមបំពេញលេខកូដគម្រោង..." aria-label="" style="cursor: text;">
+                                                    <button type="submit" class="btn btn-booking btn-1 w-25 rounded-1">បញ្ជូនលេខកូដ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="rent-type shadow-checkout rounded-1 p-4 d-none">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="icon rounded-1">
+                                            <i class="fa-solid fa-credit-card text-light"></i>
+                                        </div>
+                                        <h5 class="fw-bold ms-2 mb-0">ជម្រើសបង់ប្រាក់ <span class="text-danger">*</span></h5>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div id="cardOption" class="form-check rounded-1 p-3" onclick="document.getElementById('creditcard').click();">
+                                                <input data-bs-toggle="collapse" data-bs-target="#payCard" class="form-check-input fs-5 m-0" type="radio" name="payMethod" id="creditcard">
+                                                <label class="form-check-label mt-2" for="creditcard">
+                                                    ប្រើប្រាស់កាតឥណទាន
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div id="scanOption" class="form-check rounded-1 p-3" onclick="document.getElementById('scankhqr').click();">
+                                                <input data-bs-toggle="collapse" data-bs-target="#payScan" class="form-check-input fs-5 m-0" type="radio" name="payMethod" id="scankhqr">
+                                                <label class="form-check-label mt-2" for="scankhqr">
+                                                    ស្កេន KHQR Code
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div id="payCard" class="collapse">
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <h5 class="mb-0">បំពេញព័ត័មានអំពីកាតឥណទាន</h5>
+                                                <div class="col-3">
+                                                    <div class="row g-2">
+                                                        <div class="col-3">
+                                                            <img src="assets/img/driver/express-card.png" class="img-fluid" alt="Express American Card">
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <img src="assets/img/driver/master-card.png" class="img-fluid" alt="Master Card">
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <img src="assets/img/driver/visa-card.png" class="img-fluid" alt="Visa Card">
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <img src="assets/img/driver/union-card.png" class="img-fluid" alt="Unionpay Card">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <label for="cardNumber" class="form-label">លេខកាតឥណទាន <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control rounded-1" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <label for="cardName" class="form-label">ឈ្មោះកាតឥណទាន <span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control rounded-1" placeholder="បំពេញឈ្មោះកាតរបស់អ្នក...">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <label for="cardExpire" class="form-label">ថ្ងៃផុតកំណត់ <span class="text-danger">*</span></label>
+                                                        <input type="" class="form-control rounded-1" placeholder="ខែ / ឆ្នាំ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <label for="cardExpire" class="form-label">លេខ CVV <span class="text-danger">*</span></label>
+                                                        <input type="password" class="form-control rounded-1" placeholder="xxx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="payScan" class="collapse">
+                                            <div class="d-flex justify-content-evenly align-items-center mt-3">
+                                                <div class="text-center">
+                                                    <h5>សូមធ្វើការស្កេន KHQR កូដ​ដើម្បីបង់ប្រាក់</h5>
+                                                    <span>អ្នកអាចស្កេនដើម្បីផ្ទេរប្រាក់ពីគ្រប់ធនាគារតាមរយៈ KHQR នេះ។</span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <img src="assets/img/driver/driver-qr.png" class="img-fluid rounded-3" alt="KHQR Code">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="wrapper-button d-flex gap-3 justify-content-start">
+                                    <a href="driver-checkout.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">ត្រឡប់ក្រោយវិញ</a>
+                                    <a href="#" class="btn btn-booking text-decoration-none rounded-1">រួចរាល់</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-5 col-xl-3">
+                    <div class="card summary-detail shadow-checkout border-0 rounded-1">
+                        <div class="card-header border-0 d-flex justify-content-between">
+                            <h5 class="fw-bold mb-0">សង្ខេបព័ត៌មានជួល</h5>
+                            <h5 class="fw-bold mb-0">0168</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="col-8">
+                                    <ul class="list-group-flush p-0 pe-3">
+                                        <li class="list-group-item py-1">
+                                            <span>ឈ្មោះ</span>
+                                            <span class="float-end">ចន ស្មីត</span>
+                                        </li>
+                                        <li class="list-group-item py-1">
+                                            <span>បទពិសោធន៍</span>
+                                            <span class="float-end">04 ឆ្នាំ</span>
+                                        </li>
+                                        <li class="list-group-item py-1">
+                                            <span>អាយុ</span>
+                                            <span class="float-end">24 ឆ្នាំ</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <div class="profile rounded-2">
+                                        <img src="assets/img/driver/pf/9.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group-flush p-0">
+                                <li class="list-group-item py-1">
+                                    <span>លេខប័ណ្ណបើកបរ</span>
+                                    <span class="float-end">B.0020097</span>
+                                </li>
+                                <li class="list-group-item py-1">
+                                    <span>លេខទូរស័ព្ទ</span>
+                                    <span class="float-end">+855 123456789</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul class="list-group-flush p-0">
+                                <li class="list-group-item py-1 d-flex justify-content-between">
+                                    <span>ថ្ងៃចាប់ផ្តើម</span>
+                                    <div class="d-flex flex-column align-items-end">
+                                        <span>អាទិត្យ, 12-ធ្នូ-2030</span>
+                                        <small class="text-secondary">07:30 am</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-1 d-flex justify-content-between">
+                                    <span>ថ្ងៃបញ្ចប់</span>
+                                    <div class="d-flex flex-column align-items-end">
+                                        <span>ពុធ, 15-ធ្នូ-2030</span>
+                                        <small class="text-secondary">05:00 pm</small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <hr>
+                            <ul class="list-group-flush p-0">
+                                <li class="list-group-item py-1">
+                                    <span class="fw-medium">ថ្លៃឈ្នួលមួយថ្ងៃ</span>
+                                    <span class="float-end fw-medium fs-5">$10</span>
+                                </li>
+                                <li class="list-group-item py-1">
+                                    <span class="fw-medium">ថ្លៃសេវាកម្មបន្ថែម</span>
+                                    <span class="float-end fw-medium fs-5">$5</span>
+                                </li> 
+                                <li class="list-group-item py-1">
+                                    <span class="fw-medium">រយៈពេល</span>
+                                    <span class="float-end fw-medium">4 <small>ថ្ងៃ</small></span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div>
+                                <div>
+                                    <span class="fw-medium">សរុប</span>
+                                    <span class="float-end fw-medium fs-4">$60</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <script>
+        document.getElementById('prepayOption').addEventListener('click', function() {
+            selectPaymentOption('prepayAmount', ['totalAmount', 'planAmount']);
+            togglePaymentVisibility(true);
+        });
+        document.getElementById('allpayOption').addEventListener('click', function() {
+            selectPaymentOption('totalAmount', ['prepayAmount', 'planAmount']);
+            togglePaymentVisibility(true);
+        });
+        document.getElementById('planpayOption').addEventListener('click', function() {
+            selectPaymentOption('planAmount', ['prepayAmount', 'totalAmount']);
+            togglePaymentVisibility(false);
+        });
+        //
+        document.getElementById('cardOption').addEventListener('click', function() {
+            selectPaymentOption('payCard', ['payScan']);
+        });
+        document.getElementById('scanOption').addEventListener('click', function() {
+            selectPaymentOption('payScan', ['payCard']);
+        });
+        //
+        function selectPaymentOption(showId, hideIds) {
+            document.getElementById(showId).classList.add('show');
+            hideIds.forEach(function(id) {
+                document.getElementById(id).classList.remove('show');
+            });
+        }
+        //
+        function togglePaymentVisibility(show) {
+            var rentTypeSection = document.querySelector('.rent-type');
+            if (show) {
+                rentTypeSection.classList.add('show');
+                rentTypeSection.classList.remove('d-none');
+            } else {
+                rentTypeSection.classList.remove('show');
+                rentTypeSection.classList.add('d-none');
+            }
+        }
+    </script>
+</body>
+</html>

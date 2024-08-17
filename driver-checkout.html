@@ -24,7 +24,7 @@
                 </nav>
             </div>
         </section>
-        <section class="booking-info py-5">
+        <section class="booking-info driver-checkout py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-12">
@@ -33,7 +33,7 @@
                             <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-xl-9">
                         <form action="" class="booking-form rounded-1">
                             <div class="row g-4">
                                 <div class="col-12">
@@ -47,7 +47,7 @@
                                         <div class="row g-3">
                                             <div class="col-6">
                                                 <div class="form-check rounded-1 p-3" onclick="document.getElementById('randomSelect').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="selectType" id="randomSelect">
+                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="selectType" id="randomSelect">
                                                     <label class="form-check-label mt-2" for="randomSelect">
                                                         ជ្រើសរើសដោយស្វ័យប្រវត្តិ
                                                     </label>
@@ -55,7 +55,7 @@
                                             </div>
                                             <div class="col-6">
                                                 <div class="form-check rounded-1 p-3" onclick="document.getElementById('selfSelect').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="selectType" id="selfSelect">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="selectType" id="selfSelect">
                                                     <label class="form-check-label mt-2" for="selfSelect">
                                                         ជ្រើសរើសដោយខ្លួនឯង
                                                     </label>
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-4">
+                                    <div class="shadow-checkout rounded-1 p-4">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="icon rounded-1">
                                                 <i class="fa-solid fa-info text-light"></i>
@@ -77,26 +77,66 @@
                                                 <div class="row g-3">
                                                     <div class="col-6">
                                                         <div>
-                                                            <label for="deliveryLocate" class="form-label">លេខសម្គាល់</label>
-                                                            <input  type="text" placeholder="0168" class="form-control rounded-1">
+                                                            <label for="deliveryLocate" class="form-label">លេខសម្គាល់ <span class="text-danger">*</span></label>
+                                                            <input disabled type="text" placeholder="0168" class="form-control rounded-1">
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div>
-                                                            <label for="deliveryLocate" class="form-label">ឈ្មោះពេញ</label>
-                                                            <input type="text" placeholder="ចន ស្មីត" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div>
-                                                            <label for="deliveryLocate" class="form-label">បទពិសោធន៍</label>
-                                                            <input type="text" placeholder="បទពិសោធន៍ 04 ឆ្នាំ" class="form-control rounded-1">
+                                                            <label for="deliveryLocate" class="form-label">ឈ្មោះពេញ <span class="text-danger">*</span></label>
+                                                            <input disabled type="text" placeholder="ចន ស្មីត" class="form-control rounded-1">
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div>
                                                             <label for="deliveryLocate" class="form-label">លេខទូរស័ព្ទ</label>
-                                                            <input type="text" placeholder="+855 123456789" class="form-control rounded-1">
+                                                            <input disabled type="text" placeholder="+855 123456789" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">បន្ថែមសេវាកម្ម</label>
+                                                            <input type="text" placeholder="បញ្ចូលសេវាកម្មបន្ថែម..." class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="rent-time shadow-checkout rounded-1 p-4">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="icon rounded-1">
+                                                <i class="fa-regular fa-hourglass-half text-light"></i>
+                                            </div>
+                                            <h5 class="fw-bold ms-2 mb-0">រយៈពេលជួល</h5>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="row g-3">
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ថ្ងៃចាប់ផ្តើម <span class="text-danger">*</span></label>
+                                                            <input onclick="this.showPicker();" type="date" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ពេលវេលាចាប់ផ្តើម <span class="text-danger">*</span></label>
+                                                            <input onclick="this.showPicker();" type="time" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ថ្ងៃបញ្ចប់ <span class="text-danger">*</span></label>
+                                                            <input onclick="this.showPicker();" type="date" class="form-control rounded-1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div>
+                                                            <label for="deliveryLocate" class="form-label">ពេលវេលាបញ្ចប់ <span class="text-danger">*</span></label>
+                                                            <input onclick="this.showPicker();" type="time" class="form-control rounded-1">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -106,14 +146,14 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="wrapper-button d-flex gap-3 justify-content-start">
-                                        <a href="car-rent-detail.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានអ្នកបើកបរ</a>
-                                        <a href="#" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</a>
+                                        <a href="driver-category.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">ត្រឡប់ក្រោយវិញ</a>
+                                        <a href="driver-payment.html" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</a>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-3">
+                    <div class="col-5 col-xl-3">
                         <div class="card summary-detail shadow-checkout border-0 rounded-1">
                             <div class="card-header border-0 d-flex justify-content-between">
                                 <h5 class="fw-bold mb-0">សង្ខេបព័ត៌មានជួល</h5>
@@ -122,18 +162,20 @@
                             <div class="card-body">
                                 <div class="row g-0">
                                     <div class="col-8">
-                                        <div>
-                                            <ul class="list-group-flush p-0 pe-4">
-                                                <li class="list-group-item my-2 mt-0">
-                                                    <span>ឈ្មោះ</span>
-                                                    <span class="float-end">ចន ស្មីត</span>
-                                                </li>
-                                                <li class="list-group-item my-2">
-                                                    <span>បទពិសោធន៍</span>
-                                                    <span class="float-end">04 ឆ្នាំ</span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <ul class="list-group-flush p-0 pe-3">
+                                            <li class="list-group-item py-1">
+                                                <span>ឈ្មោះ</span>
+                                                <span class="float-end">ចន ស្មីត</span>
+                                            </li>
+                                            <li class="list-group-item py-1">
+                                                <span>បទពិសោធន៍</span>
+                                                <span class="float-end">04 ឆ្នាំ</span>
+                                            </li>
+                                            <li class="list-group-item py-1">
+                                                <span>អាយុ</span>
+                                                <span class="float-end">24 ឆ្នាំ</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="col-4">
                                         <div class="profile rounded-2">
@@ -141,34 +183,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <li class="list-group-item my-2">
+                                <ul class="list-group-flush p-0">
+                                    <li class="list-group-item py-1">
                                         <span>លេខប័ណ្ណបើកបរ</span>
                                         <span class="float-end">B.0020097</span>
                                     </li>
-                                    <li class="list-group-item my-2">
+                                    <li class="list-group-item py-1">
                                         <span>លេខទូរស័ព្ទ</span>
-                                        <span class="float-end">123456789</span>
+                                        <span class="float-end">+855 123456789</span>
                                     </li>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between">
-                                        <span>ថ្ងៃចាប់ផ្តើម</span>
-                                        <span>អាទិត្យ, 12-ធ្នូ-2030</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span>ថ្ងៃបញ្ចប់</span>
-                                        <span>អាទិត្យ, 15-ធ្នូ-2030</span>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex justify-content-between mt-2">
-                                        <span class="fw-bold">ថ្លៃឈ្នួល</span>
-                                        <span class="fw-bold fs-5">$110</span>
-                                    </div> 
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>

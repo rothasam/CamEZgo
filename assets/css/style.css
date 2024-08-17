@@ -1922,7 +1922,8 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
 }
 .booking-info .booking-form .form-check-input,
-.booking-info .booking-form .form-check-label {
+.booking-info .booking-form .form-check-label,
+.booking-info .booking-form .rent-time .form-control {
   cursor: pointer;
 }
 .booking-info .booking-form .form-check-input {
@@ -1982,10 +1983,47 @@ header nav .nav-link:hover {
   color: var(--bg-color);
 }
 /* ======================= */
-/* === driver-checkout === */
+/* === driver-checkout.html === */
 /* ======================= */
 .summary-detail .profile {
   background-color: var(--main-color-900);
+}
+/* =========================== */
+/* === driver-payment.html === */
+/* =========================== */
+.booking-info .cash-collapse {
+  border: 1px solid var(--main-color-100);
+}
+.arrow-animation {
+  color: var(--main-color-400);
+  display: inline-block;
+  animation: moveUpDown 1s infinite;
+}
+.booking-info #cardOption .fa-credit-card,
+.booking-info #cardOption .fa-qrcode {
+  animation: bounce 2s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 /* ================================= */
 
