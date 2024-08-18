@@ -2103,7 +2103,7 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
   color: white;
 }
-.search-car-box input:focus {
+.search-car-box input:focus, .search-car-box form .form-select:focus {
   box-shadow: none !important;
   border-color: rgb(151, 151, 151) !important;
 }
@@ -2532,12 +2532,17 @@ header nav .nav-link:hover {
   border-radius: 8px;
   z-index: 10;
   padding: 0 25px;
+  transition: 0.3s;
 }
 .car-sell-promotion img {
   position: absolute;
   height: 270px;
   top: -38px;
   right: -70px;
+}
+.car-sell-promotion:hover{
+  transform: translateY(-4px);
+  border-bottom: 4px solid var(--main-color);
 }
 .promotion-sale-text div:nth-child(2){
   background-color: var(--dark-blue);
@@ -3152,7 +3157,7 @@ header nav .nav-link:hover {
 /***************************************/
 .blog-sticky {
   position: sticky;
-  top: 60px;
+  top: 100px;
 }
 .card-discount {
   height: 120px;
