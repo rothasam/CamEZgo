@@ -380,7 +380,7 @@
                                                     <div class="input-group flex-nowrap">
                                                         <span class="input-group-text" id="addon-wrapping"><i
                                                                 class="fa-regular fa-calendar"></i></span>
-                                                        <input type="text" class="form-control" id="pickDate"
+                                                        <input type="text" class="form-control" id="pickDate-home"
                                                             placeholder="ថ្ងៃចាប់ផ្តើមកក់" aria-label="Username"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -389,7 +389,7 @@
                                                     <div class="input-group flex-nowrap">
                                                         <span class="input-group-text" id="addon-wrapping"><i
                                                                 class="fa-regular fa-calendar"></i></span>
-                                                        <input type="text" class="form-control" id="dropDate"
+                                                        <input type="text" class="form-control" id="dropDate-home"
                                                             placeholder="បញ្ចប់ការកក់" aria-label="Username"
                                                             aria-describedby="addon-wrapping">
 
@@ -462,7 +462,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-7">
                             <div class="col-12 left-side-title pb-4 d-none d-lg-block wow animate__animated animate__fadeIn">
-                                <h1 class="fw-bold">ហេតុអ្វីបានជាជ្រើសរើសពួកយើង</h1>
+                                <h1 class="fw-bold">ហេតុអ្វីជ្រើសរើសពួកយើង</h1>
                             </div>
                             <div class="col-12 head-title pb-4 d-block d-lg-none">
                                 <h1 class="fw-bold">ហេតុអ្វីបានជាជ្រើសរើសពួកយើង</h1>
@@ -620,7 +620,7 @@
                     <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">
                         <h1 class="fw-bold">ប្រភេទរថយន្ត</h1>
                     </div>
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper mb-5">
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
                             <a href="car-rent-category-home.html">
                                 <div class="car-type-item position-relative">
@@ -667,6 +667,11 @@
                             </a>
                         </div>
                     </div>
+                    
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+                <div class="row">
                     <div class="col-12 d-flex justify-content-center align-items-center pt-3">
                         <a href="car-rent-category-home.html" class="text-decoration-none view-all-car">មើលទាំងអស់<i
                                 class="fa-solid fa-arrow-right-long ms-2"></i></a>
@@ -682,7 +687,7 @@
                     <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">
                         <h1 class="fw-bold">រថយន្តសំរា​ប់ជួល</h1>
                     </div>
-                    <div class="swiper-wrapper py-2">
+                    <div class="swiper-wrapper py-2 mb-4">
                         <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
                             <div class="card car-rent rounded-1">
                                 <div class="car-img position-relative m-2 pb-0 mb-0">
@@ -770,7 +775,7 @@
                                 <div class="card-body px-4">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <a href="car-rent-detail-home.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Chevrolet Corvette</h5></a>
+                                            <a href="car-rent-detail-home.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Chevrolet</h5></a>
                                             <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                         </div>
                                         <div class="feature">
@@ -806,7 +811,7 @@
                                 <div class="card-body px-4">
                                     <div>
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <a href="car-rent-detail-home.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Ford Shelby GT500</h5></a>
+                                            <a href="car-rent-detail-home.html" class="text-decoration-none"><h5 class="dark-blue mb-0 fw-medium">Ford Shelby</h5></a>
                                             <div><i class="fa-solid fa-star text-warning me-1"></i><span class="fw-medium">4.5</span></div>
                                         </div>
                                         <div class="feature">
@@ -867,11 +872,16 @@
                     </div>
                     <!-- <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div> -->
-                    <div class="col-12 d-flex justify-content-center align-items-center pt-3 ">
-                        <a href="car-rent-category-home.html" class="text-decoration-none view-all-car">មើលទាំងអស់<i
-                                class="fa-solid fa-arrow-right-long ms-2"></i></a>
-                    </div>
+                    <!-- Swiper Pagination -->
+                    
+                    <div class="swiper-pagination"></div>  
                 </div>
+               <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center pt-3 ">
+                    <a href="car-rent-category-home.html" class="text-decoration-none view-all-car">មើលទាំងអស់<i
+                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                </div>
+               </div>
             </div>
         </section>
 
@@ -1479,13 +1489,16 @@
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
+            fade: "true",
+            centerslide: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
             autoplay: {
             delay: 10000,
             disableOnInteraction: false,
-            },
-            pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
             },
             breakpoints: {
             0: {
@@ -1507,16 +1520,19 @@
 
          // Car for rent
          var swiper = new Swiper(".car-item-swiper", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
+        fade: "true",
+        centerslide: "true",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
         autoplay: {
             delay: 10000,
             disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",
