@@ -115,7 +115,8 @@ header nav .nav-link:hover {
 .nav-noti:hover .dropdown-noti {
   display: block;
 }
-.nav-noti .nav-link span, .nav-item .nav-link .bi-suit-heart~span {
+.nav-noti .nav-link span,
+.nav-item .nav-link .bi-suit-heart ~ span {
   right: 0;
   font-size: 8px;
 }
@@ -364,6 +365,17 @@ header nav .nav-link:hover {
 .radio.selected {
   background-color: transparent;
   border: 1px solid var(--main-color);
+}
+
+.label-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 5px;
 }
 .line-root {
   position: relative;
@@ -1911,9 +1923,10 @@ header nav .nav-link:hover {
 /* === rent-checkout.html === */
 /* ========================== */
 .shadow-checkout {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
-.booking-info .booking-form .icon{
+.booking-info .booking-form .icon {
   width: 33px;
   height: 33px;
   display: flex;
@@ -1955,10 +1968,20 @@ header nav .nav-link:hover {
   border: 1px solid var(--main-color-50);
   position: relative;
 }
-.booking-info .booking-form .rent-type .form-check .form-check-input:checked + .form-check-label::before,
-.booking-info .booking-form .rent-time .form-check .form-check-input:checked + .form-check-label::before {
+.booking-info
+  .booking-form
+  .rent-type
+  .form-check
+  .form-check-input:checked
+  + .form-check-label::before,
+.booking-info
+  .booking-form
+  .rent-time
+  .form-check
+  .form-check-input:checked
+  + .form-check-label::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -2442,11 +2465,11 @@ header nav .nav-link:hover {
   background-color: #ffc107;
   padding-top: 10px;
 }
-.car-rent-promotion .card-discount{
+.car-rent-promotion .card-discount {
   background-color: white;
   border: 1px solid rgb(171, 171, 171);
 }
-.car-rent-promotion .card-discount h6{
+.car-rent-promotion .card-discount h6 {
   color: var(--dark-blue);
 }
 .special-offer .btn-register {
@@ -2457,13 +2480,13 @@ header nav .nav-link:hover {
 .special-offer .btn-register:hover {
   background-color: var(--main-hover);
 }
-.car-sell-promotion{
+.car-sell-promotion {
   overflow: hidden;
   background-color: pink;
   border-radius: 8px;
   z-index: 10;
 }
-.car-sell-promotion img{
+.car-sell-promotion img {
   position: absolute;
   height: 280px;
   background-color: red;
@@ -3440,15 +3463,17 @@ footer .nav-link:hover {
     top: 10px;
     left: -120px;
   }
-  .nav-noti .bi-bell, .nav-item .bi-suit-heart {
+  .nav-noti .bi-bell,
+  .nav-item .bi-suit-heart {
     font-size: 20px;
   }
-  .nav-noti .nav-link span , .nav-item .nav-link .bi-suit-heart~span {
+  .nav-noti .nav-link span,
+  .nav-item .nav-link .bi-suit-heart ~ span {
     right: -5px;
     transform: translateY(2px);
     font-size: 9px;
   }
-  .nav-item .nav-link .bi-suit-heart~span{
+  .nav-item .nav-link .bi-suit-heart ~ span {
     right: -7px;
   }
 
@@ -4058,7 +4083,11 @@ footer .nav-link:hover {
     font-size: 30px !important;
     font-weight: bold;
   }
+  .f-w-100 {
+    width: 100% !important;
+  }
 }
+
 @media (max-width: 442px) {
   .driver-list .modal .image {
     border: 1px solid var(--main-color-200);
