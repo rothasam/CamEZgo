@@ -48,7 +48,7 @@
                                         <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសការបង់ប្រាក់ <span class="text-danger">*</span></h5>
                                     </div>
                                     <div class="row g-2 g-md-3">
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-sm-6 col-md-4">
                                             <div id="prepayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('prepay').click();">
                                                 <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="prepay" data-bs-toggle="collapse" data-bs-target="#prepayAmount">
                                                 <label class="form-check-label mt-2" for="prepay">
@@ -56,7 +56,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-sm-6 col-md-4">
                                             <div id="allpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('allpay').click();">
                                                 <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="allpay" data-bs-toggle="collapse" data-bs-target="#totalAmount">
                                                 <label class="form-check-label mt-2" for="allpay">
@@ -64,7 +64,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
+                                        <div class="col-md-4">
                                             <div id="planpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('planpay').click();">
                                                 <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="planpay" data-bs-toggle="collapse" data-bs-target="#planAmount">
                                                 <label class="form-check-label mt-2" for="planpay">
@@ -174,7 +174,7 @@
                                         </div>
                                         <div id="payScan" class="collapse">
                                             <div class="row justify-content-evenly align-items-center mt-3">
-                                                <div class="col-md-9 col-lg-10">
+                                                <div class="col-md-7 col-lg-6">
                                                     <div class="text-center text-qrcode">
                                                         <h5>សូមធ្វើការស្កេន KHQR កូដ​ដើម្បីបង់ប្រាក់</h5>
                                                         <span>អ្នកអាចស្កេនដើម្បីផ្ទេរប្រាក់ពីគ្រប់ធនាគារតាមរយៈ KHQR នេះ</span>
@@ -300,21 +300,18 @@
             selectPaymentOption('planAmount', ['prepayAmount', 'totalAmount']);
             togglePaymentVisibility(false);
         });
-        //
         document.getElementById('cardOption').addEventListener('click', function() {
             selectPaymentOption('payCard', ['payScan']);
         });
         document.getElementById('scanOption').addEventListener('click', function() {
             selectPaymentOption('payScan', ['payCard']);
         });
-        //
         function selectPaymentOption(showId, hideIds) {
             document.getElementById(showId).classList.add('show');
             hideIds.forEach(function(id) {
                 document.getElementById(id).classList.remove('show');
             });
         }
-        //
         function togglePaymentVisibility(show) {
             var rentTypeSection = document.querySelector('.rent-type');
             if (show) {

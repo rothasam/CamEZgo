@@ -4068,6 +4068,9 @@ footer .nav-link:hover {
   .car-attribute .sub-info i {
     font-size: 25px;
   }
+  .booking-info .summary-detail {
+    border: 1px solid var(--main-color-200) !important;
+  }
   .shadow-checkout {
     box-shadow: none;
   }
