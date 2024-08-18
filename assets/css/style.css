@@ -3382,16 +3382,13 @@ footer .nav-link:hover {
   .wishlist .car-cart-item h5 {
     font-weight: 500 !important;
   }
-  .info-driver-payment .row .col-xl-12,
-  .driver-checkout .row .col-xl-12 {
+  .booking-info .row .col-xl-12 {
     order: 1;
   }
-  .info-driver-payment .row .col-xl-9,
-  .driver-checkout .row .col-xl-9 {
+  .booking-info .row .col-xl-9 {
     order: 3;
   }
-  .info-driver-payment .row .col-xl-3,
-  .driver-checkout .row .col-xl-3 {
+  .booking-info .row .col-xl-3 {
     order: 2;
   }
 }
@@ -3413,7 +3410,6 @@ footer .nav-link:hover {
     width: 100%;
     height: 140px;
   }
-
   .image-profile img {
     width: 100%;
     height: 140px;
@@ -3421,7 +3417,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 30px;
     height: 30px;
@@ -3429,7 +3424,6 @@ footer .nav-link:hover {
     bottom: 10px;
     right: 10px;
   }
-
   .list-credit-card img {
     width: 25px !important;
   }
@@ -3866,7 +3860,6 @@ footer .nav-link:hover {
   .head-title h1 {
     font-size: 20px;
   }
-
   .icon-card {
     width: 50px;
     height: 50px;
@@ -3880,7 +3873,6 @@ footer .nav-link:hover {
   .why-us-des {
     width: 68%;
   }
-
   .notification-list .navbar-nav .nav-item .nav-link .noti-dot {
     width: 8px;
     height: 8px;
@@ -3909,11 +3901,9 @@ footer .nav-link:hover {
     width: 90% !important;
     margin-top: -110px !important;
   }
-
   .app-section p {
     font-size: 12px;
   }
-
   .login-signup a {
     font-size: 12px;
   }
@@ -3923,7 +3913,6 @@ footer .nav-link:hover {
   .hero-text h3 {
     font-size: 20px;
   }
-
   .blog-category .nav .nav-item .nav-link {
     font-size: 11px;
     padding: 4px 8px;
@@ -3931,7 +3920,6 @@ footer .nav-link:hover {
   .blog-card .card-body h6 {
     font-size: 16px;
   }
-
   .blog-card .card-body .btn {
     font-size: 14px;
   }
@@ -3944,7 +3932,6 @@ footer .nav-link:hover {
   .blog-card-img .fa-calendar {
     font-size: 10px;
   }
-
   /* === panha's code === */
   .hero-sell .hero-content h1,
   .hero-driver .hero-content h1,
@@ -4056,9 +4043,9 @@ footer .nav-link:hover {
   .car-list .ts-control {
     width: 150px;
   }
-  .breadcrumb-item {
+  /* .breadcrumb-item {
     font-size: 13px !important;
-  }
+  } */
   .banner-name .banner-content h1 {
     font-size: 25px;
   }
