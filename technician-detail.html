@@ -9,115 +9,302 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    
 </head>
 
 <body>
-    <section class="tech-detail">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-12" data-aos="fade-up-right" data-aos-duration="2000">
-                    <div class="card bg-transparent border-0">
-                        <img class="img-fluid" src="assets/img/repair-page/technician/technician-1.webp" alt="">
-                        <div class="card-body p-0 mt-3">
-                            <div>
-                                <h4 class="fw-medium">ជំនាញ​វិជ្ជាជីវៈ</h4>
-                                <p class="fs-6">
-                                    ជំនាញ​វិជ្ជាជីវៈ​គឺ​ជា​សមត្ថភាព​និង​គុណ​សម្បត្តិ​ដែល​អាច​ឱ្យ​បុគ្គល​ម្នាក់ៗ​អាច​អនុវត្ត​បាន​យ៉ាង​មាន​ប្រសិទ្ធភាព​ក្នុង​ការ​ងារ​របស់​ពួក​គេ
-                                    ហើយ​រួម​បញ្ចូល​ទាំង​ការ​ទំនាក់ទំនង ភាព​ជា​អ្នក​ដឹកនាំ។
-                                </p>
-                            </div>
-                            <div>
-                                <div class="d-flex justify-content-between mb-1 fw-medium"
-                                    style="width: 97%; font-size: 12px;">
-                                    <p class="m-0">ជួសជុលម៉ាស៊ីន</p>
-                                    <p class="m-0">95%</p>
+
+    <header>
+        <nav class="navbar navbar-expand-md p-0 navbar-landing">
+            <div class="container d-flex flex-column nav-contain">
+                <div class="row w-100 py-2">
+                    <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
+                    <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
+                    </div> 
+                    <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
+                        <a href="create-account.html" class="btn rounded-1" style="border: 1px solid var(--main-color);">បង្កើតគណនី</a>
+                        <a href="sign-in.html" class="btn ms-2 rounded-1" style="border: 1px solid var(--main-color);">ចូលគណនី</a>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+</header>
+<!-- Buttton back to top -->
+<button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <main>
+        <section class="tech-detail py-5">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-12" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="card bg-transparent border-0">
+                            <img class="img-fluid" src="assets/img/repair-page/technician/technician-1.webp" alt="">
+                            <div class="card-body p-0 mt-3">
+                                <div>
+                                    <h4 class="fw-medium">ជំនាញ​វិជ្ជាជីវៈ</h4>
+                                    <p class="fs-6">
+                                        ជំនាញ​វិជ្ជាជីវៈ​គឺ​ជា​សមត្ថភាព​និង​គុណ​សម្បត្តិ​ដែល​អាច​ឱ្យ​បុគ្គល​ម្នាក់ៗ​អាច​អនុវត្ត​បាន​យ៉ាង​មាន​ប្រសិទ្ធភាព​ក្នុង​ការ​ងារ​របស់​ពួក​គេ
+                                        ហើយ​រួម​បញ្ចូល​ទាំង​ការ​ទំនាក់ទំនង ភាព​ជា​អ្នក​ដឹកនាំ។
+                                    </p>
                                 </div>
-                                <div class="progress mb-3" role="progressbar" aria-label="Basic example"
-                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="height: 4px;">
-                                    <div class="progress-bar" style="width: 95%; height: 4px;"></div>
-                                </div>
-                                <div class="d-flex justify-content-between mb-1 fw-medium"
-                                    style="width: 82%; font-size: 12px;">
-                                    <p class="m-0">ការវិភាគម៉ាស៊ីន</p>
-                                    <p class="m-0">80%</p>
-                                </div>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="80" style="height: 4px;">
-                                    <div class="progress-bar" style="width: 80%; height: 4px;"></div>
+                                <div>
+                                    <div class="d-flex justify-content-between mb-1 fw-medium"
+                                        style="width: 97%; font-size: 12px;">
+                                        <p class="m-0">ជួសជុលម៉ាស៊ីន</p>
+                                        <p class="m-0">95%</p>
+                                    </div>
+                                    <div class="progress mb-3" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="height: 4px;">
+                                        <div class="progress-bar" style="width: 95%; height: 4px;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-1 fw-medium"
+                                        style="width: 82%; font-size: 12px;">
+                                        <p class="m-0">ការវិភាគម៉ាស៊ីន</p>
+                                        <p class="m-0">80%</p>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="80" style="height: 4px;">
+                                        <div class="progress-bar" style="width: 80%; height: 4px;"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-8 col-12 mt-lg-0 mt-5" data-aos="fade-up" data-aos-duration="2400">
-                    <div class="card border-0 bg-transparent">
-                        <div class="card-body p-0">
-                            <h2 class="m-0 mb-2 fw-bold">សេង សុផា</h2>
-                            <p class="text-primary">វិស្វករ​មេកានិច</p>
-                            <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តអនុវត្តគោលការណ៍នៃមេកានិចយានយន្ត ការធ្វើរោគវិនិច្ឆ័យ
-                                និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ ដោះស្រាយបញ្ហា
-                                និងជួសជុលយានយន្ត។ ជាធម្មតា ពួកវាធ្វើការនៅក្នុងឧស្សាហកម្មដូចជា សេវាកម្មជួលរថយន្ត
-                                ហាងជួសជុលរថយន្ត ឬហាងលក់ទំនិញ
-                                ដែលធានាឱ្យយានជំនិះមានសុវត្ថិភាព អាចទុកចិត្តបាន និងថែទាំបានល្អ។
-                                តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការប្រើប្រាស់ឧបករណ៍
-                                និងឧបករណ៍ឯកទេស ដើម្បីធ្វើរោគវិនិច្ឆ័យបញ្ហា ធ្វើការជួសជុល
-                                និងធ្វើការថែទាំជាប្រចាំលើប្រភេទផ្សេងៗនៃយានយន្ត។</p>
-                            <div class="count-number d-flex align-items-center pb-4 border-bottom">
-                                <span class="fw-bold fs-1 js-count-up" data-value="2123">2,123</span> <span
-                                    class="fw-bold fs-1">+</span>
-                                <div class="ms-4">
-                                    <p class="m-0 fw-medium">គម្រោងបានបញ្ចប់</p>
-                                    <p class="m-0 fw-medium">18 ឆ្នាំ</p>
+                    <div class="col-lg-8 col-12 mt-lg-0 mt-5" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="card border-0 bg-transparent">
+                            <div class="card-body p-0">
+                                <h2 class="m-0 mb-2 fw-bold">សេង សុផា</h2>
+                                <p class="text-primary">វិស្វករ​មេកានិច</p>
+                                <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តអនុវត្តគោលការណ៍នៃមេកានិចយានយន្ត ការធ្វើរោគវិនិច្ឆ័យ
+                                    និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ ដោះស្រាយបញ្ហា
+                                    និងជួសជុលយានយន្ត។ ជាធម្មតា ពួកវាធ្វើការនៅក្នុងឧស្សាហកម្មដូចជា សេវាកម្មជួលរថយន្ត
+                                    ហាងជួសជុលរថយន្ត ឬហាងលក់ទំនិញ
+                                    ដែលធានាឱ្យយានជំនិះមានសុវត្ថិភាព អាចទុកចិត្តបាន និងថែទាំបានល្អ។
+                                    តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការប្រើប្រាស់ឧបករណ៍
+                                    និងឧបករណ៍ឯកទេស ដើម្បីធ្វើរោគវិនិច្ឆ័យបញ្ហា ធ្វើការជួសជុល
+                                    និងធ្វើការថែទាំជាប្រចាំលើប្រភេទផ្សេងៗនៃយានយន្ត។</p>
+                                <div class="count-number d-flex align-items-center pb-4 border-bottom">
+                                    <span class="fw-bold fs-1 js-count-up" data-value="2123">2,123</span> <span
+                                        class="fw-bold fs-1">+</span>
+                                    <div class="ms-4">
+                                        <p class="m-0 fw-medium">គម្រោងបានបញ្ចប់</p>
+                                        <p class="m-0 fw-medium">18 ឆ្នាំ</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <ul class="list-unstyled get-touch">
-                                <h4 class="fw-medium mt-4 mb-3">ទំនាក់ទំនង</h4>
-                                <li class="mb-3">
-                                    <a href="#" class="text-decoration-none text-black fw-medium">
-                                        <span>
-                                            <i class="fa-solid fa-phone text-primary"></i>
-                                        </span> (+855) 23 123 456
-                                    </a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="#" class="text-decoration-none text-black fw-medium">
-                                        <span>
-                                            <i class="fa-regular fa-envelope-open text-primary"></i>
-                                        </span>
-                                        ronaldrichards@gmail.com
-                                    </a>
-                                </li>
-                                <ul class="nav">
-                                    <li class="nav-item me-2">
-                                        <a class="nav-link" href="#">
-                                            <span><i class="fa-brands fa-twitter text-white"></i></span>
+                                <ul class="list-unstyled get-touch">
+                                    <h4 class="fw-medium mt-4 mb-3">ទំនាក់ទំនង</h4>
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-black fw-medium">
+                                            <span>
+                                                <i class="fa-solid fa-phone text-primary"></i>
+                                            </span> (+855) 23 123 456
                                         </a>
                                     </li>
-                                    <li class="nav-item me-2">
-                                        <a class="nav-link" href="#">
-                                            <span><i class="fa-brands fa-instagram text-white"></i></span>
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-black fw-medium">
+                                            <span>
+                                                <i class="fa-regular fa-envelope-open text-primary"></i>
+                                            </span>
+                                            ronaldrichards@gmail.com
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">
-                                            <span><i class="fa-brands fa-facebook-f text-white"></i></span>
-                                        </a>
-                                    </li>
+                                    <ul class="nav">
+                                        <li class="nav-item me-2">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-twitter text-white"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-2">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-instagram text-white"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span><i class="fa-brands fa-facebook-f text-white"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </ul>
+                                <h4 class="fw-medium mb-3">ការណែនាំអំពីអាជីព</h4>
+                                <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តប្រើមេកានិចយានយន្ត ការវិនិច្ឆ័យ និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ
+                                    និងជួសជុលយានយន្ត។
+                                    ពួកគេធ្វើការនៅក្នុងសេវាកម្មជួលរថយន្ត ហាងជួសជុល ឬហាងលក់ទំនិញ ធានាថាយានយន្តមានសុវត្ថិភាព
+                                    និងបំពេញតម្រូវការអតិថិជនប្រកបដោយប្រសិទ្ធភាព។
+                                    តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការធ្វើរោគវិនិច្ឆ័យបញ្ហា អនុវត្តការជួសជុល
+                                    និងដំណើរការថែទាំ ខណៈពេលដែលអនុវត្តតាមស្តង់ដារឧស្សាហកម្ម និងគោលការណ៍ណែនាំសុវត្ថិភាព។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="footer-brand">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="60px" class="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 pb-4 pb-lg-0">
+                    <h5 class="fw-bold">អំពីយើង</h5>
+                    <p>គោលបំណងផ្តល់នូវសេវាកម្មទាក់ទងនឹងការជួលរថយន្ត ដែលមានតម្លៃសមរម្យ មានផាសុខភាព
+                        និងមានជំរើសច្រើនក្នុងការជ្រើសរើសទៅតាមតម្រូវការ</p>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item">
+                            <a href="term-condition.html" class="nav-link">លក្ខខណ្ឌ​</a>
+                        </li>
+                        <small class="mt-2">&nbsp | &nbsp</small>
+                        <li class="nav-item">
+                            <a href="privacy-policy.html" class="nav-link">គោលការណ៍​​ឯកជនភាព</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-6  mx-auto mx-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">តំណភ្ជាប់</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="create-account.html" class="nav-link">ចុះឈ្មោះ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sign-in.html" class="nav-link">ចូលគណនី</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-us.html" class="nav-link">អំពីយើង</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">ប្លុក</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="career.html" class="nav-link">ការងារ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-us.html" class="nav-link">ទំនាក់ទំនង</a>
+                                </li>
                             </ul>
-                            <h4 class="fw-medium mb-3">ការណែនាំអំពីអាជីព</h4>
-                            <p>អ្នកបច្ចេកទេសជួសជុលរថយន្តប្រើមេកានិចយានយន្ត ការវិនិច្ឆ័យ និងបច្ចេកទេសជួសជុលដើម្បីថែទាំ
-                                និងជួសជុលយានយន្ត។
-                                ពួកគេធ្វើការនៅក្នុងសេវាកម្មជួលរថយន្ត ហាងជួសជុល ឬហាងលក់ទំនិញ ធានាថាយានយន្តមានសុវត្ថិភាព
-                                និងបំពេញតម្រូវការអតិថិជនប្រកបដោយប្រសិទ្ធភាព។
-                                តួនាទីរបស់ពួកគេពាក់ព័ន្ធនឹងការធ្វើរោគវិនិច្ឆ័យបញ្ហា អនុវត្តការជួសជុល
-                                និងដំណើរការថែទាំ ខណៈពេលដែលអនុវត្តតាមស្តង់ដារឧស្សាហកម្ម និងគោលការណ៍ណែនាំសុវត្ថិភាព។</p>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <h5 class="fw-bold pt-4 pt-md-0">សេវាកម្ម</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="car-rent-category.html" class="nav-link">ជួលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="repair-service.html" class="nav-link">ជួសជុលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="service-sell.html" class="nav-link">លក់រថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="driver.html" class="nav-link">ជួលអ្នកបើកបរ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-4 pe-4 pe-lg-0">
+                            <h5 class="fw-bold pt-4 pt-md-0">ទំនាក់ទំនង</h5>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-pin-map me-2"></i>ភ្នំពេញ</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><span><i class="bi bi-telephone me-2"></i>+855 23 99 999</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link w-100"><span><i class="bi bi-envelope-open me-2"></i>CamEZgo@info.com</span></a>
+                                </li>
+                            </ul>
+                            <div class="footer-social-media">
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <div class="col-3">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <i class="fa-regular fa-paper-plane"></i>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-5">
+                <div class="col-6 d-flex ">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="mb-0 text-white">រក្សាសិទ្ធដោយ CamEZgo</p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="footer-app-link">
+                        <div class="row gx-3">
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/app-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/img/download-app/play-store.svg" class="img-fluid"
+                                        alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -156,6 +343,25 @@
         }
     });
     AOS.init();
+</script>
+<script>
+    window.onscroll = function () {
+    var navbar = document.querySelector(".navbar-landing");
+    var backToTop = document.getElementById("backToTop");
+    var sticky = navbar.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("sticky");
+            backToTop.style.display = "block";
+        } else {
+            navbar.classList.remove("sticky");
+            backToTop.style.display = "none";
+        }
+    };
+
+    document.getElementById("backToTop").onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 </script>
 
 </html>

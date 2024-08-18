@@ -24,7 +24,6 @@ body {
 mark {
   font-weight: 900;
   background-color: transparent;
-  text-shadow: -2px 3px 10px rgba(83, 64, 255, 1);
 }
 .dark-blue {
   color: var(--dark-blue);
@@ -38,6 +37,7 @@ mark {
 /***************************************/
 header {
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 header nav .nav-link {
   color: black;
@@ -62,10 +62,11 @@ header nav .nav-link:hover {
 .navPage .navbar-nav .nav-item .nav-link {
   padding: 0px 15px;
 }
-.nav-account .navbar-nav .link-acc .dropdown-menu,
+/* .nav-account .navbar-nav .link-acc .dropdown-menu, */
 .link-acc .drop-acc {
   left: -150px;
   width: 220px;
+  top: 55px;
 }
 .nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item,
 .link-acc .drop-acc .nav-link {
@@ -144,7 +145,7 @@ header nav .nav-link:hover {
   top: -20px;
   right: 100px;
 }
-.nav-clip-path {
+.nav-clip-path{
   width: 18px;
   height: 18px;
   background-color: #ddd;
@@ -152,6 +153,9 @@ header nav .nav-link:hover {
   top: -18px;
   right: 105px;
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+.drop-acc .nav-clip-path{
+  right: 35px;
 }
 .dropdown-car-type,
 .dropdown-service {
@@ -221,9 +225,26 @@ header nav .nav-link:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.login-signup a:hover {
+.login-signup a{
+  border: 1px solid var(--main-color);
+  padding: 3px 7px;
+}
+.login-signup a:first-child{
+  background-color: var(--main-color);
+  color: white;
+}
+.login-signup a:first-child:hover{
+  background-color: var(--main-hover);
+  /* color: var(--main-color); */
+}
+.login-signup a:last-child{
   color: var(--main-color);
 }
+.login-signup a:last-child:hover{
+  color: white;
+  background-color: var(--main-hover);
+}
+
 .head-section h1 {
   text-align: center;
   text-transform: uppercase;
@@ -1935,7 +1956,8 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
 }
 .booking-info .booking-form .form-check-input,
-.booking-info .booking-form .form-check-label {
+.booking-info .booking-form .form-check-label,
+.booking-info .booking-form .rent-time .form-control {
   cursor: pointer;
 }
 .booking-info .booking-form .form-check-input {
@@ -2004,13 +2026,38 @@ header nav .nav-link:hover {
   background-color: var(--main-color-700);
   color: var(--bg-color);
 }
-/* ======================= */
-/* === driver-checkout === */
-/* ======================= */
+/* ============================ */
+/* === driver-checkout.html === */
+/* ============================ */
 .summary-detail .profile {
   background-color: var(--main-color-900);
 }
-/* ================================= */
+/* =========================== */
+/* === driver-payment.html === */
+/* =========================== */
+.booking-info .cash-collapse {
+  border: 1px solid var(--main-color-100);
+}
+.arrow-animation {
+  color: var(--main-color-400);
+  display: inline-block;
+  animation: moveUpDown 1s infinite;
+}
+.booking-info #cardOption .fa-credit-card,
+.booking-info #cardOption .fa-qrcode {
+  animation: bounce 2s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /***************************************/
 /*            Hero-banner              */
@@ -2465,8 +2512,7 @@ header nav .nav-link:hover {
   background-color: #ffc107;
   padding-top: 10px;
 }
-.car-rent-promotion .card-discount {
-  background-color: white;
+.car-rent-promotion .card-discount{
   border: 1px solid rgb(171, 171, 171);
 }
 .car-rent-promotion .card-discount h6 {
@@ -2482,18 +2528,46 @@ header nav .nav-link:hover {
 }
 .car-sell-promotion {
   overflow: hidden;
-  background-color: pink;
+  background-color: #FFC107;
   border-radius: 8px;
   z-index: 10;
+  padding: 0 25px;
 }
 .car-sell-promotion img {
   position: absolute;
-  height: 280px;
-  background-color: red;
-  /* transform: translate(200px,-60px); */
-  top: -30px;
+  height: 270px;
+  top: -38px;
   right: -70px;
-  z-index: -10;
+}
+.promotion-sale-text div:nth-child(2){
+  background-color: var(--dark-blue);
+  right: 40px;
+  border-bottom-left-radius: 8px ;
+  border-bottom-right-radius: 8px ;
+  top: 0;
+ padding: 23px 10px 5px 10px;
+ color: white;
+}
+.promotion-sale-text div:nth-child(2) strong:nth-child(2){
+  font-size: 25px;
+}
+.promotion-detail-car .nav .nav-item i{
+  font-size: 24px;
+}
+.promotion-detail-car .nav .nav-item{
+  margin: 4px 0;
+  font-size: 16px;
+}
+.sale-contact{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.sale-contact div{
+  background-color: var(--main-color-100);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-weight: 500;
 }
 
 /***************************************/
@@ -2503,6 +2577,9 @@ header nav .nav-link:hover {
 .service-cover {
   height: 180px;
 }
+.service-cover img{
+  border-radius: 4px;
+}
 .card-service .card {
   width: 80%;
   margin-top: -60px;
@@ -2511,6 +2588,7 @@ header nav .nav-link:hover {
   box-shadow: rgba(50, 50, 93, 0.176) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.236) 0px 30px 60px -30px;
   background-color: rgba(255, 255, 255, 0.924);
+  border-radius: 4px;
 }
 .card-service .card .card-body h5 {
   color: black;
@@ -2525,6 +2603,10 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   padding: 2px 15px;
   color: white;
+  border-radius: 3px;
+}
+.card-service .card .btn:hover .fa-arrow-right-long{
+  transform: translateX(4px);
 }
 .card-service .card:hover {
   background-color: var(--dark-blue);
@@ -3301,6 +3383,48 @@ header nav .nav-link:hover {
   margin-bottom: 25px;
   line-height: 27px;
 }
+.term-condition .card p, .privacy-policy .card p{
+  text-indent: 40px;
+}
+/* swiper pagination active */
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: var(--main-color)!important;
+}
+
+/* pagination */
+.my-pagination .nav-page-prev .nav-link , .my-pagination .nav-page-next .nav-link{
+  background-color: white;
+  margin: 0 12px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px ; 
+  border: 1px solid var(--main-color-100);
+  color: var(--main-color);
+}
+.my-pagination .nav-page{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+  border: 1px solid var(--main-color-100);
+}
+.my-pagination .nav-page .nav li:first-child .nav-link{
+  border-radius: 4px 0 0 4px;
+}
+.my-pagination .nav-page .nav li:last-child .nav-link{
+  border-radius: 0 4px 4px 0;
+}
+.my-pagination .nav-page .nav li .nav-link{
+  color: var(--main-color);
+}
+.my-pagination .nav-page .nav li .nav-link:hover, 
+.my-pagination .nav-page-prev:hover .nav-link , 
+.my-pagination .nav-page-next:hover .nav-link{
+  background-color: var(--main-color);
+  color: white;
+}
+.my-pagination .nav-page .nav li .nav-link.active{
+  background-color: var(--main-color);
+  color: white;
+}
+
 
 /***************************************/
 /*              Footer                 */
@@ -3380,6 +3504,15 @@ footer .nav-link:hover {
   .wishlist .car-cart-item h5 {
     font-weight: 500 !important;
   }
+  .booking-info .row .col-xl-12 {
+    order: 1;
+  }
+  .booking-info .row .col-xl-9 {
+    order: 3;
+  }
+  .booking-info .row .col-xl-3 {
+    order: 2;
+  }
 }
 @media (max-width: 1024px) {
   .emergency .emergency-img-1 {
@@ -3399,7 +3532,6 @@ footer .nav-link:hover {
     width: 100%;
     height: 140px;
   }
-
   .image-profile img {
     width: 100%;
     height: 140px;
@@ -3407,7 +3539,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 30px;
     height: 30px;
@@ -3415,7 +3546,6 @@ footer .nav-link:hover {
     bottom: 10px;
     right: 10px;
   }
-
   .list-credit-card img {
     width: 25px !important;
   }
@@ -3515,6 +3645,17 @@ footer .nav-link:hover {
   .fleet-filter .form-fleet .mid-col {
     border-right: none;
   }
+  .booking-info .booking-form .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .booking-info .booking-form .icon i {
+    font-size: 14px !important; 
+  }
+
+  .car-sell-promotion{
+    padding: 0 30px;
+  }  
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3552,6 +3693,9 @@ footer .nav-link:hover {
   .nav-clip-path {
     top: -18px;
     right: 73px;
+  }
+  .drop-acc .nav-clip-path{
+    right: 30px;
   }
   .dropdown-noti {
     right: -70px;
@@ -3692,6 +3836,28 @@ footer .nav-link:hover {
     padding: 4px 6px;
   }
 
+  .about-us-banner h1{
+    font-size: 24px;
+  }
+  .team-wrap{
+    height: 250px;
+  }
+  .team-social-media .nav .nav-item{
+    height: 35px;
+  }
+  .team-name{
+    width: 80%;
+  }
+  .border-card::after,
+  .border-card::before {
+    width: 70px;
+    height: 70px;
+  }
+  .team-detail p{
+    font-size: 13px;
+  }
+
+
   .card-discount {
     height: 140px;
   }
@@ -3763,6 +3929,10 @@ footer .nav-link:hover {
     font-size: 18px !important;
     font-weight: 500 !important;
   }
+  .booking-info .booking-form .icon {
+    width: 27px;
+    height: 27px;
+  }
   .term-condition .card h2,
   .privacy-policy .card h2 {
     font-size: 22px;
@@ -3812,6 +3982,37 @@ footer .nav-link:hover {
   .img-booking img {
     height: 150px !important;
   }
+
+  .car-sell-promotion{
+    padding: 0 30px;
+  }
+  .car-sell-promotion img{
+    height: 240px;
+    top: -24px;
+    right: -90px;
+  }
+  .promotion-sale-text div:nth-child(1) h3{
+    font-size: 22px;
+  }
+  .promotion-sale-text div:nth-child(1) h6{
+    font-size: 13px;
+  }
+  .promotion-sale-text div:nth-child(2){
+    right: 8px;
+   padding: 23px 10px 0px 10px;
+   font-size: 14px;
+  }
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+    font-size: 21px;
+  }
+  .promotion-detail-car .nav .nav-item i{
+    font-size: 22px;
+  }
+  .promotion-detail-car .nav .nav-item{
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -3844,6 +4045,10 @@ footer .nav-link:hover {
     font-size: 20px;
   }
 
+  .main-about-us p{
+    font-size: 15px;
+  }
+
   .icon-card {
     width: 50px;
     height: 50px;
@@ -3857,7 +4062,6 @@ footer .nav-link:hover {
   .why-us-des {
     width: 68%;
   }
-
   .notification-list .navbar-nav .nav-item .nav-link .noti-dot {
     width: 8px;
     height: 8px;
@@ -3886,11 +4090,9 @@ footer .nav-link:hover {
     width: 90% !important;
     margin-top: -110px !important;
   }
-
   .app-section p {
     font-size: 12px;
   }
-
   .login-signup a {
     font-size: 12px;
   }
@@ -3900,7 +4102,6 @@ footer .nav-link:hover {
   .hero-text h3 {
     font-size: 20px;
   }
-
   .blog-category .nav .nav-item .nav-link {
     font-size: 11px;
     padding: 4px 8px;
@@ -3908,7 +4109,6 @@ footer .nav-link:hover {
   .blog-card .card-body h6 {
     font-size: 16px;
   }
-
   .blog-card .card-body .btn {
     font-size: 14px;
   }
@@ -3921,7 +4121,6 @@ footer .nav-link:hover {
   .blog-card-img .fa-calendar {
     font-size: 10px;
   }
-
   /* === panha's code === */
   .hero-sell .hero-content h1,
   .hero-driver .hero-content h1,
@@ -4033,9 +4232,9 @@ footer .nav-link:hover {
   .car-list .ts-control {
     width: 150px;
   }
-  .breadcrumb-item {
+  /* .breadcrumb-item {
     font-size: 13px !important;
-  }
+  } */
   .banner-name .banner-content h1 {
     font-size: 25px;
   }
@@ -4044,6 +4243,12 @@ footer .nav-link:hover {
   }
   .car-attribute .sub-info i {
     font-size: 25px;
+  }
+  .booking-info .summary-detail {
+    border: 1px solid var(--main-color-200) !important;
+  }
+  .shadow-checkout {
+    box-shadow: none;
   }
   /* ======================= */
   .team-name {
@@ -4085,6 +4290,32 @@ footer .nav-link:hover {
   }
   .f-w-100 {
     width: 100% !important;
+  }
+  
+  .car-sell-promotion img{
+    height: 200px;
+    top: -22px;
+  }
+  .promotion-sale-text div:nth-child(1) h3{
+    font-size: 20px;
+  }
+  .promotion-sale-text div:nth-child(1) h6{
+    font-size: 11px;
+  }
+  .promotion-sale-text div:nth-child(2){
+    right: 5px;
+   padding: 20px 10px 0px 10px;
+   font-size: 12px;
+  }
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+    font-size: 18px;
+  }
+  .promotion-detail-car .nav .nav-item i{
+    font-size: 20px;
+  }
+  .promotion-detail-car .nav .nav-item{
+    margin: 4px 0;
+    font-size: 12px;
   }
 }
 
@@ -4132,6 +4363,32 @@ footer .nav-link:hover {
   }
   .car-attribute .overlay .text-over {
     font-size: 10px !important;
+  }
+
+  .text-qrcode {
+    text-align: left !important;
+  }
+
+  .car-sell-promotion img{
+    height: 170px;
+    top: -2px;
+  }
+  .promotion-sale-text div:nth-child(1) h3{
+    font-size: 20px;
+  }
+  .promotion-sale-text div:nth-child(1) h6{
+    font-size: 11px;
+  }
+  .promotion-sale-text div:nth-child(2){
+    right: 0px;
+   padding: 25px 5px 5px 8px;
+   font-size: 8px;
+  }
+  .sale-contact div span{
+    font-size: 12px;
+  }
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+    font-size: 14px;
   }
 }
 @media (max-width: 430px) {
@@ -4195,7 +4452,22 @@ footer .nav-link:hover {
     right: 15px;
   }
 }
-
+@media (max-width: 400px) {
+  .car-sell-promotion{
+    padding: 0 18px;
+  }
+  .car-sell-promotion img{
+    height: 150px;
+    top: 10px;
+    right: -60px;
+  }
+  .promotion-sale-text div:nth-child(2){
+    right: 5px;
+  }
+  .promotion-sale-text div:nth-child(1) div h6{
+    display: none;
+  }
+}
 @media (max-width: 375px) {
   .why-choose .choose-us-2 {
     top: 85px !important;
