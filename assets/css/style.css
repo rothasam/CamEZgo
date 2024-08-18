@@ -3504,13 +3504,16 @@ footer .nav-link:hover {
   .wishlist .car-cart-item h5 {
     font-weight: 500 !important;
   }
-  .booking-info .row .col-xl-12 {
+  .booking-info .row .col-xl-12,
+  .style-input .row .col-xl-12{
     order: 1;
   }
-  .booking-info .row .col-xl-9 {
+  .booking-info .row .col-xl-9,
+  .style-input .row .col-xl-9 {
     order: 3;
   }
-  .booking-info .row .col-xl-3 {
+  .booking-info .row .col-xl-3,
+  .style-input .row .col-xl-3 {
     order: 2;
   }
 }
@@ -3606,16 +3609,13 @@ footer .nav-link:hover {
   .nav-item .nav-link .bi-suit-heart ~ span {
     right: -7px;
   }
-
   .car-type-item {
     height: 210px;
   }
-
   .detail-work p {
     padding: 0 10px;
     font-size: 12px;
   }
-
   .blog-category {
     display: flex;
     justify-content: center;
@@ -3631,14 +3631,12 @@ footer .nav-link:hover {
   .blog-card-img .fa-calendar {
     font-size: 14px;
   }
-
   .d-submit {
     width: 100%;
   }
   .begin-team {
     font-size: 22px !important;
   }
-
   .feed-top-img {
     height: 280px;
   }
@@ -3652,10 +3650,12 @@ footer .nav-link:hover {
   .booking-info .booking-form .icon i {
     font-size: 14px !important; 
   }
-
   .car-sell-promotion{
     padding: 0 30px;
   }  
+  /* .img-booking img {
+    height: 200px !important;
+  } */
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3970,7 +3970,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 40px;
     height: 40px;
@@ -3978,11 +3977,9 @@ footer .nav-link:hover {
     bottom: 20px;
     right: 15px;
   }
-
-  .img-booking img {
+  /* .img-booking img {
     height: 150px !important;
-  }
-
+  } */
   .car-sell-promotion{
     padding: 0 30px;
   }
