@@ -24,7 +24,6 @@ body {
 mark {
   font-weight: 900;
   background-color: transparent;
-  text-shadow: -2px 3px 10px rgba(83, 64, 255, 1);
 }
 .dark-blue {
   color: var(--dark-blue);
@@ -1944,7 +1943,8 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
 }
 .booking-info .booking-form .form-check-input,
-.booking-info .booking-form .form-check-label {
+.booking-info .booking-form .form-check-label,
+.booking-info .booking-form .rent-time .form-control {
   cursor: pointer;
 }
 .booking-info .booking-form .form-check-input {
@@ -2003,13 +2003,38 @@ header nav .nav-link:hover {
   background-color: var(--main-color-700);
   color: var(--bg-color);
 }
-/* ======================= */
-/* === driver-checkout === */
-/* ======================= */
+/* ============================ */
+/* === driver-checkout.html === */
+/* ============================ */
 .summary-detail .profile {
   background-color: var(--main-color-900);
 }
-/* ================================= */
+/* =========================== */
+/* === driver-payment.html === */
+/* =========================== */
+.booking-info .cash-collapse {
+  border: 1px solid var(--main-color-100);
+}
+.arrow-animation {
+  color: var(--main-color-400);
+  display: inline-block;
+  animation: moveUpDown 1s infinite;
+}
+.booking-info #cardOption .fa-credit-card,
+.booking-info #cardOption .fa-qrcode {
+  animation: bounce 2s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /***************************************/
 /*            Hero-banner              */
@@ -3456,6 +3481,15 @@ footer .nav-link:hover {
   .wishlist .car-cart-item h5 {
     font-weight: 500 !important;
   }
+  .booking-info .row .col-xl-12 {
+    order: 1;
+  }
+  .booking-info .row .col-xl-9 {
+    order: 3;
+  }
+  .booking-info .row .col-xl-3 {
+    order: 2;
+  }
 }
 @media (max-width: 1024px) {
   .emergency .emergency-img-1 {
@@ -3475,7 +3509,6 @@ footer .nav-link:hover {
     width: 100%;
     height: 140px;
   }
-
   .image-profile img {
     width: 100%;
     height: 140px;
@@ -3483,7 +3516,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 30px;
     height: 30px;
@@ -3491,7 +3523,6 @@ footer .nav-link:hover {
     bottom: 10px;
     right: 10px;
   }
-
   .list-credit-card img {
     width: 25px !important;
   }
@@ -3588,6 +3619,13 @@ footer .nav-link:hover {
   }
   .fleet-filter .form-fleet .mid-col {
     border-right: none;
+  }
+  .booking-info .booking-form .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .booking-info .booking-form .icon i {
+    font-size: 14px !important; 
   }
 
   .car-sell-promotion{
@@ -3866,6 +3904,10 @@ footer .nav-link:hover {
     font-size: 18px !important;
     font-weight: 500 !important;
   }
+  .booking-info .booking-form .icon {
+    width: 27px;
+    height: 27px;
+  }
   .term-condition .card h2,
   .privacy-policy .card h2 {
     font-size: 22px;
@@ -3995,7 +4037,6 @@ footer .nav-link:hover {
   .why-us-des {
     width: 68%;
   }
-
   .notification-list .navbar-nav .nav-item .nav-link .noti-dot {
     width: 8px;
     height: 8px;
@@ -4024,11 +4065,9 @@ footer .nav-link:hover {
     width: 90% !important;
     margin-top: -110px !important;
   }
-
   .app-section p {
     font-size: 12px;
   }
-
   .login-signup a {
     font-size: 12px;
   }
@@ -4038,7 +4077,6 @@ footer .nav-link:hover {
   .hero-text h3 {
     font-size: 20px;
   }
-
   .blog-category .nav .nav-item .nav-link {
     font-size: 11px;
     padding: 4px 8px;
@@ -4046,7 +4084,6 @@ footer .nav-link:hover {
   .blog-card .card-body h6 {
     font-size: 16px;
   }
-
   .blog-card .card-body .btn {
     font-size: 14px;
   }
@@ -4059,7 +4096,6 @@ footer .nav-link:hover {
   .blog-card-img .fa-calendar {
     font-size: 10px;
   }
-
   /* === panha's code === */
   .hero-sell .hero-content h1,
   .hero-driver .hero-content h1,
@@ -4171,9 +4207,9 @@ footer .nav-link:hover {
   .car-list .ts-control {
     width: 150px;
   }
-  .breadcrumb-item {
+  /* .breadcrumb-item {
     font-size: 13px !important;
-  }
+  } */
   .banner-name .banner-content h1 {
     font-size: 25px;
   }
@@ -4182,6 +4218,12 @@ footer .nav-link:hover {
   }
   .car-attribute .sub-info i {
     font-size: 25px;
+  }
+  .booking-info .summary-detail {
+    border: 1px solid var(--main-color-200) !important;
+  }
+  .shadow-checkout {
+    box-shadow: none;
   }
   /* ======================= */
   .team-name {
@@ -4293,6 +4335,10 @@ footer .nav-link:hover {
   }
   .car-attribute .overlay .text-over {
     font-size: 10px !important;
+  }
+
+  .text-qrcode {
+    text-align: left !important;
   }
 
   .car-sell-promotion img{
