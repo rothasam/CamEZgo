@@ -21,7 +21,7 @@
 <body>
 
     <header>
-            <nav class="navbar navbar-expand-md p-0">
+            <nav class="navbar navbar-expand-md p-0 navbar-landing">
                 <div class="container d-flex flex-column nav-contain">
                     <div class="row w-100 py-2">
                         <div class="col-4 d-none justify-content-start align-items-center d-md-flex" >
@@ -50,17 +50,17 @@
                         </div>
                         <div class="col-6 col-md-4 d-flex justify-content-start align-content-center justify-content-md-center" >
                             <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
-                        </div>
-                        
+                        </div> 
                         <div class="col-6 col-md-4 d-flex justify-content-end align-items-center login-signup">   
-                            <a href="create-account.html" class="btn border-0">ចុះឈ្មោះ</a>
-                            <span>|</span>
-                            <a href="sign-in.html" class="btn border-0">ចូលគណនី</a>
+                            <a href="create-account.html" class="btn rounded-1" style="border: 1px solid var(--main-color);">បង្កើតគណនី</a>
+                            <a href="sign-in.html" class="btn ms-2 rounded-1" style="border: 1px solid var(--main-color);">ចូលគណនី</a>
                         </div>
                     </div>  
                 </div>
             </nav>
     </header>
+    <!-- Buttton back to top -->
+    <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
     <main>
         <!-- Hero banner -->
@@ -194,7 +194,7 @@
                         <div class="card-service">
                             <div class="service-cover">
                                 <a href="car-rent-category.html"> <img src="assets/img/our-service/car-renting.jpg"
-                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                                        class="w-100 object-fit-cover" alt=""></a>
                             </div>
                             <div class="card mx-auto border-0">
                                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
@@ -213,7 +213,7 @@
                         <div class="card-service">
                             <div class="service-cover">
                                 <a href="repair-service.html"> <img src="assets/img/our-service/fixing.jpg"
-                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                                        class="w-100 object-fit-cover" alt=""></a>
                             </div>
                             <div class="card mx-auto border-0">
                                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
@@ -231,18 +231,18 @@
                     <div class="col-6 col-lg-3 pt-4 pt-lg-0 wow animate__animated animate__fadeInUp">
                         <div class="card-service">
                             <div class="service-cover">
-                                <a href="car-sell-category.html"><img src="assets/img/our-service/car-selling.jpg"
-                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                                <a href="service-sell.html"><img src="assets/img/our-service/car-selling.jpg"
+                                        class="w-100 object-fit-cover" alt=""></a>
                             </div>
                             <div class="card mx-auto border-0">
                                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-card mb-2"><img src="assets/img/icon/sell-car.png"
                                             class="img-fluid" alt=""></div>
-                                    <a href="car-sell-category.html" class="text-decoration-none">
+                                    <a href="service-sell.html" class="text-decoration-none">
                                         <h5 class="card-title mb-0 pb-2 text-center fw-bold">លក់រថយន្ត</h5>
                                     </a>
                                     <p class="card-text text-center">សាកល្បងនឺងរថយន្តថ្មី ទំនើបដែលមានទាំងគុណភាពខ្ពស់</p>
-                                    <a href="car-sell-category.html" class="btn">មើល <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="service-sell.html" class="btn">មើល <i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -250,18 +250,18 @@
                     <div class="col-6 col-lg-3 pt-4 pt-lg-0 wow animate__animated animate__fadeInUp">
                         <div class="card-service">
                             <div class="service-cover">
-                                <a href="driver-category.html"><img src="assets/img/our-service/driver-mann.jpg"
-                                        class=" rounded-2 w-100 object-fit-cover" alt=""></a>
+                                <a href="driver.html"><img src="assets/img/our-service/driver-mann.jpg"
+                                        class="w-100 object-fit-cover" alt=""></a>
                             </div>
                             <div class="card mx-auto border-0">
                                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
                                     <div class="icon-card mb-2"><img src="assets/img/icon/driver.png" class="img-fluid"
                                             alt=""></div>
-                                    <a href="driver-category.html" class="text-decoration-none">
+                                    <a href="driver.html" class="text-decoration-none">
                                         <h5 class="card-title mb-0 pb-2 text-center fw-bold">អ្នកបើកបរ</h5>
                                     </a>
                                     <p class="card-text text-center">អ្នកជំនាញនិងមានបទពិសោធន៏ ធានាសុវត្ថិភាពខ្ពស់</p>
-                                    <a href="driver-category.html" class="btn">មើល <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="driver.html" class="btn">មើល <i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -364,10 +364,10 @@
                                     <p class="mb-0 text-center fw-bold">បញ្ចុះតម្លៃ <br>១០%</p>
                                 </div>
                                 <div class="m-auto wow animate__animated animate__fadeIn">
-                                    <h4 class="fw-bold text-white text-center text-md-start">ចុះឈ្មោះឥឡូវ​នេះដើម្បីទទួលបានការ<span class="text-warning">បញ្ចុះតម្លៃ ១០%</span> លើគ្រប់សេវាកម្មរបស់ពួកយើង</h4>
+                                    <h4 class="fw-bold text-white text-center text-md-start">បង្កើតគណនីឥឡូវ​នេះដើម្បីទទួលបានការ<span class="text-warning">បញ្ចុះតម្លៃ ១០%</span> លើគ្រប់សេវាកម្មរបស់ពួកយើង</h4>
                                     <small class="text-white text-center text-md-start">ការបញ្ចុះតម្លៃនេះនឹងមានសុពលភាព២០ថ្ងៃ គិតចាប់ពីថ្ងៃដែលលោកអ្នកបានចុះឈ្មោះ</small>
                                     <div class="wow animate__animated animate__bounceIn">
-                                        <a href="create-account.html" class="btn mt-3 btn-register">ចុះឈ្មោះឥឡូវ</a>
+                                        <a href="create-account.html" class="btn mt-3 btn-register rounded-1">បង្កើតគណនីឥឡូវ</a>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@
                         </div>
                     </div>
                     <div class="col-6 head-title wow animate__animated animate__fadeIn">                            
-                        <h1 class="fw-bold">មតិយោបល់</h1>
+                        <h1 class="fw-bold">មតិអតិថិជន</h1>
                     </div>
                     <!-- <div class="col-2"></div> -->
                    <div class="col-10 ms-auto" style="transform: translate(0,-180px); margin-bottom: -155px;">
@@ -416,7 +416,7 @@
                                                 <p class="text-center">ខ្ញុំ​បាន​ជួល​រថយន្ត​ពី​ក្រុមហ៊ុន​ផ្សេងៗ ប៉ុន្តែ​សេវា​បម្រើ​អតិថិជន​នៅ​ទី​នេះ​គឺ​ពិតជាល្អមែន ហើយមានភាពងាយស្រួលទៀត</p>
                                             </div>
                                             <div class="d-flex justify-content-between py-1">
-                                                <span>១២ កក្កដា ២០២៣</span>
+                                                <span>12 កក្កដា 2023</span>
                                                 <div class="feed-rate text-warning">
                                                     <span><i class="fa-solid fa-star"></i></span>
                                                     <span><i class="fa-solid fa-star"></i></span>
@@ -444,7 +444,7 @@
                                                 <p class="text-center">ខ្ញុំបានជួសជុលរថយន្តរបស់ខ្ញុំនៅទីនេះ ហើយសេវាកម្មរហ័ស និងមានប្រសិទ្ធភាព។ ឡានរបស់ខ្ញុំមានអារម្មណ៍ថ្មីម្តងទៀត។</p>
                                             </div>
                                             <div class="d-flex justify-content-between py-1">
-                                                <span>២៣ មិនា ២០២៤</span>
+                                                <span>23 មិនា 2024</span>
                                                 <div class="feed-rate text-warning">
                                                     <span><i class="fa-solid fa-star"></i></span>
                                                     <span><i class="fa-solid fa-star"></i></span>
@@ -473,7 +473,7 @@
                                                 </p>
                                             </div>
                                             <div class="d-flex justify-content-between py-1">
-                                                <span>១៩ មេសា ២០២៤</span>
+                                                <span>19 មេសា 2024</span>
                                                 <div class="feed-rate text-warning">
                                                     <span><i class="fa-solid fa-star"></i></span>
                                                     <span><i class="fa-solid fa-star"></i></span>
@@ -501,7 +501,7 @@
                                                 <p class="text-center">ការទទួលបានសេវាកម្មជួល ជួសជុល និងអ្នកបើកបរទាំងអស់នៅកន្លែងតែមួយ ធ្វើឱ្យជីវិតរបស់ខ្ញុំកាន់តែងាយស្រួល</p>
                                             </div>
                                             <div class="d-flex justify-content-between py-1">
-                                                <span>៣០ កក្កដា ២០២៤</span>
+                                                <span>30 កក្កដា 2024</span>
                                                 <div class="feed-rate text-warning">
                                                     <span><i class="fa-solid fa-star"></i></span>
                                                     <span><i class="fa-solid fa-star"></i></span>
@@ -515,7 +515,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-pagination"></div>
 
                     </div>
                    </div>
@@ -535,7 +535,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-9 m-auto py-5">
                                 <h4 class="text-center fw-bold wow animate__animated animate__fadeIn">ទាញយកកម្មវិធី CamEZgo ឥឡូវ​នេះ</h4>
-                                <p class="text-center wow animate__animated animate__fadeIn">ទទួលបានបទពិសោធន៍ភាពងាយស្រួលបំផុតជាមួយកម្មវិធីជួលរថយន្តរបស់យើង។ កក់យានជំនិះដែលអ្នកពេញចិត្តយ៉ាងឆាប់រហ័ស ចូលប្រើការផ្តល់ជូនសម្រាប់តែកម្មវិធីផ្តាច់មុខ និងទទួលបានព័ត៌មានថ្មីៗតាមពេលវេលាជាក់ស្តែងលើការកក់របស់អ្នក។ </p>
+                                <p class="text-center wow animate__animated animate__fadeIn">ដើម្បីទទួលបានបទពិសោធន៍ភាពថ្មី និងភាពងាយស្រួលបំផុតជាមួយកម្មវិធីជួលរថយន្តរបស់យើង។ កក់រថយន្តដែលអ្នកពេញចិត្តយ៉ាងឆាប់រហ័ស ទទួលបានព័ត៌មានថ្មីៗតាមពេលវេលាជាក់ស្តែងលើការកក់របស់អ្នក និងចូលប្រើប្រាស់នូវសេវាកម្មផ្សេងៗដែលមានផ្តល់ជូនដោយមានទំនុកចិត្តខ្ពស់។ </p>
                                 <div class="row">
                                     <div class="col-6 m-auto d-flex gap-3">
                                         <div class="col-6 wow animate__animated animate__zoomIn">
@@ -560,7 +560,7 @@
             <div class="container pb-5">
                 <div class="row">
                     <div class="col-12 head-title d-flex justify-content-center align-items-center pb-4 wow animate__animated animate__fadeIn">                            
-                        <h1 class="fw-bold">សំណួរដែលសួរញឹកញាប់</h1>
+                        <h1 class="fw-bold">សំណួរសួរញឹកញាប់</h1>
                     </div>
                     <div class="col-12 col-lg-5 order-2 order-lg-1 wow animate__animated animate__fadeInUp">
                         <div class="row">
@@ -584,7 +584,7 @@
                                             </div>
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="emali" class="form-label mb-0">អុីម៉ែល </label>
+                                                    <label for="emali" class="form-label mb-0">អ៊ីម៉ែល </label>
                                                     <input type="email" class="form-control" id="" required>
                                                 </div>  
                                             </div>
@@ -673,9 +673,6 @@
      
     </main>
 
-
-
-    
     <footer>
         <div class="container pb-3">
             <div class="row">
@@ -683,7 +680,6 @@
                     <div class="footer-brand">
                         <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="60px" class="" alt=""></a>
                     </div>
-
                 </div>
                 <div class="col-12 col-lg-5 pb-4 pb-lg-0">
                     <h5 class="fw-bold">អំពីយើង</h5>
@@ -735,10 +731,10 @@
                                     <a href="repair-service.html" class="nav-link">ជួសជុលរថយន្ត</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="car-sell-category.html" class="nav-link">លក់រថយន្ត</a>
+                                    <a href="service-sell.html" class="nav-link">លក់រថយន្ត</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">ជួលអ្នកបើកបរ</a>
+                                    <a href="driver.html" class="nav-link">ជួលអ្នកបើកបរ</a>
                                 </li>
                             </ul>
                         </div>
@@ -795,11 +791,9 @@
                 </div>
                 <hr class="mt-5">
                 <div class="col-6 d-flex ">
-
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="mb-0 text-white">រក្សាសិទ្ធដោយ CamEZgo</p>
                     </div>
-
                 </div>
                 <div class="col-6 d-flex justify-content-end">
                     <div class="footer-app-link">
@@ -813,7 +807,6 @@
                                         alt=""></a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -829,32 +822,8 @@
     <!-- Flatpickr -->
     <script src="assets/plugin/flatpickr/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <script>
-        // Hero banner vdo
-        const player = new Plyr("#player");
-
-        // Back to top and Menu Sticky
-        window.onscroll = function () {
-        stickyNavbar();
-        };
-        var navbar = document.querySelector(".navPage");
-        var sticky = navbar.offsetTop;
-        var backToTop = document.getElementById("backToTop");
-
-        function stickyNavbar() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("sticky");
-            backToTop.style.display = "block";
-        } else {
-            navbar.classList.remove("sticky");
-            backToTop.style.display = "none";
-        }
-        }
-
-        backToTop.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
         // date
         $("#pickDate").flatpickr({
             enableTime: true,
@@ -866,10 +835,33 @@
             time_24hr: true,
             dateFormat: "d/m/y H:m",
         })
-
+    </script>
+    <script>
         // wow
         new WOW().init();
+    </script>
+    <script>
+        // Hero banner vdo
+        const player = new Plyr("#player");
+    </script>
+    <script>
+        window.onscroll = function () {
+        var navbar = document.querySelector(".navbar-landing");
+        var backToTop = document.getElementById("backToTop");
+        var sticky = navbar.offsetTop;
 
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+                backToTop.style.display = "block";
+            } else {
+                navbar.classList.remove("sticky");
+                backToTop.style.display = "none";
+            }
+        };
+
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
     </script>
 
     <script>
@@ -921,6 +913,13 @@
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
+            fade: "true",
+            centerslide: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
             breakpoints: {
             0: {
                 slidesPerView: 1,
