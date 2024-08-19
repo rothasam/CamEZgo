@@ -2065,11 +2065,22 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
   color: white;
 }
+.search-car-box .input-group-text,
+.search-car-box select,
+.search-car-box input {
+  border: none;
+  box-shadow: none;
+}
 .search-car-box input:focus {
   box-shadow: none !important;
-  border-color: rgb(151, 151, 151) !important;
+  border: none;
 }
-
+.search-car-box select:focus{
+  border: none;
+}
+.search-car-box .index-select:hover {
+  cursor: pointer;
+}
 /***************************************/
 /*              Partner                */
 /***************************************/
