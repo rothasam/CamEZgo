@@ -3295,6 +3295,7 @@ header nav .nav-link:hover {
 /*             Contact us              */
 /***************************************/
 
+
 .form-contact .form-control {
   border: none;
   border-bottom: 2px solid rgb(222, 222, 222);
@@ -3347,7 +3348,7 @@ header nav .nav-link:hover {
 }
 
 .form-contact-us .form-contact .form-control {
-  border-bottom-color: rgb(112, 112, 112);
+  border-bottom-color: var(--main-color-100);
   background-color: white;
 }
 .form-contact-us .form-contact textarea {
@@ -4018,6 +4019,10 @@ footer .nav-link:hover {
     font-size: 14px;
   }
 
+  .about-us-banner{
+    height: auto;
+    padding: 60px 0;
+  }
 }
 @media (max-width: 600px) {
   .third-choose img,
