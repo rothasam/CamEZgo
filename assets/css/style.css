@@ -445,66 +445,6 @@ header nav .nav-link:hover {
   font-size: 22px;
   font-weight: 600;
 }
-/* @media (max-width: 600px) {
-  .encrypted {
-    font-size: 12px;
-  }
-  .under-review {
-    font-size: 18px;
-  }
-  .text-view {
-    font-size: 12px;
-  }
-  .sub-text-modal {
-    font-size: 14px;
-  }
-  .later,
-  .next {
-    width: 100%;
-    display: block;
-    font-size: 14px;
-  }
-  .modal-title {
-    font-size: 20px !important;
-  }
-  .verify-code .modal-body .form-control {
-    padding: 8px !important;
-    width: 40px;
-    height: 30px;
-  }
-  #repair-banner h1 {
-    font-size: 36px !important;
-  }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 50% !important;
-  }
-  .image-profile {
-    width: 100%;
-    height: 120px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 120px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 30px;
-    right: 15px;
-  }
-} */
-/* @media (min-width: 600px) {
-  .verify-code .modal-body .form-control {
-    padding: 12px !important;
-    width: 40px;
-    height: 40px;
-  }
-} */
 .width-450 .modal-body ul .list-step {
   display: flex;
   margin-bottom: 20px;
@@ -2071,7 +2011,7 @@ header nav .nav-link:hover {
   border: none;
   box-shadow: none;
 }
-.search-car-box input:focus {
+.search-car-box input:focus, .search-car-box form .form-select:focus {
   box-shadow: none !important;
   border: none;
 }
@@ -2239,6 +2179,10 @@ header nav .nav-link:hover {
   padding: 30px 0;
   border-radius: 10px;
 }
+.feature-count-bg{
+  background-color: white;
+}
+
 /***************************************/
 /*              Car type               */
 /***************************************/
@@ -2483,18 +2427,29 @@ header nav .nav-link:hover {
 .special-offer .btn-register:hover {
   background-color: var(--main-hover);
 }
+
+.promotion-hero-banner{
+  background-color: var(--dark-blue);
+  padding: 60px 0;
+}
+
 .car-sell-promotion {
   overflow: hidden;
   background-color: #FFC107;
   border-radius: 8px;
   z-index: 10;
   padding: 0 25px;
+  transition: 0.3s;
 }
 .car-sell-promotion img {
   position: absolute;
   height: 270px;
   top: -38px;
   right: -70px;
+}
+.car-sell-promotion:hover{
+  transform: translateY(-4px);
+  border-bottom: 4px solid var(--main-color);
 }
 .promotion-sale-text div:nth-child(2){
   background-color: var(--dark-blue);
@@ -2526,6 +2481,13 @@ header nav .nav-link:hover {
   padding: 2px 5px;
   font-weight: 500;
 }
+.comming-soon-promotion .card {
+  border: 2px solid var(--main-color-200);
+}
+.comming-soon-promotion .card .card-body img{
+  padding: 0 50px;
+}
+
 /***************************************/
 /*              Service                */
 /***************************************/
@@ -2639,6 +2601,11 @@ header nav .nav-link:hover {
   height: 60px;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 50%;
+}
+.notification-list .navbar-nav .nav-item .nav-link .notification-pf  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .noti-time {
   width: 15%;
@@ -3066,7 +3033,7 @@ header nav .nav-link:hover {
 /***************************************/
 .blog-sticky {
   position: sticky;
-  top: 60px;
+  top: 100px;
 }
 .card-discount {
   height: 120px;
@@ -3251,7 +3218,7 @@ header nav .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.545);
 }
 .form-contact-us .form-contact .form-control {
-  border-bottom-color: rgb(112, 112, 112);
+  border-bottom-color: var(--main-color-100);
   background-color: white;
 }
 .form-contact-us .form-contact textarea {
@@ -3389,7 +3356,7 @@ footer .nav-link:hover {
     width: 95%;
     line-height: 55px;
   }
-  .company-sell p {
+  .company-sell p, .why-us-des p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -3562,6 +3529,9 @@ footer .nav-link:hover {
   #career-banner.hero,
   #career-detail.hero {
     max-height: 450px;
+  }  
+  .feature-count-bg{
+    background-color: var(--bg-color);
   }
 }
 @media (max-width: 980px) {
@@ -3780,7 +3750,7 @@ footer .nav-link:hover {
   .hero-driver .hero-content p {
     font-size: 17px;
   }
-  .company-sell p {
+  .company-sell p, .why-us-des p .notification-list .lh-1 p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -3899,6 +3869,20 @@ footer .nav-link:hover {
   }
   .promotion-detail-car .nav .nav-item{
     margin: 4px 0;
+    font-size: 14px;
+  }
+  .about-us-banner{
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .comming-soon-promotion .card .card-body img{
+    padding: 0 20px;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 20px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
     font-size: 14px;
   }
 }
@@ -4249,6 +4233,16 @@ footer .nav-link:hover {
     margin: 4px 0;
     font-size: 12px;
   }
+
+  .comming-soon-promotion .card .card-body img{
+    padding: 0;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 18px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
+    font-size: 12px;
+  }
 }
 @media (max-width: 442px) {
   .driver-list .modal .image {
@@ -4319,6 +4313,12 @@ footer .nav-link:hover {
   }
   .promotion-sale-text div:nth-child(2) strong:nth-child(2){
     font-size: 14px;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 16px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
+    font-size: 10px;
   }
 }
 @media (max-width: 430px) {
