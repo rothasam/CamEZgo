@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Checkout</title>
+    <title>Frequency Ask Question</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
-    <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
 </head>
 <body>
     <!-- header -->
@@ -310,234 +309,97 @@
             </div>
         </nav>
     </header>
-    <!-- Buttton back to top -->
-    <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
-
     <!-- main -->
-     <main>
-        <section class="wishlist-head booking">
+    <main>
+        <section class="wishlist-head">
             <div class="wishlist-title">
-                <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមកក់រថយន្ត</h1>
+                <h1 class="fw-bold text-light wow animate__animated  animate__fadeInDown">សំណួរសួរញឹកញាប់</h1>
                 <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb wow animate__animated animate__fadeInUp">
+                    <ol class="breadcrumb wow animate__animated  animate__fadeInUp">
                       <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">កក់រថយន្ត</li>
+                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">សំណួរ-ចម្លើយ</li>
                     </ol>
                 </nav>
             </div>
         </section>
-        <section class="booking-info py-5">
+        <section class="faq pt-2 pt-sm-3 pt-md-4 pt-lg-5">
             <div class="container">
-                <div class="row g-3 g-lg-4">
-                    <div class="col-sm-5 col-md-6 col-xl-12">
-                        <div>
-                            <h4 class="fw-bold">ធ្វើការកក់រថយន្ត</h4>
-                            <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <form action="" class="booking-form rounded-1">
-                            <div class="row g-3 g-lg-4">
-                                <div class="col-12">
-                                    <div class="rent-type shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-car text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ការទទួលរថយន្ត</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('userLocate').click(); setGetDropLocation('customerLocation')">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="userLocate">
-                                                    <label class="form-check-label mt-2" for="userLocate">
-                                                        ទទួលនៅទីតាំងរបស់ខ្ញុំ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('adminLocate').click(); setGetDropLocation('companyLocation')">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="adminLocate">
-                                                    <label class="form-check-label mt-2" for="adminLocate">
-                                                        ទទួលនៅទីតាំងក្រុមហ៊ុន
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="locate shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-location-dot text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">កំណត់ទីតាំង</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3 align-items-end">
-                                            <div class="col-sm-9">
-                                                <div>
-                                                    <label for="getLocation" class="form-label">ទីតាំងទទួលឡាន <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control rounded-1" id="getLocation" placeholder="បញ្ចូលទីតាំង...">
-                                                </div>
-                                            </div>
-                                            <div class="col-7 d-block d-sm-none"></div>
-                                            <div class="col-5 col-sm-3">
-                                                <button id="getLocationBtn"  type="button" class="btn btn-current-location w-100 rounded-1" onclick="setDefaultLocation('getLocation')">
-                                                    ទីតាំងបច្ចុប្បន្ន
-                                                </button>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check ps-0 d-flex align-items-center">
-                                                    <input class="form-check-input m-0 ms-1 border" type="checkbox" value="" id="sameLocate">
-                                                    <label class="form-check-label text-body-secondary ms-2 small fw-medium" for="sameLocate">ប្រគល់ឡាននៅទីតាំងទទួល</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <div>
-                                                    <label for="dropLocation" class="form-label">ទីតាំងប្រគល់ <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control rounded-1" id="dropLocation" placeholder="បញ្ចូលទីតាំង...">
-                                                </div>
-                                            </div>
-                                            <div class="col-7 d-block d-sm-none"></div>
-                                            <div class="col-5 col-sm-3">
-                                                <button id="dropLocationBtn" type="button" class="btn btn-current-location w-100 rounded-1" onclick="setDefaultLocation('dropLocation')">
-                                                    ទីតាំងបច្ចុប្បន្ន
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-regular fa-hourglass-half text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">រយៈពេលជួល</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('hourRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="hourRent" value="hourRent">
-                                                    <label class="form-check-label mt-2" id="hour" for="hourRent">
-                                                        គិតជាម៉ោង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('dayRent').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="dayRent" value="dayRent">
-                                                    <label class="form-check-label mt-2" id="day" for="dayRent">
-                                                        គិតជាថ្ងៃ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('weekRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="weekRent" value="weekRent">
-                                                    <label class="form-check-label mt-2" id="week" for="weekRent">
-                                                        គិតជាសប្តាហ៏
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('monthRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="monthRent" value="monthRent">
-                                                    <label class="form-check-label mt-2" id="month" for="monthRent">
-                                                        គិតជាខែ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-2 g-md-3">
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="startDate" class="form-label">ថ្ងៃចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input id="startDate" onclick="this.showPicker();" type="date" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="startTime" class="form-label">ពេលវេលាចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input for="startTime" onclick="this.showPicker();" type="time" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="endDate" class="form-label">ថ្ងៃបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input for="endDate" onclick="this.showPicker();" type="date" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="endTime" class="form-label">ពេលវេលាបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input id="endTime" onclick="this.showPicker();" type="time" class="form-control rounded-1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-user-tie text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">កំណត់ការបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('selfDrive').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="driveType" id="selfDrive">
-                                                    <label class="form-check-label mt-2" for="selfDrive">
-                                                        បើកបរដោយខ្លួនឯង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('driver').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="driveType" id="driver">
-                                                    <label class="form-check-label mt-2" for="driver">
-                                                        ត្រូវការអ្នកបើកបរ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="wrapper-button d-flex gap-2 gap-md-3 justify-content-end">
-                                        <a href="car-rent-detail-home.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានឡាន</a>
-                                        <a href="#" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</a>
-                                    </div>
+                <div class="section-title head-title mb-3 mb-lg-4 wow animate__animated animate__fadeIn">
+                    <h1 class="fw-medium">សំណួរ-ចម្លើយ អំពីគេហទំព័រ</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 wow animate__animated animate__slideInUp">
+                        <div class="accordion accordion-flush" id="accordionFAQ">
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        តើខ្ញុំត្រូវការឯកសារអ្វីខ្លះដើម្បីជួលឡាន?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">អ្នកត្រូវមានប័ណ្ណបើកបរដែលមានសុពលភាព ប័ណ្ណឥណទាន និងអត្តសញ្ញាណប័ណ្ណ។</div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-7 col-md-6 col-xl-3">
-                        <div class="card summary-detail shadow-checkout border-0 rounded-1">
-                            <div class="card-header border-0">
-                                <h5 class="fw-bold mb-0">សង្ខេបការកក់</h5>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        តើ CamEZgo របស់យើងទទួលការកក់ រឺបង់ប្រាក់តាមទម្រង់ណា?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">ពួកយើងទទួលការការកក់ រឺបង់ប្រាក់តាមរយៈសាច់ប្រាក់
+                                        និងតាមOnline។</div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <div class="row g-0">
-                                    <div class="col-7">
-                                        <ul class="list-group-flush p-0 mb-0">
-                                            <li class="list-group-item">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">
-                                                    <h6 class="fw-bold">Tesla Model 3</h6>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item my-1"><small>តម្លៃជួល 86ដុល្លារ/ថ្ងៃ</small></li>
-                                            <li class="list-group-item my-1"><small>តម្លៃពន្ធ 5ដុល្លារ</small></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-5">
-                                        <img src="assets/img/car/car-show-2.png" class="img-fluid rounded-1" alt="Tesla Model 3">
-                                    </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        តើអតិថិជនត្រូវមានអាយុយ៉ាងតិចចាប់ពីប៉ុន្មានឡើងទើបអាចជ្រើសរើសសេវាសេវាកម្មពី
+                                        CamEZgo?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">បាទ/ចាស ចំពោះអតិថិជនត្រូវមានអាយុយ៉ាងតិចចាប់ពី
+                                        ២១ឆ្នាំឡើង។</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        តើខ្ញុំត្រូវការឯកសារអ្វីខ្លះដើម្បីធ្វើការកក់រថយន្ត?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">បាទ/ចាស យើងផ្តល់ការធានាលើសេវាកម្មជួសជុលទាំងអស់របស់យើង។
+                                        រយៈពេល និងការគ្របដណ្តប់អាស្រ័យលើប្រភេទនៃការជួសជុល។
+                                        ទាក់ទងមកយើងសម្រាប់ព័ត៌មានធានាជាក់លាក់។</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        តើអ្នកផ្តល់ការធានាលើការជួសជុលដែរឬទេ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">បាទ/ចាស យើងផ្តល់ការធានាលើសេវាកម្មជួសជុលទាំងអស់របស់យើង។
+                                        រយៈពេល និងការគ្របដណ្តប់អាស្រ័យលើប្រភេទនៃការជួសជុល។
+                                        ទាក់ទងមកយើងសម្រាប់ព័ត៌មានធានាជាក់លាក់។</div>
                                 </div>
                             </div>
                         </div>
@@ -545,10 +407,175 @@
                 </div>
             </div>
         </section>
-     </main>
-
-     <!-- footer -->
-     <footer>
+        <section class="faq pt-2 pt-md-3 pt-lg-5">
+            <div class="container">
+                <div class="section-title mb-3 mb-lg-4 head-title  wow animate__animated animate__fadeIn">
+                    <h1 class="fw-medium">សំណួរ-ចម្លើយ អំពីការជួលរថយន្ត</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8  wow animate__animated animate__fadeInUp">
+                        <div class="accordion accordion-flush" id="accordion-faq">
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqOne" aria-expanded="true" aria-controls="sellPanelFaqOne">
+                                    តើខ្ញុំអាចទាក់ទងយានដ្ឋាន ឬអ្នកចែកចាយដោយរបៀបណាសម្រាប់ព័ត៌មានបន្ថែមអំពីរថយន្ត?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        អ្នកអាចស្វែងរកព័ត៌មានទំនាក់ទំនងរបស់យានដ្ឋាន ឬក្រុមហ៊ុនចែកចាយនៅក្នុងព័ត៌មានលម្អិតនៅក្នុង <a href="car-sell-category.html" class="text-decoration-none">តារាងរថយន្ត</a>។ យើងផ្តល់លេខទូរស័ព្ទ អាស័យដ្ឋាន អ៊ីម៉ែល ទីតាំង និងអាចមានតំណផ្ទាល់ទៅកាន់គេហទំព័ររបស់ក្រុមហ៊ុនផងដែរ។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqTwo" aria-expanded="false" aria-controls="sellPanelFaqTwo">
+                                    តើរថយន្តដែលបានចុះបញ្ជីនៅលើគេហទំព័ររបស់អ្នក ត្រូវបានធានាដោយក្រុមហ៊ុនរបស់អ្នកដែរឬទេ?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ទេ យើងមិនត្រួតពិនិត្យ ឬធានារថយន្តនោះទេ។ គេហទំព័ររបស់យើងគឺជាវេទិកាសម្រាប់ដៃគូរបស់យើងក្នុងការផ្សាយពាណិជ្ជកម្មយានយន្តរបស់ពួកគេ។ យើងសូមណែនាំឱ្យទាក់ទងយានដ្ឋាន ឬអ្នកចែកចាយ ដើម្បីទទួលបានព័ត៌មានលម្អិតអំពីលក្ខខណ្ឌ និងការធានារបស់រថយន្ត។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqThree" aria-expanded="false" aria-controls="sellPanelFaqThree">
+                                    តើខ្ញុំអាចកំណត់កាលវិភាគ បើកសាកល្បងតាមរយៈគេហទំព័ររបស់អ្នកបានទេ?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqThree" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ការបើកបរសាកល្បងត្រូវបានរៀបចំដោយផ្ទាល់ជាមួយយានដ្ឋានឬអ្នកចែកចាយ។ សូមប្រើព័ត៌មានទំនាក់ទំនងដែលបានផ្តល់នៅក្នុងបញ្ជីរថយន្តដើម្បីកំណត់ពេលបើកបរសាកល្បង។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqFour" aria-expanded="false" aria-controls="sellPanelFaqFour">
+                                        តើមានព័ត៌មានអ្វីខ្លះអំពីរថយន្តដែលបានដាក់នៅលើគេហទំព័ររបស់អ្នក?
+                                    </button>
+                                </h2>
+                                <div id="sellPanelFaqFour" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                  <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ការចុះបញ្ជីរថយន្តនីមួយៗរួមមានព័ត៌មានលម្អិតសំខាន់ៗដូចជា model ឆ្នាំផលិត mileage តម្លៃ និងលក្ខណៈសំខាន់ៗផ្សេងទៀត។ លើសពីនេះ យើងផ្តល់ព័ត៌មានទំនាក់ទំនងរបស់យានដ្ឋាន ឬអ្នកចែកចាយសម្រាប់ការសាកសួរបន្ថែម។
+                                    </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqFive" aria-expanded="false" aria-controls="sellPanelFaqFive">
+                                        តើព័ត៌មាននៅលើគេហទំព័ររបស់អ្នកត្រូវបានអាប់ដេតញឹកញាប់ប៉ុណ្ណា?
+                                    </button>
+                                </h2>
+                                <div id="sellPanelFaqFive" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                  <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ដៃគូរបស់យើងធ្វើបច្ចុប្បន្នភាពបញ្ជីរបស់ពួកគេជាទៀងទាត់។ យើងព្យាយាមរក្សាព័ត៌មានឱ្យទាន់សម័យតាមដែលអាចធ្វើទៅបាន ប៉ុន្តែយើងសូមណែនាំឱ្យទាក់ទងយានដ្ឋាន ឬអ្នកចែកចាយដោយផ្ទាល់ ដើម្បីបញ្ជាក់ និងព័ត៌មានលម្អិតនៃរថយន្ត។
+                                    </p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq py-2 py-sm-3 py-md-4 py-lg-5">
+            <div class="container">
+                <div class="section-title head-title mb-3 mb-lg-4 wow animate__animated animate__fadeIn">
+                    <h1 class="fw-medium">សំណួរ-ចម្លើយ អំពីការជួលអ្នកបើកបរ</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 wow animate__animated animate__slideInUp">
+                        <div class="accordion accordion-flush" id="accordion-faq">
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqOne" aria-expanded="true" aria-controls="sellPanelFaqOne">
+                                    តើអ្នកបម្រើក្នុងតំបន់ណាខ្លះ?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        បច្ចុប្បន្នយើងបម្រើនៅក្នុងប្រទេសកម្ពុជា។ ប្រសិនបើអ្នកមិនប្រាកដថាយើងអាចទៅដល់តំបន់របស់អ្នកទេ សូមទាក់ទងក្រុមសេវាកម្មអតិថិជនរបស់យើងសម្រាប់ព័ត៌មានបន្ថែម។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqTwo" aria-expanded="false" aria-controls="sellPanelFaqTwo">
+                                    តើខ្ញុំជួលអ្នកបើកបរដោយរបៀបណា?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ដើម្បីជួលអ្នកបើកបរ គ្រាន់តែចូលទៅកាន់ទំព័រកក់របស់យើង ជ្រើសរើសកាលបរិច្ឆេទ និងពេលវេលាដែលអ្នកត្រូវការសេវាកម្ម ជ្រើសរើសអ្នកបើកបរពីបញ្ជីរបស់យើង ហើយបំពេញព័ត៌មានផ្សេងៗ។ អ្នកនឹងទទួលបានអ៊ីមែលបញ្ជាក់ នៅពេលដែលការកក់របស់អ្នកត្រូវបានដំណើរការ។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqThree" aria-expanded="false" aria-controls="sellPanelFaqThree">
+                                    តើអ្នកបើកបររបស់អ្នកមានលក្ខណៈសម្បត្តិអ្វីខ្លះ?
+                                </button>
+                              </h2>
+                              <div id="sellPanelFaqThree" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        អ្នកបើកបររបស់យើងទាំងអស់ត្រូវបានត្រួតពិនិត្យយ៉ាងម៉ត់ចត់ និងមានប័ណ្ណបើកបរដែលមានសុពលភាព កំណត់ត្រាបើកបរស្អាត និងបទពិសោធន៍បើកបរយ៉ាងទូលំទូលាយ។ ពួកគេក៏ទទួលការបណ្តុះបណ្តាលជាប្រចាំផងដែរ ដើម្បីធានាបាននូវកម្រិតខ្ពស់បំផុតនៃសេវាកម្ម។
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqFour" aria-expanded="false" aria-controls="sellPanelFaqFour">
+                                        តើខ្ញុំអាចជ្រើសរើសអ្នកបើកបររបស់ខ្ញុំបានទេ?
+                                    </button>
+                                </h2>
+                                <div id="sellPanelFaqFour" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                  <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ប្រាកដណាស់ អ្នកអាចជ្រើសរើសពីបញ្ជីកម្មវិធីបញ្ជាដែលមានរបស់យើង។ អ្នកបើកបរនីមួយៗមានប្រវត្តិរូបជាមួយនឹងលក្ខណៈសម្បត្តិ បទពិសោធន៍ និងការវាយតម្លៃពីអតិថិជនរបស់ពួកគេ ដើម្បីជួយអ្នកធ្វើការសម្រេចចិត្តប្រកបដោយការយល់ដឹង។
+                                    </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item my-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sellPanelFaqFive" aria-expanded="false" aria-controls="sellPanelFaqFive">
+                                        តើខ្ញុំអាចជួលអ្នកបើកបរសម្រាប់តម្រូវការរយៈពេលវែងបានទេ?
+                                    </button>
+                                </h2>
+                                <div id="sellPanelFaqFive" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
+                                  <div class="accordion-body pt-0">
+                                    <p class="px-3 mb-0">
+                                        ប្រាកដណាស់ យើងផ្តល់ជូននូវជម្រើសជួលអ្នកបើកបររយៈពេលវែង។ សូមទាក់ទងមកយើងខ្ញុំដើម្បីពិភាក្សាអំពីតម្រូវការរបស់អ្នក ហើយយើងនឹងរៀបចំកញ្ចប់មួយតាមតម្រូវការរបស់អ្នក។
+                                    </p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </main>
+    <!-- footer -->
+    <footer>
         <div class="container pb-3">
             <div class="row">
                 <div class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
@@ -686,60 +713,8 @@
             </div>
         </div>
     </footer>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/plugin/wowjs/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
-      <script>
-        // Back to top and Menu Sticky
-        window.onscroll = function () {
-            stickyNavbar();
-        };
-        var navbar = document.querySelector(".navPage");
-        var sticky = navbar.offsetTop;
-        var backToTop = document.getElementById("backToTop");
 
-        function stickyNavbar() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("sticky");
-            backToTop.style.display = "block";
-        } else {
-            navbar.classList.remove("sticky");
-            backToTop.style.display = "none";
-        }
-        }
-
-        backToTop.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-      </script>
-  
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function setGetDropLocation(option) {
-            const getLocation = document.getElementById('getLocation');
-            const dropLocation = document.getElementById('dropLocation');
-            const getLocationBtn = document.getElementById('getLocationBtn');
-            if (option === 'companyLocation') {
-                getLocation.value = '#86B ផ្លូវលេខ 313, ភ្នំពេញ';
-                dropLocation.value = '#86B ផ្លូវលេខ 313, ភ្នំពេញ';
-                getLocation.disabled = true;
-                dropLocation.disabled = false;
-                getLocationBtn.disabled = true;
-            } else if (option === 'customerLocation') {
-                getLocation.value = '';
-                dropLocation.value = '';
-                getLocation.disabled = false;
-                dropLocation.disabled = false;
-                getLocationBtn.disabled = false;
-                getLocationBtn.style.cursor = 'pointer';
-            }
-        }
-        function setDefaultLocation(fieldId) {
-            const userDefaultLocation = 'ផ្សារចាស់ តំបន់ផាប់ស្ទ្រីត ផ្លូវលេខ 9 សង្កាត់ស្វាយដង្គំ ខេត្តសៀមរាប';
-            document.getElementById(fieldId).value = userDefaultLocation;
-        }
-    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/wowjs/wow.min.js"></script>
 </body>
 </html>
