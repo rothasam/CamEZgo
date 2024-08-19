@@ -20,7 +20,6 @@ body {
   --main-color-800: #2d1db6;
   --main-color-900: #29208f;
 }
-
 mark {
   font-weight: 900;
   background-color: transparent;
@@ -31,7 +30,6 @@ mark {
 .accordion-button.accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
-
 /***************************************/
 /*               Header                */
 /***************************************/
@@ -235,7 +233,6 @@ header nav .nav-link:hover {
 }
 .login-signup a:first-child:hover{
   background-color: var(--main-hover);
-  /* color: var(--main-color); */
 }
 .login-signup a:last-child{
   color: var(--main-color);
@@ -244,7 +241,6 @@ header nav .nav-link:hover {
   color: white;
   background-color: var(--main-hover);
 }
-
 .head-section h1 {
   text-align: center;
   text-transform: uppercase;
@@ -327,7 +323,6 @@ header nav .nav-link:hover {
 .btn-facebook {
   border: 1px solid var(--main-color);
 }
-
 #sign-in .btn-google:hover,
 .btn-facebook:hover {
   background-color: var(--main-color);
@@ -350,15 +345,12 @@ header nav .nav-link:hover {
 .modal-3step .modal-footer button:nth-child(1):hover a {
   color: rgb(255, 255, 255);
 }
-
 .btn-cancel {
   border: none;
 }
-
 .btn-cancel:hover {
   color: var(--main-color);
 }
-
 .btn-outline-start {
   border: 1px solid var(--main-color);
   transition: all 0.5s ease-in-out;
@@ -373,7 +365,6 @@ header nav .nav-link:hover {
   display: none;
   padding: 10px;
 }
-
 .radio {
   display: flex;
   align-items: center;
@@ -382,12 +373,10 @@ header nav .nav-link:hover {
   border-width: 1px;
   background-color: #dddddd3f;
 }
-
 .radio.selected {
   background-color: transparent;
   border: 1px solid var(--main-color);
 }
-
 .label-icon {
   width: 40px;
   height: 40px;
@@ -439,7 +428,6 @@ header nav .nav-link:hover {
   background-size: cover;
   cursor: pointer;
 }
-
 #password-icon1.hide,
 #password-icon2.hide,
 #password-icon3.hide,
@@ -452,14 +440,12 @@ header nav .nav-link:hover {
   background-image: url(../img/icon/form/show.png);
   background-size: cover;
 }
-
 .width-450 .modal-title,
 .licence .modal-title {
   font-size: 22px;
   font-weight: 600;
 }
-
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .encrypted {
     font-size: 12px;
   }
@@ -489,7 +475,6 @@ header nav .nav-link:hover {
   #repair-banner h1 {
     font-size: 36px !important;
   }
-
   .user-account .width-col {
     flex: 0 0 auto;
     width: 50% !important;
@@ -498,7 +483,6 @@ header nav .nav-link:hover {
     width: 100%;
     height: 120px;
   }
-
   .image-profile img {
     width: 100%;
     height: 120px;
@@ -506,7 +490,6 @@ header nav .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 40px;
     height: 40px;
@@ -514,15 +497,14 @@ header nav .nav-link:hover {
     bottom: 30px;
     right: 15px;
   }
-}
-@media (min-width: 600px) {
+} */
+/* @media (min-width: 600px) {
   .verify-code .modal-body .form-control {
     padding: 12px !important;
     width: 40px;
     height: 40px;
   }
-}
-
+} */
 .width-450 .modal-body ul .list-step {
   display: flex;
   margin-bottom: 20px;
@@ -584,7 +566,6 @@ header nav .nav-link:hover {
 .licence ::-webkit-scrollbar-thumb:hover {
   background: var(--main-hover);
 }
-
 /* car repair service page */
 #repair-banner.hero {
   width: 100%;
@@ -594,7 +575,6 @@ header nav .nav-link:hover {
   background-position: center;
   position: relative;
 }
-
 #repair-banner.hero .overlay {
   position: absolute;
   color: #fff;
@@ -606,18 +586,15 @@ header nav .nav-link:hover {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 .our-service .card {
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
 }
-
 .our-service .card .card-header {
   overflow: hidden;
   padding: 0;
 }
-
 .our-service .card-img {
   height: 400px;
   width: 100% !important;
@@ -694,7 +671,6 @@ header nav .nav-link:hover {
 .our-service .btn-learn-more:hover {
   background-color: var(--main-color);
 }
-
 .our-service .swiper-button-next,
 .technician .swiper-button-next {
   right: 45px !important;
@@ -756,20 +732,16 @@ header nav .nav-link:hover {
 .technician .swiper-button-prev {
   top: 45% !important;
 }
-
 .content-choose h3 {
   font-weight: bold;
 }
-
 .timeline-list {
   list-style-type: none;
   padding: 0;
 }
-
 .timeline-list .timeline-panel {
   display: flex;
 }
-
 .timeline-list .timeline-panel .timeline-img span {
   width: 50px;
   height: 50px;
@@ -780,13 +752,11 @@ header nav .nav-link:hover {
   color: #fff;
   font-size: 20px;
 }
-
 .timeline-list .timeline-panel .timeline-text h2 {
   font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
-
 .timeline-list .timeline-panel .timeline-text p {
   font-size: 12px;
   margin: 0;
@@ -1150,7 +1120,6 @@ header nav .nav-link:hover {
   background-color: var(--main-hover);
   color: #f1f1f1;
 }
-
 .feature-staff .key-feature i {
   font-size: 30px;
   color: var(--main-color);
@@ -1401,7 +1370,6 @@ header nav .nav-link:hover {
 .driver-list .action a:hover::before {
   left: 0;
 }
-
 .driver-list.driver-expert .card .media-icon-1 {
   border-top-right-radius: 11px;
   padding: 2px;
@@ -2026,9 +1994,6 @@ header nav .nav-link:hover {
   background-color: var(--main-color-700);
   color: var(--bg-color);
 }
-/* ============================ */
-/* === driver-checkout.html === */
-/* ============================ */
 .summary-detail .profile {
   background-color: var(--main-color-900);
 }
@@ -2058,7 +2023,6 @@ header nav .nav-link:hover {
     transform: translateY(0);
   }
 }
-
 /***************************************/
 /*            Hero-banner              */
 /***************************************/
@@ -2068,7 +2032,6 @@ header nav .nav-link:hover {
 }
 .hero-banner .video-wrap .plyr__video-wrapper {
   width: 100% !important;
-  /* height: 100%!important; */
   height: 650px;
 }
 .hero-banner .video-wrap .plyr__video-wrapper video {
@@ -2090,7 +2053,6 @@ header nav .nav-link:hover {
 .down-app-link {
   width: 25%;
 }
-
 .search-car-box {
   background-color: rgba(255, 255, 255, 0.716);
   border-radius: 8px;
@@ -2160,7 +2122,6 @@ header nav .nav-link:hover {
   margin-left: -50px;
   background-color: var(--main-color);
 }
-
 .left-side-title h1 {
   font-size: 28px;
   font-weight: 500;
@@ -2191,7 +2152,6 @@ header nav .nav-link:hover {
 /***************************************/
 /*           Why choose us             */
 /***************************************/
-
 .why-us-img .img-1 {
   height: 180px;
   position: relative;
@@ -2237,7 +2197,6 @@ header nav .nav-link:hover {
   border-bottom: 7px solid var(--main-color);
   border-right: 7px solid var(--main-color);
 }
-
 .why-us-img .img-1 img,
 .why-us-img .img-3 img,
 .why-us-img .img-2 img {
@@ -2258,7 +2217,6 @@ header nav .nav-link:hover {
 .why-us-des {
   width: 75%;
 }
-
 /***************************************/
 /*              Feature                */
 /***************************************/
@@ -2270,12 +2228,6 @@ header nav .nav-link:hover {
   padding: 30px 0;
   border-radius: 10px;
 }
-/* @media (max-width: 992px) {
-  .feature-counting{
-    transform: translate(80px,-120px);
-  }
-} */
-
 /***************************************/
 /*              Car type               */
 /***************************************/
@@ -2302,13 +2254,10 @@ header nav .nav-link:hover {
 .car-type-item:hover img {
   transform: scale(105%);
 }
-
 /***************************************/
 /*           car for rent              */
 /***************************************/
-
 .car-item.card {
-  /* height: 400px; */
   padding: 10px 10px 0 10px;
   transition: 0.4s;
   border: 0;
@@ -2320,7 +2269,6 @@ header nav .nav-link:hover {
   color: white;
   transform: translateY(-8px);
 }
-
 .car-item.card:hover .rent-price {
   color: var(--main-color);
 }
@@ -2441,7 +2389,6 @@ header nav .nav-link:hover {
   bottom: 0 !important;
   margin-bottom: 0 !important;
 }
-
 /***************************************/
 /*             How we work             */
 /***************************************/
@@ -2489,7 +2436,6 @@ header nav .nav-link:hover {
   height: 60px;
   margin: auto;
 }
-
 /***************************************/
 /*            Special Offer            */
 /***************************************/
@@ -2569,11 +2515,9 @@ header nav .nav-link:hover {
   padding: 2px 5px;
   font-weight: 500;
 }
-
 /***************************************/
 /*              Service                */
 /***************************************/
-
 .service-cover {
   height: 180px;
 }
@@ -2615,7 +2559,6 @@ header nav .nav-link:hover {
 .card-service .card .btn:hover {
   background-color: var(--main-hover);
 }
-
 /***************************************/
 /*          Download App               */
 /***************************************/
@@ -2646,8 +2589,6 @@ header nav .nav-link:hover {
   height: 40px;
 }
 .feedback-wrap .card-bottom {
-  /* width: 100%; */
-  /* height: 245px; */
   background-color: rgb(255, 255, 255);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -2672,7 +2613,6 @@ header nav .nav-link:hover {
 .feed-rate {
   font-size: 14px;
 }
-
 /***************************************/
 /*           NOTIFICATION              */
 /***************************************/
@@ -2698,36 +2638,30 @@ header nav .nav-link:hover {
 .notification-list:hover {
   background-color: rgb(234, 234, 234);
 }
-
 .achievement-count span {
   font-size: 42px;
   font-weight: bold;
 }
-
 .achievement-count p {
   font-size: 20px;
   font-weight: 550;
 }
-
 .achievement-left {
   position: absolute;
   right: 0;
   top: -50%;
 }
-
 .achievement-left img {
   margin-left: 20px;
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
-
 .achievement-text h1 {
   font-weight: 550;
   padding-left: 10px;
   border-left: 3px solid var(--main-color);
 }
-
 .technician .techincian-soical .nav {
   z-index: 10;
 }
@@ -2751,7 +2685,6 @@ header nav .nav-link:hover {
 .technician .card:hover .techincian-soical .nav .nav-item .nav-link span i {
   color: #fff;
 }
-
 /* emergency section */
 .bagde-24h {
   width: 45px;
@@ -2766,7 +2699,6 @@ header nav .nav-link:hover {
   top: -12px;
   left: 220px;
 }
-
 .btn-logout {
   border: 1px solid var(--main-color);
   font-size: 12px;
@@ -2775,7 +2707,6 @@ header nav .nav-link:hover {
   color: #fff;
   background-color: var(--main-color);
 }
-
 .techician-hover {
   width: 80%;
   height: 200px;
@@ -2785,7 +2716,6 @@ header nav .nav-link:hover {
   top: -100px;
   overflow: hidden;
 }
-
 .techincian-img {
   width: 100%;
   height: 450px;
@@ -2797,7 +2727,6 @@ header nav .nav-link:hover {
   transition: 0.5s;
   object-fit: cover;
 }
-
 .technician-info,
 .techincian-soical {
   height: 50%;
@@ -2805,7 +2734,6 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-
 .technician .card:hover .techincian-img img {
   transform: scale(1.1);
 }
@@ -2818,10 +2746,6 @@ header nav .nav-link:hover {
   bottom: -50%;
   transition: 0.5s;
 }
-/* .technician .techincian-soical:hover::before {
-  bottom: 0;
-} */
-
 .technician .card:hover .techician-hover .techincian-soical::before {
   bottom: 0;
 }
@@ -2856,7 +2780,6 @@ header nav .nav-link:hover {
   border-radius: 100%;
   object-fit: cover;
 }
-
 .customer-say .card-header .cust-info h3 {
   margin: 0;
   font-size: 24px;
@@ -2875,7 +2798,6 @@ header nav .nav-link:hover {
 .get-touch .nav .nav-item .nav-link:hover {
   background-color: var(--main-hover);
 }
-
 /* =================================== */
 /* ========== career page ============ */
 /* =================================== */
@@ -2887,7 +2809,6 @@ header nav .nav-link:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  /* background-attachment: fixed; */
 }
 
 #career-banner.hero .overlay,
@@ -2895,13 +2816,11 @@ header nav .nav-link:hover {
   position: absolute;
   color: #fff;
   display: flex;
-  /* justify-content: end; */
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 600px;
   background-color: rgba(0, 0, 0, 0);
-  /* background-color: rgba(0, 0, 0, 0.5); */
   padding-bottom: 50px;
 }
 #career-detail.hero .overlay {
@@ -2914,7 +2833,6 @@ header nav .nav-link:hover {
 .card-career .info-career p {
   font-size: 12px;
 }
-
 .card-career {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -2929,11 +2847,9 @@ header nav .nav-link:hover {
   border-bottom: 1px solid var(--main-color);
   box-shadow: var(--bs-box-shadow) !important;
 }
-
 .text-career {
   color: var(--main-color);
 }
-
 .head-title-career h1 {
   font-weight: 500;
   letter-spacing: 0;
@@ -2951,12 +2867,10 @@ header nav .nav-link:hover {
   width: 55px;
   background-color: var(--main-color);
 }
-
 /* user account */
 .user-account .nav .nav-item {
   width: 100%;
 }
-
 .user-account .nav .nav-item .nav-link {
   padding: 12px 25px;
   font-weight: 500;
@@ -2969,12 +2883,10 @@ header nav .nav-link:hover {
 .user-account .nav .nav-item .nav-link.active {
   background-color: var(--main-color);
 }
-
 .image-profile {
   width: 100%;
   height: 190px;
 }
-
 .image-profile img {
   width: 100%;
   height: 190px;
@@ -2982,7 +2894,6 @@ header nav .nav-link:hover {
   border: 3px solid #ddd;
   object-fit: cover;
 }
-
 .edit-img {
   background-color: #ddd;
   border: 2px solid #fff;
@@ -2996,7 +2907,6 @@ header nav .nav-link:hover {
   bottom: 10px;
   right: 10px;
 }
-
 .label-verified {
   background-color: #16a34a;
   color: #fff;
@@ -3005,7 +2915,6 @@ header nav .nav-link:hover {
   border-radius: 8px;
 }
 /* end user account */
-
 /* =================================== */
 /* ========== career detail ========== */
 /* =================================== */
@@ -3024,11 +2933,9 @@ header nav .nav-link:hover {
 #career-detail .title-hero .btn-back-career:hover {
   color: #ffffffc5;
 }
-
 .hr-info p {
   margin: 0 !important;
 }
-
 /***************************************/
 /*               Blog                  */
 /***************************************/
@@ -3076,7 +2983,6 @@ header nav .nav-link:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-
 .blog-card .blog-card-img {
   height: 50%;
   width: 100%;
@@ -3112,7 +3018,6 @@ header nav .nav-link:hover {
   clip-path: polygon(0 0, 0% 100%, 100% 100%);
   right: -39.5px;
 }
-
 .blog-card .card-body {
   height: 50%;
 }
@@ -3123,7 +3028,6 @@ header nav .nav-link:hover {
   font-size: 14px;
   padding: 8px 0;
 }
-
 .blog-card .card-body .btn {
   border: 1px solid var(--main-color);
   color: var(--main-color);
@@ -3146,7 +3050,6 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   color: white;
 }
-
 /***************************************/
 /*           Blog Detail              */
 /***************************************/
@@ -3264,7 +3167,6 @@ header nav .nav-link:hover {
   border-right: 8px solid var(--main-color);
   margin: 0 -12px -12px 0;
 }
-
 .team-social-media .nav .nav-item {
   border: 2px solid var(--main-color);
   width: 100%;
@@ -3285,11 +3187,9 @@ header nav .nav-link:hover {
 .team-social-media .nav .nav-item:hover .nav-link {
   color: white;
 }
-
 /***************************************/
 /*             Contact us              */
 /***************************************/
-
 .form-contact .form-control {
   border: none;
   border-bottom: 2px solid rgb(222, 222, 222);
@@ -3326,7 +3226,6 @@ header nav .nav-link:hover {
   margin-right: 20px;
   color: var(--main-color);
 }
-
 .form-contact-us .form-contact {
   padding: 30px 50px;
   background-color: white;
@@ -3340,7 +3239,6 @@ header nav .nav-link:hover {
   top: 0;
   background-color: rgba(0, 0, 0, 0.545);
 }
-
 .form-contact-us .form-contact .form-control {
   border-bottom-color: rgb(112, 112, 112);
   background-color: white;
@@ -3390,7 +3288,6 @@ header nav .nav-link:hover {
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background-color: var(--main-color)!important;
 }
-
 /* pagination */
 .my-pagination .nav-page-prev .nav-link , .my-pagination .nav-page-next .nav-link{
   background-color: white;
@@ -3424,8 +3321,6 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   color: white;
 }
-
-
 /***************************************/
 /*              Footer                 */
 /***************************************/
@@ -3440,11 +3335,9 @@ footer .nav-link {
 }
 footer .nav-link:hover {
   color: white;
-  /* transform: scale(102%); */
 }
 .footer-social-media .navbar-nav .nav-item .nav-link {
   font-size: 18px;
-  /* padding: 0 12px; */
 }
 .footer-brand {
   height: 50px;
@@ -3452,7 +3345,6 @@ footer .nav-link:hover {
 .footer-app-link img {
   height: 50px;
 }
-
 /***************************************/
 /*             MEDIA QUERY             */
 /***************************************/
@@ -3652,10 +3544,7 @@ footer .nav-link:hover {
   }
   .car-sell-promotion{
     padding: 0 30px;
-  }  
-  /* .img-booking img {
-    height: 200px !important;
-  } */
+  } 
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3677,7 +3566,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 40px;
     height: 40px;
@@ -3747,11 +3635,9 @@ footer .nav-link:hover {
   .hero-text h1 {
     font-size: 26px;
   }
-
   .car-type-item {
     height: 240px;
   }
-
   .card-service .card p {
     font-size: 14px;
   }
@@ -3761,11 +3647,9 @@ footer .nav-link:hover {
   .card-service .card {
     margin-top: -90px !important;
   }
-
   .app-section p {
     font-size: 14px;
   }
-
   .num-step {
     width: 40px;
     height: 40px;
@@ -3777,7 +3661,6 @@ footer .nav-link:hover {
   .detail-work p {
     padding: 0 40px;
   }
-
   .special-offer {
     padding: 0 20px;
   }
@@ -3803,7 +3686,6 @@ footer .nav-link:hover {
   .special-offer .btn-register {
     font-size: 13px;
   }
-
   .detail-contact {
     margin-top: -90px;
   }
@@ -3816,7 +3698,6 @@ footer .nav-link:hover {
   .map {
     margin-top: -10px;
   }
-
   .search-blog {
     padding: 0 20px;
   }
@@ -3835,7 +3716,6 @@ footer .nav-link:hover {
     font-size: 12px;
     padding: 4px 6px;
   }
-
   .about-us-banner h1{
     font-size: 24px;
   }
@@ -3856,8 +3736,6 @@ footer .nav-link:hover {
   .team-detail p{
     font-size: 13px;
   }
-
-
   .card-discount {
     height: 140px;
   }
@@ -3962,7 +3840,6 @@ footer .nav-link:hover {
     width: 100%;
     height: 250px;
   }
-
   .image-profile img {
     width: 100%;
     height: 250px;
@@ -3977,9 +3854,6 @@ footer .nav-link:hover {
     bottom: 20px;
     right: 15px;
   }
-  /* .img-booking img {
-    height: 150px !important;
-  } */
   .car-sell-promotion{
     padding: 0 30px;
   }
@@ -4009,7 +3883,6 @@ footer .nav-link:hover {
     margin: 4px 0;
     font-size: 14px;
   }
-
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -4031,21 +3904,75 @@ footer .nav-link:hover {
   .emergency .calling-text {
     font-size: 1rem !important;
   }
-
   .btn-payment {
     width: 100% !important;
   }
+  .encrypted {
+    font-size: 12px;
+  }
+  .under-review {
+    font-size: 18px;
+  }
+  .text-view {
+    font-size: 12px;
+  }
+  .sub-text-modal {
+    font-size: 14px;
+  }
+  .later,
+  .next {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+  }
+  .modal-title {
+    font-size: 20px !important;
+  }
+  .verify-code .modal-body .form-control {
+    padding: 8px !important;
+    width: 40px;
+    height: 30px;
+  }
+  #repair-banner h1 {
+    font-size: 36px !important;
+  }
+  .user-account .width-col {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+  .image-profile {
+    width: 100%;
+    height: 120px;
+  }
+  .image-profile img {
+    width: 100%;
+    height: 120px;
+    border-radius: 100%;
+    border: 3px solid #ddd;
+    object-fit: cover;
+  }
+  .edit-img {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    bottom: 30px;
+    right: 15px;
+  }
 }
-
+@media (min-width: 600px) {
+  .verify-code .modal-body .form-control {
+    padding: 12px !important;
+    width: 40px;
+    height: 40px;
+  }
+}
 @media (max-width: 576px) {
   .head-title h1 {
     font-size: 20px;
   }
-
   .main-about-us p{
     font-size: 15px;
   }
-
   .icon-card {
     width: 50px;
     height: 50px;
@@ -4073,7 +4000,6 @@ footer .nav-link:hover {
     width: 18%;
     font-size: 10px;
   }
-
   .card-service .card h5 {
     font-size: 17px;
   }
@@ -4229,9 +4155,6 @@ footer .nav-link:hover {
   .car-list .ts-control {
     width: 150px;
   }
-  /* .breadcrumb-item {
-    font-size: 13px !important;
-  } */
   .banner-name .banner-content h1 {
     font-size: 25px;
   }
@@ -4247,7 +4170,6 @@ footer .nav-link:hover {
   .shadow-checkout {
     box-shadow: none;
   }
-  /* ======================= */
   .team-name {
     width: 70%;
   }
@@ -4288,7 +4210,6 @@ footer .nav-link:hover {
   .f-w-100 {
     width: 100% !important;
   }
-  
   .car-sell-promotion img{
     height: 200px;
     top: -22px;
@@ -4315,7 +4236,6 @@ footer .nav-link:hover {
     font-size: 12px;
   }
 }
-
 @media (max-width: 442px) {
   .driver-list .modal .image {
     border: 1px solid var(--main-color-200);
@@ -4361,7 +4281,6 @@ footer .nav-link:hover {
   .car-attribute .overlay .text-over {
     font-size: 10px !important;
   }
-
   .text-qrcode {
     text-align: left !important;
   }
@@ -4405,7 +4324,6 @@ footer .nav-link:hover {
     flex: 0 0 auto;
     width: 83.33333333%;
   }
-
   .why-choose .choose-us-1 {
     flex: 0 0 auto;
     width: 66.66666667%;
@@ -4413,17 +4331,14 @@ footer .nav-link:hover {
   .why-choose .choose-us-2 {
     top: 110px !important;
   }
-
   .our-service .swiper-button-next,
   .technician .swiper-button-next {
     right: 15px !important;
   }
-
   .our-service .swiper-button-prev,
   .technician .swiper-button-prev {
     left: 15px !important;
   }
-
   .user-account .width-col {
     flex: 0 0 auto;
     width: 55%;
@@ -4432,7 +4347,6 @@ footer .nav-link:hover {
     width: 100%;
     height: 210px;
   }
-
   .image-profile img {
     width: 100%;
     height: 210px;
@@ -4440,7 +4354,6 @@ footer .nav-link:hover {
     border: 3px solid #ddd;
     object-fit: cover;
   }
-
   .edit-img {
     width: 40px;
     height: 40px;
@@ -4473,12 +4386,10 @@ footer .nav-link:hover {
     flex: 0 0 auto;
     width: 60% !important;
   }
-
   .image-profile {
     width: 100%;
     height: 200px;
   }
-
   .image-profile img {
     width: 100%;
     height: 200px;
