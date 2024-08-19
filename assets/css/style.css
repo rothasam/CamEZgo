@@ -145,7 +145,7 @@ header nav .nav-link:hover {
   top: -20px;
   right: 100px;
 }
-.nav-clip-path{
+.nav-clip-path {
   width: 18px;
   height: 18px;
   background-color: #ddd;
@@ -154,7 +154,7 @@ header nav .nav-link:hover {
   right: 105px;
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
 }
-.drop-acc .nav-clip-path{
+.drop-acc .nav-clip-path {
   right: 35px;
 }
 .dropdown-car-type,
@@ -225,22 +225,22 @@ header nav .nav-link:hover {
   cursor: pointer;
   transition: 0.5s;
 }
-.login-signup a{
+.login-signup a {
   border: 1px solid var(--main-color);
   padding: 3px 7px;
 }
-.login-signup a:first-child{
+.login-signup a:first-child {
   background-color: var(--main-color);
   color: white;
 }
-.login-signup a:first-child:hover{
+.login-signup a:first-child:hover {
   background-color: var(--main-hover);
   /* color: var(--main-color); */
 }
-.login-signup a:last-child{
+.login-signup a:last-child {
   color: var(--main-color);
 }
-.login-signup a:last-child:hover{
+.login-signup a:last-child:hover {
   color: white;
   background-color: var(--main-hover);
 }
@@ -2512,7 +2512,7 @@ header nav .nav-link:hover {
   background-color: #ffc107;
   padding-top: 10px;
 }
-.car-rent-promotion .card-discount{
+.car-rent-promotion .card-discount {
   border: 1px solid rgb(171, 171, 171);
 }
 .car-rent-promotion .card-discount h6 {
@@ -2528,7 +2528,7 @@ header nav .nav-link:hover {
 }
 .car-sell-promotion {
   overflow: hidden;
-  background-color: #FFC107;
+  background-color: #ffc107;
   border-radius: 8px;
   z-index: 10;
   padding: 0 25px;
@@ -2539,31 +2539,31 @@ header nav .nav-link:hover {
   top: -38px;
   right: -70px;
 }
-.promotion-sale-text div:nth-child(2){
+.promotion-sale-text div:nth-child(2) {
   background-color: var(--dark-blue);
   right: 40px;
-  border-bottom-left-radius: 8px ;
-  border-bottom-right-radius: 8px ;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   top: 0;
- padding: 23px 10px 5px 10px;
- color: white;
+  padding: 23px 10px 5px 10px;
+  color: white;
 }
-.promotion-sale-text div:nth-child(2) strong:nth-child(2){
+.promotion-sale-text div:nth-child(2) strong:nth-child(2) {
   font-size: 25px;
 }
-.promotion-detail-car .nav .nav-item i{
+.promotion-detail-car .nav .nav-item i {
   font-size: 24px;
 }
-.promotion-detail-car .nav .nav-item{
+.promotion-detail-car .nav .nav-item {
   margin: 4px 0;
   font-size: 16px;
 }
-.sale-contact{
+.sale-contact {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
 }
-.sale-contact div{
+.sale-contact div {
   background-color: var(--main-color-100);
   border-radius: 4px;
   padding: 2px 5px;
@@ -2577,7 +2577,7 @@ header nav .nav-link:hover {
 .service-cover {
   height: 180px;
 }
-.service-cover img{
+.service-cover img {
   border-radius: 4px;
 }
 .card-service .card {
@@ -2605,7 +2605,7 @@ header nav .nav-link:hover {
   color: white;
   border-radius: 3px;
 }
-.card-service .card .btn:hover .fa-arrow-right-long{
+.card-service .card .btn:hover .fa-arrow-right-long {
   transform: translateX(4px);
 }
 .card-service .card:hover {
@@ -3285,6 +3285,69 @@ header nav .nav-link:hover {
 .team-social-media .nav .nav-item:hover .nav-link {
   color: white;
 }
+/* succesful payment amintation */
+.success-animation {
+  margin: 40px auto;
+  margin-top: 10px;
+  /* margin-top: 30px;
+  margin-bottom: 25px; */
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  margin: 0 auto;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}
 
 /***************************************/
 /*             Contact us              */
@@ -3383,48 +3446,49 @@ header nav .nav-link:hover {
   margin-bottom: 25px;
   line-height: 27px;
 }
-.term-condition .card p, .privacy-policy .card p{
+.term-condition .card p,
+.privacy-policy .card p {
   text-indent: 40px;
 }
 /* swiper pagination active */
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background-color: var(--main-color)!important;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--main-color) !important;
 }
 
 /* pagination */
-.my-pagination .nav-page-prev .nav-link , .my-pagination .nav-page-next .nav-link{
+.my-pagination .nav-page-prev .nav-link,
+.my-pagination .nav-page-next .nav-link {
   background-color: white;
   margin: 0 12px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px ; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 1px solid var(--main-color-100);
   color: var(--main-color);
 }
-.my-pagination .nav-page{
+.my-pagination .nav-page {
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 1px solid var(--main-color-100);
 }
-.my-pagination .nav-page .nav li:first-child .nav-link{
+.my-pagination .nav-page .nav li:first-child .nav-link {
   border-radius: 4px 0 0 4px;
 }
-.my-pagination .nav-page .nav li:last-child .nav-link{
+.my-pagination .nav-page .nav li:last-child .nav-link {
   border-radius: 0 4px 4px 0;
 }
-.my-pagination .nav-page .nav li .nav-link{
+.my-pagination .nav-page .nav li .nav-link {
   color: var(--main-color);
 }
-.my-pagination .nav-page .nav li .nav-link:hover, 
-.my-pagination .nav-page-prev:hover .nav-link , 
-.my-pagination .nav-page-next:hover .nav-link{
+.my-pagination .nav-page .nav li .nav-link:hover,
+.my-pagination .nav-page-prev:hover .nav-link,
+.my-pagination .nav-page-next:hover .nav-link {
   background-color: var(--main-color);
   color: white;
 }
-.my-pagination .nav-page .nav li .nav-link.active{
+.my-pagination .nav-page .nav li .nav-link.active {
   background-color: var(--main-color);
   color: white;
 }
-
 
 /***************************************/
 /*              Footer                 */
@@ -3650,12 +3714,12 @@ footer .nav-link:hover {
     height: 30px;
   }
   .booking-info .booking-form .icon i {
-    font-size: 14px !important; 
+    font-size: 14px !important;
   }
 
-  .car-sell-promotion{
+  .car-sell-promotion {
     padding: 0 30px;
-  }  
+  }
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3694,7 +3758,7 @@ footer .nav-link:hover {
     top: -18px;
     right: 73px;
   }
-  .drop-acc .nav-clip-path{
+  .drop-acc .nav-clip-path {
     right: 30px;
   }
   .dropdown-noti {
@@ -3836,16 +3900,16 @@ footer .nav-link:hover {
     padding: 4px 6px;
   }
 
-  .about-us-banner h1{
+  .about-us-banner h1 {
     font-size: 24px;
   }
-  .team-wrap{
+  .team-wrap {
     height: 250px;
   }
-  .team-social-media .nav .nav-item{
+  .team-social-media .nav .nav-item {
     height: 35px;
   }
-  .team-name{
+  .team-name {
     width: 80%;
   }
   .border-card::after,
@@ -3853,10 +3917,9 @@ footer .nav-link:hover {
     width: 70px;
     height: 70px;
   }
-  .team-detail p{
+  .team-detail p {
     font-size: 13px;
   }
-
 
   .card-discount {
     height: 140px;
@@ -3983,36 +4046,35 @@ footer .nav-link:hover {
     height: 150px !important;
   }
 
-  .car-sell-promotion{
+  .car-sell-promotion {
     padding: 0 30px;
   }
-  .car-sell-promotion img{
+  .car-sell-promotion img {
     height: 240px;
     top: -24px;
     right: -90px;
   }
-  .promotion-sale-text div:nth-child(1) h3{
+  .promotion-sale-text div:nth-child(1) h3 {
     font-size: 22px;
   }
-  .promotion-sale-text div:nth-child(1) h6{
+  .promotion-sale-text div:nth-child(1) h6 {
     font-size: 13px;
   }
-  .promotion-sale-text div:nth-child(2){
+  .promotion-sale-text div:nth-child(2) {
     right: 8px;
-   padding: 23px 10px 0px 10px;
-   font-size: 14px;
+    padding: 23px 10px 0px 10px;
+    font-size: 14px;
   }
-  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2) {
     font-size: 21px;
   }
-  .promotion-detail-car .nav .nav-item i{
+  .promotion-detail-car .nav .nav-item i {
     font-size: 22px;
   }
-  .promotion-detail-car .nav .nav-item{
+  .promotion-detail-car .nav .nav-item {
     margin: 4px 0;
     font-size: 14px;
   }
-
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -4045,7 +4107,7 @@ footer .nav-link:hover {
     font-size: 20px;
   }
 
-  .main-about-us p{
+  .main-about-us p {
     font-size: 15px;
   }
 
@@ -4291,29 +4353,29 @@ footer .nav-link:hover {
   .f-w-100 {
     width: 100% !important;
   }
-  
-  .car-sell-promotion img{
+
+  .car-sell-promotion img {
     height: 200px;
     top: -22px;
   }
-  .promotion-sale-text div:nth-child(1) h3{
+  .promotion-sale-text div:nth-child(1) h3 {
     font-size: 20px;
   }
-  .promotion-sale-text div:nth-child(1) h6{
+  .promotion-sale-text div:nth-child(1) h6 {
     font-size: 11px;
   }
-  .promotion-sale-text div:nth-child(2){
+  .promotion-sale-text div:nth-child(2) {
     right: 5px;
-   padding: 20px 10px 0px 10px;
-   font-size: 12px;
+    padding: 20px 10px 0px 10px;
+    font-size: 12px;
   }
-  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2) {
     font-size: 18px;
   }
-  .promotion-detail-car .nav .nav-item i{
+  .promotion-detail-car .nav .nav-item i {
     font-size: 20px;
   }
-  .promotion-detail-car .nav .nav-item{
+  .promotion-detail-car .nav .nav-item {
     margin: 4px 0;
     font-size: 12px;
   }
@@ -4369,25 +4431,25 @@ footer .nav-link:hover {
     text-align: left !important;
   }
 
-  .car-sell-promotion img{
+  .car-sell-promotion img {
     height: 170px;
     top: -2px;
   }
-  .promotion-sale-text div:nth-child(1) h3{
+  .promotion-sale-text div:nth-child(1) h3 {
     font-size: 20px;
   }
-  .promotion-sale-text div:nth-child(1) h6{
+  .promotion-sale-text div:nth-child(1) h6 {
     font-size: 11px;
   }
-  .promotion-sale-text div:nth-child(2){
+  .promotion-sale-text div:nth-child(2) {
     right: 0px;
-   padding: 25px 5px 5px 8px;
-   font-size: 8px;
+    padding: 25px 5px 5px 8px;
+    font-size: 8px;
   }
-  .sale-contact div span{
+  .sale-contact div span {
     font-size: 12px;
   }
-  .promotion-sale-text div:nth-child(2) strong:nth-child(2){
+  .promotion-sale-text div:nth-child(2) strong:nth-child(2) {
     font-size: 14px;
   }
 }
@@ -4446,25 +4508,25 @@ footer .nav-link:hover {
 
   .edit-img {
     width: 40px;
-    height: 40px;
     font-size: 16px;
+    height: 40px;
     bottom: 20px;
     right: 15px;
   }
 }
 @media (max-width: 400px) {
-  .car-sell-promotion{
+  .car-sell-promotion {
     padding: 0 18px;
   }
-  .car-sell-promotion img{
+  .car-sell-promotion img {
     height: 150px;
     top: 10px;
     right: -60px;
   }
-  .promotion-sale-text div:nth-child(2){
+  .promotion-sale-text div:nth-child(2) {
     right: 5px;
   }
-  .promotion-sale-text div:nth-child(1) div h6{
+  .promotion-sale-text div:nth-child(1) div h6 {
     display: none;
   }
 }

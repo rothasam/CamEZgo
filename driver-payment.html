@@ -20,9 +20,11 @@
             <h1 class="fw-bold text-light">ចាប់ផ្តើមទូទាត់ប្រាក់</h1>
             <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                  <li class="breadcrumb-item"><a href="driver-checkout.html" class="text-decoration-none text-light opacity-75">ជួលអ្នកបើកបរ</a></li>
-                  <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ទូទាត់ប្រាក់</li>
+                    <li class="breadcrumb-item"><a href="homepage.html"
+                            class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
+                    <li class="breadcrumb-item"><a href="driver-checkout.html"
+                            class="text-decoration-none text-light opacity-75">ជួលអ្នកបើកបរ</a></li>
+                    <li class="breadcrumb-item active text-light opacity-50" aria-current="page">ទូទាត់ប្រាក់</li>
                 </ol>
             </nav>
         </div>
@@ -45,28 +47,36 @@
                                         <div class="icon rounded-1">
                                             <i class="fa-solid fa-money-check-dollar text-light"></i>
                                         </div>
-                                        <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសការបង់ប្រាក់ <span class="text-danger">*</span></h5>
+                                        <h5 class="fw-bold ms-2 mb-0">ជ្រើសរើសការបង់ប្រាក់ <span
+                                                class="text-danger">*</span></h5>
                                     </div>
                                     <div class="row g-2 g-md-3">
                                         <div class="col-sm-6 col-md-4">
-                                            <div id="prepayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('prepay').click();">
-                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="prepay" data-bs-toggle="collapse" data-bs-target="#prepayAmount">
+                                            <div id="prepayOption" class="form-check rounded-1 p-3"
+                                                onclick="document.getElementById('prepay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType"
+                                                    id="prepay" data-bs-toggle="collapse"
+                                                    data-bs-target="#prepayAmount">
                                                 <label class="form-check-label mt-2" for="prepay">
                                                     បង់ប្រាក់កក់ 10%
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-4">
-                                            <div id="allpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('allpay').click();">
-                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="allpay" data-bs-toggle="collapse" data-bs-target="#totalAmount">
+                                            <div id="allpayOption" class="form-check rounded-1 p-3"
+                                                onclick="document.getElementById('allpay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType"
+                                                    id="allpay" data-bs-toggle="collapse" data-bs-target="#totalAmount">
                                                 <label class="form-check-label mt-2" for="allpay">
                                                     បង់ប្រាក់ទាំងអស់
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div id="planpayOption" class="form-check rounded-1 p-3" onclick="document.getElementById('planpay').click();">
-                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType" id="planpay" data-bs-toggle="collapse" data-bs-target="#planAmount">
+                                            <div id="planpayOption" class="form-check rounded-1 p-3"
+                                                onclick="document.getElementById('planpay').click();">
+                                                <input class="form-check-input fs-5 m-0" type="radio" name="payType"
+                                                    id="planpay" data-bs-toggle="collapse" data-bs-target="#planAmount">
                                                 <label class="form-check-label mt-2" for="planpay">
                                                     ប្រើប្រាស់គម្រោងបង់ប្រាក់
                                                 </label>
@@ -74,23 +84,33 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div id="prepayAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
+                                        <div id="prepayAmount"
+                                            class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
                                             <div class="text-center py-3">
-                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់កក់ <span class="fs-4 ps-1">$5</span></h5>
-                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
+                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់កក់ <span
+                                                        class="fs-4 ps-1">$5</span></h5>
+                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i
+                                                        class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
                                             </div>
                                         </div>
-                                        <div id="totalAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
+                                        <div id="totalAmount"
+                                            class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
                                             <div class="text-center py-3">
-                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់សរុប <span class="fs-4 ps-1">$60</span></h5>
-                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
+                                                <h5 class="fw-medium text-dark">ចំនួនទឹកប្រាក់សរុប <span
+                                                        class="fs-4 ps-1">$60</span></h5>
+                                                <span class="text-secondary">សូមជ្រើសរើសវិធីទូទាត់ប្រាក់ <i
+                                                        class="fa-solid fa-angles-down arrow-animation ms-1"></i></span>
                                             </div>
                                         </div>
-                                        <div id="planAmount" class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
+                                        <div id="planAmount"
+                                            class="collapse cash-collapse rounded-1 bg-secondary bg-opacity-10 mt-2 mt-md-3">
                                             <div class="p-3">
                                                 <div class="d-flex">
-                                                    <label for="planCode" class="form-label mt-1 me-1 me-md-2">លេខកូដគម្រោង</label>
-                                                    <input required class="form-control bg-light rounded-1" id="planCode" type="text" placeholder="សូមបំពេញលេខកូដគម្រោង..." aria-label="" style="cursor: text;">
+                                                    <label for="planCode"
+                                                        class="form-label mt-1 me-1 me-md-2">លេខកូដគម្រោង</label>
+                                                    <input required class="form-control bg-light rounded-1"
+                                                        id="planCode" type="text" placeholder="សូមបំពេញលេខកូដគម្រោង..."
+                                                        aria-label="" style="cursor: text;">
                                                 </div>
                                             </div>
                                         </div>
@@ -103,20 +123,27 @@
                                         <div class="icon rounded-1">
                                             <i class="fa-solid fa-credit-card text-light"></i>
                                         </div>
-                                        <h5 class="fw-bold ms-2 mb-0">ជម្រើសបង់ប្រាក់ <span class="text-danger">*</span></h5>
+                                        <h5 class="fw-bold ms-2 mb-0">ជម្រើសបង់ប្រាក់ <span class="text-danger">*</span>
+                                        </h5>
                                     </div>
                                     <div class="row g-2 g-md-3">
                                         <div class="col-sm-6">
-                                            <div id="cardOption" class="form-check rounded-1 p-3" onclick="document.getElementById('creditcard').click();">
-                                                <input data-bs-toggle="collapse" data-bs-target="#payCard" class="form-check-input fs-5 m-0" type="radio" name="payMethod" id="creditcard">
+                                            <div id="cardOption" class="form-check rounded-1 p-3"
+                                                onclick="document.getElementById('creditcard').click();">
+                                                <input data-bs-toggle="collapse" data-bs-target="#payCard"
+                                                    class="form-check-input fs-5 m-0" type="radio" name="payMethod"
+                                                    id="creditcard">
                                                 <label class="form-check-label mt-2" for="creditcard">
                                                     ប្រើប្រាស់កាតឥណទាន
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div id="scanOption" class="form-check rounded-1 p-3" onclick="document.getElementById('scankhqr').click();">
-                                                <input data-bs-toggle="collapse" data-bs-target="#payScan" class="form-check-input fs-5 m-0" type="radio" name="payMethod" id="scankhqr">
+                                            <div id="scanOption" class="form-check rounded-1 p-3"
+                                                onclick="document.getElementById('scankhqr').click();">
+                                                <input data-bs-toggle="collapse" data-bs-target="#payScan"
+                                                    class="form-check-input fs-5 m-0" type="radio" name="payMethod"
+                                                    id="scankhqr">
                                                 <label class="form-check-label mt-2" for="scankhqr">
                                                     ស្កេន KHQR Code
                                                 </label>
@@ -130,16 +157,20 @@
                                                 <div class="col-5 col-md-3">
                                                     <div class="row g-2">
                                                         <div class="col-3">
-                                                            <img src="assets/img/driver/express-card.png" class="img-fluid" alt="Express American Card">
+                                                            <img src="assets/img/driver/express-card.png"
+                                                                class="img-fluid" alt="Express American Card">
                                                         </div>
                                                         <div class="col-3">
-                                                            <img src="assets/img/driver/master-card.png" class="img-fluid" alt="Master Card">
+                                                            <img src="assets/img/driver/master-card.png"
+                                                                class="img-fluid" alt="Master Card">
                                                         </div>
                                                         <div class="col-3">
-                                                            <img src="assets/img/driver/visa-card.png" class="img-fluid" alt="Visa Card">
+                                                            <img src="assets/img/driver/visa-card.png" class="img-fluid"
+                                                                alt="Visa Card">
                                                         </div>
                                                         <div class="col-3">
-                                                            <img src="assets/img/driver/union-card.png" class="img-fluid" alt="Unionpay Card">
+                                                            <img src="assets/img/driver/union-card.png"
+                                                                class="img-fluid" alt="Unionpay Card">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -148,26 +179,34 @@
                                             <div class="row g-2 g-md-3">
                                                 <div class="col-md-6">
                                                     <div>
-                                                        <label for="cardNumber" class="form-label">លេខកាតឥណទាន <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control rounded-1" placeholder="xxxx-xxxx-xxxx-xxxx">
+                                                        <label for="cardNumber" class="form-label">លេខកាតឥណទាន <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control rounded-1"
+                                                            placeholder="xxxx-xxxx-xxxx-xxxx">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div>
-                                                        <label for="cardName" class="form-label">ឈ្មោះកាតឥណទាន <span class="text-danger">*</span></label>
-                                                        <input type="text" class="form-control rounded-1" placeholder="បំពេញឈ្មោះកាតរបស់អ្នក...">
+                                                        <label for="cardName" class="form-label">ឈ្មោះកាតឥណទាន <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control rounded-1"
+                                                            placeholder="បំពេញឈ្មោះកាតរបស់អ្នក...">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div>
-                                                        <label for="cardExpire" class="form-label">ថ្ងៃផុតកំណត់ <span class="text-danger">*</span></label>
-                                                        <input type="" class="form-control rounded-1" placeholder="ខែ / ឆ្នាំ">
+                                                        <label for="cardExpire" class="form-label">ថ្ងៃផុតកំណត់ <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="" class="form-control rounded-1"
+                                                            placeholder="ខែ / ឆ្នាំ">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div>
-                                                        <label for="cardExpire" class="form-label">លេខ CVV <span class="text-danger">*</span></label>
-                                                        <input type="password" class="form-control rounded-1" placeholder="xxx">
+                                                        <label for="cardExpire" class="form-label">លេខ CVV <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="password" class="form-control rounded-1"
+                                                            placeholder="xxx">
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,11 +216,13 @@
                                                 <div class="col-md-7 col-lg-6">
                                                     <div class="text-center text-qrcode">
                                                         <h5>សូមធ្វើការស្កេន KHQR កូដ​ដើម្បីបង់ប្រាក់</h5>
-                                                        <span>អ្នកអាចស្កេនដើម្បីផ្ទេរប្រាក់ពីគ្រប់ធនាគារតាមរយៈ KHQR នេះ</span>
+                                                        <span>អ្នកអាចស្កេនដើម្បីផ្ទេរប្រាក់ពីគ្រប់ធនាគារតាមរយៈ KHQR
+                                                            នេះ</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-5 col-md-3 col-lg-2">
-                                                    <img src="assets/img/driver/driver-qr.png" class="img-fluid rounded-3 my-3 my-md-0" alt="KHQR Code">
+                                                    <img src="assets/img/driver/driver-qr.png"
+                                                        class="img-fluid rounded-3 my-3 my-md-0" alt="KHQR Code">
                                                 </div>
                                             </div>
                                         </div>
@@ -192,20 +233,55 @@
                                 <div class="wrapper-button row g-2 g-sm-3 justify-content-between align-items-center">
                                     <div class="col-md-7 col-lg-8">
                                         <div class="form-check ps-0 d-flex align-items-sm-center">
-                                            <input class="form-check-input m-0 ms-1 border" type="checkbox" value="" id="sameLocate" required>
-                                            <label class="form-check-label text-body-secondary ms-2 small fw-medium" for="sameLocate">
+                                            <input class="form-check-input m-0 ms-1 border" type="checkbox" value=""
+                                                id="sameLocate" required>
+                                            <label class="form-check-label text-body-secondary ms-2 small fw-medium"
+                                                for="sameLocate">
                                                 ខ្ញុំយល់ព្រមជាមួយ
-                                                <a href="#" class="text-decoration-none">លក្ខខណ្ឌ</a> និង<a href="#" class="text-decoration-none">គោលការណ៍ឯកជនភាព</a>
+                                                <a href="#" class="text-decoration-none">លក្ខខណ្ឌ</a> និង<a href="#"
+                                                    class="text-decoration-none">គោលការណ៍ឯកជនភាព</a>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-md-5 col-lg-4">
                                         <div class="row g-1 g-sm-2 justify-content-end">
                                             <div class="col-5 col-sm-4 col-md-7">
-                                                <a href="driver-checkout.html" class="w-100 me-1 me-md-2 btn btn-booking btn-1 text-decoration-none rounded-1">ត្រឡប់ក្រោយវិញ</a>
+                                                <a href="driver-checkout.html"
+                                                    class="w-100 me-1 me-md-2 btn btn-booking btn-1 text-decoration-none rounded-1">ត្រឡប់ក្រោយវិញ</a>
                                             </div>
                                             <div class="col-4 col-sm-3 col-md-5">
-                                                <a href="#" class="w-100 btn btn-booking text-decoration-none rounded-1">រួចរាល់</a>
+                                                <a href="#successfully"
+                                                    class="w-100 btn btn-booking text-decoration-none rounded-1"
+                                                    role="button" data-bs-toggle="modal">រួចរាល់</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="successfully" tabindex="-1" aria-labelledby="successfully"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 p-4 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body pt-4">
+                                            <div>
+                                                <div class="success-animation">
+                                                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 52 52">
+                                                        <circle class="checkmark__circle" cx="26" cy="26" r="25"
+                                                            fill="none" />
+                                                        <path class="checkmark__check" fill="none"
+                                                            d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                                    </svg>
+                                                </div>
+                                                <div class="text-center pb-4">
+                                                    <h3 class="fw-medium">ការទូទាត់ជោគជ័យ</h3>
+                                                    <p>ការទូទាត់របស់អ្នកត្រូវបានដំណើរការដោយជោគជ័យ!</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -227,7 +303,8 @@
                                         <li class="list-group-item py-1">
                                             <span>ឈ្មោះ</span>
                                             <span class="float-end">
-                                                <a href="driver-category.html" class="text-decoration-none text-dark fw-bold">ចន ស្មីត</a>
+                                                <a href="driver-category.html"
+                                                    class="text-decoration-none text-dark fw-bold">ចន ស្មីត</a>
                                             </span>
                                         </li>
                                         <li class="list-group-item py-1">
@@ -282,7 +359,7 @@
                                 <li class="list-group-item py-1">
                                     <span class="fw-medium">ថ្លៃសេវាកម្មបន្ថែម</span>
                                     <span class="float-end fw-medium fs-5">$5</span>
-                                </li> 
+                                </li>
                                 <li class="list-group-item py-1">
                                     <span class="fw-medium">រយៈពេល</span>
                                     <span class="float-end fw-medium">4 <small>ថ្ងៃ</small></span>
@@ -303,29 +380,29 @@
     </section>
 
     <!-- footer -->
-     <script src="assets/js/bootstrap.bundle.min.js"></script>
-     <script>
-        document.getElementById('prepayOption').addEventListener('click', function() {
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('prepayOption').addEventListener('click', function () {
             selectPaymentOption('prepayAmount', ['totalAmount', 'planAmount']);
             togglePaymentVisibility(true);
         });
-        document.getElementById('allpayOption').addEventListener('click', function() {
+        document.getElementById('allpayOption').addEventListener('click', function () {
             selectPaymentOption('totalAmount', ['prepayAmount', 'planAmount']);
             togglePaymentVisibility(true);
         });
-        document.getElementById('planpayOption').addEventListener('click', function() {
+        document.getElementById('planpayOption').addEventListener('click', function () {
             selectPaymentOption('planAmount', ['prepayAmount', 'totalAmount']);
             togglePaymentVisibility(false);
         });
-        document.getElementById('cardOption').addEventListener('click', function() {
+        document.getElementById('cardOption').addEventListener('click', function () {
             selectPaymentOption('payCard', ['payScan']);
         });
-        document.getElementById('scanOption').addEventListener('click', function() {
+        document.getElementById('scanOption').addEventListener('click', function () {
             selectPaymentOption('payScan', ['payCard']);
         });
         function selectPaymentOption(showId, hideIds) {
             document.getElementById(showId).classList.add('show');
-            hideIds.forEach(function(id) {
+            hideIds.forEach(function (id) {
                 document.getElementById(id).classList.remove('show');
             });
         }
@@ -341,4 +418,5 @@
         }
     </script>
 </body>
+
 </html>
