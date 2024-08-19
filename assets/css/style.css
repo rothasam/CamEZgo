@@ -2524,6 +2524,12 @@ header nav .nav-link:hover {
 .special-offer .btn-register:hover {
   background-color: var(--main-hover);
 }
+
+.promotion-hero-banner{
+  background-color: var(--dark-blue);
+  padding: 60px 0;
+}
+
 .car-sell-promotion {
   overflow: hidden;
   background-color: #FFC107;
@@ -2571,6 +2577,12 @@ header nav .nav-link:hover {
   border-radius: 4px;
   padding: 2px 5px;
   font-weight: 500;
+}
+.comming-soon-promotion .card {
+  border: 2px solid var(--main-color-200);
+}
+.comming-soon-promotion .card .card-body img{
+  padding: 0 50px;
 }
 
 /***************************************/
@@ -4029,6 +4041,16 @@ footer .nav-link:hover {
     height: auto;
     padding: 60px 0;
   }
+
+  .comming-soon-promotion .card .card-body img{
+    padding: 0 20px;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 20px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
+    font-size: 14px;
+  }
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -4333,6 +4355,16 @@ footer .nav-link:hover {
     margin: 4px 0;
     font-size: 12px;
   }
+
+  .comming-soon-promotion .card .card-body img{
+    padding: 0;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 18px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 442px) {
@@ -4405,6 +4437,12 @@ footer .nav-link:hover {
   }
   .promotion-sale-text div:nth-child(2) strong:nth-child(2){
     font-size: 14px;
+  }  
+  .comming-soon-promotion .card .card-body h3{
+    font-size: 16px;
+  }
+  .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
+    font-size: 10px;
   }
 }
 @media (max-width: 430px) {
