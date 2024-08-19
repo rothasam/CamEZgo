@@ -478,7 +478,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 d-flex justify-content-end mt-2">
-                                                <button class="btn btn-start-now f-w-100">បន្ទាប់</button>
+                                                <button class="btn btn-start-now f-w-100" type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#successfully">បន្ទាប់</button>
                                             </div>
                                         </div>
                                         <div class="col-12 show-hide" id="khqr">
@@ -502,7 +504,9 @@
                                                         សម្រាប់សុវត្ថិភាព</span>
                                                 </div>
                                                 <div class="col-12 d-flex justify-content-end mt-2">
-                                                    <button class="btn btn-start-now f-w-100">បន្ទាប់</button>
+                                                    <button class="btn btn-start-now f-w-100" type="button"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#successfully">បន្ទាប់</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,6 +574,30 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="successfully" tabindex="-1" aria-labelledby="successfully" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-4 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-4">
+                        <div>
+                            <div class="success-animation">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                </svg>
+                            </div>
+                            <div class="text-center pb-4">
+                                <h3 class="fw-medium">ការទូទាត់ជោគជ័យ</h3>
+                                <p>ការទូទាត់របស់អ្នកត្រូវបានដំណើរការដោយជោគជ័យ!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -717,6 +745,7 @@
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 
