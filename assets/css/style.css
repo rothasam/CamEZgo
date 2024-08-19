@@ -1799,6 +1799,9 @@ header nav .nav-link:hover {
   position: sticky;
   top: 50px;
 }
+.car-attribute .main-info.main-info-home {
+  top: 100px;
+}
 .car-attribute .main-info .price {
   color: var(--main-color);
 }
