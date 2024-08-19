@@ -215,13 +215,29 @@ header nav .nav-link:hover {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #007bff;
+  background-color: var(--main-color-400);
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#backToTop i{
+  animation: moveTop 1s infinite;
+}
+@keyframes moveTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .login-signup a{
   border: 1px solid var(--main-color);
@@ -2803,6 +2819,7 @@ header nav .nav-link:hover {
 }
 #career-detail.hero .overlay {
   justify-content: end;
+  border-image: fill 0 linear-gradient(0deg, #0000009f, transparent);
 }
 .card-career .info-career h1 {
   font-size: 18px;
@@ -2861,14 +2878,9 @@ header nav .nav-link:hover {
 .user-account .nav .nav-item .nav-link.active {
   background-color: var(--main-color);
 }
-.image-profile {
-  width: 100%;
-  height: 190px;
-}
 .image-profile img {
-  width: 100%;
+  width: 190px;
   height: 190px;
-  border-radius: 100%;
   border: 3px solid #ddd;
   object-fit: cover;
 }
@@ -2882,8 +2894,9 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 5%;
+  right: 6%;
+  /* z-index: 3; */
 }
 .label-verified {
   background-color: #16a34a;
@@ -3326,7 +3339,26 @@ footer .nav-link:hover {
 /***************************************/
 /*             MEDIA QUERY             */
 /***************************************/
+@media (max-width: 1400px) {
+  .image-profile img {
+    width: 170px;
+    height: 170px;
+  }
+}
 @media (max-width: 1200px) {
+  .image-profile img {
+    width: 140px;
+    height: 140px;
+  }
+  .edit-img {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .label-verified {
+    font-size: 12px;
+    padding: 2px 10px;
+  }
   .fs-20 {
     font-size: 20px !important;
   }
@@ -3407,29 +3439,24 @@ footer .nav-link:hover {
     flex: 0 0 auto;
     width: 66.66666667%;
   }
-  .image-profile {
-    width: 100%;
-    height: 140px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 140px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
   .edit-img {
     width: 30px;
     height: 30px;
     font-size: 12px;
-    bottom: 10px;
-    right: 10px;
   }
   .list-credit-card img {
     width: 25px !important;
   }
 }
 @media (max-width: 992px) {
+  .image-profile img {
+    width: 150px;
+    height: 150px;
+  }
+  .edit-img {
+    bottom: 5%;
+    right: 28%;
+  }
   .head-title h1 {
     font-size: 27px;
   }
@@ -3530,7 +3557,8 @@ footer .nav-link:hover {
     padding: 0 30px;
   } 
   #career-banner.hero,
-  #career-detail.hero {
+  #career-detail.hero,
+  #career-detail.hero .overlay {
     max-height: 450px;
   }  
   .feature-count-bg{
@@ -3541,31 +3569,12 @@ footer .nav-link:hover {
   .fs-20 {
     font-size: 24px !important;
   }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 40% !important;
-  }
-  .image-profile {
-    width: 100%;
-    height: 250px;
-  }
-
-  .image-profile img {
-    width: 100%;
-    height: 250px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 30px;
-    right: 15px;
-  }
 }
 @media (max-width: 768px) {
+  .edit-img {
+    bottom: 5%;
+    right: 20%;
+  }
   .head-title h1 {
     font-size: 23px;
   }
@@ -3823,28 +3832,6 @@ footer .nav-link:hover {
   #career-detail.hero {
     background-position: left;
   }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 39%;
-  }
-  .image-profile {
-    width: 100%;
-    height: 250px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 250px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 20px;
-    right: 15px;
-  }
   .car-sell-promotion{
     padding: 0 30px;
   }
@@ -3878,7 +3865,6 @@ footer .nav-link:hover {
     height: auto;
     padding: 60px 0;
   }
-
   .comming-soon-promotion .card .card-body img{
     padding: 0 20px;
   }  
@@ -3888,6 +3874,7 @@ footer .nav-link:hover {
   .comming-soon-promotion .card .card-body p , .comming-soon-promotion .card .card-body a{
     font-size: 14px;
   }
+  
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -3941,28 +3928,6 @@ footer .nav-link:hover {
   #repair-banner h1 {
     font-size: 36px !important;
   }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 50% !important;
-  }
-  .image-profile {
-    width: 100%;
-    height: 120px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 120px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 30px;
-    right: 15px;
-  }
 }
 @media (min-width: 600px) {
   .verify-code .modal-body .form-control {
@@ -3972,6 +3937,10 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .edit-img {
+    bottom: 5%;
+    right: 24%;
+  }
   .head-title h1 {
     font-size: 20px;
   }
@@ -4048,6 +4017,10 @@ footer .nav-link:hover {
   }
   .blog-card-img .fa-calendar {
     font-size: 10px;
+  }
+  .image-profile img {
+    width: 120px;
+    height: 120px;
   }
   /* === panha's code === */
   .hero-sell .hero-content h1,
@@ -4295,7 +4268,10 @@ footer .nav-link:hover {
   .text-qrcode {
     text-align: left !important;
   }
-
+  .edit-img {
+    bottom: 5%;
+    right: 10%;
+  }
   .car-sell-promotion img{
     height: 170px;
     top: -2px;
@@ -4356,28 +4332,6 @@ footer .nav-link:hover {
   .technician .swiper-button-prev {
     left: 15px !important;
   }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 55%;
-  }
-  .image-profile {
-    width: 100%;
-    height: 210px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 210px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-  }
-  .edit-img {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    bottom: 20px;
-    right: 15px;
-  }
 }
 @media (max-width: 400px) {
   .car-sell-promotion{
@@ -4394,24 +4348,13 @@ footer .nav-link:hover {
   .promotion-sale-text div:nth-child(1) div h6{
     display: none;
   }
+  .edit-img {
+    bottom: 5%;
+    right: 6%;
+  }
 }
 @media (max-width: 375px) {
   .why-choose .choose-us-2 {
     top: 85px !important;
-  }
-  .user-account .width-col {
-    flex: 0 0 auto;
-    width: 60% !important;
-  }
-  .image-profile {
-    width: 100%;
-    height: 200px;
-  }
-  .image-profile img {
-    width: 100%;
-    height: 200px;
-    border-radius: 100%;
-    border: 3px solid #ddd;
-    object-fit: cover;
   }
 }
