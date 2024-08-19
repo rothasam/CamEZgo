@@ -735,6 +735,7 @@ header nav .nav-link:hover {
 .hero-sell .hero-content {
   height: 600px;
   background-color: rgba(0, 0, 0, 0.5);
+  border-image: fill 0 linear-gradient(0deg, rgba(0, 0, 0, 0.63), transparent);
 }
 .hero-sell .hero-content,
 .hero-driver .hero-content .description,
