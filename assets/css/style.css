@@ -414,7 +414,7 @@ header nav .nav-link:hover {
   height: 1px;
   width: 35%;
   top: 50%;
-  background-color: #ccc;
+  background-color: #000;
 }
 .line-root::before {
   left: 0;
