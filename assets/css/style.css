@@ -3389,6 +3389,9 @@ footer .nav-link:hover {
   #career-detail.hero {
     background-position: left;
   }
+  .promotion-sale-text div:nth-child(2){
+    right: 20px;
+  }
 }
 @media (max-width: 1024px) {
   .emergency .emergency-img-1 {
