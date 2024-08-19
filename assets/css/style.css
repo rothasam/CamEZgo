@@ -404,7 +404,7 @@ header nav .nav-link:hover {
   border: 1px solid var(--main-color);
 }
 .label-icon {
-  width: 40px;
+  width: 35px;
   height: 40px;
   background-color: var(--main-color);
   display: flex;
@@ -422,7 +422,7 @@ header nav .nav-link:hover {
   content: "";
   position: absolute;
   height: 1px;
-  width: 35%;
+  width: 32%;
   top: 50%;
   background-color: #000;
 }
@@ -4302,6 +4302,13 @@ footer .nav-link:hover {
   .comming-soon-promotion .card .card-body p,
   .comming-soon-promotion .card .card-body a {
     font-size: 12px;
+  }
+  .h-576 {
+    height: 100vh !important;
+  }
+  .line-root::before,
+  .line-root::after {
+    width: 30%;
   }
 }
 @media (max-width: 442px) {
