@@ -3363,7 +3363,6 @@ footer .nav-link:hover {
   .fs-20 {
     font-size: 20px !important;
   }
-
   .team-wrap {
     height: 300px;
   }
@@ -3418,6 +3417,10 @@ footer .nav-link:hover {
   .booking-info .row .col-xl-3,
   .style-input .row .col-xl-3 {
     order: 2;
+  }
+  #career-banner.hero,
+  #career-detail.hero {
+    background-position: left;
   }
 }
 @media (max-width: 1024px) {
@@ -3556,6 +3559,10 @@ footer .nav-link:hover {
   .car-sell-promotion{
     padding: 0 30px;
   } 
+  #career-banner.hero,
+  #career-detail.hero {
+    max-height: 450px;
+  }
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -4209,10 +4216,6 @@ footer .nav-link:hover {
   .privacy-policy .card ul {
     padding: 0 10px 0 20px;
     font-size: 13px;
-  }
-  #career-banner.hero,
-  #career-detail.hero {
-    background-position: center;
   }
   .text-achievement {
     font-size: 30px !important;
