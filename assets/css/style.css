@@ -225,7 +225,7 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-#backToTop i{
+#backToTop i {
   animation: moveTop 1s infinite;
 }
 @keyframes moveTop {
@@ -3490,7 +3490,7 @@ footer .nav-link:hover {
   #career-detail.hero {
     background-position: left;
   }
-  .promotion-sale-text div:nth-child(2){
+  .promotion-sale-text div:nth-child(2) {
     right: 20px;
   }
 }
@@ -3903,7 +3903,7 @@ footer .nav-link:hover {
   #career-detail.hero {
     background-position: left;
   }
-  .car-sell-promotion{
+  .car-sell-promotion {
     padding: 0 30px;
   }
   .car-sell-promotion img {
@@ -3936,7 +3936,7 @@ footer .nav-link:hover {
     height: auto;
     padding: 60px 0;
   }
-  .comming-soon-promotion .card .card-body img{
+  .comming-soon-promotion .card .card-body img {
     padding: 0 20px;
   }
   .comming-soon-promotion .card .card-body h3 {
@@ -3946,7 +3946,6 @@ footer .nav-link:hover {
   .comming-soon-promotion .card .card-body a {
     font-size: 14px;
   }
-  
 }
 @media (max-width: 600px) {
   .third-choose img,
@@ -4347,7 +4346,7 @@ footer .nav-link:hover {
     bottom: 5%;
     right: 10%;
   }
-  .car-sell-promotion img{
+  .car-sell-promotion img {
     height: 170px;
     top: -2px;
   }
