@@ -310,6 +310,16 @@ header nav .nav-link:hover {
   color: #fff;
   background-color: var(--main-hover);
 }
+/* .sign-in-from {
+  height: 100vh;
+} */
+#sign-in {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #sign-in .nav .nav-item {
   width: 50%;
 }
