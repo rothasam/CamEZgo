@@ -777,11 +777,6 @@ header nav .nav-link:hover {
 .feature-sell .abstract-sell .abstract-content p {
   color: #6d6868;
   position: relative;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
 }
 .feature-sell .abstract-sell .abstract-content p span {
   width: 3px;
@@ -1851,6 +1846,63 @@ header nav .nav-link:hover {
 .car-attribute .image-list .overlay:hover,
 .wishlist .car-cart-item:hover .overlay {
   background-color: transparent;
+}
+#modalAddToCart .cart-container {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: inline-block;
+}
+#modalAddToCart .cart-icon {
+  font-size: 50px;
+  color: var(--main-color-800);
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  z-index: 2;
+  animation: cart-expand 1.5s forwards;
+}
+#modalAddToCart .car-icon {
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: car-drop 1.5s forwards;
+}
+@keyframes cart-expand {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes car-drop {
+  0% {
+    transform: translate(-50%, -60px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -20%);
+    opacity: 0;
+  }
+}
+#modalAddToCart.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+#modalAddToCart.show .modal-dialog {
+  transform: scale(1);
+}
+#modalAddToCart .btn-goto-list {
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+#modalAddToCart .btn-still {
+  background-color: var(--dark-blue);
+  color: var(--bg-color);
 }
 /* ===================== */
 /* === wishlist.html === */
@@ -3466,6 +3518,13 @@ footer .nav-link:hover {
   .image-profile img {
     width: 170px;
     height: 170px;
+  }
+  .feature-sell .abstract-sell .abstract-content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
   }
 }
 @media (max-width: 1200px) {
