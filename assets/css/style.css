@@ -1986,7 +1986,7 @@ header nav .nav-link:hover {
   text-align: center;
   color: var(--main-color-700);
   color: rgba(255, 0, 0, 0.87);
-  border: 1px solid var(--main-color-50);
+  border: 1px solid var(--main-color-900);
   background-color: #fff;
   border-radius: 0.25rem;
   padding: 7px 0;
