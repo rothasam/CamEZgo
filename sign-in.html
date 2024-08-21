@@ -11,7 +11,7 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
+    <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-xxl-4 col-12 mx-auto rounded-1 h-576 animate__animated animate__zoomIn"
-                        style="background-color: rgba(255, 255, 255, 0.445);">
+                        style="background-color: rgba(255, 255, 255, 0.5);">
                         <div class="card border-0 bg-transparent">
                             <div class="card-body">
                                 <form id="signInForm" action="3-more-step.html" method="post" class="needs-validation"
@@ -29,7 +29,7 @@
                                     <a href="index.html"
                                         class="d-flex justify-content-center align-items-center mt-2"><img
                                             src="assets/img/CamEZgo_logo.png" height="40px" alt=""></a>
-                                    <h4 class="my-3 fw-bold text-center">សូមស្វាគមន៍មកកាន់ CamEZgo</h4>
+                                    <h4 class="my-4 fw-bold text-center">សូមស្វាគមន៍មកកាន់ CamEZgo</h4>
                                     <div class="col-12 my-4">
                                         <ul class="nav">
                                             <li class="nav-item">
@@ -42,34 +42,45 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="mb-3 position-relative">
-                                        <label for="email" class="form-label mb-1">អ៊ីមែល <span class="text-danger">
+                                    <div class="mb-3 mt-4 position-relative fs-placeholder">
+                                        <label for="email" class="form-label mb-1">លេខទូរស័ព្ទ ឬ អ៊ីមែល
+                                            <span class="text-danger">
                                                 *</span></label>
                                         <input type="email" class="form-control" id="email" name="txtemail"
-                                            placeholder="អ៊ីមែល" aria-label="Email" required>
+                                            value="camezgo@gmail.com" placeholder="អ៊ីមែល" aria-label="Email" required>
                                         <div class="invalid-feedback">សូមបំពេញអ៊ីមែលរបស់អ្នក!</div>
                                     </div>
-                                    <div class="mb-3 position-relative">
-                                        <label for="password" class="form-label">ពាក្យសម្ងាត់ <span class="text-danger">
+                                    <div class="mb-3 position-relative fs-placeholder">
+                                        <label for="password3" class="form-label">ពាក្យសម្ងាត់ <span
+                                                class="text-danger">
                                                 *</span></label>
-                                        <input type="password" class="form-control" id="password3" name="txtpass"
-                                            placeholder="ពាក្យសម្ងាត់" aria-label="password" required>
+                                        <input type="password" class="form-control" value="qwert1234sdfg" id="password3"
+                                            name="txtpass" placeholder="ពាក្យសម្ងាត់" aria-label="password" required>
                                         <div class="eye-icon-hover">
                                             <div id="password-icon3" onclick="togglePasswordVisibility()"></div>
                                         </div>
                                         <div class="invalid-feedback">សូមបំពេញពាក្យសម្ងាត់របស់អ្នក!</div>
                                     </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">ចងចាំគណនីខ្ញុំ</label>
+                                    <!--  -->
+                                    <div class="mt-1 mb-4 form-check d-flex justify-content-between">
+                                        <div>
+                                            <input type="checkbox" class="form-check-input fw-medium"
+                                                id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">ចងចាំគណនីខ្ញុំ</label>
+                                        </div>
+                                        <div>
+                                            <a href="forgot-password.html" class="forgot fw-medium"
+                                                style="color: #22262a;">ខ្ញុំ​ភ្លេច​ពាក្យសម្ងាត់​របស់ខ្ញុំ</a>
+                                        </div>
                                     </div>
+
                                     <div class="col-12 mb-3">
                                         <a href="homepage.html" role="button" class="btn btn-start-now d-block"
                                             id="submitBtn">ចូលគណនី</a>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <div class="line-root">
-                                            <span>ឬបង្កើតគណនីមួយ</span>
+                                            <span class="fw-medium">ឬចូលគណនីជាមួយ</span>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center mb-2">
@@ -83,10 +94,6 @@
                                             <img style="width: 20px; height: 20px;"
                                                 src="assets/img/icon/form/facebook.png" alt="">
                                         </a>
-                                    </div>
-                                    <div class="col-12 mb-3 text-center">
-                                        <a href="forgot-password.html" class="forgot text-white fw-bold"
-                                            style="text-shadow: 3px 3px 10px #00000065;">ខ្ញុំ​ភ្លេច​ពាក្យសម្ងាត់​របស់ខ្ញុំ</a>
                                     </div>
                                 </form>
                             </div>

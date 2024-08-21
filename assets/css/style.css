@@ -323,6 +323,11 @@ header nav .nav-link:hover {
   color: #fff;
   background-color: var(--main-hover);
 }
+/*  */
+.verify-profile {
+  background-color: rgba(83, 64, 255, 0.3);
+}
+/*  */
 #sign-in {
   height: 100vh;
   background-position: center;
@@ -349,7 +354,10 @@ header nav .nav-link:hover {
 #sign-in .form-label,
 .fs-label {
   font-weight: 500;
-  font-size: 12px !important;
+  font-size: 16px !important;
+}
+.fs-placeholder input::placeholder {
+  font-size: 16px !important;
 }
 #sign-in .btn-google:hover span,
 .btn-facebook:hover span {
@@ -357,10 +365,10 @@ header nav .nav-link:hover {
 }
 #sign-in .btn-google,
 .btn-facebook {
-  border: 1px solid var(--main-color);
+  border: 2px solid var(--main-color);
 }
 #sign-in .btn-google:hover,
-.btn-facebook:hover {
+#sign-in .btn-facebook:hover {
   background-color: var(--main-color);
 }
 .filter-career .form-select:focus {
@@ -414,7 +422,7 @@ header nav .nav-link:hover {
   border: 1px solid var(--main-color);
 }
 .label-icon {
-  width: 35px;
+  width: 40px;
   height: 40px;
   background-color: var(--main-color);
   display: flex;
@@ -454,7 +462,10 @@ header nav .nav-link:hover {
 #password-icon3,
 #password-icon4,
 #password-icon5,
-#password-icon6 {
+#password-icon6,
+#password-icon7,
+#password-icon8,
+#password-icon9 {
   position: absolute;
   width: 21px;
   height: 21px;
@@ -4085,6 +4096,9 @@ footer .nav-link:hover {
   .comming-soon-promotion .card .card-body p,
   .comming-soon-promotion .card .card-body a {
     font-size: 14px;
+  }
+  .btn-w {
+    width: 100% !important;
   }
 }
 @media (max-width: 600px) {
