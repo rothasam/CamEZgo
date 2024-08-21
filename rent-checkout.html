@@ -454,25 +454,25 @@
                                                     <div class="col-md-6">
                                                         <div>
                                                             <label for="startDate" class="form-label">ថ្ងៃចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input id="startDate" onclick="this.showPicker();" type="date" class="form-control rounded-1">
+                                                            <input id="startDate" onclick="this.showPicker();" type="date" class="form-control rounded-1" value="2024-09-22">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div>
                                                             <label for="startTime" class="form-label">ពេលវេលាចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input for="startTime" onclick="this.showPicker();" type="time" class="form-control rounded-1">
+                                                            <input for="startTime" onclick="this.showPicker();" type="time" class="form-control rounded-1" value="10:15">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div>
                                                             <label for="endDate" class="form-label">ថ្ងៃបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input for="endDate" onclick="this.showPicker();" type="date" class="form-control rounded-1">
+                                                            <input for="endDate" onclick="this.showPicker();" type="date" class="form-control rounded-1" value="2024-09-25">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div>
                                                             <label for="endTime" class="form-label">ពេលវេលាបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input id="endTime" onclick="this.showPicker();" type="time" class="form-control rounded-1">
+                                                            <input id="endTime" onclick="this.showPicker();" type="time" class="form-control rounded-1" value="20:15">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -490,8 +490,8 @@
                                         </div>
                                         <div class="row g-2 g-md-3">
                                             <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('selfDrive').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="driveType" id="selfDrive">
+                                                <div data-bs-toggle="collapse" data-bs-target="#driverLicense" class="form-check rounded-1 p-3" onclick="document.getElementById('selfDrive').click();">
+                                                    <input class="form-check-input fs-5 m-0" type="radio" name="driveType" id="selfDrive">
                                                     <label class="form-check-label mt-2" for="selfDrive">
                                                         បើកបរដោយខ្លួនឯង
                                                     </label>
@@ -503,6 +503,23 @@
                                                     <label class="form-check-label mt-2" for="driver">
                                                         ត្រូវការអ្នកបើកបរ
                                                     </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="collapse show" id="driverLicense">
+                                                <div class="mt-4 p-3 fileInput bg-secondary bg-opacity-10 rounded-1">
+                                                    <div class="d-flex gap-2 gap-md-3 flex-column flex-xxl-row align-items-center align-items-lg-start align-items-xxl-center">
+                                                        <div class="">
+                                                            <label for="fileDriverLicenseCar" class="form-label upload-btn mb-0 ps-xxl-2 fw-medium">សូម​ Upload ប័ណ្ណបើកបររបស់អ្នក</label>
+                                                        </div>
+                                                        <div class="d-flex gap-2 gap-md-3 flex-column flex-lg-row align-items-center">
+                                                            <div class="btn-input-file">
+                                                                <input class="form-control custom-file-input p-0" id="fileDriverLicenseCard" type="file">
+                                                            </div>
+                                                            <span class=" text-secondary small text-center">(ឯកសារដែលអាច upload បានត្រូវមានទំហំតូចជាង 5MB និងជាប្រភេទ .png, .jpg, .pdf)</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -686,12 +703,12 @@
             </div>
         </div>
     </footer>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/plugin/wowjs/wow.min.js"></script>
-      <script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/wowjs/wow.min.js"></script>
+    <script>
         new WOW().init();
-      </script>
-      <script>
+    </script>
+    <script>
         // Back to top and Menu Sticky
         window.onscroll = function () {
             stickyNavbar();
@@ -713,9 +730,7 @@
         backToTop.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-      </script>
-  
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </script>
     <script>
         function setGetDropLocation(option) {
             const getLocation = document.getElementById('getLocation');
@@ -740,6 +755,48 @@
             const userDefaultLocation = 'ផ្សារចាស់ តំបន់ផាប់ស្ទ្រីត ផ្លូវលេខ 9 សង្កាត់ស្វាយដង្គំ ខេត្តសៀមរាប';
             document.getElementById(fieldId).value = userDefaultLocation;
         }
+        document.addEventListener('DOMContentLoaded', function () {
+            const selfDrive = document.getElementById('selfDrive');
+            const driver = document.getElementById('driver');
+            const collapseElement = new bootstrap.Collapse(document.getElementById('driverLicense'), {
+                toggle: false
+            });
+            selfDrive.addEventListener('change', function () {
+                if (selfDrive.checked) {
+                    collapseElement.show();
+                }
+            });
+            driver.addEventListener('change', function () {
+                if (driver.checked) {
+                    collapseElement.hide();
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const fileInput = document.querySelector('#fileDriverLicenseCard');
+            fileInput.addEventListener('change', function () {
+                const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : 'ចុចត្រង់នេះ';
+                const btnInputFile = fileInput.closest('.btn-input-file');
+                btnInputFile.classList.add('file-selected');
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    .file-selected .custom-file-input::before {
+                        content: 'បាន upload រួចរាល់';
+                        background-color: #28a745;
+                        color: #fff;
+                        border-color: #28a745;
+                        width: 100%;
+                        display: inline-block;
+                        text-align: center;
+                        padding: 7px 0;
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-size: 10pt;
+                    }
+                `;
+                document.head.appendChild(style);
+            });
+        });
     </script>
 </body>
 </html>

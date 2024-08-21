@@ -323,9 +323,6 @@ header nav .nav-link:hover {
   color: #fff;
   background-color: var(--main-hover);
 }
-/* .sign-in-from {
-  height: 100vh;
-} */
 #sign-in {
   height: 100vh;
   background-position: center;
@@ -793,11 +790,6 @@ header nav .nav-link:hover {
 .feature-sell .abstract-sell .abstract-content p {
   color: #6d6868;
   position: relative;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
 }
 .feature-sell .abstract-sell .abstract-content p span {
   width: 3px;
@@ -1803,7 +1795,8 @@ header nav .nav-link:hover {
 .wishlist .car-cart-item .overlay,
 .booking-info .booking-form .form-control,
 .booking-info .booking-form .btn-current-location,
-.booking-info .booking-form .btn-booking {
+.booking-info .booking-form .btn-booking,
+.custom-file-input::before {
   transition: all 0.4s ease-out;
 }
 .car-attribute .main-info {
@@ -1854,7 +1847,8 @@ header nav .nav-link:hover {
   line-height: 33px;
 }
 .car-attribute .image-list,
-.wishlist .car-cart-item {
+.wishlist .car-cart-item,
+.fileInput {
   border: 1px solid var(--main-color-100);
 }
 .car-attribute .image-list .overlay {
@@ -1865,6 +1859,63 @@ header nav .nav-link:hover {
 .car-attribute .image-list .overlay:hover,
 .wishlist .car-cart-item:hover .overlay {
   background-color: transparent;
+}
+#modalAddToCart .cart-container {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: inline-block;
+}
+#modalAddToCart .cart-icon {
+  font-size: 50px;
+  color: var(--main-color-800);
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  z-index: 2;
+  animation: cart-expand 1.5s forwards;
+}
+#modalAddToCart .car-icon {
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: car-drop 1.5s forwards;
+}
+@keyframes cart-expand {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes car-drop {
+  0% {
+    transform: translate(-50%, -60px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -20%);
+    opacity: 0;
+  }
+}
+#modalAddToCart.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+#modalAddToCart.show .modal-dialog {
+  transform: scale(1);
+}
+#modalAddToCart .btn-goto-list {
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+#modalAddToCart .btn-still {
+  background-color: var(--dark-blue);
+  color: var(--bg-color);
 }
 /* ===================== */
 /* === wishlist.html === */
@@ -1979,6 +2030,49 @@ header nav .nav-link:hover {
 }
 .summary-detail .profile {
   background-color: var(--main-color-900);
+}
+.booking-info .fileInput .form-label:focus,
+.booking-info .fileInput .form-control:focus{
+  border: none;
+}
+.custom-file-input {
+  background-color: transparent !important;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.btn-input-file {
+  width: 140px; 
+}
+.custom-file-input::before {
+  width: 100%;
+  content: 'ចុចត្រង់នេះ';
+  display: inline-block;
+  text-align: center;
+  color: var(--main-color-700);
+  color: rgba(255, 0, 0, 0.87);
+  border: 1px solid var(--main-color-900);
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 7px 0;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.custom-file-input:hover::before {
+  border: 1px solid var(--main-color-200);
+  background-color: var(--main-color-50);
+}
+.custom-file-input:focus::before {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #000000a9;
+}
+.custom-file-input.uploaded::before {
+  content: 'Upload Complete';
+  background-color: #12812c;
+  color: #fff;
+  border-color: #28a745;
 }
 /* =========================== */
 /* === driver-payment.html === */
@@ -3450,6 +3544,13 @@ footer .nav-link:hover {
   .image-profile img {
     width: 170px;
     height: 170px;
+  }
+  .feature-sell .abstract-sell .abstract-content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
   }
 }
 @media (max-width: 1200px) {
