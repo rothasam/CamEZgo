@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- Light gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css">
 </head>
 <body>
     <!-- header -->
@@ -442,49 +445,63 @@
                             </div>
                             <div class="col-12 wow animate__animated animate__fadeInUp">
                                 <h3 class="fw-bold">រូបភាព</h3>
-                                <div class="row image-list g-0 rounded-1 p-1">
+                                <div class="row image-list g-0 rounded-1 p-1" id="lightgallery">
                                     <div class="col-6 col-sm-4">
+                                       <a href="assets/img/gallery/gallery-1.jpg" class="car-photo" data-src="assets/img/gallery/gallery-1.jpg">
                                         <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid rounded-1" alt="gallery_1">
+                                            <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid rounded-1" alt="">
                                             <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
                                         </div>
+                                       </a>
                                     </div>
                                     <div class="col-6 col-sm-4">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid rounded-1" alt="gallery_2">
-                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid rounded-1" alt="gallery_3">
-                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-sm-3">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid rounded-1" alt="gallery_4">
-                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-sm-3">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid rounded-1" alt="gallery_5">
-                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid rounded-1" alt="gallery_6">
-                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <div class="position-relative m-1">
-                                            <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid rounded-1" alt="gallery_7">
-                                            <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center rounded-1 align-items-center">
-                                                <a href="#" class="text-decoration-none text-over fs-4 fw-bold text-light">ទាំងអស់ <i class="fa-solid fa-plus"></i></a>
+                                        <a href="assets/img/gallery/gallery-2.jpg" class="car-photo" data-src="assets/img/gallery/gallery-2.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
                                             </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" >
+                                        <a href="assets/img/gallery/gallery-3.jpg" class="car-photo" data-src="assets/img/gallery/gallery-3.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-4.jpg" class="car-photo" data-src="assets/img/gallery/gallery-4.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-5.jpg" class="car-photo" data-src="assets/img/gallery/gallery-5.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-6.jpg" class="car-photo" data-src="assets/img/gallery/gallery-6.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="position-relative m-1">
+                                            <a href="assets/img/gallery/gallery-7.jpg" class="car-photo" data-src="assets/img/gallery/gallery-7.jpg">
+                                                <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid rounded-1" alt="">
+                                                <!-- <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center rounded-1 align-items-center">
+                                                    <a href="#" class="text-decoration-none text-over fs-4 fw-bold text-light">ទាំងអស់ <i class="fa-solid fa-plus"></i></a>
+                                                </div> -->
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -638,8 +655,18 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugin/wowjs/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgThumbnail],
+            thumbnail: true,
+            zoom: true,
+            selector: '.car-photo'
+        });
     </script>
     <script>
         // Back to top and Menu Sticky
