@@ -310,9 +310,11 @@ header nav .nav-link:hover {
   color: #fff;
   background-color: var(--main-hover);
 }
-/* .sign-in-from {
-  height: 100vh;
-} */
+/*  */
+.verify-profile {
+  background-color: rgba(83, 64, 255, 0.3);
+}
+/*  */
 #sign-in {
   height: 100vh;
   background-position: center;
@@ -3964,6 +3966,9 @@ footer .nav-link:hover {
   .comming-soon-promotion .card .card-body p,
   .comming-soon-promotion .card .card-body a {
     font-size: 14px;
+  }
+  .btn-w {
+    width: 100% !important;
   }
 }
 @media (max-width: 600px) {
