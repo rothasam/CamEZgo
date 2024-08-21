@@ -1687,6 +1687,88 @@ header nav .nav-link:hover {
 .car-list .car-rent .btn-rent a {
   color: var(--bg-color) !important;
 }
+/* for sign-up with google or facebook */
+.google .google-account .list-group-item,
+.google .wrapper-button .btn,
+.google .back-btn,
+.google .ts-wrapper.single .ts-control {
+  transition: all 0.2s ease-in-out;
+}
+.google .icon {
+  width: 24px;
+  height: 24px;
+}
+.google .website-logo {
+  width: 120px;
+}
+.google .google-account .list-group-item{
+  cursor: pointer;
+}
+.google .google-account .list-group-item::after {
+  position: absolute;
+  content: '';
+  width: 94%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d6d5d5;
+}
+.google .google-account .list-group-item .pf-image{
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+}
+.google .google-account .list-group-item .badge {
+  top: 0;
+  right: 0;
+  font-weight: 500;
+}
+.google .back-btn {
+  border: 1px solid #000;
+}
+.google .back-btn .acc-img {
+  width: 25px;
+  height: 25px;
+}
+.google .back-btn i {
+  font-size: 12px;
+}
+.google .wrapper-button .btn {
+  border: 1px solid #BABBBA;
+}
+.google .google-account .list-group-item:hover,
+.google .back-btn:hover,
+.google .wrapper-button .btn:hover {
+  background-color: #F0F4F9;
+}
+.google .select-languages {
+  width: 200px;
+}
+.google .ts-wrapper.single .ts-control {
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 7px 14px;
+  font-size: 12px !important;
+}
+.google .ts-wrapper.single .ts-control:hover,
+.google .google-support .list-group-item:hover {
+  background-color: #E2E7EB;
+  cursor: pointer;
+}
+.google .ts-wrapper.single .ts-control::after {
+  position: absolute;
+  right: 6%;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 12px;
+  content: "\f0d7";
+  color: #000;
+}
+.google .ts-wrapper.single .ts-control:checked {
+  border: 1px solid var(--main-color-400) !important;
+}
 /* ========================= */
 /* === car-sell-category === */
 /* ========================= */
