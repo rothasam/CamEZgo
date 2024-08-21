@@ -539,7 +539,7 @@ header nav .nav-link:hover {
 .was-validated .form-control:invalid {
   background-image: none !important;
 }
-.licence ::-webkit-scrollbar {
+/* .licence ::-webkit-scrollbar {
   width: 8px;
 }
 .licence ::-webkit-scrollbar-track {
@@ -552,7 +552,7 @@ header nav .nav-link:hover {
 }
 .licence ::-webkit-scrollbar-thumb:hover {
   background: var(--main-hover);
-}
+} */
 /* car repair service page */
 #repair-banner.hero {
   width: 100%;
@@ -1814,7 +1814,7 @@ header nav .nav-link:hover {
   background-color: var(--main-color-50);
   border: 1px solid var(--main-color-200);
   position: sticky;
-  top: 50px;
+  top: 140px;
 }
 .car-attribute .main-info.main-info-home {
   top: 100px;
@@ -2147,6 +2147,9 @@ header nav .nav-link:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.556) !important;
   z-index: 10;
+}
+.hero-text h1{
+  line-height: 60px;
 }
 .hero-text p{
   font-size: 19px;
@@ -3784,6 +3787,9 @@ footer .nav-link:hover {
   }
   .feature-count-bg {
     background-color: var(--bg-color);
+  }
+  .hero-text h1{
+    line-height: 45px;
   }
 }
 @media (max-width: 980px) {
