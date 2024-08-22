@@ -1687,7 +1687,6 @@ header nav .nav-link:hover {
 .car-list .car-rent .btn-rent a {
   color: var(--bg-color) !important;
 }
-/* for sign-up with google or facebook */
 .google .google-account .list-group-item,
 .google .wrapper-button .btn,
 .google .back-btn,
@@ -3906,6 +3905,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 768px) {
+  .google .select-languages {
+    width: 170px;
+  }
   .edit-img {
     bottom: 5%;
     right: 20%;
@@ -4276,6 +4278,20 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .google .container {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .google .container .card {
+    border-radius: 0 !important;
+  }
+  .google .wrapper-button .btn {
+    border: 1px solid #323131;
+  }
   .edit-img {
     bottom: 5%;
     right: 24%;
@@ -4283,7 +4299,6 @@ footer .nav-link:hover {
   .head-title h1 {
     font-size: 20px;
   }
-
   .main-about-us p {
     font-size: 15px;
   }
@@ -4651,6 +4666,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 430px) {
+  .google .select-languages {
+    width: 150px;
+  }
   .noti-time {
     width: 28%;
   }
@@ -4704,6 +4722,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 375px) {
+  .google .select-languages {
+    width: 120px;
+  }
   .why-choose .choose-us-2 {
     top: 85px !important;
   }
