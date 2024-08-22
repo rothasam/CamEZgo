@@ -3660,6 +3660,56 @@ header nav .nav-link:hover {
   width: 120px;
   height: 85px;
 }
+/* log-with-facebook-account-html */
+.header-login-fb {
+  background: linear-gradient(0deg, #3B5998, #4B66A0);
+}
+.header-login-fb .btn-create-fb-acc,
+.facebook .btn-create-fb-acc {
+  font-size: 13px;
+  padding: 5px 15px;
+  background-color: #36A420;
+}
+.facebook {
+  background-color: #E9EBEE;
+  padding: 80px 0;
+}
+.facebook .card {
+  width: 620px;
+}
+.facebook .card .btn-log {
+  background-color: #4267B2;
+}
+.facebook .btn-create-fb-acc {
+  font-size: 16px;
+}
+.facebook .forget-fb-acc,
+.facebook .not-yet {
+  text-decoration: none;
+}
+.facebook .forget-fb-acc:hover,
+.facebook .not-yet:hover {
+  text-decoration: underline;
+}
+.facebook-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 15px;
+}
+.facebook-footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.facebook-footer hr {
+  border: 1px solid #605f5f;
+  width: 94.5%;
+  opacity: 0.3;
+}
+.facebook-footer .list-item {
+  font-size: 15px;
+  font-weight: 300;
+}
 /***************************************/
 /*              Footer                 */
 /***************************************/
