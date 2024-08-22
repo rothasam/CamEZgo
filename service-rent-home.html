@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
+    <title>Service rent</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugin/swipper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!-- header -->
+
+
     <header>
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container d-flex flex-column nav-contain">
@@ -315,231 +318,329 @@
             </div>
         </nav>
     </header>
+
     <!-- Buttton back to top -->
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <!-- main -->
     <main>
-        <section class="wishlist-head">
-            <div class="wishlist-title">
-                <h1 class="fw-bold text-light wow animate__animated  animate__fadeInDown">កន្ត្រករបស់ខ្ញំុ</h1>
-                <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb wow animate__animated  animate__fadeInUp">
-                      <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">កន្ត្រករបស់ខ្ញំុ</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="wishlist py-5">
-            <div class="container">
-                <div class="section-title mb-3 mb-lg-5 d-flex justify-content-between align-items-center wow animate__animated  animate__fadeIn">
-                    <h2 class="fw-bold dark-blue">រថយន្តដែលបានដាក់ក្នុងកន្ត្រក</h2>
-                    <div class="fs-5">
-                        <i class="fa-solid fa-table-cells me-2"></i>
-                        <i class="fa-solid fa-list"></i>
-                    </div>
-                </div>
-                <div class="row g-3 g-xl-4">
-                    <div class="col-lg-6 wow animate__animated  animate__fadeInUp">
-                        <div class="card car-cart-item rounded-1">
-                            <div class="row g-0">
-                                <div class="col-md-5 col-lg-4 col-xl-5">
-                                    <div class="position-relative overflow-hidden rounded-1 h-100">
-                                        <img src="assets/img/car-list/5.jpg" class="img-fluid h-100" alt="Nissan Z">
-                                        <div class="position-absolute w-100 h-100 overlay">
-                                            <span class="badge favorite fill p-2 rounded-circle m-2" id="interest"
-                                            data-bs-toggle="tooltip" data-bs-placement="right"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="យកចេញពីកន្ត្រក">
-                                                <i class="fa-solid fa-heart text-danger"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-8 col-xl-7">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="dark-blue mb-0">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">Nissan Z</a>
-                                            </h5>
-                                            <h5 class="text-dark mb-0">$32<small class="text-secondary">/មួយថ្ងៃ</small></h5>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-start text-secondary my-1 my-xl-2">
-                                            <span class="fw-medium w-50 ps-3 my-1"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
-                                            <span class="fw-medium w-50 ps-4 my-1"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                            <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                            <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2023</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-bold"><i class="fa-solid fa-star text-warning"></i> 4.7</span>
-                                            <a href="rent-checkout.html" class="text-decoration-none btn btn-let-rent py-1"><small>ជួលឥឡូវ​នេះ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- Hero banner -->
+        <section class="service-rent-banner">
+            <img src="assets/img/service-rent/rent-banner-1.jpg" class="w-100 h-100 object-fit-cover" alt="">
+            <div class="overlay d-flex justify-content-start align-items-center">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-6 text-white " >
+                            <div >
+                                <h1 class="fw-bold">កំពុងស្វែងរករថយន្តជួល?</h1>
+                                <p class="py-4">ចាប់ផ្តើមឥឡូវនេះជាមួយពួកយើង ផ្តល់ជូននូវបទពិសោធន៍ជួលរថយន្តដ៏ទូលំទូលាយដែលតម្រូវតាមតម្រូវការចម្រុះរបស់អតិថិជនរបស់យើង។ មិនថាអ្នកកំពុងរៀបចំផែនការទៅលំហែកាយចុងសប្តាហ៍ ដំណើរអាជីវកម្ម ឬការជួលរយៈពេលវែងនោះទេ</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 wow animate__animated  animate__fadeInUp">
-                        <div class="card car-cart-item rounded-1">
-                            <div class="row g-0">
-                                <div class="col-md-5 col-lg-4 col-xl-5">
-                                    <div class="position-relative overflow-hidden rounded-1 h-100">
-                                        <img src="assets/img/car-list/4.jpg" class="img-fluid h-100" alt="Hyundai Elantra">
-                                        <div class="position-absolute w-100 h-100 overlay">
-                                            <span class="badge favorite fill p-2 rounded-circle m-2 bg-light" id="interest"
-                                            data-bs-toggle="tooltip" data-bs-placement="right"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="យកចេញពីកន្ត្រក">
-                                                <i class="fa-solid fa-heart text-danger"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-8 col-xl-7">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="dark-blue mb-0">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">Hyundai Elantra</a>
-                                            </h5>
-                                            <h5 class="text-dark mb-0">$35<small class="text-secondary">/មួយថ្ងៃ</small></h5>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-start text-secondary my-1 my-xl-2">
-                                            <span class="fw-medium w-50 ps-3 my-1"><i class="fa-solid fa-car me-2"></i><small>SUV</small></span>
-                                            <span class="fw-medium w-50 ps-4 my-1"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                            <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                            <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-bold"><i class="fa-solid fa-star text-warning"></i> 4.3</span>
-                                            <a href="rent-checkout.html" class="text-decoration-none btn btn-let-rent py-1"><small>ជួលឥឡូវ​នេះ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow animate__animated  animate__fadeInUp">
-                        <div class="card car-cart-item rounded-1">
-                            <div class="row g-0">
-                                <div class="col-md-5 col-lg-4 col-xl-5">
-                                    <div class="position-relative overflow-hidden rounded-1 h-100">
-                                        <img src="assets/img/car-list/17.jpg" class="img-fluid h-100" alt="Acura TLX Type S">
-                                        <div class="position-absolute w-100 h-100 overlay">
-                                            <span class="badge favorite fill p-2 rounded-circle m-2 bg-light" id="interest"
-                                            data-bs-toggle="tooltip" data-bs-placement="right"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="យកចេញពីកន្ត្រក">
-                                                <i class="fa-solid fa-heart text-danger"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-8 col-xl-7">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="dark-blue mb-0">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">Acura TLX Type S</a>
-                                            </h5>
-                                            <h5 class="text-dark mb-0">$39<small class="text-secondary">/មួយថ្ងៃ</small></h5>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-start text-secondary my-1 my-xl-2">
-                                            <span class="fw-medium w-50 ps-3 my-1"><i class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
-                                            <span class="fw-medium w-50 ps-4 my-1"><i class="fa-solid fa-user me-2"></i>4 នាក់</span>
-                                            <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                            <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-bold"><i class="fa-solid fa-star text-warning"></i> 4.7</span>
-                                            <a href="rent-checkout.html" class="text-decoration-none btn btn-let-rent py-1"><small>ជួលឥឡូវ​នេះ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow animate__animated  animate__fadeInUp">
-                        <div class="card car-cart-item rounded-1">
-                            <div class="row g-0">
-                                <div class="col-md-5 col-lg-4 col-xl-5">
-                                    <div class="position-relative overflow-hidden rounded-1 h-100">
-                                        <img src="assets/img/car-list/18.jpg" class="img-fluid h-100" alt="Acura TLX">
-                                        <div class="position-absolute w-100 h-100 overlay">
-                                            <span class="badge favorite fill p-2 rounded-circle m-2 bg-light" id="interest"
-                                            data-bs-toggle="tooltip" data-bs-placement="right"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="យកចេញពីកន្ត្រក">
-                                                <i class="fa-solid fa-heart text-danger"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-8 col-xl-7">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="dark-blue mb-0">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">Acura TLX</a>
-                                            </h5>
-                                            <h5 class="text-dark mb-0">$38<small class="text-secondary">/មួយថ្ងៃ</small></h5>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-start text-secondary my-1 my-xl-2">
-                                            <span class="fw-medium w-50 ps-3 my-1"><i class="fa-solid fa-car me-2"></i><small>SEDAN</small></span>
-                                            <span class="fw-medium w-50 ps-4 my-1"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                            <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
-                                            <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-bold"><i class="fa-solid fa-star text-warning"></i> 4.6</span>
-                                            <a href="rent-checkout.html" class="text-decoration-none btn btn-let-rent py-1"><small>ជួលឥឡូវ​នេះ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow animate__animated  animate__fadeInUp">
-                        <div class="card car-cart-item rounded-1">
-                            <div class="row g-0">
-                                <div class="col-md-5 col-lg-4 col-xl-5">
-                                    <div class="position-relative overflow-hidden rounded-1 h-100">
-                                        <img src="assets/img/car-list/20.jpg" class="img-fluid h-100" alt="Toyota Highlander">
-                                        <div class="position-absolute w-100 h-100 overlay">
-                                            <span class="badge favorite fill p-2 rounded-circle m-2 bg-light" id="interest"
-                                            data-bs-toggle="tooltip" data-bs-placement="right"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="យកចេញពីកន្ត្រក">
-                                                <i class="fa-solid fa-heart text-danger"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-8 col-xl-7">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <h5 class="dark-blue mb-0">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">Tesla Model 3</a>
-                                            </h5>
-                                            <h5 class="text-dark mb-0">$45<small class="text-secondary">/មួយថ្ងៃ</small></h5>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-start text-secondary my-1 my-xl-2">
-                                            <span class="fw-medium w-50 ps-3 my-1"><i class="fa-solid fa-car me-2"></i><small>SEDAN</small></span>
-                                            <span class="fw-medium w-50 ps-4 my-1"><i class="fa-solid fa-user me-2"></i>2 នាក់</span>
-                                            <span class="fw-medium w-50 ps-3 mt-1"><i class="fa-solid fa-charging-station me-2"></i>អគ្គិសនី</span>
-                                            <span class="fw-medium w-50 ps-4 mt-1"><i class="fa-solid fa-calendar me-2"></i>2024</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-bold"><i class="fa-solid fa-star text-warning"></i> 4.5</span>
-                                            <a href="rent-checkout.html" class="text-decoration-none btn btn-let-rent py-1"><small>ជួលឥឡូវ​នេះ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-12">
+                            <div class="col-2">
+                                <a href="car-rent-category.html" class="btn text-white" style="background-color: #5340ff;"><i class="fa-solid fa-magnifying-glass me-1"></i>មើលតារាងរថយន្ត</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Reantal service -->
+        <section>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-6">
+                        <small>សេវាកម្មជួល</small>
+                        <h3 class="fw-bold">អ្វីៗគ្រប់យ៉ាងនឹងមានភាពងាយស្រួល</h3>
+                        <p>យើងបានរៀបចំសេវាកម្មជួលរថយន្តរបស់យើងឱ្យមានលក្ខណៈសាមញ្ញ និងគ្មានភាពតានតឹងតាមដែលអាចធ្វើទៅបាន ដូច្នេះអ្នកអាចផ្តោតលើការរីករាយនឹងការធ្វើដំណើររបស់អ្នក</p>
+                        <ul class="nav d-flex flex-column ">
+                            <li class="nav-item mb-2">
+                                <span class="text-success"><i class="fa-regular fa-circle-check"></i></span>
+                                <span>ជំរើសច្រើន ទំនើប ស៊ីវិល័យ</span>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <span class="text-success"><i class="fa-regular fa-circle-check"></i></span>
+                                <span>តម្លៃសមរម្យ</span>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <span class="text-success"><i class="fa-regular fa-circle-check"></i></span>
+                                <span>ការកក់តាមអនឡាញរហ័ស</span>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <span class="text-success"><i class="fa-regular fa-circle-check"></i></span>
+                                <span>មានការគាំទ្រ24/7</span>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="col-6">
+                        <div class="img-service-rent">
+                            <img src="assets/img/service-rent/woman-holdingkey.png" class="w-100 h-100 object-fit-cover rounded-2" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- car for rent -->
+        <section class="car-list">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row swiper car-item-swiper gx-0 swiper-button">
+                            <div class="swiper-wrapper py-2 mb-4">
+                                <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
+                                    <div class="card car-rent rounded-1">
+                                        <div class="car-img position-relative m-2 pb-0 mb-0">
+                                            <a href="car-rent-detail-home.html"><img src="assets/img/car-list/1.png"
+                                                    class="img-fluid rounded-1" alt=""></a>
+                                            <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                                <div>
+                                                    <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
+                                                </div>
+                                                <span class="badge favorite fill py-2 rounded-1"><i
+                                                        class="fa-regular fa-heart text-dark"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <a href="car-rent-detail-home.html" class="text-decoration-none">
+                                                        <h5 class="dark-blue mb-0 fw-medium">Toyota GR 86</h5>
+                                                    </a>
+                                                    <div><i class="fa-solid fa-star text-warning me-1"></i><span
+                                                            class="fw-medium">4.5</span></div>
+                                                </div>
+                                                <div class="feature">
+                                                    <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                        <span class="fw-medium w-50 ps-3 my-2"><i
+                                                                class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                        <span class="fw-medium w-50 ps-4 my-2"><i
+                                                                class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                        <span class="fw-medium w-50 ps-3 mt-1"><i
+                                                                class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                        <span class="fw-medium w-50 ps-4 mt-1"><i
+                                                                class="fa-solid fa-calendar me-2"></i>2023</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0 fw-medium">$55<small
+                                                            class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
+                                                    <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
+                                                        <a href="car-rent-detail-home.html"
+                                                            class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
+                                    <div class="card car-rent rounded-1">
+                                        <div class="car-img position-relative m-2 pb-0 mb-0">
+                                            <a href="car-rent-detail-home.html"><img src="assets/img/car-list/15.jpg"
+                                                    class="img-fluid rounded-1" alt=""></a>
+                                            <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                                <div>
+                                                    <span class="badge discount py-2 rounded-1">បញ្ចុះតម្លៃ​ 10%</span>
+                                                </div>
+                                                <span class="badge favorite fill py-2 rounded-1"><i
+                                                        class="fa-regular fa-heart text-dark"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <a href="car-rent-detail-home.html" class="text-decoration-none">
+                                                        <h5 class="dark-blue mb-0 fw-medium">Lamborghini</h5>
+                                                    </a>
+                                                    <div><i class="fa-solid fa-star text-warning me-1"></i><span
+                                                            class="fw-medium">4.5</span></div>
+                                                </div>
+                                                <div class="feature">
+                                                    <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                        <span class="fw-medium w-50 ps-3 my-2"><i
+                                                                class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                        <span class="fw-medium w-50 ps-4 my-2"><i
+                                                                class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                        <span class="fw-medium w-50 ps-3 mt-1"><i
+                                                                class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                        <span class="fw-medium w-50 ps-4 mt-1"><i
+                                                                class="fa-solid fa-calendar me-2"></i>2023</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0 fw-medium">$75<small
+                                                            class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
+                                                    <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
+                                                        <a href="car-rent-detail-home.html"
+                                                            class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
+                                    <div class="card car-rent rounded-1">
+                                        <div class="car-img position-relative m-2 pb-0 mb-0">
+                                            <a href="car-rent-detail-home.html"><img src="assets/img/car-list/13.jpg"
+                                                    class="img-fluid rounded-1" alt=""></a>
+                                            <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                                <div>
+                                                    <span class="badge soon py-2 rounded-1">មកដល់ឆាប់ៗ</span>
+                                                </div>
+                                                <span class="badge favorite fill rounded-1 py-2"><i
+                                                        class="fa-regular fa-heart text-dark"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <a href="car-rent-detail-home.html" class="text-decoration-none">
+                                                        <h5 class="dark-blue mb-0 fw-medium">Chevrolet</h5>
+                                                    </a>
+                                                    <div><i class="fa-solid fa-star text-warning me-1"></i><span
+                                                            class="fw-medium">4.5</span></div>
+                                                </div>
+                                                <div class="feature">
+                                                    <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                        <span class="fw-medium w-50 ps-3 my-2"><i
+                                                                class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                        <span class="fw-medium w-50 ps-4 my-2"><i
+                                                                class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                        <span class="fw-medium w-50 ps-3 mt-1"><i
+                                                                class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                        <span class="fw-medium w-50 ps-4 mt-1"><i
+                                                                class="fa-solid fa-calendar me-2"></i>2023</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0 fw-medium">$65<small
+                                                            class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
+                                                    <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
+                                                        <a href="car-rent-detail-home.html"
+                                                            class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
+                                    <div class="card car-rent rounded-1">
+                                        <div class="car-img position-relative m-2 pb-0 mb-0">
+                                            <a href="car-rent-detail-home.html"><img src="assets/img/car-list/7.jpg"
+                                                    class="img-fluid rounded-1" alt=""></a>
+                                            <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                                <div>
+                                                    <span class="badge trending py-2 rounded-1">កំពុងពេញនិយម</span>
+                                                </div>
+                                                <span class="badge favorite fill py-2 rounded-1"><i
+                                                        class="fa-regular fa-heart text-dark"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <a href="car-rent-detail-home.html" class="text-decoration-none">
+                                                        <h5 class="dark-blue mb-0 fw-medium">Ford Shelby</h5>
+                                                    </a>
+                                                    <div><i class="fa-solid fa-star text-warning me-1"></i><span
+                                                            class="fw-medium">4.5</span></div>
+                                                </div>
+                                                <div class="feature">
+                                                    <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                        <span class="fw-medium w-50 ps-3 my-2"><i
+                                                                class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                        <span class="fw-medium w-50 ps-4 my-2"><i
+                                                                class="fa-solid fa-user me-2"></i>4 នាក់</span>
+                                                        <span class="fw-medium w-50 ps-3 mt-1"><i
+                                                                class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                        <span class="fw-medium w-50 ps-4 mt-1"><i
+                                                                class="fa-solid fa-calendar me-2"></i>2024</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0 fw-medium">$65<small
+                                                            class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
+                                                    <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
+                                                        <a href="car-rent-detail-home.html"
+                                                            class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide wow animate__animated animate__fadeInUp">
+                                    <div class="card car-rent rounded-1">
+                                        <div class="car-img position-relative m-2 pb-0 mb-0">
+                                            <a href="car-rent-detail-home.html"><img src="assets/img/car-list/19.jpg"
+                                                    class="img-fluid rounded-1" alt=""></a>
+                                            <div class="status w-100 h-100 rounded-1 p-2 position-absolute">
+                                                <div>
+                                                    <span class="badge new py-2 rounded-1">ឡានថ្មី</span>
+                                                </div>
+                                                <span class="badge favorite fill py-2 rounded-1"><i
+                                                        class="fa-regular fa-heart text-dark"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <div>
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <a href="car-rent-detail-home.html" class="text-decoration-none">
+                                                        <h5 class="dark-blue mb-0 fw-medium">Nissan Z NISMO</h5>
+                                                    </a>
+                                                    <div><i class="fa-solid fa-star text-warning me-1"></i><span
+                                                            class="fw-medium">4.4</span></div>
+                                                </div>
+                                                <div class="feature">
+                                                    <div class="d-flex flex-wrap justify-content-start text-secondary">
+                                                        <span class="fw-medium w-50 ps-3 my-2"><i
+                                                                class="fa-solid fa-car me-2"></i><small>SPORT</small></span>
+                                                        <span class="fw-medium w-50 ps-4 my-2"><i
+                                                                class="fa-solid fa-user me-2"></i>2 នាក់</span>
+                                                        <span class="fw-medium w-50 ps-3 mt-1"><i
+                                                                class="fa-solid fa-gas-pump me-2"></i>សាំង</span>
+                                                        <span class="fw-medium w-50 ps-4 mt-1"><i
+                                                                class="fa-solid fa-calendar me-2"></i>2024</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h4 class="mb-0 fw-medium">$40<small
+                                                            class="fs-6 text-secondary">/មួយថ្ងៃ</small></h4>
+                                                    <button type="button" class="btn btn-rent rounded-1 py-1 fw-medium">
+                                                        <a href="car-rent-detail-home.html"
+                                                            class="text-decoration-none text-dark">ជួលរថយន្ត​</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4" style="border: 1px solid red;">
+                        <h2>ស្វែងរករថយន្ត</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  -->
+
     </main>
+
     <footer>
         <div class="container pb-3">
             <div class="row">
@@ -684,20 +785,17 @@
             </div>
         </div>
     </footer>
+    
 
-    <!-- footer -->
-     <script src="assets/js/bootstrap.bundle.min.js"></script>
-     <script src="assets/plugin/wowjs/wow.min.js"></script>
-     <script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/swipper/swiper-bundle.min.js"></script>
+    <script src="assets/plugin/wowjs/wow.min.js"></script>
+    <script>
         new WOW().init();
-     </script>
-     <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-     </script>
-     <script>
+    </script>
+
+
+    <script>
         // Back to top and Menu Sticky
         window.onscroll = function () {
             stickyNavbar();
@@ -707,18 +805,56 @@
         var backToTop = document.getElementById("backToTop");
 
         function stickyNavbar() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("sticky");
-            backToTop.style.display = "block";
-        } else {
-            navbar.classList.remove("sticky");
-            backToTop.style.display = "none";
-        }
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+                backToTop.style.display = "block";
+            } else {
+                navbar.classList.remove("sticky");
+                backToTop.style.display = "none";
+            }
         }
 
         backToTop.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
-     </script>
+    </script>
+
+    <script>
+        // Car for rent
+        var swiper = new Swiper(".car-item-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            fade: "true",
+            centerslide: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
