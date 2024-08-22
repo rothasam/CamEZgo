@@ -3656,6 +3656,10 @@ header nav .nav-link:hover {
 #accoverview .dropup .dropdown-toggle:focus::after {
   transform: rotate(0deg);
 }
+#accoverview #rentDetail .detail-img {
+  width: 120px;
+  height: 85px;
+}
 /***************************************/
 /*              Footer                 */
 /***************************************/
