@@ -3631,6 +3631,31 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   color: white;
 }
+#accoverview .rent-table{
+  width: 100%;
+}
+#accoverview table tr .order {
+  text-align: center;
+}
+#accoverview table tr .image {
+  width: 70px;
+  height: 50px;
+}
+#accoverview table tr .btn-action {
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+#accoverview table tr .btn-action::after {
+  display: none;
+}
+#accoverview .dropup .dropdown-toggle::after {
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+#accoverview .dropup .dropdown-toggle:focus::after {
+  transform: rotate(0deg);
+}
 /***************************************/
 /*              Footer                 */
 /***************************************/
@@ -3672,6 +3697,16 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 1200px) {
+  .table-receipt,
+  #accoverview .rent-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table-receipt .table,
+  #accoverview .rent-table table {
+    width: 120% !important;
+  }
+  /* #accoverview .rent-table */
   .image-profile img {
     width: 140px;
     height: 140px;
@@ -3905,6 +3940,12 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 768px) {
+  .table-receipt .table {
+    width: 150% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 170% !important;
+  }
   .google .select-languages {
     width: 170px;
   }
@@ -4278,6 +4319,12 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .table-receipt .table {
+    width: 200% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 200% !important;
+  }
   .google .container {
     padding: 0;
     height: 100vh;
@@ -4666,6 +4713,12 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 430px) {
+  .table-receipt .table {
+    width: 250% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 220% !important;
+  }
   .google .select-languages {
     width: 150px;
   }
@@ -4702,6 +4755,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 400px) {
+  #accoverview .rent-table .table {
+    width: 250% !important;
+  }
   .car-sell-promotion {
     padding: 0 18px;
   }
@@ -4722,6 +4778,12 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 375px) {
+  .table-receipt .table {
+    width: 290% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 290% !important;
+  }
   .google .select-languages {
     width: 120px;
   }
