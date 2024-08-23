@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Checkout</title>
+    <title>Vehicle Sell Detail</title>
     <link rel="icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/plugin/tom-select/tom-select.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/plugin/animation/animate.min.css">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- Light gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css">
 </head>
 <body>
     <!-- header -->
@@ -318,248 +322,212 @@
     </header>
     <!-- Buttton back to top -->
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
-    <div id="liveAlertPlaceholder" class="alert-1"></div>
+
     <!-- main -->
      <main>
-        <section class="wishlist-head booking">
-            <div class="wishlist-title">
-                <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមកក់រថយន្ត</h1>
-                <nav aria-label="breadcrumb" class="mt-3 d-flex justify-content-center">
-                    <ol class="breadcrumb wow animate__animated animate__fadeInUp">
-                      <li class="breadcrumb-item"><a href="homepage.html" class="text-decoration-none text-light opacity-75">ទំព័រដើម</a></li>
-                      <li class="breadcrumb-item active text-light opacity-50" aria-current="page">កក់រថយន្ត</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="booking-info py-5">
+        <section class="banner-name">
             <div class="container">
-                <div class="row g-3 g-lg-4">
-                    <div class="col-sm-5 col-md-6 col-xl-12 wow animate__animated animate__fadeInLeft">
-                        <div>
-                            <h4 class="fw-bold">ធ្វើការកក់រថយន្ត</h4>
-                            <span>ដោយបំពេញព័ត៌មានតាមខាងក្រោម</span>
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="banner-content text-center h-100 mt-4 mt-md-0 wow animate__animated animate__fadeInLeft">
+                            <h1 class="fw-bold">Mercedes-Benz CLA45 AMG</h1>
+                            <nav aria-label="breadcrumb" class="mt-lg-3 d-flex justify-content-center">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="car-rent-category-home.html" class="text-decoration-none text-light opacity-75">តារាងរថយន្តជួល</a></li>
+                                  <li class="breadcrumb-item active text-light opacity-50" aria-current="page">Mercedes-Benz</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
-                    <div class="col-xl-9 wow animate__animated animate__fadeIn">
-                        <form action="" class="booking-form rounded-1">
-                            <div class="row g-3 g-lg-4">
-                                <div class="col-12">
-                                    <div class="rent-type shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-car text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">ការទទួលរថយន្ត</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('userLocate').click(); setGetDropLocation('customerLocation')">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="userLocate">
-                                                    <label class="form-check-label mt-2" for="userLocate">
-                                                        ទទួលនៅទីតាំងរបស់ខ្ញុំ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('adminLocate').click(); setGetDropLocation('companyLocation')">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="optionLocation" id="adminLocate">
-                                                    <label class="form-check-label mt-2" for="adminLocate">
-                                                        ទទួលនៅទីតាំងក្រុមហ៊ុន
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="locate shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-location-dot text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">កំណត់ទីតាំង</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3 align-items-end">
-                                            <div class="col-sm-9">
-                                                <div>
-                                                    <label for="getLocation" class="form-label">ទីតាំងទទួលឡាន <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control rounded-1" id="getLocation" placeholder="បញ្ចូលទីតាំង...">
-                                                </div>
-                                            </div>
-                                            <div class="col-7 d-block d-sm-none"></div>
-                                            <div class="col-5 col-sm-3">
-                                                <button id="getLocationBtn"  type="button" class="btn btn-current-location w-100 rounded-1" onclick="setDefaultLocation('getLocation')">
-                                                    ទីតាំងបច្ចុប្បន្ន
-                                                </button>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check ps-0 d-flex align-items-center">
-                                                    <input class="form-check-input m-0 ms-1 border" type="checkbox" value="" id="sameLocate">
-                                                    <label class="form-check-label text-body-secondary ms-2 small fw-medium" for="sameLocate">ប្រគល់ឡាននៅទីតាំងទទួល</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <div>
-                                                    <label for="dropLocation" class="form-label">ទីតាំងប្រគល់ <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control rounded-1" id="dropLocation" placeholder="បញ្ចូលទីតាំង...">
-                                                </div>
-                                            </div>
-                                            <div class="col-7 d-block d-sm-none"></div>
-                                            <div class="col-5 col-sm-3">
-                                                <button id="dropLocationBtn" type="button" class="btn btn-current-location w-100 rounded-1" onclick="setDefaultLocation('dropLocation')">
-                                                    ទីតាំងបច្ចុប្បន្ន
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-regular fa-hourglass-half text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">រយៈពេលជួល</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('hourRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="hourRent" value="hourRent">
-                                                    <label class="form-check-label mt-2" id="hour" for="hourRent">
-                                                        គិតជាម៉ោង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('dayRent').click();">
-                                                    <input checked class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="dayRent" value="dayRent">
-                                                    <label class="form-check-label mt-2" id="day" for="dayRent">
-                                                        គិតជាថ្ងៃ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('weekRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="weekRent" value="weekRent">
-                                                    <label class="form-check-label mt-2" id="week" for="weekRent">
-                                                        គិតជាសប្តាហ៏
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-md-3">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('monthRent').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="rentTime" id="monthRent" value="monthRent">
-                                                    <label class="form-check-label mt-2" id="month" for="monthRent">
-                                                        គិតជាខែ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row g-2 g-md-3">
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="startDate" class="form-label">ថ្ងៃចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input id="startDate" onclick="this.showPicker();" type="date" class="form-control rounded-1" value="2024-09-22">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="startTime" class="form-label">ពេលវេលាចាប់ផ្តើម <span class="text-danger">*</span></label>
-                                                            <input for="startTime" onclick="this.showPicker();" type="time" class="form-control rounded-1" value="10:15">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="endDate" class="form-label">ថ្ងៃបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input for="endDate" onclick="this.showPicker();" type="date" class="form-control rounded-1" value="2024-09-25">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div>
-                                                            <label for="endTime" class="form-label">ពេលវេលាបញ្ចប់ <span class="text-danger">*</span></label>
-                                                            <input id="endTime" onclick="this.showPicker();" type="time" class="form-control rounded-1" value="20:15">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="rent-time shadow-checkout rounded-1 p-sm-3 p-md-4">
-                                        <div class="d-flex align-items-center mb-2 mb-sm-3 mb-md-4">
-                                            <div class="icon rounded-1">
-                                                <i class="fa-solid fa-user-tie text-light"></i>
-                                            </div>
-                                            <h5 class="fw-bold ms-2 mb-0">កំណត់ការបើកបរ</h5>
-                                        </div>
-                                        <div class="row g-2 g-md-3">
-                                            <div class="col-sm-6">
-                                                <div data-bs-toggle="collapse" data-bs-target="#driverLicense" class="form-check rounded-1 p-3" onclick="document.getElementById('selfDrive').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="driveType" id="selfDrive">
-                                                    <label class="form-check-label mt-2" for="selfDrive">
-                                                        បើកបរដោយខ្លួនឯង
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check rounded-1 p-3" onclick="document.getElementById('driver').click();">
-                                                    <input class="form-check-input fs-5 m-0" type="radio" name="driveType" id="driver">
-                                                    <label class="form-check-label mt-2" for="driver">
-                                                        ត្រូវការអ្នកបើកបរ
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="collapse" id="driverLicense">
-                                                <div class="mt-4 p-3 fileInput bg-secondary bg-opacity-10 rounded-1">
-                                                    <div class="d-flex gap-2 gap-md-3 flex-column flex-xxl-row align-items-center align-items-lg-start align-items-xxl-center">
-                                                        <div class="">
-                                                            <label for="fileDriverLicenseCar" class="form-label upload-btn mb-0 ps-xxl-2 fw-medium">សូម​ Upload ប័ណ្ណបើកបររបស់អ្នក</label>
-                                                        </div>
-                                                        <div class="d-flex gap-2 gap-md-3 flex-column flex-lg-row align-items-center">
-                                                            <div class="btn-input-file">
-                                                                <input class="form-control custom-file-input p-0" id="fileDriverLicenseCard" type="file">
-                                                            </div>
-                                                            <span class=" text-secondary small text-center">(ឯកសារដែលអាច upload បានត្រូវមានទំហំតូចជាង 5MB និងជាប្រភេទ .png, .jpg, .pdf)</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="wrapper-button d-flex gap-2 gap-md-3 justify-content-end wow animate__animated animate__slideInUp">
-                                        <a href="car-rent-detail-home.html" class="btn btn-booking btn-1 text-decoration-none rounded-1">មើលព័ត៌មានឡាន</a>
-                                        <button type="button" id="liveAlertBtn" class="btn btn-booking text-decoration-none rounded-1">បន្តទៅការទូទាត់ប្រាក់</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="col-md-6 wow animate__animated animate__fadeInRight">
+                        <div class="main-image h-100">
+                            <img src="assets/img/gallery/main-image.png" class="img-fluid" alt="main_image">
+                        </div>
                     </div>
-                    <div class="col-sm-7 col-md-6 col-xl-3 wow animate__animated animate__fadeInRight">
-                        <div class="card summary-detail shadow-checkout border-0 rounded-1">
-                            <div class="card-header border-0">
-                                <h5 class="fw-bold mb-0">សង្ខេបការកក់</h5>
+                </div>
+            </div>
+        </section>
+        <section class="car-attribute py-5">
+            <div class="container">
+                <div class="row g-md-3 g-lg-4 g-xl-5">
+                    <div class="col-lg-4 wow animate__animated animate__fadeIn">
+                        <div class="main-info main-info-home rounded-1 px-5 py-4 p-lg-3 p-xl-5">
+                            <div class="text-center">
+                                <strong class="fs-1 price">$45<span class="fw-normal px-1 fs-1 text-dark">/</span></strong><span class="fs-5 fw-medium text-secondary">មួយថ្ងៃ</span>
                             </div>
-                            <div class="card-body">
-                                <div class="row g-0">
-                                    <div class="col-7">
-                                        <ul class="list-group-flush p-0 mb-0">
-                                            <li class="list-group-item">
-                                                <a href="car-rent-detail-home.html" class="text-decoration-none text-dark">
-                                                    <h6 class="fw-bold">Tesla Model 3</h6>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item my-1"><small>តម្លៃជួល 86ដុល្លារ/ថ្ងៃ</small></li>
-                                            <li class="list-group-item my-1"><small>តម្លៃពន្ធ 5ដុល្លារ</small></li>
-                                        </ul>
+                            <hr class="hr-main-info mb-xl-4">
+                            <ul class="list-group-flush p-0">
+                              <li class="list-group-item my-3">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-medium"><i class="fa-solid fa-car me-3"></i>ប្រភេទរថយន្ត</span>
+                                    <span class="fw-bold">SPORT</span>
+                                </div>
+                              </li>
+                              <li class="list-group-item my-3">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-medium"><i class="fa-solid fa-gas-pump me-3"></i>ប្រភេទសាំង</span>
+                                    <span class="fw-bold">Petrol</span>
+                                </div>
+                              </li>
+                              <li class="list-group-item my-3">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-medium"><i class="fa-solid fa-user me-3"></i>ចំនួនកៅអី</span>
+                                    <span class="fw-bold">2 កៅអី</span>
+                                </div>
+                              </li>
+                              <li class="list-group-item my-3">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-medium"><i class="fa-solid fa-calendar-check me-3"></i>ឆ្នាំផលិត</span>
+                                    <span class="fw-bold">2023</span>
+                                </div>
+                              </li>
+                              <li class="list-group-item my-3">
+                                <div class="d-flex justify-content-between">
+                                    <span class="fw-medium"><i class="fa-solid fa-sliders me-3"></i>Transmission</span>
+                                    <span class="fw-bold">Manual</span>
+                                </div>
+                              </li>
+                            </ul>
+                            <hr class="hr-main-info my-xl-4">
+                            <a href="#modalAddToCart" data-bs-toggle="modal" class="btn btn-interest rounded-1 fw-bold w-100 mb-3"><i class="fa-regular fa-heart me-2"></i>បញ្ចូលទៅកន្ត្រក់</a>
+                            <a href="rent-checkout-fake.html" class="btn btn-booking rounded-1 fw-bold w-100"><i class="fa-solid fa-car me-2"></i>កក់ឥឡូវនេះ</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalAddToCart" tabindex="-1" aria-labelledby="modalAddToCartLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content p-3 p-md-4 p-lg-5">
+                                    <div class="modal-body text-center">
+                                        <div class="cart-container">
+                                            <i class="fa-solid fa-shopping-cart cart-icon"></i>
+                                            <i class="fa-solid fa-car car-icon"></i>
+
+                                        </div>
+                                        <h4 class="my-3 my-md-4 my-lg-5 fw-bold">បានដាក់ចូលកន្ត្រករួចរាល់</h4>
+                                        <div class="d-flex flex-column">
+                                            <a href="wishlist.html" class="btn btn-goto-list rounded-1 mb-3">ទៅមើលក្នុងកន្រ្តក</a>
+                                            <button type="button" class="btn rounded-1 btn-still" data-bs-dismiss="modal">បន្តមើលព័ត៌មាន</button>
+                                        </div>
                                     </div>
-                                    <div class="col-5">
-                                        <img src="assets/img/car/car-show-2.png" class="img-fluid rounded-1" alt="Tesla Model 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row gy-3 gy-xl-4">
+                            <div class="col-12 wow animate__animated animate__fadeIn">
+                                <div class="describe">
+                                    <h3 class="fw-bold mt-3 mt-md-0">ការពិពណ៌នា</h3>
+                                    <p><span class="dark-blue fw-bold">ទទួលបានបទពិសោធន៍ និងភាពងាយស្រួល</span> ដែលមិនអាចប្រៀបផ្ទឹមបានជាមួយយានជំនិះលំដាប់កំពូលរបស់យើង បានរចនាឡើងសម្រាប់អ្នកដែលផ្តល់តម្លៃលើភាពប្រណីត និងភាពជឿជាក់ រថយន្តនេះមានការរចនាដ៏ស្រស់បំព្រង និងលក្ខណៈពិសេសកម្រិតខ្ពស់ ដើម្បីបង្កើនបទពិសោធន៍នៃការបើកបររបស់អ្នក។ មិនថាអ្នកកំពុងធ្វើដំណើរទៅព្រឹត្តិការណ៍ពិសេស ឬដំណើរកម្សាន្តចុងសប្តាហ៍ រថយន្តនេះធានាថាអ្នកធ្វើដំណើរប្រកបដោយរចនាប័ទ្ម។ រីករាយជាមួយការជិះដ៏រលូន និងអាចទុកចិត្តបានជាមួយនឹងរាល់ការធ្វើដំណើរដែលអ្នកធ្វើ។</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-3 g-xl-4">
+                                    <div class="col-md-6 wow animate__animated animate__bounceIn">
+                                        <div class="d-flex sub-info rounded-1">
+                                            <div class="me-3 me-xl-4">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-1 mb-md-2">ប្រាក់កក់ក្នុងតម្លៃទាប</h4>
+                                                <p class="mb-0 mb-md-3">ធានាការជួលរបស់អ្នកជាមួយនឹងតម្លៃទាបជាមុន ធ្វើឱ្យកាន់តែងាយស្រួលក្នុងការធ្វើដំណើរ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 wow animate__animated animate__bounceIn">
+                                        <div class="d-flex sub-info rounded-1">
+                                            <div class="me-3 me-xl-4">
+                                                <i class="fa-regular fa-calendar-check"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-1 mb-md-2">ការបង់ប្រាក់ងាយស្រួល</h4>
+                                                <p class="mb-0 mb-md-3">រីករាយជាមួយតម្លៃច្បាស់លាស់ ដោយផ្អែកទៅតាមរយៈដែលអ្នកបានជួល និងអាចបត់បែនបាន</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 wow animate__animated animate__bounceIn">
+                                        <div class="d-flex sub-info rounded-1">
+                                            <div class="me-3 me-xl-4">
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-1 mb-md-2">រថយន្តមានគុណភាពខ្ពស់</h4>
+                                                <p class="mb-0 mb-md-3">រថយន្តរបស់យើងត្រូវបានបញ្ជាក់ដោយអ្នកជំនាញដែលមានបទពិសោធន៍លើស 6 ឆ្នាំ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 wow animate__animated animate__bounceIn">
+                                        <div class="d-flex sub-info rounded-1">
+                                            <div class="me-3 me-xl-4">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-1 mb-md-2">អតិថិជនជឿទុកចិត្ត</h4>
+                                                <p class="mb-0 mb-md-3">ចូលរួមជាមួយអតិថិជនដែលពេញចិត្ត ជឿទុកចិត្តលើយើងសម្រាប់ការជួលដោយរីករាយ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 wow animate__animated animate__fadeInUp">
+                                <h3 class="fw-bold">រូបភាព</h3>
+                                <div class="row image-list g-0 rounded-1 p-1" id="lightgallery">
+                                    <div class="col-6 col-sm-4">
+                                       <a href="assets/img/gallery/gallery-1.jpg" class="car-photo" data-src="assets/img/gallery/gallery-1.jpg">
+                                        <div class="position-relative m-1">
+                                            <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid rounded-1" alt="">
+                                            <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                        </div>
+                                       </a>
+                                    </div>
+                                    <div class="col-6 col-sm-4">
+                                        <a href="assets/img/gallery/gallery-2.jpg" class="car-photo" data-src="assets/img/gallery/gallery-2.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" >
+                                        <a href="assets/img/gallery/gallery-3.jpg" class="car-photo" data-src="assets/img/gallery/gallery-3.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-4.jpg" class="car-photo" data-src="assets/img/gallery/gallery-4.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-5.jpg" class="car-photo" data-src="assets/img/gallery/gallery-5.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <a href="assets/img/gallery/gallery-6.jpg" class="car-photo" data-src="assets/img/gallery/gallery-6.jpg">
+                                            <div class="position-relative m-1">
+                                                <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid rounded-1" alt="">
+                                                <div class="overlay position-absolute w-100 h-100 rounded-1"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="position-relative m-1">
+                                            <a href="assets/img/gallery/gallery-7.jpg" class="car-photo" data-src="assets/img/gallery/gallery-7.jpg">
+                                                <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid rounded-1" alt="">
+                                                <!-- <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center rounded-1 align-items-center">
+                                                    <a href="#" class="text-decoration-none text-over fs-4 fw-bold text-light">ទាំងអស់ <i class="fa-solid fa-plus"></i></a>
+                                                </div> -->
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -570,8 +538,8 @@
         </section>
      </main>
 
-     <!-- footer -->
-     <footer>
+    <!-- footer -->
+    <footer>
         <div class="container pb-3">
             <div class="row">
                 <div
@@ -715,10 +683,21 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugin/wowjs/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgThumbnail],
+            thumbnail: true,
+            zoom: true,
+            selector: '.car-photo'
+        });
     </script>
     <script>
         // Back to top and Menu Sticky
@@ -742,102 +721,6 @@
         backToTop.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-    </script>
-    <script>
-        function setGetDropLocation(option) {
-            const getLocation = document.getElementById('getLocation');
-            const dropLocation = document.getElementById('dropLocation');
-            const getLocationBtn = document.getElementById('getLocationBtn');
-            if (option === 'companyLocation') {
-                getLocation.value = '#86B ផ្លូវលេខ 313, ភ្នំពេញ';
-                dropLocation.value = '#86B ផ្លូវលេខ 313, ភ្នំពេញ';
-                getLocation.disabled = true;
-                dropLocation.disabled = false;
-                getLocationBtn.disabled = true;
-            } else if (option === 'customerLocation') {
-                getLocation.value = '';
-                dropLocation.value = '';
-                getLocation.disabled = false;
-                dropLocation.disabled = false;
-                getLocationBtn.disabled = false;
-                getLocationBtn.style.cursor = 'pointer';
-            }
-        }
-        function setDefaultLocation(fieldId) {
-            const userDefaultLocation = 'ផ្សារចាស់ តំបន់ផាប់ស្ទ្រីត ផ្លូវលេខ 9 សង្កាត់ស្វាយដង្គំ ខេត្តសៀមរាប';
-            document.getElementById(fieldId).value = userDefaultLocation;
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-            const selfDrive = document.getElementById('selfDrive');
-            const driver = document.getElementById('driver');
-            const collapseElement = new bootstrap.Collapse(document.getElementById('driverLicense'), {
-                toggle: false
-            });
-            selfDrive.addEventListener('change', function () {
-                if (selfDrive.checked) {
-                    collapseElement.show();
-                }
-            });
-            driver.addEventListener('change', function () {
-                if (driver.checked) {
-                    collapseElement.hide();
-                }
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            const fileInput = document.querySelector('#fileDriverLicenseCard');
-            fileInput.addEventListener('change', function () {
-                const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : 'ចុចត្រង់នេះ';
-                const btnInputFile = fileInput.closest('.btn-input-file');
-                btnInputFile.classList.add('file-selected');
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    .file-selected .custom-file-input::before {
-                        content: 'បាន upload រួចរាល់';
-                        background-color: #28a745;
-                        color: #fff;
-                        border-color: #28a745;
-                        width: 100%;
-                        display: inline-block;
-                        text-align: center;
-                        padding: 7px 0;
-                        cursor: pointer;
-                        font-weight: bold;
-                        font-size: 10pt;
-                    }
-                `;
-                document.head.appendChild(style);
-            });
-        });
-        //
-        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-        const appendAlert = (message, linkText, linkUrl, backgroundColor, timeout = 5000) => {
-            const wrapper = document.createElement('div')
-            wrapper.innerHTML = [
-                `<div class="alert alert-dismissible" style="background-color: ${backgroundColor}; color: white;" role="alert">`,
-                `   <div>${message.replace(linkText, `<a href="${linkUrl}" class="alert-link" style="color: white;">${linkText}</a>`)}</div>`,
-                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                '</div>'
-            ].join('')
-        const alertElement = wrapper.firstChild;
-        alertPlaceholder.append(alertElement)
-        setTimeout(() => {
-            alertElement.classList.add('fade');
-                setTimeout(() => alertElement.remove(), 150);
-            }, timeout)
-        }
-        const alertTrigger = document.getElementById('liveAlertBtn')
-            if (alertTrigger) {
-            alertTrigger.addEventListener('click', () => {
-                appendAlert(
-                'សូមធ្វើការ ផ្ទៀងផ្ទាត់គណនី របស់អ្នកជាមុនសិន ដើម្បីធ្វើការកក់',
-                'ផ្ទៀងផ្ទាត់គណនី',
-                'useraccount.html',
-                '#fa3939',
-                5000
-                )
-            })
-        }
     </script>
 </body>
 </html>
