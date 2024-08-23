@@ -49,7 +49,6 @@
                     <div class="pb-2 col-6 col-lg-4 d-flex justify-content-lg-center align-items-lg-center justify-content-start align-items-start" >
                         <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="40px" class="" alt=""></a>
                     </div> 
-
                     <div class="col-6 col-lg-4 d-flex justify-content-end align-items-center login-signup">   
                         <a href="create-account.html" class="btn rounded-1">បង្កើតគណនី</a>
                         <a href="sign-in.html" class="btn ms-2 rounded-1">ចូលគណនី</a>
@@ -58,159 +57,145 @@
                     <!-- Menu button - offcanvas -->
                     <div class="col-12 d-block d-lg-none offcanvas-btn-landing">
                         <button class="btn me-auto" style="border: 1px solid rgb(104, 104, 104);" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#navOffcanvasLanding" aria-controls="navOffcanvasLanding">
-                        <i class="fa-solid fa-bars"></i>
-                    </button> 
+                            data-bs-target="#navOffcanvasLanding" aria-controls="navOffcanvasLanding">
+                            <i class="fa-solid fa-bars"></i>
+                        </button> 
                     </div>
-
-            <div class="offcanvas-lg offcanvas-start pt-2 navPage" tabindex="-1" id="navOffcanvasLanding"
-                aria-labelledby="navOffcanvasLandingLabel">
-                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title m-auto ps-4" id="navOffcanvasLandingLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
-                    <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
-                        data-bs-target="#navOffcanvasLanding" aria-label="Close"></button>
-                </div>
-                
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav m-auto"> <!-- mb-2 mb-lg-0 -->
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">
-                                <span><i class="bi bi-house-door"></i></span>
-                                <span>ទំព័រដើម</span>
-                            </a>
-                        </li>
-                        <li class="nav-item position-relative hover-nav-service d-lg-block d-none">
-                            <a class="nav-link" href="#">
-                                <span><i class="bi bi-gear"></i></span>
-                                <span>សេវាកម្ម</span>
-                                <span><i class="bi bi-chevron-down"></i></span>
-                            </a>
-                            <div class="dropdown-service">
-                                <div class="line-service-hover"></div>
-                                <ul class="nav d-flex flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link top-round-5" href="car-rent-category.html">ជួលរថយន្ត</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="repair-service.html">ជួសជុលរថយន្ត</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="service-sell.html">លក់រថយន្ត</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link bottom-round-5" href="driver.html">ជួលអ្នកបើកបរ</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </li>
-                        <!--  -->
-                        <!-- dropdow -->
-                        <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
-                            <a class="btn" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span><i class="bi bi-gear"></i></span>
-                                <span>សេវាកម្ម</span>
-                                <span><i class="bi bi-chevron-down"></i></span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">ជួលរថយន្ត</a></li>
-                                <li><a class="dropdown-item ps-5" href="repair-service.html">ជួសជុលរថយន្ត</a></li>
-                                <li><a class="dropdown-item ps-5" href="service-sell.html">លក់រថយន្ត</a></li>
-                                <li><a class="dropdown-item ps-5" href="driver-category.html">ជួលអ្នកបើកបរ</a></li>
+                    <div class="offcanvas-lg offcanvas-start pt-2 navPage" tabindex="-1" id="navOffcanvasLanding" aria-labelledby="navOffcanvasLandingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title m-auto ps-4" id="navOffcanvasLandingLabel"><img src="assets/img/CamEZgo_logo.png" height="40px" alt=""></h5>
+                            <button type="button " class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#navOffcanvasLanding" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">
+                                        <span><i class="bi bi-house-door"></i></span>
+                                        <span>ទំព័រដើម</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item position-relative hover-nav-service d-lg-block d-none">
+                                    <a class="nav-link" href="#">
+                                        <span><i class="bi bi-gear"></i></span>
+                                        <span>សេវាកម្ម</span>
+                                        <span><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="dropdown-service">
+                                        <div class="line-service-hover"></div>
+                                        <ul class="nav d-flex flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link top-round-5" href="service-rent.html">ជួលរថយន្ត</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="driver.html">ជួលអ្នកបើកបរ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="repair-service.html">ជួសជុលរថយន្ត</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link bottom-round-5" href="service-sell.html">លក់រថយន្ត</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- dropdow -->
+                                <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                    <a class="btn" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="bi bi-gear"></i></span>
+                                        <span>សេវាកម្ម</span>
+                                        <span><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item ps-5" href="service-rent.html">ជួលរថយន្ត</a></li>
+                                        <li><a class="dropdown-item ps-5" href="driver-category.html">ជួលអ្នកបើកបរ</a></li>
+                                        <li><a class="dropdown-item ps-5" href="repair-service.html">ជួសជុលរថយន្ត</a></li>
+                                        <li><a class="dropdown-item ps-5" href="service-sell.html">លក់រថយន្ត</a></li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="promotion-landing.html">
+                                        <span><i class="bi bi-tags"></i></span>
+                                        <span>ប្រូម៉ូសិន</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html">
+                                        <i class="bi bi-briefcase"></i>
+                                        <span>ការងារ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">
+                                        <span><i class="bi bi-book"></i></span>
+                                        <span>ប្លុក</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item position-relative hover-nav-car-type d-lg-block d-none">
+                                    <a class="nav-link" href="#">
+                                        <span><i class="bi bi-car-front"></i></span>
+                                        <span>ប្រភេទរថយន្ត</span>
+                                        <span><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="dropdown-car-type">
+                                        <div class="line-car-type-hover"></div>
+                                        <ul class="nav d-flex flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link top-round-5" href="car-rent-category.html">Sedan</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="car-rent-category.html">SUV</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="car-rent-category.html">Sport</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="car-rent-category.html">Pickup</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link bottom-round-5" href="car-rent-category.html">Van</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- dropdow -->
+                                <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
+                                    <a class="btn" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="bi bi-car-front"></i></span>
+                                        <span>ប្រភេទរថយន្ត</span>
+                                        <span><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sedan</a></li>
+                                        <li><a class="dropdown-item ps-5" href="car-rent-category.html">SUV</a></li>
+                                        <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sport</a></li>
+                                        <li><a class="dropdown-item ps-5" href="car-rent-category.html">Pickup</a></li>
+                                        <li><a class="dropdown-item ps-5" href="car-rent-category.html">Van</a></li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">
+                                        <span><i class="bi bi-people"></i></span>
+                                        <span>អំពីយើង</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">
+                                        <span><i class="bi bi-telephone"></i></span>
+                                        <span>ទំនាក់ទំនង</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                        <!--  -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="promotion-landing.html">
-                                <span><i class="bi bi-tags"></i></span>
-                                <span>ប្រូម៉ូសិន</span>
-                            </a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="career.html">
-                                <i class="bi bi-briefcase"></i>
-                                <span>ការងារ</span>
-                            </a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">
-                                <span><i class="bi bi-book"></i></span>
-                                <span>ប្លុក</span>
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item position-relative hover-nav-car-type d-lg-block d-none">
-                            <a class="nav-link" href="#">
-
-                                <span><i class="bi bi-car-front"></i></span>
-                                <span>ប្រភេទរថយន្ត</span>
-                                <span><i class="bi bi-chevron-down"></i></span>
-                            </a>
-                            <div class="dropdown-car-type">
-                                <div class="line-car-type-hover"></div>
-                                <ul class="nav d-flex flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link top-round-5" href="car-rent-category.html">Sedan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="car-rent-category.html">SUV</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="car-rent-category.html">Sport</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="car-rent-category.html">Pickup</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link bottom-round-5" href="car-rent-category.html">Van</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- dropdow -->
-                        <div class="dropdown d-lg-none d-block offcanvas-drop-menu">
-                            <a class="btn" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span><i class="bi bi-car-front"></i></span>
-                                <span>ប្រភេទរថយន្ត</span>
-                                <span><i class="bi bi-chevron-down"></i></span>
-                            </a>
-                            <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sedan</a></li>
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">SUV</a></li>
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">Sport</a></li>
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">Pickup</a></li>
-                                <li><a class="dropdown-item ps-5" href="car-rent-category.html">Van</a></li>
-                            </ul>
-                        </div>
-                        <!--  -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">
-                                <span><i class="bi bi-people"></i></span>
-                                <span>អំពីយើង</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">
-                                <span><i class="bi bi-telephone"></i></span>
-                                <span>ទំនាក់ទំនង</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-            </div>
-                    
-                </div>  
             </div>
         </nav>
-</header>
-    <!-- Buttton back to top -->
+    </header>
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
-
     <!-- main -->
      <main>
         <section class="main-info pt-5">
@@ -277,9 +262,9 @@
                                     </div>
                                 </div>
                                 <div class="w-100 view-video">
-                                    <button type="button" class="btn rounded-5 btn-video px-md-3">
+                                    <a href="404page.html" class="btn rounded-5 btn-video px-md-3">
                                         <i class="fa-regular fa-circle-play fs-5 me-2"></i><span class="fw-medium">មើលវីដេអូ</span>
-                                    </button>
+                                    </a>
                                     <hr class="rounded-5 border-0 m-0">
                                 </div>
                             </div>
@@ -758,9 +743,11 @@
     <footer>
         <div class="container pb-3">
             <div class="row">
-                <div class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                <div
+                    class="col-12 py-5 d-flex justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
                     <div class="footer-brand">
-                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="60px" class="" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/CamEZgo_logo.png" height="60px"
+                                class="" alt=""></a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 pb-4 pb-lg-0">
@@ -807,7 +794,10 @@
                             <h5 class="fw-bold pt-4 pt-md-0">សេវាកម្ម</h5>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="car-rent-category.html" class="nav-link">ជួលរថយន្ត</a>
+                                    <a href="service-rent.html" class="nav-link">ជួលរថយន្ត</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="driver.html" class="nav-link">ជួលអ្នកបើកបរ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="repair-service.html" class="nav-link">ជួសជុលរថយន្ត</a>
@@ -815,9 +805,7 @@
                                 <li class="nav-item">
                                     <a href="service-sell.html" class="nav-link">លក់រថយន្ត</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="driver.html" class="nav-link">ជួលអ្នកបើកបរ</a>
-                                </li>
+                                
                             </ul>
                         </div>
 
@@ -825,13 +813,16 @@
                             <h5 class="fw-bold pt-4 pt-md-0">ទំនាក់ទំនង</h5>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link"><span><i class="bi bi-pin-map me-2"></i>ភ្នំពេញ</span></a>
+                                    <a href="#" class="nav-link"><span><i
+                                                class="bi bi-pin-map me-2"></i>ភ្នំពេញ</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link"><span><i class="bi bi-telephone me-2"></i>+855 23 99 999</span></a>
+                                    <a href="#" class="nav-link"><span><i class="bi bi-telephone me-2"></i>+855 23 99
+                                            999</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link w-100"><span><i class="bi bi-envelope-open me-2"></i>CamEZgo@info.com</span></a>
+                                    <a href="#" class="nav-link w-100"><span><i
+                                                class="bi bi-envelope-open me-2"></i>CamEZgo@info.com</span></a>
                                 </li>
                             </ul>
                             <div class="footer-social-media">

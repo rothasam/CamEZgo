@@ -1687,6 +1687,110 @@ header nav .nav-link:hover {
 .car-list .car-rent .btn-rent a {
   color: var(--bg-color) !important;
 }
+.google .google-account .list-group-item,
+.google .wrapper-button .btn,
+.google .back-btn,
+.google .select-languages,
+.google .dropdown-menu .dropdown-item {
+  transition: all 0.2s ease-in-out;
+}
+.google .icon {
+  width: 24px;
+  height: 24px;
+}
+.google .website-logo {
+  width: 120px;
+}
+.google .google-account .list-group-item{
+  cursor: pointer;
+}
+.google .google-account .list-group-item::after {
+  position: absolute;
+  content: '';
+  width: 94%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d6d5d5;
+}
+.google .google-account .list-group-item .pf-image{
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+}
+.google .google-account .list-group-item .badge {
+  top: 0;
+  right: 0;
+  font-weight: 500;
+}
+.google .back-btn {
+  border: 1px solid #000;
+}
+.google .back-btn .acc-img {
+  width: 25px;
+  height: 25px;
+}
+.google .back-btn i {
+  font-size: 12px;
+}
+.google .wrapper-button .btn {
+  border: 1px solid #BABBBA;
+}
+.google .google-account .list-group-item:hover,
+.google .back-btn:hover,
+.google .wrapper-button .btn:hover {
+  background-color: #F0F4F9;
+}
+.google .select-languages {
+  width: 200px;
+  font-size: 13px;
+  color: #000;
+  border: 2px solid transparent;
+  box-shadow: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.google .select-languages:hover {
+  background-color: #F0F4F9;
+} 
+.google .select-languages:focus {
+  border: 2px solid var(--main-color);
+}
+.google .dropdown-menu {
+  max-height: 450px;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.google .dropdown-menu .dropdown-item:hover {
+  background-color: #F0F4F9;
+}
+.google .dropdown-menu a {
+  font-size: 13px;
+  padding: 15px;
+}
+.google .dropup .dropdown-toggle::after {
+  position: absolute;
+  display: inline-block;
+  margin-left: 0;
+  content: "";
+  top: 47%;
+  right: 5%;
+  transform: rotate(180deg);
+}
+.google .dropup .dropdown-toggle:focus::after {
+  transform: rotate(0deg);
+}
+.google .google-support .list-group-item:hover,
+.google .google-support .list-group-item .btn:focus {
+  background-color: #E2E7EB;
+  cursor: pointer;
+  border: none;
+}
+.google .google-support a {
+  font-size: 12px;
+}
 /* ========================= */
 /* === car-sell-category === */
 /* ========================= */
@@ -3527,6 +3631,86 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
   color: white;
 }
+
+#accoverview .rent-table{
+  width: 100%;
+}
+#accoverview table tr .order {
+  text-align: center;
+}
+#accoverview table tr .image {
+  width: 70px;
+  height: 50px;
+}
+#accoverview table tr .btn-action {
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+#accoverview table tr .btn-action::after {
+  display: none;
+}
+#accoverview .dropup .dropdown-toggle::after {
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+#accoverview .dropup .dropdown-toggle:focus::after {
+  transform: rotate(0deg);
+}
+#accoverview #rentDetail .detail-img {
+  width: 120px;
+  height: 85px;
+}
+/* log-with-facebook-account-html */
+.header-login-fb {
+  background: linear-gradient(0deg, #3B5998, #4B66A0);
+}
+.header-login-fb .btn-create-fb-acc,
+.facebook .btn-create-fb-acc {
+  font-size: 13px;
+  padding: 5px 15px;
+  background-color: #36A420;
+}
+.facebook {
+  background-color: #E9EBEE;
+  padding: 80px 0;
+}
+.facebook .card {
+  width: 620px;
+}
+.facebook .card .btn-log {
+  background-color: #4267B2;
+}
+.facebook .btn-create-fb-acc {
+  font-size: 16px;
+}
+.facebook .forget-fb-acc,
+.facebook .not-yet {
+  text-decoration: none;
+}
+.facebook .forget-fb-acc:hover,
+.facebook .not-yet:hover {
+  text-decoration: underline;
+}
+.facebook-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 15px;
+}
+.facebook-footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.facebook-footer hr {
+  border: 1px solid #605f5f;
+  width: 94.5%;
+  opacity: 0.3;
+}
+.facebook-footer .list-item {
+  font-size: 15px;
+  font-weight: 300;
+}
 /************************************/
 /*            Service Rent          */
 /************************************/
@@ -3558,6 +3742,24 @@ header nav .nav-link:hover {
 .img-service-rent {
   height: 320px;
 }
+.service-rent-vdo{
+  width: 100%;
+  position: relative;
+}
+.service-rent-vdo .overlay{
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.883);
+  border-radius: 10px;
+}
+.service-rent-vdo video{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 /***************************************/
 /*              Footer                 */
@@ -3600,6 +3802,16 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 1200px) {
+  .table-receipt,
+  #accoverview .rent-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table-receipt .table,
+  #accoverview .rent-table table {
+    width: 120% !important;
+  }
+  /* #accoverview .rent-table */
   .image-profile img {
     width: 140px;
     height: 140px;
@@ -3823,6 +4035,9 @@ footer .nav-link:hover {
   .hero-text h1 {
     line-height: 45px;
   }
+  .google .google-account .list-group-item::after {
+    width: 97%;
+  }
 }
 @media (max-width: 980px) {
   .fs-20 {
@@ -3830,6 +4045,15 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 768px) {
+  .table-receipt .table {
+    width: 150% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 170% !important;
+  }
+  .google .select-languages {
+    width: 170px;
+  }
   .edit-img {
     bottom: 5%;
     right: 20%;
@@ -4203,6 +4427,26 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .table-receipt .table {
+    width: 200% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 200% !important;
+  }
+  .google .container {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .google .container .card {
+    border-radius: 0 !important;
+  }
+  .google .wrapper-button .btn {
+    border: 1px solid #323131;
+  }
   .edit-img {
     bottom: 5%;
     right: 24%;
@@ -4210,7 +4454,6 @@ footer .nav-link:hover {
   .head-title h1 {
     font-size: 20px;
   }
-
   .main-about-us p {
     font-size: 15px;
   }
@@ -4578,6 +4821,15 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 430px) {
+  .table-receipt .table {
+    width: 250% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 220% !important;
+  }
+  .google .select-languages {
+    width: 150px;
+  }
   .noti-time {
     width: 28%;
   }
@@ -4611,6 +4863,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 400px) {
+  #accoverview .rent-table .table {
+    width: 250% !important;
+  }
   .car-sell-promotion {
     padding: 0 18px;
   }
@@ -4631,6 +4886,15 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 375px) {
+  .table-receipt .table {
+    width: 290% !important;
+  }
+  #accoverview .rent-table .table {
+    width: 290% !important;
+  }
+  .google .select-languages {
+    width: 120px;
+  }
   .why-choose .choose-us-2 {
     top: 85px !important;
   }
