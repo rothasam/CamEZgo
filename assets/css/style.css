@@ -539,6 +539,13 @@ header nav .nav-link:hover {
 .was-validated .form-control:invalid {
   background-image: none !important;
 }
+.alert-1 {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
 /* .licence ::-webkit-scrollbar {
   width: 8px;
 }
@@ -4020,7 +4027,6 @@ footer .nav-link:hover {
   .booking-info .booking-form .icon i {
     font-size: 14px !important;
   }
-
   .car-sell-promotion {
     padding: 0 30px;
   }
@@ -4037,6 +4043,20 @@ footer .nav-link:hover {
   }
   .google .google-account .list-group-item::after {
     width: 97%;
+  }
+  .facebook {
+    padding: 50px 0;
+  }
+  .facebook .card {
+    max-width: 580px;
+  }
+  .facebook-footer hr {
+    display: none;
+  }
+  .facebook-footer .meta {
+    display: block;
+    text-align: center;
+    font-size: 15px;
   }
 }
 @media (max-width: 980px) {
@@ -4694,7 +4714,6 @@ footer .nav-link:hover {
   .f-w-100 {
     width: 100% !important;
   }
-
   .car-sell-promotion img {
     height: 200px;
     top: -22px;
@@ -4737,6 +4756,16 @@ footer .nav-link:hover {
   .line-root::before,
   .line-root::after {
     width: 30%;
+  }
+  .header-login-fb .heading{
+    justify-content: center;
+  }
+  .facebook {
+    padding: 30px 0;
+  }
+  .facebook .card {
+    border: none;
+    background-color: transparent;
   }
 }
 @media (max-width: 442px) {

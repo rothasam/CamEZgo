@@ -14,9 +14,9 @@
     <header class="header-login-fb">
         <nav>
             <div class="container">
-                <div class="d-flex gap-2 align-items-center mx-5 px-5 pb-2 pt-4">
-                    <h1 class="fw-bold mb-0 text-light ms-5">facebook</h1>
-                    <a href="#" class="btn text-light rounded-1 btn-create-fb-acc">បង្កើតគណនីថ្មី</a>
+                <div class="d-flex heading gap-2 align-items-center mx-md-5 px-md-5 pb-2 pt-2 pt-md-4">
+                    <h1 class="fw-bold mb-0 text-light ms-lg-5 media-name">facebook</h1>
+                    <a href="#" class="btn text-light rounded-1 btn-create-fb-acc d-none d-sm-block">បង្កើតគណនីថ្មី</a>
                 </div>
             </div>
         </nav>
@@ -26,26 +26,26 @@
         <section class="facebook">
             <div class="container">
                 <form action="" class="d-flex justify-content-center">
-                    <div class="card rounded-1 mx-5">
-                        <div class="card-body p-5 pb-4">
+                    <div class="card rounded-1 mx-lg-5">
+                        <div class="card-body p-lg-5 pb-4">
                             <div class="d-flex flex-column justify-content-center">
-                                <h4 class="text-normal text-center mb-4">ចូលក្នុងកម្មវិធី Facebook</h4>
-                                <div class="mb-2 mt-1 px-5 mx-5">
-                                    <input class="form-control rounded-0" id="emailOrPhone" type="text" placeholder="អ៊ីមែល ឫលេខទូរស័ព្ទ" aria-label="" style="box-shadow: none;">
+                                <h4 class="text-normal text-center mb-3 mb-lg-4">ចូលក្នុងកម្មវិធី Facebook</h4>
+                                <div class="mb-2 mt-1 px-sm-5 mx-3 mx-lg-5">
+                                    <input class="form-control rounded-0" id="emailOrPhone" type="text" placeholder="អ៊ីមែល ឫលេខទូរស័ព្ទ" value="0764343452" aria-label="" style="box-shadow: none;">
                                 </div>
-                                <div class="mb-2 mt-1 px-5 mx-5">
-                                    <input class="form-control rounded-0" id="emailOrPhone" type="password" placeholder="ពាក្យសម្ងាត់" aria-label="" style="box-shadow: none;">
+                                <div class="mb-2 mt-1 px-sm-5 mx-3 mx-lg-5">
+                                    <input class="form-control rounded-0" id="emailOrPhone" type="password" placeholder="ពាក្យសម្ងាត់" value="********" aria-label="" style="box-shadow: none;">
                                 </div>
-                                <div class="mb-2 mt-1 px-5 mx-5">
+                                <div class="mb-2 mt-1 px-sm-5 mx-3 mx-lg-5">
                                     <a href="homepage.html" class="w-100 btn btn-log text-light rounded-1 py-2">ចូល</a>
                                 </div>
                                 <a href="#" class="forget-fb-acc text-dark align-self-center">ភ្លេចគណនី?</a>
-                                <div class="d-flex justify-content-between align-items-center px-5 mx-5 my-1">
+                                <div class="d-flex justify-content-between align-items-center px-sm-5 mx-3 mx-lg-5 my-1">
                                     <div class="col-5"><hr class="w-100"></div>
                                     <div class="col-2"><span class="text-center d-block w-100">ឫ</span></div>
                                     <div class="col-5"><hr class="w-100"></div>
                                 </div>
-                                <div class="px-5 mx-5 d-flex justify-content-center">
+                                <div class="px-sm-5 mx-3 mx-lg-5 d-flex justify-content-center">
                                     <a href="#" class="btn text-light rounded-1 small btn-create-fb-acc">បង្កើតគណនីថ្មី</a>
                                 </div>
                                 <a href="#" class="text-dark align-self-center pt-1 not-yet">កុំទាន់អាល</a>
@@ -57,61 +57,91 @@
         </section>
     </main>
 
-    <footer class="facebook-footer bg-transparent mt-5 py-5">
+    <footer class="facebook-footer bg-transparent mt-5 py-lg-5 pb-5">
         <div class="container">
-            <div class="mx-5 px-5 list-languages">
-                <ul class="text-secondary mb-0">
-                    <li class="me-2">ភាសាខ្មែរ​</li>
-                    <li class="me-2">English (US)</li>
-                    <li class="me-2">Français (France)</li>
-                    <li class="me-2">Tiếng Việt</li>
-                    <li class="me-2">中文(简体)</li>
-                    <li class="me-2">ภาษาไทย</li>
-                    <li class="me-2">한국어</li>
-                    <li class="me-2">日本語</li>
-                    <li class="me-2">Español</li>
-                    <li class="me-2">Português (Brasil)</li>
-                    <li class="me-2">Deutsch</li>
-                    <li class="me-2">
-                        <span class="px-2 border border-secondary rounded-1 small"><i class="fa-solid fa-plus"></i></span>
-                    </li>
-                </ul>
+            <div class="mx-md-5 px-md-5 list-languages">
+                <div class="d-lg-none">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <div>
+                                <ul class="d-flex flex-column align-items-center text-dark">
+                                    <li>English (US)</li>
+                                    <li>Français (France)</li>
+                                    <li>中文(简体)</li>
+                                    <li>Português (Brasil)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <ul class="d-flex flex-column align-items-center text-dark">
+                                    <li>ភាសាខ្មែរ</li>
+                                    <li>Tiếng Việt</li>
+                                    <li>Español</li>
+                                    <li>
+                                        <span class="px-2 border border-secondary rounded-1 small"><i class="fa-solid fa-plus"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block">
+                    <ul class="text-secondary mb-0">
+                        <li class="me-2">ភាសាខ្មែរ​</li>
+                        <li class="me-2">English (US)</li>
+                        <li class="me-2">Français (France)</li>
+                        <li class="me-2">Tiếng Việt</li>
+                        <li class="me-2">中文(简体)</li>
+                        <li class="me-2">ภาษาไทย</li>
+                        <li class="me-2">한국어</li>
+                        <li class="me-2">日本語</li>
+                        <li class="me-2">Español</li>
+                        <li class="me-2">Português (Brasil)</li>
+                        <li class="me-2">Deutsch</li>
+                        <li class="me-2">
+                            <span class="px-2 border border-secondary rounded-1 small"><i class="fa-solid fa-plus"></i></span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="d-flex justify-content-center">
                     <hr class="my-2">
                 </div>
-                <ul class="text-secondary list-item">
-                    <li class="me-4">ចុះ​ឈ្មោះ​</li>
-                    <li class="me-4">ចូល</li>
-                    <li class="me-4">កម្មវិធីផ្ញើសារ</li>
-                    <li class="me-4">Facebook Lite</li>
-                    <li class="me-4">វីដេអូ</li>
-                    <li class="me-4">ទីកន្លែង</li>
-                    <li class="me-4">ហ្គេម</li>
-                    <li class="me-4">Marketplace</li>
-                    <li class="me-4">Meta Pay</li>
-                    <li class="me-4">ហាង Meta</li>
-                    <li class="me-4">Meta Quest</li>
-                    <li class="me-4">Meta AI</li>
-                    <li class="me-4">Instagram</li>
-                    <li class="me-4">Threads</li>
-                    <li class="me-4">កម្មវិធី​រៃអង្គាស​ថវិកា</li>
-                    <li class="me-4">សេវាកម្ម</li>
-                    <li class="me-4">មជ្ឈមណ្ឌល​ព័ត៌មាន​បោះឆ្នោត</li>
-                    <li class="me-4">គោលការណ៍​ឯកជនភាព</li>
-                    <li class="me-4">មជ្ឈមណ្ឌលឯកជនភាព</li>
-                    <li class="me-4">ក្រុម</li>
-                    <li class="me-4">អំពី</li>
-                    <li class="me-4">បង្កើតការផ្សាយពាណិជ្ជកម្ម</li>
-                    <li class="me-4">បង្កើតទំព័រ</li>
-                    <li class="me-4">អ្នកអភិវឌ្ឍន៍</li>
-                    <li class="me-4">មុខរបរ</li>
-                    <li class="me-4">ឃុកឃី</li>
-                    <li class="me-4">ជម្រើសផ្សាយពាណិជ្ជកម្ម</li>
-                    <li class="me-4">លក្ខខណ្ឌ</li>
-                    <li class="me-4">ជំនួយ</li>
-                    <li class="me-4">ការ​បង្ហោះ​​ទំនាក់ទំនងឡើង និង​មិនមែន​អ្នកប្រើប្រាស់ការកំណត់</li>
-                </ul>
-                <span class="text-secondary small ms-4 ps-2">Meta &copy; 2024</span>
+                <div class="d-none d-lg-block">
+                    <ul class="text-secondary list-item">
+                        <li class="me-2 me-xl-4">ចុះ​ឈ្មោះ​</li>
+                        <li class="me-2 me-xl-4">ចូល</li>
+                        <li class="me-2 me-xl-4">កម្មវិធីផ្ញើសារ</li>
+                        <li class="me-2 me-xl-4">Facebook Lite</li>
+                        <li class="me-2 me-xl-4">វីដេអូ</li>
+                        <li class="me-2 me-xl-4">ទីកន្លែង</li>
+                        <li class="me-2 me-xl-4">ហ្គេម</li>
+                        <li class="me-2 me-xl-4">Marketplace</li>
+                        <li class="me-2 me-xl-4">Meta Pay</li>
+                        <li class="me-2 me-xl-4">ហាង Meta</li>
+                        <li class="me-2 me-xl-4">Meta Quest</li>
+                        <li class="me-2 me-xl-4">Meta AI</li>
+                        <li class="me-2 me-xl-4">Instagram</li>
+                        <li class="me-2 me-xl-4">Threads</li>
+                        <li class="me-2 me-xl-4">កម្មវិធី​រៃអង្គាស​ថវិកា</li>
+                        <li class="me-2 me-xl-4">សេវាកម្ម</li>
+                        <li class="me-2 me-xl-4">មជ្ឈមណ្ឌល​ព័ត៌មាន​បោះឆ្នោត</li>
+                        <li class="me-2 me-xl-4">គោលការណ៍​ឯកជនភាព</li>
+                        <li class="me-2 me-xl-4">មជ្ឈមណ្ឌលឯកជនភាព</li>
+                        <li class="me-2 me-xl-4">ក្រុម</li>
+                        <li class="me-2 me-xl-4">អំពី</li>
+                        <li class="me-2 me-xl-4">បង្កើតការផ្សាយពាណិជ្ជកម្ម</li>
+                        <li class="me-2 me-xl-4">បង្កើតទំព័រ</li>
+                        <li class="me-2 me-xl-4">អ្នកអភិវឌ្ឍន៍</li>
+                        <li class="me-2 me-xl-4">មុខរបរ</li>
+                        <li class="me-2 me-xl-4">ឃុកឃី</li>
+                        <li class="me-2 me-xl-4">ជម្រើសផ្សាយពាណិជ្ជកម្ម</li>
+                        <li class="me-2 me-xl-4">លក្ខខណ្ឌ</li>
+                        <li class="me-2 me-xl-4">ជំនួយ</li>
+                        <li>ការ​បង្ហោះ​​ទំនាក់ទំនងឡើង និង​មិនមែន​អ្នកប្រើប្រាស់ការកំណត់</li>
+                    </ul>
+                </div>
+                <span class="text-secondary small ms-lg-4 ps-lg-2 meta">Meta &copy; 2024</span>
             </div>
         </div>
     </footer>
