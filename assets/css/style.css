@@ -198,7 +198,7 @@ header nav .nav-link:hover {
 .offcanvas-drop-menu .dropdown-menu {
   border: 0;
 }
-.navPage.sticky  {
+.navPage.sticky {
   position: fixed !important;
   top: 0;
   width: 100%;
@@ -207,7 +207,7 @@ header nav .nav-link:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
   padding: 20px !important;
 }
-.header-fix.sticky{
+.header-fix.sticky {
   position: fixed !important;
   top: 0;
   width: 100%;
@@ -215,7 +215,7 @@ header nav .nav-link:hover {
   background-color: #ffffff !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
-.offcanvas-btn-landing .btn{
+.offcanvas-btn-landing .btn {
   padding: 3px 10px;
   margin-top: 5px;
 }
@@ -2147,7 +2147,7 @@ header nav .nav-link:hover {
   background-color: var(--main-color-900);
 }
 .booking-info .fileInput .form-label:focus,
-.booking-info .fileInput .form-control:focus{
+.booking-info .fileInput .form-control:focus {
   border: none;
 }
 .custom-file-input {
@@ -2157,11 +2157,11 @@ header nav .nav-link:hover {
   visibility: hidden;
 }
 .btn-input-file {
-  width: 140px; 
+  width: 140px;
 }
 .custom-file-input::before {
   width: 100%;
-  content: 'ចុចត្រង់នេះ';
+  content: "ចុចត្រង់នេះ";
   display: inline-block;
   text-align: center;
   color: var(--main-color-700);
@@ -2184,7 +2184,7 @@ header nav .nav-link:hover {
   color: #000000a9;
 }
 .custom-file-input.uploaded::before {
-  content: 'Upload Complete';
+  content: "Upload Complete";
   background-color: #12812c;
   color: #fff;
   border-color: #28a745;
@@ -2222,11 +2222,11 @@ header nav .nav-link:hover {
   width: 100%;
   height: 650px;
 }
-.hero-banner .video-wrap{
+.hero-banner .video-wrap {
   width: 100% !important;
   height: 650px;
 }
-.video-wrap video{
+.video-wrap video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2252,10 +2252,10 @@ header nav .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.556) !important;
   z-index: 10;
 }
-.hero-text h1{
+.hero-text h1 {
   line-height: 60px;
 }
-.hero-text p{
+.hero-text p {
   font-size: 19px;
 }
 .down-app-link {
@@ -3714,28 +3714,32 @@ header nav .nav-link:hover {
 /************************************/
 /*            Service Rent          */
 /************************************/
-.service-rent-banner{
+.service-rent-banner {
   width: 100%;
   height: 600px;
   background-color: var(--dark-blue);
   position: relative;
 }
-.service-rent-banner img{
+.service-rent-banner img {
   width: 100%;
   height: 600px;
   background-color: #4ab71b5b;
   margin-left: auto;
 }
-.service-rent-banner .overlay{
+.service-rent-banner .overlay {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background: rgb(0,0,0);
-background: linear-gradient(94deg, rgba(0, 0, 0, 0.79) 36%, rgba(0,0,0,0.010714490874474736) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    94deg,
+    rgba(0, 0, 0, 0.79) 36%,
+    rgba(0, 0, 0, 0.010714490874474736) 100%
+  );
 }
-.img-service-rent{
+.img-service-rent {
   height: 320px;
 }
 .service-rent-vdo{
@@ -3755,8 +3759,6 @@ background: linear-gradient(94deg, rgba(0, 0, 0, 0.79) 36%, rgba(0,0,0,0.0107144
   object-fit: cover;
   border-radius: 10px;
 }
-
-
 
 
 /***************************************/
@@ -4030,7 +4032,7 @@ footer .nav-link:hover {
   .feature-count-bg {
     background-color: var(--bg-color);
   }
-  .hero-text h1{
+  .hero-text h1 {
     line-height: 45px;
   }
   .google .google-account .list-group-item::after {
@@ -4359,6 +4361,9 @@ footer .nav-link:hover {
   }
   .btn-w {
     width: 100% !important;
+  }
+  .fs-label-1 {
+    font-size: 12px !important;
   }
 }
 @media (max-width: 600px) {
