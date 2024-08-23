@@ -539,6 +539,13 @@ header nav .nav-link:hover {
 .was-validated .form-control:invalid {
   background-image: none !important;
 }
+.alert-1 {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
 /* .licence ::-webkit-scrollbar {
   width: 8px;
 }
