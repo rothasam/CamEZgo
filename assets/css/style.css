@@ -1708,12 +1708,12 @@ header nav .nav-link:hover {
 .google .website-logo {
   width: 120px;
 }
-.google .google-account .list-group-item{
+.google .google-account .list-group-item {
   cursor: pointer;
 }
 .google .google-account .list-group-item::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 94%;
   height: 1px;
   bottom: 0;
@@ -1721,7 +1721,7 @@ header nav .nav-link:hover {
   transform: translateX(-50%);
   background-color: #d6d5d5;
 }
-.google .google-account .list-group-item .pf-image{
+.google .google-account .list-group-item .pf-image {
   width: 32px;
   height: 32px;
   font-size: 20px;
@@ -1742,12 +1742,12 @@ header nav .nav-link:hover {
   font-size: 12px;
 }
 .google .wrapper-button .btn {
-  border: 1px solid #BABBBA;
+  border: 1px solid #babbba;
 }
 .google .google-account .list-group-item:hover,
 .google .back-btn:hover,
 .google .wrapper-button .btn:hover {
-  background-color: #F0F4F9;
+  background-color: #f0f4f9;
 }
 .google .select-languages {
   width: 200px;
@@ -1760,8 +1760,8 @@ header nav .nav-link:hover {
   cursor: pointer;
 }
 .google .select-languages:hover {
-  background-color: #F0F4F9;
-} 
+  background-color: #f0f4f9;
+}
 .google .select-languages:focus {
   border: 2px solid var(--main-color);
 }
@@ -1771,7 +1771,7 @@ header nav .nav-link:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .google .dropdown-menu .dropdown-item:hover {
-  background-color: #F0F4F9;
+  background-color: #f0f4f9;
 }
 .google .dropdown-menu a {
   font-size: 13px;
@@ -1791,7 +1791,7 @@ header nav .nav-link:hover {
 }
 .google .google-support .list-group-item:hover,
 .google .google-support .list-group-item .btn:focus {
-  background-color: #E2E7EB;
+  background-color: #e2e7eb;
   cursor: pointer;
   border: none;
 }
@@ -3639,7 +3639,7 @@ header nav .nav-link:hover {
   color: white;
 }
 
-#accoverview .rent-table{
+#accoverview .rent-table {
   width: 100%;
 }
 #accoverview table tr .order {
@@ -3670,23 +3670,23 @@ header nav .nav-link:hover {
 }
 /* log-with-facebook-account-html */
 .header-login-fb {
-  background: linear-gradient(0deg, #3B5998, #4B66A0);
+  background: linear-gradient(0deg, #3b5998, #4b66a0);
 }
 .header-login-fb .btn-create-fb-acc,
 .facebook .btn-create-fb-acc {
   font-size: 13px;
   padding: 5px 15px;
-  background-color: #36A420;
+  background-color: #36a420;
 }
 .facebook {
-  background-color: #E9EBEE;
+  background-color: #e9ebee;
   padding: 80px 0;
 }
 .facebook .card {
   width: 620px;
 }
 .facebook .card .btn-log {
-  background-color: #4267B2;
+  background-color: #4267b2;
 }
 .facebook .btn-create-fb-acc {
   font-size: 16px;
@@ -3749,24 +3749,23 @@ header nav .nav-link:hover {
 .img-service-rent {
   height: 330px;
 }
-.service-rent-vdo{
+.service-rent-vdo {
   width: 100%;
   position: relative;
 }
-.service-rent-vdo .overlay{
+.service-rent-vdo .overlay {
   position: absolute;
   width: 100%;
   height: 320px;
   background-color: rgba(0, 0, 0, 0.883);
   border-radius: 10px;
 }
-.service-rent-vdo video{
+.service-rent-vdo video {
   width: 100%;
   height: 320px;
   object-fit: cover;
   border-radius: 10px;
 }
-
 
 /***************************************/
 /*              Footer                 */
@@ -4757,7 +4756,7 @@ footer .nav-link:hover {
   .line-root::after {
     width: 30%;
   }
-  .header-login-fb .heading{
+  .header-login-fb .heading {
     justify-content: center;
   }
   .facebook {
