@@ -540,7 +540,7 @@ header nav .nav-link:hover {
   background-image: none !important;
 }
 .alert-1 {
-  width: 30%;
+  width: 36%;
   position: fixed;
   top: 10%;
   right: 2%;
@@ -3808,6 +3808,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 1200px) {
+  .alert-1 {
+    width: 38%;
+  }
   .table-receipt,
   #accoverview .rent-table {
     width: 100%;
@@ -3922,6 +3925,11 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 992px) {
+  .alert-1 {
+    width: 50%;
+    top: 5%;
+    right: 2%;
+  }
   .image-profile img {
     width: 150px;
     height: 150px;
@@ -4064,6 +4072,11 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 768px) {
+  .alert-1 {
+    width: 80%;
+    top: 5%;
+    right: 10%;
+  }
   .table-receipt .table {
     width: 150% !important;
   }
@@ -4446,6 +4459,11 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .alert-1 {
+    width: 98%;
+    top: 5%;
+    right: 1%;
+  }
   .table-receipt .table {
     width: 200% !important;
   }
