@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"); */
 
+@font-face {
+  font-family: "Noto Sans Khmer", sans-serif;
+  src: url(../font/NotoSansKhmer-Regular.ttf) format('ttf');
+  /* font-family: 'Noto Sans Khmer'; */
+  /* font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap; */
+
+}
 body {
+  /* font-family: "Noto Sans Khmer", sans-serif; */
   font-family: "Noto Sans Khmer", sans-serif;
   scroll-behavior: smooth;
   background-color: var(--bg-color);
