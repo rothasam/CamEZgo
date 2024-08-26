@@ -1,20 +1,32 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap"); */
-
+/* khmer */
 @font-face {
-  font-family: "Noto Sans Khmer", sans-serif;
-  src: url(../font/NotoSansKhmer-Regular.ttf) format('ttf');
-  /* font-family: 'Noto Sans Khmer'; */
-  /* font-style: normal;
+  font-family: 'Noto Sans Khmer';
+  font-style: normal;
   font-weight: 100 900;
   font-stretch: 100%;
-  font-display: swap; */
-
+  font-display: swap;
+  src: url(../font/font-noto-sans-khmer/khmer.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+19E0-19FF, U+200C-200D, U+25CC;
 }
-body {
-  /* font-family: "Noto Sans Khmer", sans-serif; */
-  font-family: "Noto Sans Khmer", sans-serif;
-  scroll-behavior: smooth;
-  background-color: var(--bg-color);
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans Khmer';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../font/font-noto-sans-khmer/latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans Khmer';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../font/font-noto-sans-khmer/latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 :root {
   --main-color: #5340ff;
@@ -30,6 +42,13 @@ body {
   --main-color-700: #3720e2;
   --main-color-800: #2d1db6;
   --main-color-900: #29208f;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Sans Khmer', sans-serif;
+  background-color: var(--bg-color);
 }
 mark {
   font-weight: 900;
@@ -71,7 +90,6 @@ header nav .nav-link:hover {
 .navPage .navbar-nav .nav-item .nav-link {
   padding: 0px 15px;
 }
-/* .nav-account .navbar-nav .link-acc .dropdown-menu, */
 .link-acc .drop-acc {
   left: -150px;
   width: 220px;
@@ -557,20 +575,6 @@ header nav .nav-link:hover {
   right: 2%;
   z-index: 100;
 }
-/* .licence ::-webkit-scrollbar {
-  width: 8px;
-}
-.licence ::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 10px;
-}
-.licence ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
-  border-radius: 10px;
-}
-.licence ::-webkit-scrollbar-thumb:hover {
-  background: var(--main-hover);
-} */
 /* car repair service page */
 #repair-banner.hero {
   width: 100%;
@@ -2250,20 +2254,6 @@ header nav .nav-link:hover {
   object-fit: cover;
   filter: blur(2px);
 }
-/* .hero-banner .video-wrap .plyr__video-wrapper {
-  width: 100% !important;
-  height: 650px;
-}
-.hero-banner .video-wrap .plyr__video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(2px);
-}
-.video-wrap .plyr__controls,
-.plyr__control--overlaid {
-  display: none !important;
-} */
 .hero-banner .video-wrap .overlay {
   width: 100%;
   height: 100%;
@@ -3453,8 +3443,6 @@ header nav .nav-link:hover {
 .success-animation {
   margin: 40px auto;
   margin-top: 10px;
-  /* margin-top: 30px;
-  margin-bottom: 25px; */
 }
 
 .checkmark {
