@@ -95,6 +95,9 @@ header nav .nav-link:hover {
   width: 220px;
   top: 55px;
 }
+.nav-account .navbar-nav .badge{
+  color: white!important;
+}
 .nav-account .navbar-nav .link-acc .dropdown-menu .dropdown-item,
 .link-acc .drop-acc .nav-link {
   padding: 10px 18px;
