@@ -629,9 +629,6 @@
 <script src="assets/plugin/font-awsome/all.min.js"></script>
 <script src="assets/plugin/aos/aos.js"></script>
 <script>
-    AOS.init();
-    new WOW().init();
-
     // Back to top and Menu Sticky
     window.onscroll = function () {
         stickyNavbar();
@@ -653,6 +650,9 @@
     backToTop.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+    AOS.init();
+    new WOW().init();
+
 </script>
 
 </html>

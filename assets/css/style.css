@@ -2310,7 +2310,7 @@ header nav .nav-link:hover {
 }
 .partner-brand img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
 }
 /***************************************/
 /*           TITLE STYLE               */
@@ -2320,7 +2320,7 @@ header nav .nav-link:hover {
   padding: 0;
   margin: 0;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 38px;
   color: #080808;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -2354,7 +2354,7 @@ header nav .nav-link:hover {
   background-color: var(--main-color);
 }
 .left-side-title h1 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.5em;
@@ -2443,7 +2443,7 @@ header nav .nav-link:hover {
   width: 25%;
 }
 .why-us-list .card-text {
-  font-size: 15px;
+  font-size: 17px;
 }
 .why-us-des {
   width: 75%;
@@ -2674,6 +2674,16 @@ header nav .nav-link:hover {
 /***************************************/
 /*            Special Offer            */
 /***************************************/
+.offer-text h4{
+  line-height: 32px;
+}
+.fs-register-now{
+  font-size: 18px;
+  color: rgb(200, 200, 200)!important;
+}
+.fs-promo-title{
+  font-size: 20px;
+}
 .special-offer {
   background-color: var(--dark-blue);
   border-radius: 10px;
@@ -3338,6 +3348,9 @@ header nav .nav-link:hover {
   transform: translateY(-5px);
   border-bottom: 4px solid var(--main-color);
 }
+.blog-detail-fs{
+  font-size: 18px;
+}
 /***************************************/
 /*               About us              */
 /***************************************/
@@ -3346,6 +3359,12 @@ header nav .nav-link:hover {
   width: 100%;
   height: 450px;
   background-color: var(--dark-blue);
+}
+.about-us-fs{
+  font-size: 20px;
+}
+.ant-stu-img{
+  height: 380px;
 }
 .team-wrap {
   width: 100%;
@@ -3744,8 +3763,8 @@ header nav .nav-link:hover {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     94deg,
-    rgba(0, 0, 0, 0.79) 36%,
-    rgba(0, 0, 0, 0.010714490874474736) 100%
+    rgba(0, 0, 0, 0.592) 36%,
+    rgba(0, 0, 0, 0.010) 100%
   );
 }
 .img-service-rent {
@@ -3941,7 +3960,7 @@ footer .nav-link:hover {
     right: 28%;
   }
   .head-title h1 {
-    font-size: 27px;
+    font-size: 31px;
   }
   .navPage .nav-account {
     display: flex;
@@ -4074,6 +4093,21 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 768px) {
+  .left-side-title h1{
+    font-size: 28px;
+  }
+  .fs-promo-title{
+    font-size: 18px;
+  }
+  .fs-register-now{
+    font-size: 15px!important;
+  }
+  .ant-stu-img{
+    height: auto;
+  }
+  .about-us-fs{
+    font-size: 17px;
+  }
   .alert-1 {
     width: 80%;
     top: 5%;
@@ -4093,7 +4127,7 @@ footer .nav-link:hover {
     right: 20%;
   }
   .head-title h1 {
-    font-size: 23px;
+    font-size: 28px;
   }
   .nav-clip-path {
     top: -18px;
@@ -4110,10 +4144,10 @@ footer .nav-link:hover {
     left: -155px;
   }
   .why-us-list .card-title {
-    font-size: 18px;
+    font-size: 20px;
   }
   .why-us-list .card-text {
-    font-size: 12px;
+    font-size: 15px;
   }
   .nav-account .navbar-nav .nav-item .nav-link .user-account {
     width: 28px;
@@ -4182,7 +4216,7 @@ footer .nav-link:hover {
     padding: 0 20px;
   }
   .offer-text h4 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .offer-text small {
     font-size: 12px;
@@ -4452,6 +4486,13 @@ footer .nav-link:hover {
   #repair-banner h1 {
     font-size: 36px !important;
   }
+  .service-rent-banner .overlay {
+    background: linear-gradient(
+      94deg,
+      rgba(0, 0, 0, 0.592) 36%,
+      rgba(0, 0, 0, 0.592) 36%
+    );
+  }
 }
 @media (min-width: 600px) {
   .verify-code .modal-body .form-control {
@@ -4461,6 +4502,12 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 576px) {
+  .left-side-title h1{
+    font-size: 26px;
+  }
+  .fs-promo-title{
+    font-size: 16px;
+  }
   .alert-1 {
     width: 98%;
     top: 5%;
@@ -4491,7 +4538,7 @@ footer .nav-link:hover {
     right: 24%;
   }
   .head-title h1 {
-    font-size: 20px;
+    font-size: 26px;
   }
   .main-about-us p {
     font-size: 15px;
@@ -4503,8 +4550,11 @@ footer .nav-link:hover {
   .why-us-list .card-body .icon-card {
     width: 32%;
   }
+  .why-us-list .card-title {
+    font-size: 17px;
+  }
   .why-us-list .card-text {
-    font-size: 12px;
+    font-size: 13px;
   }
   .why-us-des {
     width: 68%;
@@ -4530,7 +4580,7 @@ footer .nav-link:hover {
     font-size: 12px;
   }
   .card-service .card .card-body button {
-    font-size: 13px;
+    font-size: 14px;
   }
   .card-service .card {
     width: 90% !important;
