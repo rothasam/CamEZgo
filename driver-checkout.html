@@ -318,8 +318,6 @@
     <!-- Buttton back to top -->
     <button id="backToTop" class="btn " style="background-color: #5340ff;"><i class="fa-solid fa-arrow-up"></i></button>
 
-
-
     <!-- main -->
      <main>
         <section class="wishlist-head booking">
@@ -702,5 +700,11 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
      </script>
+     <script>
+        document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+            const text = link.innerHTML;
+            link.innerHTML = `<span>${text}</span>`;
+        });
+    </script>
 </body>
 </html>

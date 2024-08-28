@@ -597,6 +597,12 @@
         });
 
     </script>
+    <script>
+        document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+            const text = link.innerHTML;
+            link.innerHTML = `<span>${text}</span>`;
+        });
+    </script>
 </body>
 
 </html>

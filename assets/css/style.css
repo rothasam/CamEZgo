@@ -3812,9 +3812,18 @@ footer .nav-link {
   color: #c9c9c9e5;
   transition: 0.2s;
   font-size: 15px;
+  cursor: default !important;
+  transition: all 0.2s ease-in-out;
 }
-footer .nav-link:hover {
-  color: white;
+footer .nav-link span {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+footer .nav-item:hover {
+  color: #c9c9c9e5;
+}
+footer .nav-item span:hover {
+  color: #fff;
 }
 .footer-social-media .navbar-nav .nav-item .nav-link {
   font-size: 18px;

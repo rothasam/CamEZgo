@@ -811,8 +811,6 @@
         });
     });
 
-    // document.getElementsByClassName('radioPayment').style.cursor = 'pointer';
-
     AOS.init();
     new WOW().init();
     // Back to top and Menu Sticky
@@ -837,5 +835,10 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 </script>
-
+<script>
+    document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+        const text = link.innerHTML;
+        link.innerHTML = `<span>${text}</span>`;
+    });
+</script>
 </html>
