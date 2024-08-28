@@ -915,8 +915,6 @@
         })();
         
     </script>
-
-
     <script>
         // Back to top and Menu Sticky
         window.onscroll = function () {
@@ -941,42 +939,48 @@
         });
     </script>
 
-<script>
-    // Car for rent
-    var swiper = new Swiper(".car-item-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        fade: "true",
-        centerslide: "true",
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-        },
-        autoplay: {
-            delay: 10000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
+    <script>
+        // Car for rent
+        var swiper = new Swiper(".car-item-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            fade: "true",
+            centerslide: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
             },
-            768: {
-                slidesPerView: 2,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
             },
-            992: {
-                slidesPerView: 2,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            1200: {
-                slidesPerView: 3,
-            }
-        },
-    });
-</script>
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                }
+            },
+        });
+    </script>
+    <script>
+        document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+            const text = link.innerHTML;
+            link.innerHTML = `<span>${text}</span>`;
+        });
+    </script>
 </body>
 </html>

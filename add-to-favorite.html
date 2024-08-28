@@ -30,5 +30,11 @@
     </main>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+            const text = link.innerHTML;
+            link.innerHTML = `<span>${text}</span>`;
+        });
+    </script>
 </body>
 </html>

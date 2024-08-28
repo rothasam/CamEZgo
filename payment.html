@@ -333,7 +333,6 @@
     
 
     <main>
-
         <section class="wishlist-head booking">
             <div class="wishlist-title">
                 <h1 class="fw-bold text-light wow animate__animated animate__fadeInDown">ចាប់ផ្តើមទូទាត់ប្រាក់</h1>
@@ -348,7 +347,6 @@
                 </nav>
             </div>
         </section>
-        
         <section class="style-input py-5">
             <div class="container">
                 <div class="row g-3 g-lg-4">
@@ -369,8 +367,8 @@
                                     <div class="row g-2 g-md-3">
                                         <!-- Pay Now / Pay Later Options -->
                                         <div class="col-lg-6">
-                                            <div class="radio rounded-1">
-                                                <label class="w-100">
+                                            <div class="radio rounded-1 radioPayment">
+                                                <label class="w-100 radioPayment">
                                                     <input type="radio" name="payment_timing" value="paynow" />
                                                     <span style="margin-left: 6px;" class="fw-bold">បង់ឥឡូវនេះ</span>
                                                     <div style="margin-left: 23px;">
@@ -381,8 +379,8 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="radio rounded-1">
-                                                <label class="w-100">
+                                            <div class="radio rounded-1 radioPayment">
+                                                <label class="w-100 radioPayment">
                                                     <input type="radio" name="payment_timing" value="paylater" />
                                                     <span style="margin-left: 6px;" class="fw-bold">បង់ប្រាក់កក់</span>
                                                     <div style="margin-left: 23px;">
@@ -399,8 +397,8 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="radio rounded-1">
-                                                <label class="d-flex justify-content-between w-100 align-items-center" style="cursor: pointer;">
+                                            <div class="radio rounded-1 radioPayment">
+                                                <label class="radioPayment d-flex justify-content-between w-100 align-items-center">
                                                     <div>
                                                         <input type="radio" name="payment_method" value="visa" />
                                                         <span style="margin-left: 6px;" class="fw-bold"><i
@@ -421,8 +419,8 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="radio rounded-1">
-                                                <label class="w-100">
+                                            <div class="radio rounded-1 radioPayment">
+                                                <label class="w-100 radioPayment">
                                                     <input type="radio" name="payment_method" value="khqr" />
                                                     <img style=" margin-left: 6px; width: 50px; height: 20px;"
                                                         src="assets/img/payment/khqr.webp" alt="">
@@ -841,10 +839,13 @@
             }
         });
     });
-    
-    
     AOS.init();
     new WOW().init();
 </script>
-
+<script>
+    document.querySelectorAll('footer .nav-item .nav-link').forEach(function(link) {
+        const text = link.innerHTML;
+        link.innerHTML = `<span>${text}</span>`;
+    });
+</script>
 </html>
