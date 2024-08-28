@@ -456,6 +456,7 @@ header nav .nav-link:hover {
   width: 100%;
   border-width: 1px;
   background-color: #dddddd3f;
+
 }
 .radio.selected {
   background-color: transparent;
@@ -469,7 +470,7 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 5px;  
 }
 .line-root {
   position: relative;
@@ -2837,6 +2838,10 @@ header nav .nav-link:hover {
   background-color: var(--dark-blue);
   border-radius: 10px;
   color: white;
+}
+.app-section p{
+  font-size: 16px;
+  color: var(--bg-color);
 }
 
 /***************************************/
