@@ -5004,6 +5004,9 @@ footer .nav-link:hover {
   }
 }
 @media (max-width: 375px) {
+  nav[aria-label="breadcrumb"] {
+    display: none !important;
+  }
   .table-receipt .table {
     width: 290% !important;
   }
