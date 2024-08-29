@@ -3367,14 +3367,16 @@ header nav .nav-link:hover {
 /***************************************/
 /*               About us              */
 /***************************************/
-.about-us-banner,
+.about-us-banner{
+  background-color: var(--dark-blue);
+  padding: 50px 0;
+}
 .contact-us-banner {
   width: 100%;
   height: 450px;
-  background-color: var(--dark-blue);
 }
 .about-us-fs{
-  font-size: 20px;
+  font-size: 19px;
 }
 .ant-stu-img{
   height: 380px;
