@@ -5038,4 +5038,7 @@ footer .nav-item span:hover {
   .why-choose .choose-us-2 {
     top: 85px !important;
   }
+  .login-signup a{
+    font-size: 11px!important;
+  }
 }
